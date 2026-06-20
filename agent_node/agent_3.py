@@ -1,28 +1,49 @@
 from config import llm
-from utils.competitor_research import collect_competitor_reviews
+
+from utils.competitor_research import (
+    collect_competitor_reviews
+)
+
 
 def competitor_research_agent(
     state
 ):
 
-    results = []
+    competitor_research = []
 
     for competitor in (
         state["competitors"]
     ):
 
-        result = (
-            collect_competitor_reviews(
-                competitor,
-                llm
-            )
-        )
+        try:
 
-        results.append(
-            result
-        )
+            result = (
+                collect_competitor_reviews(
+                    competitor,
+                    llm
+                )
+            )
+
+            competitor_research.append(
+                result
+            )
+
+        except Exception as e:
+
+            competitor_research.append(
+                {
+                    "competitor":
+                    competitor,
+
+                    "source":
+                    "error",
+
+                    "error":
+                    str(e)
+                }
+            )
 
     return {
         "competitor_research":
-        results
+        competitor_research
     }
