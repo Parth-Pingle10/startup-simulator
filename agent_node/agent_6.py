@@ -3,39 +3,115 @@ from agent_llm.agent_6 import agent6_llm
 def startup_scoring_agent(state):
 
     prompt = f"""
-    Evaluate this startup.
+    You are an experienced startup investor, venture capitalist, product strategist, and market analyst.
 
-    Startup Description:
-    {state["one_line_description"]}
+Your task is to objectively evaluate the startup using the provided market research.
 
-    Features:
-    {state["key_features"]}
+Startup Description:
+{state["one_line_description"]}
 
-    Market Gap Analysis:
-    {state["market_gaps"]}
+Startup Features:
+{state["key_features"]}
 
-    Competitor Intelligence:
-    {state["competitor_insights"]}
+Market Gap Analysis:
+{state["market_gaps"]}
 
-    Score the startup.
+Competitor Intelligence:
+{state["competitor_insights"]}
 
-    Provide:
+Evaluate the startup across multiple dimensions.
 
-    1. Market Fit Score (0-100)
-    2. Differentiation Score (0-100)
-    3. Problem Strength Score (0-100)
-    4. Monetization Score (0-100)
-    5. Execution Complexity Score (0-100)
-    6. Overall Score (0-100)
+Evaluation Rules:
 
-    Verdict:
+* Be objective and evidence-based.
+* Do not assume the startup will succeed.
+* Do not assume the startup will fail.
+* Base all judgments on the provided information.
+* Compare the startup against existing competitors.
+* Consider both strengths and weaknesses.
+* High scores must be justified by strong evidence.
+* Low scores must be justified by significant weaknesses.
+* Use the full scoring range from 0 to 100 when appropriate.
+* Do not artificially inflate or compress scores.
+* Do not favor startups simply because they use AI.
 
-    - Poor
-    - Average
-    - Good
-    - Excellent
+Scoring Categories:
 
-    Return structured output.
+1. Market Fit Score (0-100)
+
+Evaluate:
+
+* Demand for the problem
+* Alignment with customer needs
+* Coverage of customer pain points
+* Relevance to target users
+
+2. Differentiation Score (0-100)
+
+Evaluate:
+
+* Competitive advantage
+* Uniqueness
+* Defensibility
+* Novel value proposition
+
+3. Problem Strength Score (0-100)
+
+Evaluate:
+
+* Severity of the problem
+* Frequency of occurrence
+* Importance to users
+* Urgency of solving it
+
+4. Monetization Score (0-100)
+
+Evaluate:
+
+* Likelihood customers would pay
+* Revenue potential
+* Pricing feasibility
+* Commercial viability
+
+5. Execution Complexity Score (0-100)
+
+Important:
+
+A higher score means the startup is MORE difficult to build, scale, and operate.
+
+Evaluate:
+
+* Technical complexity
+* Data requirements
+* Infrastructure requirements
+* Operational complexity
+* Regulatory complexity
+
+Reasoning Requirements:
+
+For each score provide concise reasoning based on the available evidence.
+
+Do not invent evidence.
+
+Verdict Rules:
+
+Poor:
+Startup has major weaknesses, weak market demand, or poor differentiation.
+
+Average:
+Startup solves a real problem but lacks strong differentiation or competitive advantages.
+
+Good:
+Startup demonstrates strong demand, reasonable differentiation, and meaningful customer value.
+
+Excellent:
+Startup demonstrates exceptional market demand, strong competitive advantages, meaningful differentiation, and clear customer value.
+
+Important:
+
+Exceptional scores should only be awarded when there is strong evidence supporting them.
+
+Return structured output only.
     """
 
     response = agent6_llm.invoke(prompt)

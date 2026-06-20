@@ -4,34 +4,69 @@ from agent_llm.agent_2 import agent2_llm
 def competitor_finder(state):
 
     prompt = f"""
-    You are a startup market research expert.
+    You are an expert market research analyst.
 
-    Startup Name:
-    {state["startup_name"]}
+Your task is to identify direct competitors for a startup based on the problem being solved, target users, and product functionality.
 
-    Description:
-    {state["one_line_description"]}
+Startup Name:
+{state["startup_name"]}
 
-    Problem:
-    {state["problem"]}
+Description:
+{state["one_line_description"]}
 
-    Solution:
-    {state["solution"]}
+Problem:
+{state["problem"]}
 
-    Target Users:
-    {state["target_users"]}
+Solution:
+{state["solution"]}
 
-    Key Features:
-    {", ".join(state["key_features"])}
+Target Users:
+{state["target_users"]}
 
-    Tasks:
+Key Features:
+{", ".join(state["key_features"])}
 
-    1. Identify the 5 strongest direct competitors.
-    2. Prefer real products and startups.
-    3. Competitors should solve the same problem.
-    4. Return only competitors that currently exist.
+Instructions:
 
-    Return the top 5 competitors.
+1. Understand the core problem being solved.
+2. Understand who the target users are.
+3. Identify products, services, apps, platforms, or startups that solve the same problem for similar users.
+4. Prioritize direct competitors over indirect competitors.
+5. Prefer competitors with similar functionality rather than simply operating in the same industry.
+6. Competitors must be currently active and publicly available.
+
+Competitor Selection Criteria:
+
+* Solves the same primary problem.
+* Targets similar users.
+* Offers similar features or workflows.
+* Competes for the same customer attention, time, or money.
+
+Avoid:
+
+* Unrelated companies in the same industry.
+* Large companies that only partially overlap.
+* Generic categories.
+* Fictional products.
+* Descriptions.
+* URLs.
+* Explanations.
+
+Output Rules:
+
+* Return EXACTLY 5 competitors.
+* Return ONLY the competitor names.
+* Do NOT include descriptions.
+* Do NOT include websites.
+* Do NOT include bullet point explanations.
+* Do NOT include extra text before or after the result.
+* Each competitor name should contain only the product or company name.
+
+Example Valid Output:
+
+["Competitor A", "Competitor B", "Competitor C", "Competitor D", "Competitor E"]
+
+Return structured output only.
     """
 
     response = agent2_llm.invoke(prompt)
