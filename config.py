@@ -1,6 +1,11 @@
-from langchain_ollama import ChatOllama
+from dotenv import load_dotenv
+import os
+from langchain_google_genai import ChatGoogleGenerativeAI
 
-llm = ChatOllama(
-    model="mistral:latest",
-    temperature=0.2
+load_dotenv(override=True)
+
+llm = ChatGoogleGenerativeAI(
+    model="gemini-2.5-flash",
+    google_api_key=os.getenv("GOOGLE_API_KEY"),
+    temperature=0
 )
