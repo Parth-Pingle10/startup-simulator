@@ -2,5 +2,6 @@ langchain
 langgraph
 langchain-google-genai
 python-dotenv
-fastapi 
 uvicorn
+fastapi 
+slowapi
