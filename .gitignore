@@ -6,6 +6,7 @@ venv/
 *.pyc
 __pycache__/
 *.py[cod]
+og_main.py
 *$py.class
 venv/
 .venv/
