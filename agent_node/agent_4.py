@@ -1,6 +1,15 @@
-from agent_llm.agent_4 import agent4_llm
+from agent_state.agent_4 import CompetitorAnalysis
+from utils.structured_invoke import invoke_structured
+from utils.logger import logger
+import time
 
 def competitor_intelligence_agent(state):
+    
+    start = time.time()
+    
+    logger.info(
+        f"Agent 4 Started | {state['startup_name']}"
+    )
 
     competitor_insights = []
 
@@ -67,7 +76,10 @@ If a finding is not supported by the reviews, do not include it.
 Return structured output only.
         """
 
-        response = agent4_llm.invoke(prompt)
+        response = invoke_structured(
+        CompetitorAnalysis,
+        prompt
+)
 
         if isinstance(response, dict):
 
@@ -80,6 +92,15 @@ Return structured output only.
             competitor_insights.append(
                 response.model_dump()
             )
+
+    end = time.time()
+            
+    logger.info(
+        f"Agent 4 Completed | {state['startup_name']}"
+    )
+    logger.info(
+    f"Agent 4 Runtime: {end-start:.2f}s"
+)
 
     return {
         "competitor_insights":

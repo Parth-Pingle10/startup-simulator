@@ -3,6 +3,8 @@ from scraper.trustpilot import (
     scrape_trustpilot_reviews
 )
 
+from structured_invoke import invoke_structured
+
 from pydantic import BaseModel
 from typing import List
 
@@ -25,11 +27,6 @@ def llm_competitor_research(
     llm
 ):
 
-    research_llm = (
-        llm.with_structured_output(
-            FallbackResearch
-        )
-    )
 
     prompt = f"""
 You are a senior product researcher, startup analyst, and competitive intelligence expert.
@@ -98,7 +95,8 @@ Generate specific, realistic findings.
 Return structured output only.
 """
 
-    response = research_llm.invoke(
+    response = invoke_structured(
+        FallbackResearch,
         prompt
     )
 

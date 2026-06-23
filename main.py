@@ -8,7 +8,7 @@ from slowapi import _rate_limit_exceeded_handler
 
 from schemas import StartupRequest
 from builder import graph
-
+from utils.logger import logger
 
 limiter = Limiter(
     key_func=get_remote_address
@@ -43,7 +43,11 @@ def home(request: Request):
 async def analyze_startup(
     request: Request,
     startup: StartupRequest
-):
+):  
+    
+    logger.info(
+        f"New Analysis: {startup.startup_name}"
+    )
 
     try:
 
@@ -65,12 +69,20 @@ async def analyze_startup(
             state
         )
 
+        logger.info(
+            f"Analysis Complete: {startup.startup_name}"
+        )
+        
         return {
             "success": True,
             "data": result
         }
 
     except Exception as e:
+        
+        logger.error(
+            f"Analysis Failed: {str(e)}"
+        )
 
         return {
             "success": False,

@@ -1,8 +1,17 @@
-from agent_llm.agent_9 import agent9_llm
+from agent_state.agent_9 import AdoptionAnalytics
+from utils.structured_invoke import invoke_structured
+from utils.logger import logger
+import time
 
 def adoption_analytics_agent(state):
+   
+   start = time.time()
+   
+   logger.info(
+        f"Agent  Started | {state['startup_name']}"
+    )
 
-    prompt = f"""
+   prompt = f"""
     You are an expert startup analyst, market researcher, and customer insights specialist.
 
 Your task is to analyze aggregated customer feedback and identify overall market sentiment toward the startup.
@@ -97,16 +106,28 @@ Do not assign high probabilities unless the feedback strongly supports them.
 Return structured output only.
     """
 
-    response = agent9_llm.invoke(prompt)
+   response = invoke_structured(
+    AdoptionAnalytics,
+    prompt
+)
 
-    if isinstance(response, dict):
+   if isinstance(response, dict):
 
         analytics = response
 
-    else:
+   else:
 
         analytics = response.model_dump()
+        
+   end = time.time()
+   
+   logger.info(
+        f"Agent 9 Completed | {state['startup_name']}"
+    )
+   logger.info(
+    f"Agent 9 Runtime: {end-start:.2f}s"
+)
 
-    return {
+   return {
         "adoption_analytics": analytics
     }

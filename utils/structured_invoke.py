@@ -1,9 +1,45 @@
-from config.llm_manager import llm_manager
+import logging
 
+from tenacity import (
+    retry,
+    stop_after_attempt,
+    wait_exponential,
+    before_sleep_log
+)
+
+from config.llm_manager import (
+    llm_manager
+)
+
+from utils.logger import (
+    logger
+)
+
+
+@retry(
+    stop=stop_after_attempt(3),
+
+    wait=wait_exponential(
+        multiplier=1,
+        min=2,
+        max=10
+    ),
+
+    before_sleep=before_sleep_log(
+        logger,
+        logging.WARNING
+    ),
+
+    reraise=True
+)
 def invoke_structured(
     schema,
     prompt
 ):
+
+    logger.info(
+        f"Invoking Gemini | {schema.__name__}"
+    )
 
     try:
 
@@ -14,11 +50,25 @@ def invoke_structured(
             )
         )
 
-        return llm.invoke(
+        response = llm.invoke(
             prompt
         )
 
-    except Exception:
+        logger.info(
+            f"Gemini Success | {schema.__name__}"
+        )
+
+        return response
+
+    except Exception as e:
+
+        logger.warning(
+            f"Gemini Failed | {str(e)}"
+        )
+
+        logger.info(
+            f"Switching To DeepSeek | {schema.__name__}"
+        )
 
         llm = (
             llm_manager.fallback
@@ -27,6 +77,12 @@ def invoke_structured(
             )
         )
 
-        return llm.invoke(
+        response = llm.invoke(
             prompt
         )
+
+        logger.info(
+            f"DeepSeek Success | {schema.__name__}"
+        )
+
+        return response

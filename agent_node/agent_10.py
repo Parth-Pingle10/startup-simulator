@@ -1,6 +1,14 @@
-from agent_llm.agent_10 import agent10_llm
+from agent_state.agent_10 import FinalReport
+from utils.structured_invoke import invoke_structured
+from utils.logger import logger 
+import time
     
 def final_report_generator_agent(state):
+    
+    logger.info(
+        f"Agent 10 Started | {state['startup_name']}"
+    )
+    start = time.time()
 
     prompt = f"""
     You are an experienced startup consultant preparing a professional startup validation report for a founder.
@@ -137,7 +145,10 @@ Important:
 Return structured output only.
     """
 
-    response = agent10_llm.invoke(prompt)
+    response = invoke_structured(
+    FinalReport,
+    prompt
+)
 
     if isinstance(response, dict):
 
@@ -146,6 +157,16 @@ Return structured output only.
     else:
 
         report = response.model_dump()
+    
+    end = time.time()
+        
+    logger.info(
+        f"Agent 10 Completed | {state['startup_name']}"
+    )
+    logger.info(
+    f"Agent 10 Runtime: {end-start:.2f}s"
+)
+
 
     return {
         "final_report": report

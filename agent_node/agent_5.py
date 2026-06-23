@@ -1,6 +1,15 @@
-from agent_llm.agent_5 import agent5_llm
+from agent_state.agent_5 import MarketGapAnalysis
+from utils.structured_invoke import invoke_structured
+from utils.logger import logger
+import time
 
 def market_gap_analysis_agent(state):
+    
+    start = time.time()
+    
+    logger.info(
+        f"Agent 5 Started | {state['startup_name']}"
+    )
 
     prompt = f"""
     You are an expert startup strategist, product manager, and market analyst.
@@ -101,7 +110,10 @@ Every strength, opportunity, threat, solved pain point, and unsolved pain point 
 Return structured output only.
     """
 
-    response = agent5_llm.invoke(prompt)
+    response = invoke_structured(
+    MarketGapAnalysis,
+    prompt
+)
 
     if isinstance(response, dict):
 
@@ -111,6 +123,15 @@ Return structured output only.
 
         analysis = response.model_dump()
 
+    end = time.time()
+    
+    logger.info(
+        f"Agent 5 Completed | {state['startup_name']}"
+    )
+    logger.info(
+    f"Agent 5 Runtime: {end-start:.2f}s"
+)
+    
     return {
         "market_gaps": analysis
     }

@@ -1,6 +1,15 @@
-from agent_llm.agent_7 import agent7_llm
+from agent_state.agent_7 import PersonaOutput
+from utils.structured_invoke import invoke_structured
+from utils.logger import logger
+import time
 
 def persona_generator_agent(state):
+    
+    start = time.time()
+    
+    logger.info(
+        f"Agent 7 Started | {state['startup_name']}"
+    )
 
     prompt = f"""
     You are an expert consumer psychologist, startup researcher, and customer segmentation specialist.
@@ -94,7 +103,10 @@ At least 30% of personas should be skeptical or unlikely to adopt.
 Return structured output only.
     """
 
-    response = agent7_llm.invoke(prompt)
+    response = invoke_structured(
+    PersonaOutput,
+    prompt
+)
 
     if isinstance(response, dict):
 
@@ -106,6 +118,15 @@ Return structured output only.
             p.model_dump()
             for p in response.personas
         ]
+        
+    end = time.time()
+    
+    logger.info(
+        f"Agent 7 Completed | {state['startup_name']}"
+    )
+    logger.info(
+    f"Agent 7 Runtime: {end-start:.2f}s"
+)
 
     return {
         "personas": personas

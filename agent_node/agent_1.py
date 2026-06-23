@@ -1,6 +1,15 @@
-from agent_llm.agent_1 import agent1_llm
+from agent_state.agent_1 import StartupAnalysis
+from utils.structured_invoke import invoke_structured
+from utils.logger import logger
+import time
 
 def startup_analyzer(state):
+    start = time.time()
+    
+    
+    logger.info(
+        f"Agent 1 Started | {state['startup_name']}"
+    )
 
     prompt1 = f"""
     You are a senior startup analyst and product strategist.
@@ -64,7 +73,21 @@ Think like a product manager designing the first version of the startup.
 Return only structured output.
     """
 
-    response = agent1_llm.invoke(prompt1)
+    response = invoke_structured(
+    StartupAnalysis,
+    prompt1
+    )
+    
+    end = time.time()
+    
+    logger.info(
+        f"Agent 1 Completed | {state['startup_name']}"
+    )
+    
+    logger.info(
+    f"Agent 1 Runtime: {end-start:.2f}s"
+)
+
 
     return {
         "one_line_description": response.one_line_description,

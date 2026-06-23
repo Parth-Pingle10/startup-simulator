@@ -1,6 +1,15 @@
-from agent_llm.agent_6 import agent6_llm
+from agent_state.agent_6 import StartupScore
+from utils.structured_invoke import invoke_structured
+from utils.logger import logger
+import time
 
 def startup_scoring_agent(state):
+    
+    start = time.time()
+    
+    logger.info(
+        f"Agent 6 Started | {state['startup_name']}"
+    )
 
     prompt = f"""
     You are an experienced startup investor, venture capitalist, product strategist, and market analyst.
@@ -114,7 +123,10 @@ Exceptional scores should only be awarded when there is strong evidence supporti
 Return structured output only.
     """
 
-    response = agent6_llm.invoke(prompt)
+    response = invoke_structured(
+    StartupScore,
+    prompt
+)
 
     if isinstance(response, dict):
 
@@ -123,6 +135,16 @@ Return structured output only.
     else:
 
         result = response.model_dump()
+        
+    end = time.time()
+      
+    logger.info(
+        f"Agent 6 Completed | {state['startup_name']}"
+    )
+    logger.info(
+    f"Agent 6 Runtime: {end-start:.2f}s"
+)
+
 
     return {
         "startup_score": result

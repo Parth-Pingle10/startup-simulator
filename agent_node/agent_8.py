@@ -1,12 +1,28 @@
-from agent_llm.agent_8 import agent8_llm
+from concurrent.futures import (
+    ThreadPoolExecutor
+)
 
-def persona_simulation_agent(state):
+from agent_state.agent_8 import (
+    PersonaFeedback
+)
 
-    persona_feedback = []
+from utils.structured_invoke import (
+    invoke_structured
+)
 
-    for persona in state["personas"]:
+from utils.logger import (
+    logger
+)
 
-        prompt = f"""
+import time
+
+
+def evaluate_persona(
+    persona,
+    state
+):
+
+    prompt = f"""
          You are roleplaying as the following customer persona.
 
 Persona:
@@ -119,17 +135,73 @@ Highly likely to use.
 Return structured output only.
         """
 
-        response = agent8_llm.invoke(prompt)
+    response = invoke_structured(
+        PersonaFeedback,
+        prompt
+    )
 
-        if isinstance(response, dict):
+    if isinstance(
+        response,
+        dict
+    ):
+        return response
 
-            persona_feedback.append(response)
+    return response.model_dump()
 
-        else:
 
-            persona_feedback.append(
-                response.model_dump()
+def persona_simulation_agent(
+    state
+):
+
+    start = time.time()
+
+    logger.info(
+        f"Agent 8 Started | {state['startup_name']}"
+    )
+
+    personas = (
+        state["personas"]
+    )
+
+    try:
+
+        with ThreadPoolExecutor(
+            max_workers=3
+        ) as executor:
+
+            persona_feedback = list(
+                executor.map(
+                    lambda persona:
+                    evaluate_persona(
+                        persona,
+                        state
+                    ),
+                    personas
+                )
             )
+
+    except Exception as e:
+
+        logger.error(
+            f"Agent 8 Failed | {str(e)}"
+        )
+
+        raise
+
+    end = time.time()
+
+    logger.info(
+        f"Agent 8 Completed | {state['startup_name']}"
+        
+    )
+
+    logger.info(
+        f"Agent 8 Runtime: {end-start:.2f}s"
+    )
+
+    logger.info(
+        f"Personas Evaluated: {len(persona_feedback)}"
+    )
 
     return {
         "persona_feedback":

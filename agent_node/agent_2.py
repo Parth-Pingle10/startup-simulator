@@ -1,8 +1,17 @@
 
-from agent_llm.agent_2 import agent2_llm
+from agent_state.agent_2 import CompetitorOutput
+from utils.structured_invoke import invoke_structured
+from utils.logger import logger
+import time
 
 def competitor_finder(state):
 
+    start = time.time()
+    
+    logger.info(
+        f"Agent 2 Started | {state['startup_name']}"
+    )
+    
     prompt = f"""
     You are an expert market research analyst.
 
@@ -69,14 +78,26 @@ Example Valid Output:
 Return structured output only.
     """
 
-    response = agent2_llm.invoke(prompt)
+    response = invoke_structured(
+    CompetitorOutput,
+    prompt
+)
+
 
     
     if isinstance(response, dict):
         competitors = response["competitors"]
     else:
         competitors = response.competitors
+    
+    end = time.time()
 
+    logger.info(
+        f"Agent 2 Completed | {state['startup_name']}"
+    )
+    logger.info(
+    f"Agent 2 Runtime: {end-start:.2f}s"
+)
     return {
         "competitors": competitors
     }
