@@ -9,6 +9,7 @@ __pycache__/
 og_main.py
 *$py.class
 venv/
+myenv/
 .venv/
 .env
 build/

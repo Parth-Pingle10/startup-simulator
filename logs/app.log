@@ -1,0 +1,71 @@
+2026-06-23 17:28:45,087 | INFO | New Analysis: FitAI
+2026-06-23 17:28:45,094 | INFO | Agent 1 Started | FitAI
+2026-06-23 17:28:45,095 | INFO | Invoking Gemini | StartupAnalysis
+2026-06-23 17:28:45,626 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-23 17:29:12,362 | INFO | Gemini Success | StartupAnalysis
+2026-06-23 17:29:12,362 | INFO | Agent 1 Completed | FitAI
+2026-06-23 17:29:12,362 | INFO | Agent 1 Runtime: 27.27s
+2026-06-23 17:29:12,363 | INFO | Agent 2 Started | FitAI
+2026-06-23 17:29:12,364 | INFO | Invoking Gemini | CompetitorOutput
+2026-06-23 17:29:13,699 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-23 17:29:18,167 | INFO | Gemini Success | CompetitorOutput
+2026-06-23 17:29:18,167 | INFO | Agent 2 Completed | FitAI
+2026-06-23 17:29:18,167 | INFO | Agent 2 Runtime: 5.80s
+2026-06-23 17:29:18,168 | INFO | Agent 3 Started | FitAI
+2026-06-23 17:30:07,532 | INFO | Agent 3 Completed | FitAI
+2026-06-23 17:30:07,532 | INFO | Agent 3 Runtime: 49.36s
+2026-06-23 17:30:07,533 | INFO | Agent 4 Started | FitAI
+2026-06-23 17:30:07,534 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-06-23 17:30:10,108 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-23 17:30:44,926 | INFO | Gemini Success | CompetitorAnalysis
+2026-06-23 17:30:44,929 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-06-23 17:30:51,983 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-23 17:31:41,933 | INFO | Gemini Success | CompetitorAnalysis
+2026-06-23 17:31:41,933 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-06-23 17:31:43,054 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-23 17:31:55,857 | INFO | Gemini Success | CompetitorAnalysis
+2026-06-23 17:31:55,857 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-06-23 17:32:03,313 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-23 17:33:14,717 | INFO | Gemini Success | CompetitorAnalysis
+2026-06-23 17:33:14,719 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-06-23 17:33:20,959 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-23 17:34:39,925 | INFO | Gemini Success | CompetitorAnalysis
+2026-06-23 17:34:39,925 | INFO | Agent 4 Completed | FitAI
+2026-06-23 17:34:39,925 | INFO | Agent 4 Runtime: 272.39s
+2026-06-23 17:34:39,926 | INFO | Agent 5 Started | FitAI
+2026-06-23 17:34:39,926 | INFO | Invoking Gemini | MarketGapAnalysis
+2026-06-23 17:34:43,924 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-23 17:36:37,633 | INFO | Gemini Success | MarketGapAnalysis
+2026-06-23 17:36:37,633 | INFO | Agent 5 Completed | FitAI
+2026-06-23 17:36:37,633 | INFO | Agent 5 Runtime: 117.71s
+2026-06-23 17:36:37,634 | INFO | Agent 6 Started | FitAI
+2026-06-23 17:36:37,634 | INFO | Invoking Gemini | StartupScore
+2026-06-23 17:36:42,269 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-23 17:37:03,331 | INFO | Gemini Success | StartupScore
+2026-06-23 17:37:03,332 | INFO | Agent 6 Completed | FitAI
+2026-06-23 17:37:03,332 | INFO | Agent 6 Runtime: 25.70s
+2026-06-23 17:37:03,332 | INFO | Agent 7 Started | FitAI
+2026-06-23 17:37:03,333 | INFO | Invoking Gemini | PersonaOutput
+2026-06-23 17:37:07,982 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-23 17:44:06,796 | INFO | Gemini Success | PersonaOutput
+2026-06-23 17:44:06,797 | INFO | Agent 7 Completed | FitAI
+2026-06-23 17:44:06,797 | INFO | Agent 7 Runtime: 423.46s
+2026-06-23 17:44:06,797 | INFO | Agent 8 Started | FitAI
+2026-06-23 17:44:06,798 | INFO | Invoking Gemini | PersonaFeedbackOutput
+2026-06-23 17:44:07,530 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-23 17:46:38,999 | INFO | Gemini Success | PersonaFeedbackOutput
+2026-06-23 17:46:39,000 | INFO | Agent 8 Completed | FitAI
+2026-06-23 17:46:39,000 | INFO | Agent 8 Runtime: 152.20s
+2026-06-23 17:46:39,001 | INFO | Agent 9 Started | FitAI
+2026-06-23 17:46:39,001 | INFO | Invoking Gemini | AdoptionAnalytics
+2026-06-23 17:46:41,261 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-23 17:47:11,773 | INFO | Gemini Success | AdoptionAnalytics
+2026-06-23 17:47:11,773 | INFO | Agent 9 Completed | FitAI
+2026-06-23 17:47:11,774 | INFO | Agent 9 Runtime: 32.77s
+2026-06-23 17:47:11,774 | INFO | Agent 10 Started | FitAI
+2026-06-23 17:47:11,775 | INFO | Invoking Gemini | FinalReport
+2026-06-23 17:47:16,923 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-23 17:50:02,484 | INFO | Gemini Success | FinalReport
+2026-06-23 17:50:02,484 | INFO | Agent 10 Completed | FitAI
+2026-06-23 17:50:02,484 | INFO | Agent 10 Runtime: 170.71s
+2026-06-23 17:50:02,486 | INFO | Analysis Complete: FitAI

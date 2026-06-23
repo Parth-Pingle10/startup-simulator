@@ -2,7 +2,6 @@ from concurrent.futures import (
     ThreadPoolExecutor
 )
 
-from config import llm
 from utils.logger import logger
 from utils.competitor_research import (
     collect_competitor_reviews
@@ -19,15 +18,14 @@ def process_competitor(
 
         return (
             collect_competitor_reviews(
-                competitor,
-                llm
+                competitor 
             )
         )
 
     except Exception as e:
 
         return {
-            "competitor":
+            "competitors":
             competitor,
 
             "source":

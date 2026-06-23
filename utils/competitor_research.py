@@ -3,7 +3,7 @@ from scraper.trustpilot import (
     scrape_trustpilot_reviews
 )
 
-from structured_invoke import invoke_structured
+from utils.structured_invoke import invoke_structured
 
 from pydantic import BaseModel
 from typing import List
@@ -23,8 +23,8 @@ class FallbackResearch(BaseModel):
 
 
 def llm_competitor_research(
-    competitor,
-    llm
+    competitor
+    
 ):
 
 
@@ -106,12 +106,12 @@ Return structured output only.
     ):
         return response.model_dump()
 
-    return response
+    return{ "reviews" : response}
 
 
 def collect_competitor_reviews(
     competitor,
-    llm
+   
 ):
 
     search_result = (
@@ -149,8 +149,7 @@ def collect_competitor_reviews(
 
     research = (
         llm_competitor_research(
-            competitor,
-            llm
+            competitor
         )
     )
 
@@ -159,6 +158,7 @@ def collect_competitor_reviews(
         competitor,
 
         "source":
+            
         "llm_research",
 
         **research

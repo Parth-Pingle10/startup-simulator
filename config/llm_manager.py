@@ -6,6 +6,8 @@ from langchain_google_genai import (
     ChatGoogleGenerativeAI
 )
 
+from langchain_ollama import ChatOllama
+
 from langchain_openai import (
     ChatOpenAI
 )
@@ -17,12 +19,19 @@ class LLMManager:
 
     def __init__(self):
 
+        # self.primary = (
+        #     ChatGoogleGenerativeAI(
+        #         model="gemini-2.5-flash",
+        #         google_api_key=os.getenv(
+        #             "GOOGLE_API_KEY"
+        #         ),
+        #         temperature=0
+        #     )
+        # )
         self.primary = (
-            ChatGoogleGenerativeAI(
-                model="gemini-2.5-flash",
-                google_api_key=os.getenv(
-                    "GOOGLE_API_KEY"
-                ),
+            ChatOllama(
+                
+                model="mistral:latest",
                 temperature=0
             )
         )

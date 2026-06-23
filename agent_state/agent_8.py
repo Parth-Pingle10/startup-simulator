@@ -1,5 +1,6 @@
-from pydantic import BaseModel
 from typing import List
+from pydantic import BaseModel
+
 
 class PersonaFeedback(BaseModel):
 
@@ -19,4 +20,13 @@ class PersonaFeedback(BaseModel):
 
     concerns: List[str]
 
-    feedback: str
+    detailed_feedback: str
+
+
+class PersonaFeedbackOutput(
+    BaseModel
+):
+
+    persona_feedback: List[
+        PersonaFeedback
+    ]

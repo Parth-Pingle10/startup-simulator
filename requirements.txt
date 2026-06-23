@@ -6,3 +6,6 @@ uvicorn
 fastapi 
 slowapi
 tenacity
+langchain-openai
+playwright
+langchain_ollama
