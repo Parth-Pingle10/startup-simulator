@@ -1,0 +1,14 @@
+[33m1b50a23[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Added Parallel Execution and reduced llm calls for agent 8
+[33m8da0237[m Implemeneted logging and parallel execution for agent 3 and agent 8
+[33m3066433[m Added rate limiter
+[33m45cc05e[m Added Fastapi endpoints and fallback llms script
+[33m9548d5e[m Remove .env from repository
+[33m8a655ee[m Added readme.md
+[33m8d66ed5[m Added readme.md
+[33m76e8491[m Improved agent 3
+[33maab4877[m Improved llm prompts
+[33maff36de[m removed pycache
+[33mbadac5f[m ---
+[33m9d260c1[m its messed up
+[33m39904a0[m Remove tracked pycache files
+[33m6b9866a[m Baseline Ai agent created

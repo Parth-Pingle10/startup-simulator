@@ -18,9 +18,9 @@ def search_trustpilot(
 
         page = browser.new_page()
 
-        page.goto(search_url)
+        page.goto(search_url,wait_until="domcontentloaded")
 
-        page.wait_for_timeout(3000)
+        page.wait_for_timeout(2000)
 
         links = page.locator(
             "a[href*='/review/']"
@@ -86,9 +86,9 @@ def scrape_trustpilot_reviews(
                     f"{review_url}?page={page_num}"
                 )
 
-            page.goto(url)
+            page.goto(url,wait_until="domcontentloaded")
 
-            page.wait_for_timeout(3000)
+            page.wait_for_timeout(2000)
 
             page_text = (
                 page.locator("body")
@@ -108,7 +108,8 @@ def scrape_trustpilot_reviews(
             ).all()
 
             for card in review_cards:
-
+                if len(reviews) >= 15:
+                    break
                 try:
 
                     review_text = (
