@@ -9,3 +9,8 @@ tenacity
 langchain-openai
 playwright
 langchain_ollama
+motor
+python-jose[cryptography] 
+passlib[bcrypt] 
+email-validator
+python-multipart

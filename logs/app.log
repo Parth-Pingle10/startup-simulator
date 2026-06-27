@@ -138,3 +138,39 @@
 2026-06-26 11:22:16,566 | INFO | Agent 10 Completed | FitAI
 2026-06-26 11:22:16,566 | INFO | Agent 10 Runtime: 175.96s
 2026-06-26 11:22:16,582 | INFO | Analysis Complete: FitAI
+2026-06-27 17:39:55,314 | WARNING | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-06-27 17:40:16,742 | WARNING | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-06-27 17:56:51,834 | WARNING | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-06-27 17:58:27,395 | WARNING | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-06-27 18:01:39,412 | WARNING | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-06-27 18:03:19,265 | WARNING | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'

@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Request
 
+
 from slowapi import Limiter
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
@@ -9,12 +10,19 @@ from slowapi import _rate_limit_exceeded_handler
 from schemas import StartupRequest
 from builder import graph
 from utils.logger import logger
+from auth.routes import (
+    router as auth_router
+)
 
 limiter = Limiter(
     key_func=get_remote_address
 )
 
 app = FastAPI()
+
+app.include_router(
+    auth_router
+)
 
 app.state.limiter = limiter
 
