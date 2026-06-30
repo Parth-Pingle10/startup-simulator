@@ -20,7 +20,7 @@ def search_trustpilot(
 
         page.goto(search_url,wait_until="domcontentloaded")
 
-        page.wait_for_timeout(2000)
+        page.wait_for_timeout(3000)
 
         links = page.locator(
             "a[href*='/review/']"
@@ -88,7 +88,7 @@ def scrape_trustpilot_reviews(
 
             page.goto(url,wait_until="domcontentloaded")
 
-            page.wait_for_timeout(2000)
+            page.wait_for_timeout(3000)
 
             page_text = (
                 page.locator("body")

@@ -1,7 +1,11 @@
 from typing import TypedDict, List, Dict, Any
 
 class StartupState(TypedDict):
-
+    
+    analysis_id: str
+    user_id: str
+    current_agent: str
+    
     startup_name: str
     problem: str
     solution: str
