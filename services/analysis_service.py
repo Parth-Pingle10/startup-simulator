@@ -44,13 +44,6 @@ async def create_analysis(
 
         "report": None,
 
-        "logs": {
-
-            "agent_logs": [],
-
-            "errors": []
-
-        }
 
     }
 

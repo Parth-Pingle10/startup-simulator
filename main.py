@@ -14,6 +14,7 @@ from utils.logger import logger
 from auth.routes import router as auth_router
 from auth.dependencies import get_current_user
 from services.analysis_service import create_analysis, complete_analysis, fail_analysis
+from services.log_service import create_log, complete_log, fail_log
 
 limiter = Limiter(
     key_func=get_remote_address
@@ -81,12 +82,16 @@ async def analyze_startup(
             state
         )
 
+        await create_log(
+        analysis_id,
+        current_user["user_id"]
+        )
+        
+        
         state["analysis_id"] = analysis_id
         state["user_id"] = current_user["user_id"]
 
-        result = graph.invoke(
-            state
-        )
+        result = await graph.ainvoke(state)
         
         runtime = time.time() - start
         
@@ -95,6 +100,12 @@ async def analyze_startup(
             result,
             runtime
         )
+        
+        await complete_log(
+        analysis_id,
+        runtime
+        )
+        
         logger.info(
             f"Analysis Complete: {startup.startup_name}; Total time: {runtime}"
         )
@@ -111,6 +122,11 @@ async def analyze_startup(
             await fail_analysis(
                 analysis_id,
                 str(e)
+            )
+            
+            await fail_log(
+            analysis_id,
+            runtime
             )
 
         logger.error(

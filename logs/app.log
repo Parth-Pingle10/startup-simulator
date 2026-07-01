@@ -29,3 +29,268 @@
 2026-06-30 20:04:28,502 | INFO | Agent 1 Started | FitAI
 2026-06-30 20:04:28,502 | INFO | Invoking Gemini | StartupAnalysis
 2026-06-30 20:04:39,858 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-01 19:27:03,908 | INFO | New Analysis: FitAI
+2026-07-01 19:31:27,366 | INFO | New Analysis: FitAI
+2026-07-01 19:31:27,374 | INFO | Agent 1 Started | FitAI
+2026-07-01 19:31:27,374 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-01 19:31:41,189 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-01 19:32:02,793 | INFO | Gemini Success | StartupAnalysis
+2026-07-01 19:32:02,796 | INFO | Agent 1 Completed | FitAI
+2026-07-01 19:32:02,796 | INFO | Agent 1 Runtime: 35.42s
+2026-07-01 19:32:02,798 | INFO | Agent 2 Started | FitAI
+2026-07-01 19:32:02,798 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-01 19:32:04,045 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-01 19:32:08,489 | INFO | Gemini Success | CompetitorOutput
+2026-07-01 19:32:08,489 | INFO | Agent 2 Completed | FitAI
+2026-07-01 19:32:08,489 | INFO | Agent 2 Runtime: 5.69s
+2026-07-01 19:32:08,491 | INFO | Agent 3 Started | FitAI
+2026-07-01 19:32:36,458 | INFO | Agent 3 Completed | FitAI
+2026-07-01 19:32:36,458 | INFO | Agent 3 Runtime: 27.97s
+2026-07-01 19:32:36,461 | INFO | Agent 4 Started | FitAI
+2026-07-01 19:32:36,462 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-01 19:32:38,562 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-01 19:33:13,173 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-01 19:33:13,174 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-01 19:33:15,265 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-01 19:34:03,049 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-01 19:34:03,049 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-01 19:34:03,947 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-01 19:34:16,607 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-01 19:34:16,608 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-01 19:34:18,441 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-01 19:35:16,859 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-01 19:35:16,859 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-01 19:35:20,245 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-01 19:35:45,663 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-01 19:35:45,663 | INFO | Agent 4 Completed | FitAI
+2026-07-01 19:35:45,663 | INFO | Agent 4 Runtime: 189.20s
+2026-07-01 19:35:45,665 | INFO | Agent 5 Started | FitAI
+2026-07-01 19:35:45,665 | INFO | Invoking Gemini | MarketGapAnalysis
+2026-07-01 19:35:48,328 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-01 19:36:42,583 | INFO | Gemini Success | MarketGapAnalysis
+2026-07-01 19:36:42,583 | INFO | Agent 5 Completed | FitAI
+2026-07-01 19:36:42,583 | INFO | Agent 5 Runtime: 56.92s
+2026-07-01 19:36:42,585 | INFO | Agent 6 Started | FitAI
+2026-07-01 19:36:42,585 | INFO | Invoking Gemini | StartupScore
+2026-07-01 19:36:45,566 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-01 19:37:02,579 | INFO | Gemini Success | StartupScore
+2026-07-01 19:37:02,579 | INFO | Agent 6 Completed | FitAI
+2026-07-01 19:37:02,580 | INFO | Agent 6 Runtime: 19.99s
+2026-07-01 19:37:02,582 | INFO | Agent 7 Started | FitAI
+2026-07-01 19:37:02,582 | INFO | Invoking Gemini | PersonaOutput
+2026-07-01 19:37:05,564 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-01 19:37:26,759 | ERROR | Task was destroyed but it is pending!
+task: <Task pending name='Task-269' coro=<AsyncCallbackManagerForChainRun.on_chain_error() running at C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\langchain_core\callbacks\manager.py:246> wait_for=<Future finished result=None>>
+2026-07-01 19:43:04,184 | INFO | Gemini Success | PersonaOutput
+2026-07-01 19:43:04,193 | INFO | Agent 7 Completed | FitAI
+2026-07-01 19:43:04,194 | INFO | Agent 7 Runtime: 361.61s
+2026-07-01 19:43:05,304 | ERROR | Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<RequestResponseCycle.run_asgi() done, defined at C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py:413> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\anyio\streams\memory.py", line 117, in receive
+    return self.receive_nowait()
+           ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\anyio\streams\memory.py", line 112, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 415, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 62, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\slowapi\middleware.py", line 128, in dispatch
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\starlette\middleware\base.py", line 151, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\anyio\streams\memory.py", line 125, in receive
+    await receive_event.wait()
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1840, in wait
+    await self._event.wait()
+  File "C:\Program Files\Python313\Lib\asyncio\locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\uvicorn\main.py", line 620, in run
+    server.run()
+    ~~~~~~~~~~^^
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\uvicorn\server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 194, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+         ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+    ~~~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Program Files\Python313\Lib\asyncio\runners.py", line 206, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 712, in run_until_complete
+    self.run_forever()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 683, in run_forever
+    self._run_once()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 2042, in _run_once
+    handle._run()
+    ~~~~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\asyncio\events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\parth\Desktop\startup-simulator\code\myenv\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 420, in run_asgi
+    self.logger.error(msg, exc_info=exc)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1551, in error
+    self._log(ERROR, msg, args, **kwargs)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1667, in _log
+    self.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1686, in handle
+    self.callHandlers(record)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1744, in callHandlers
+    hdlr.handle(record)
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1027, in handle
+    self.emit(record)
+    ~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 1151, in emit
+    msg = self.format(record)
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 999, in format
+    return fmt.format(record)
+           ~~~~~~~~~~^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 720, in format
+    record.exc_text = self.formatException(record.exc_info)
+                      ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\logging\__init__.py", line 670, in formatException
+    traceback.print_exception(ei[0], ei[1], tb, limit=None, file=sio)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\traceback.py", line 130, in print_exception
+    te.print(file=file, chain=chain, colorize=colorize)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\traceback.py", line 1469, in print
+    for line in self.format(chain=chain, colorize=colorize):
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\traceback.py", line 1405, in format
+    yield from _ctx.emit(exc.stack.format(colorize=colorize))
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\traceback.py", line 757, in format
+    formatted_frame = self.format_frame_summary(frame_summary, colorize=colorize)
+  File "C:\Program Files\Python313\Lib\traceback.py", line 549, in format_frame_summary
+    if frame_summary._dedented_lines and frame_summary._dedented_lines.strip():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\traceback.py", line 368, in _dedented_lines
+    self._lines_dedented = textwrap.dedent(self._lines)
+                           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\textwrap.py", line 466, in dedent
+    text = re.sub(r'(?m)^' + margin, '', text)
+  File "C:\Program Files\Python313\Lib\re\__init__.py", line 208, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+           ~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\re\__init__.py", line 330, in _compile
+    def _compile(pattern, flags):
+    
+KeyboardInterrupt
+2026-07-02 01:16:53,400 | INFO | New Analysis: FitAI
+2026-07-02 01:16:53,416 | INFO | Agent 1 Started | FitAI
+2026-07-02 01:16:53,416 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-02 01:17:08,697 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:17:31,300 | INFO | Gemini Success | StartupAnalysis
+2026-07-02 01:17:31,301 | INFO | Agent 1 Completed | FitAI
+2026-07-02 01:17:31,308 | INFO | Agent 2 Started | FitAI
+2026-07-02 01:17:31,308 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-02 01:17:32,575 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:17:37,334 | INFO | Gemini Success | CompetitorOutput
+2026-07-02 01:17:37,334 | INFO | Agent 2 Completed | FitAI
+2026-07-02 01:17:37,341 | INFO | Agent 3 Started | FitAI
+2026-07-02 01:17:51,264 | INFO | Invoking Gemini | FallbackResearch
+2026-07-02 01:17:52,277 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:19:17,118 | INFO | Gemini Success | FallbackResearch
+2026-07-02 01:19:17,131 | INFO | Agent 3 Completed | FitAI
+2026-07-02 01:23:31,213 | INFO | New Analysis: FitAI
+2026-07-02 01:23:31,229 | INFO | Agent 1 Started | FitAI
+2026-07-02 01:23:31,229 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-02 01:23:31,813 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:23:56,626 | INFO | Gemini Success | StartupAnalysis
+2026-07-02 01:23:56,626 | INFO | Agent 1 Completed | FitAI
+2026-07-02 01:23:56,630 | INFO | Agent 2 Started | FitAI
+2026-07-02 01:23:56,630 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-02 01:23:57,453 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:24:02,307 | INFO | Gemini Success | CompetitorOutput
+2026-07-02 01:24:02,307 | INFO | Agent 2 Completed | FitAI
+2026-07-02 01:24:02,310 | INFO | Agent 3 Started | FitAI
+2026-07-02 01:24:29,239 | INFO | Agent 3 Completed | FitAI
+2026-07-02 01:24:29,244 | INFO | Agent 4 Started | FitAI
+2026-07-02 01:24:29,245 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-02 01:24:31,454 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:25:13,171 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-02 01:25:13,173 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-02 01:25:15,437 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:26:12,265 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-02 01:26:12,266 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-02 01:26:14,212 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:27:14,521 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-02 01:27:14,522 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-02 01:27:16,852 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:27:59,834 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-02 01:27:59,835 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-02 01:28:06,456 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:28:46,153 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-02 01:28:46,154 | INFO | Agent 4 Completed | FitAI
+2026-07-02 01:28:46,199 | INFO | Agent 5 Started | FitAI
+2026-07-02 01:28:46,201 | INFO | Invoking Gemini | MarketGapAnalysis
+2026-07-02 01:28:49,342 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:30:28,808 | INFO | Gemini Success | MarketGapAnalysis
+2026-07-02 01:30:28,809 | INFO | Agent 5 Completed | FitAI
+2026-07-02 01:30:28,821 | INFO | Agent 6 Started | FitAI
+2026-07-02 01:30:28,822 | INFO | Invoking Gemini | StartupScore
+2026-07-02 01:30:32,539 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:30:53,351 | INFO | Gemini Success | StartupScore
+2026-07-02 01:30:53,352 | INFO | Agent 6 Completed | FitAI
+2026-07-02 01:30:53,357 | INFO | Agent 7 Started | FitAI
+2026-07-02 01:30:53,357 | INFO | Invoking Gemini | PersonaOutput
+2026-07-02 01:30:57,814 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:38:04,935 | INFO | Gemini Success | PersonaOutput
+2026-07-02 01:38:04,936 | INFO | Agent 7 Completed | FitAI
+2026-07-02 01:38:04,943 | INFO | Agent 8 Started | FitAI
+2026-07-02 01:38:04,944 | INFO | Invoking Gemini | PersonaFeedbackOutput
+2026-07-02 01:38:09,384 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:47:41,013 | INFO | Gemini Success | PersonaFeedbackOutput
+2026-07-02 01:47:41,013 | INFO | Agent 8 Completed | FitAI
+2026-07-02 01:47:41,021 | INFO | Agent 9 Started | FitAI
+2026-07-02 01:47:41,022 | INFO | Invoking Gemini | AdoptionAnalytics
+2026-07-02 01:47:45,458 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:48:39,497 | INFO | Gemini Success | AdoptionAnalytics
+2026-07-02 01:48:39,499 | INFO | Agent 9 Completed | FitAI
+2026-07-02 01:48:39,513 | INFO | Agent 10 Started | FitAI
+2026-07-02 01:48:39,514 | INFO | Invoking Gemini | FinalReport
+2026-07-02 01:48:42,818 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 01:50:34,112 | INFO | Gemini Success | FinalReport
+2026-07-02 01:50:34,114 | INFO | Agent 10 Completed | FitAI
+2026-07-02 01:50:34,159 | INFO | Analysis Complete: FitAI; Total time: 1622.9240131378174
