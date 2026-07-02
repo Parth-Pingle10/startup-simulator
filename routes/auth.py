@@ -34,7 +34,7 @@ async def register(request: Register):
     try:
         return await register_user(request)
     except Exception as e:
-        traceback.print_exc()   # <-- prints the full error in the terminal
+        traceback.print_exc()  
         raise HTTPException(
             status_code=400,
             detail=str(e)
