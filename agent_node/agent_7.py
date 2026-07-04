@@ -104,7 +104,7 @@ async def persona_generator_agent(state):
     Return structured output only.
         """
 
-        response = invoke_structured(
+        response = await invoke_structured(
         PersonaOutput,
         prompt
     )

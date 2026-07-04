@@ -14,7 +14,20 @@ async def competitor_intelligence_agent(state):
         competitor_insights = []
 
         for company in state["competitor_research"]:
+            logger.info(f"Company Object: {company}")
+            if company["source"] == "llm_research":
 
+                competitor_insights.append({
+                    "competitor": company["competitor"],
+                    "strengths": company["strengths"],
+                    "weaknesses": company["weaknesses"],
+                    "pain_points": company["pain_points"],
+                    "feature_requests": company["feature_requests"],
+                    "target_users": company["target_users"]
+                })
+
+                continue
+            
             prompt = f"""
         You are an expert product researcher and customer insights analyst.
 
@@ -76,7 +89,7 @@ async def competitor_intelligence_agent(state):
     Return structured output only.
             """
 
-            response = invoke_structured(
+            response = await invoke_structured(
             CompetitorAnalysis,
             prompt
     )

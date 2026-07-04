@@ -76,7 +76,7 @@ async def startup_analyzer(state):
     Return only structured output.
         """
 
-        response = invoke_structured(
+        response = await invoke_structured(
             StartupAnalysis,
             prompt1
         )

@@ -294,3 +294,1253 @@ KeyboardInterrupt
 2026-07-02 01:50:34,112 | INFO | Gemini Success | FinalReport
 2026-07-02 01:50:34,114 | INFO | Agent 10 Completed | FitAI
 2026-07-02 01:50:34,159 | INFO | Analysis Complete: FitAI; Total time: 1622.9240131378174
+2026-07-02 23:48:23,523 | INFO | New Analysis: FitAI
+2026-07-02 23:48:23,537 | INFO | Agent 1 Started | FitAI
+2026-07-02 23:48:23,537 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-02 23:48:36,315 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 23:48:58,435 | INFO | Gemini Success | StartupAnalysis
+2026-07-02 23:48:58,435 | INFO | Agent 1 Completed | FitAI
+2026-07-02 23:48:58,441 | INFO | Agent 2 Started | FitAI
+2026-07-02 23:48:58,441 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-02 23:48:59,717 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 23:49:04,119 | INFO | Gemini Success | CompetitorOutput
+2026-07-02 23:49:04,120 | INFO | Agent 2 Completed | FitAI
+2026-07-02 23:49:04,124 | INFO | Agent 3 Started | FitAI
+2026-07-02 23:49:15,891 | INFO | Invoking Gemini | FallbackResearch
+2026-07-02 23:49:16,124 | INFO | Invoking Gemini | FallbackResearch
+2026-07-02 23:49:16,736 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 23:50:17,649 | INFO | Gemini Success | FallbackResearch
+2026-07-02 23:50:18,333 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 23:51:23,137 | INFO | Gemini Success | FallbackResearch
+2026-07-02 23:51:23,139 | INFO | Agent 3 Completed | FitAI
+2026-07-02 23:51:23,152 | INFO | Agent 4 Started | FitAI
+2026-07-02 23:51:49,639 | INFO | New Analysis: FitAI
+2026-07-02 23:51:49,645 | INFO | Agent 1 Started | FitAI
+2026-07-02 23:51:49,645 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-02 23:51:50,274 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 23:52:13,447 | INFO | Gemini Success | StartupAnalysis
+2026-07-02 23:52:13,447 | INFO | Agent 1 Completed | FitAI
+2026-07-02 23:52:13,453 | INFO | Agent 2 Started | FitAI
+2026-07-02 23:52:13,453 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-02 23:52:14,294 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-02 23:52:18,893 | INFO | Gemini Success | CompetitorOutput
+2026-07-02 23:52:18,893 | INFO | Agent 2 Completed | FitAI
+2026-07-02 23:52:18,899 | INFO | Agent 3 Started | FitAI
+2026-07-02 23:52:27,590 | INFO | Invoking Gemini | FallbackResearch
+2026-07-02 23:52:27,943 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"2026-07-03 00:48:34,200 | INFO | New Analysis: FitAI
+2026-07-03 00:48:34,221 | INFO | Agent 1 Started | FitAI
+2026-07-03 00:48:34,222 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-03 00:48:46,715 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 00:49:08,608 | INFO | Gemini Success | StartupAnalysis
+2026-07-03 00:49:08,609 | INFO | Agent 1 Completed | FitAI
+2026-07-03 00:49:08,614 | INFO | Agent 2 Started | FitAI
+2026-07-03 00:49:08,615 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-03 00:49:09,994 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 00:49:14,210 | INFO | Gemini Success | CompetitorOutput
+2026-07-03 00:49:14,211 | INFO | Agent 2 Completed | FitAI
+2026-07-03 00:49:14,214 | INFO | Agent 3 Started | FitAI
+2026-07-03 00:49:14,215 | INFO | Collecting competitor reviews for JEFIT
+2026-07-03 00:49:14,215 | INFO | Searching Trustpilot: JEFIT
+2026-07-03 00:49:14,215 | INFO | Collecting competitor reviews for Sworkit
+2026-07-03 00:49:14,216 | INFO | Searching Trustpilot: Sworkit
+2026-07-03 00:49:14,216 | INFO | Collecting competitor reviews for Fitbod
+2026-07-03 00:49:14,216 | INFO | Searching Trustpilot: Fitbod
+2026-07-03 00:49:14,217 | INFO | Collecting competitor reviews for MyFitnessPal
+2026-07-03 00:49:14,217 | INFO | Searching Trustpilot: MyFitnessPal
+2026-07-03 00:49:14,218 | INFO | Collecting competitor reviews for Aaptiv
+2026-07-03 00:49:14,218 | INFO | Searching Trustpilot: Aaptiv
+2026-07-03 00:49:25,607 | INFO | MyFitnessPal: 3 search results found.
+2026-07-03 00:49:25,713 | INFO | Aaptiv: 10 search results found.
+2026-07-03 00:49:25,732 | INFO | First Trustpilot result -> Aaptiv
+
+aaptiv.com
+
+1.1971 reviews
+
+One World Trade, New York, United States
+2026-07-03 00:49:25,842 | INFO | Search Result: {'name': 'Aaptiv\n\naaptiv.com\n\n1.1971 reviews\n\nOne World Trade, New York, United States', 'review_url': 'https://www.trustpilot.com/review/aaptiv.com'}
+2026-07-03 00:49:25,842 | INFO | Scraping reviews from https://www.trustpilot.com/review/aaptiv.com
+2026-07-03 00:49:26,089 | INFO | First Trustpilot result -> MyFitnessPal
+
+www.myfitnesspal.com
+
+4.312,678 reviews
+
+United States
+2026-07-03 00:49:26,178 | INFO | Search Result: {'name': 'MyFitnessPal\n\nwww.myfitnesspal.com\n\n4.312,678 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com'}
+2026-07-03 00:49:26,178 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-03 00:49:26,813 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com
+2026-07-03 00:49:27,180 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-03 00:49:27,274 | INFO | Fitbod: 10 search results found.
+2026-07-03 00:49:27,296 | INFO | First Trustpilot result -> Fitbod
+
+www.fitbod.me
+
+3.135 reviews
+
+Taraval Street 1655, San Francisco, United States
+2026-07-03 00:49:27,402 | INFO | Search Result: {'name': 'Fitbod\n\nwww.fitbod.me\n\n3.135 reviews\n\nTaraval Street 1655, San Francisco, United States', 'review_url': 'https://www.trustpilot.com/review/www.fitbod.me'}
+2026-07-03 00:49:27,402 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.fitbod.me
+2026-07-03 00:49:28,418 | INFO | JEFIT: 8 search results found.
+2026-07-03 00:49:28,436 | INFO | First Trustpilot result -> jefit.com
+
+www.jefit.com
+
+2.75 reviews
+2026-07-03 00:49:28,502 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me
+2026-07-03 00:49:28,559 | INFO | Search Result: {'name': 'jefit.com\n\nwww.jefit.com\n\n2.75 reviews', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com'}
+2026-07-03 00:49:28,559 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.jefit.com
+2026-07-03 00:49:28,598 | INFO | Sworkit: 10 search results found.
+2026-07-03 00:49:28,616 | INFO | First Trustpilot result -> Sworkit
+
+sworkit.com
+
+3.04 reviews
+
+United States
+2026-07-03 00:49:28,737 | INFO | Search Result: {'name': 'Sworkit\n\nsworkit.com\n\n3.04 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/sworkit.com'}
+2026-07-03 00:49:28,737 | INFO | Scraping reviews from https://www.trustpilot.com/review/sworkit.com
+2026-07-03 00:49:29,425 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com
+2026-07-03 00:49:29,524 | INFO | Opening https://www.trustpilot.com/review/sworkit.com
+2026-07-03 00:49:32,325 | INFO | Page 1: 20 review cards found.
+2026-07-03 00:49:32,413 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com?page=2
+2026-07-03 00:49:33,770 | INFO | Page 1: 19 review cards found.
+2026-07-03 00:49:34,245 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=2
+2026-07-03 00:49:37,772 | INFO | Page 1: 20 review cards found.
+2026-07-03 00:49:37,844 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=2
+2026-07-03 00:49:38,690 | INFO | Page 1: 0 review cards found.
+2026-07-03 00:49:38,690 | INFO | Opening https://www.trustpilot.com/review/sworkit.com?page=2
+2026-07-03 00:49:39,208 | INFO | Page 1: 4 review cards found.
+2026-07-03 00:49:39,228 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=2
+2026-07-03 00:49:39,350 | INFO | Page 2: 19 review cards found.
+2026-07-03 00:49:39,351 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=3
+2026-07-03 00:49:44,362 | INFO | Page 2: 20 review cards found.
+2026-07-03 00:49:44,362 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com?page=3
+2026-07-03 00:49:44,777 | INFO | Page 3: 20 review cards found.
+2026-07-03 00:49:44,862 | INFO | Total reviews scraped: 15
+2026-07-03 00:49:44,862 | INFO | MyFitnessPal: 15 reviews scraped.
+2026-07-03 00:49:44,862 | INFO | MyFitnessPal: Using Trustpilot reviews.
+2026-07-03 00:49:45,160 | INFO | Page 2: 0 review cards found.
+2026-07-03 00:49:45,160 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=3
+2026-07-03 00:49:49,380 | INFO | Page 3: 0 review cards found.
+2026-07-03 00:49:49,442 | INFO | Page 3: 20 review cards found.
+2026-07-03 00:49:49,481 | INFO | Total reviews scraped: 4
+2026-07-03 00:49:49,482 | INFO | JEFIT: 4 reviews scraped.
+2026-07-03 00:49:49,482 | INFO | JEFIT: Using Trustpilot reviews.
+2026-07-03 00:49:49,542 | INFO | Total reviews scraped: 15
+2026-07-03 00:49:49,542 | INFO | Aaptiv: 15 reviews scraped.
+2026-07-03 00:49:49,542 | INFO | Aaptiv: Using Trustpilot reviews.
+2026-07-03 00:49:49,547 | INFO | Page 2: 14 review cards found.
+2026-07-03 00:49:49,547 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=3
+2026-07-03 00:49:53,455 | INFO | Page 3: 0 review cards found.
+2026-07-03 00:49:53,553 | INFO | Total reviews scraped: 15
+2026-07-03 00:49:53,554 | INFO | Fitbod: 15 reviews scraped.
+2026-07-03 00:49:53,554 | INFO | Fitbod: Using Trustpilot reviews.
+2026-07-03 00:49:53,558 | INFO | Agent 3 Completed | FitAI
+2026-07-03 00:49:53,561 | INFO | Agent 4 Started | FitAI
+2026-07-03 00:49:53,562 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-03 00:49:56,966 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 00:50:27,232 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-03 00:54:03,795 | INFO | New Analysis: FitAI
+2026-07-03 00:54:03,807 | INFO | Agent 1 Started | FitAI
+2026-07-03 00:54:03,807 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-03 00:54:04,285 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 00:54:27,524 | INFO | Gemini Success | StartupAnalysis
+2026-07-03 00:54:27,524 | INFO | Agent 1 Completed | FitAI
+2026-07-03 00:54:27,528 | INFO | Agent 2 Started | FitAI
+2026-07-03 00:54:27,528 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-03 00:54:28,378 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 00:54:32,848 | INFO | Gemini Success | CompetitorOutput
+2026-07-03 00:54:32,848 | INFO | Agent 2 Completed | FitAI
+2026-07-03 00:54:32,853 | INFO | Agent 3 Started | FitAI
+2026-07-03 00:54:32,853 | INFO | Collecting competitor reviews for JEFIT
+2026-07-03 00:54:32,853 | INFO | Searching Trustpilot: JEFIT
+2026-07-03 00:54:32,854 | INFO | Collecting competitor reviews for Fitbod
+2026-07-03 00:54:32,854 | INFO | Collecting competitor reviews for MyFitnessPal
+2026-07-03 00:54:32,854 | INFO | Searching Trustpilot: Fitbod
+2026-07-03 00:54:32,855 | INFO | Searching Trustpilot: MyFitnessPal
+2026-07-03 00:54:32,855 | INFO | Collecting competitor reviews for Strong
+2026-07-03 00:54:32,855 | INFO | Collecting competitor reviews for Aaptiv
+2026-07-03 00:54:32,856 | INFO | Searching Trustpilot: Strong
+2026-07-03 00:54:32,856 | INFO | Searching Trustpilot: Aaptiv
+2026-07-03 00:54:40,000 | INFO | JEFIT: 8 search results found.
+2026-07-03 00:54:40,092 | INFO | First Trustpilot result -> jefit.com
+
+www.jefit.com
+
+2.75 reviews
+2026-07-03 00:54:40,193 | INFO | Search Result: {'name': 'jefit.com\n\nwww.jefit.com\n\n2.75 reviews', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com'}
+2026-07-03 00:54:40,193 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.jefit.com
+2026-07-03 00:54:41,091 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com
+2026-07-03 00:54:41,776 | INFO | Aaptiv: 10 search results found.
+2026-07-03 00:54:42,070 | INFO | First Trustpilot result -> Aaptiv
+
+aaptiv.com
+
+1.1971 reviews
+
+One World Trade, New York, United States
+2026-07-03 00:54:42,166 | INFO | Search Result: {'name': 'Aaptiv\n\naaptiv.com\n\n1.1971 reviews\n\nOne World Trade, New York, United States', 'review_url': 'https://www.trustpilot.com/review/aaptiv.com'}
+2026-07-03 00:54:42,167 | INFO | Scraping reviews from https://www.trustpilot.com/review/aaptiv.com
+2026-07-03 00:54:42,985 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com
+2026-07-03 00:54:43,434 | INFO | Fitbod: 10 search results found.
+2026-07-03 00:54:43,540 | INFO | First Trustpilot result -> Fitbod
+
+www.fitbod.me
+
+3.135 reviews
+
+Taraval Street 1655, San Francisco, United States
+2026-07-03 00:54:43,634 | INFO | Search Result: {'name': 'Fitbod\n\nwww.fitbod.me\n\n3.135 reviews\n\nTaraval Street 1655, San Francisco, United States', 'review_url': 'https://www.trustpilot.com/review/www.fitbod.me'}
+2026-07-03 00:54:43,634 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.fitbod.me
+2026-07-03 00:54:43,768 | INFO | Strong: 10 search results found.
+2026-07-03 00:54:43,789 | INFO | First Trustpilot result -> STRONGER
+
+strongerlabel.com
+
+4.212,315 reviews
+
+Vasagatan 46, Stockholm, Sweden
+2026-07-03 00:54:43,875 | INFO | MyFitnessPal: 3 search results found.
+2026-07-03 00:54:43,890 | INFO | Search Result: {'name': 'STRONGER\n\nstrongerlabel.com\n\n4.212,315 reviews\n\nVasagatan 46, Stockholm, Sweden', 'review_url': 'https://www.trustpilot.com/review/strongerlabel.com'}
+2026-07-03 00:54:43,890 | INFO | Scraping reviews from https://www.trustpilot.com/review/strongerlabel.com
+2026-07-03 00:54:43,891 | INFO | First Trustpilot result -> MyFitnessPal
+
+www.myfitnesspal.com
+
+4.312,678 reviews
+
+United States
+2026-07-03 00:54:43,991 | INFO | Search Result: {'name': 'MyFitnessPal\n\nwww.myfitnesspal.com\n\n4.312,678 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com'}
+2026-07-03 00:54:43,991 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-03 00:54:44,585 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me
+2026-07-03 00:54:44,775 | INFO | Opening https://www.trustpilot.com/review/strongerlabel.com
+2026-07-03 00:54:44,879 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-03 00:54:48,962 | INFO | Page 1: 4 review cards found.
+2026-07-03 00:54:48,992 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=2
+2026-07-03 00:54:49,912 | INFO | Page 1: 20 review cards found.
+2026-07-03 00:54:50,008 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com?page=2
+2026-07-03 00:54:53,842 | INFO | Page 1: 0 review cards found.
+2026-07-03 00:54:53,843 | INFO | Opening https://www.trustpilot.com/review/strongerlabel.com?page=2
+2026-07-03 00:54:55,972 | INFO | Page 1: 20 review cards found.
+2026-07-03 00:54:56,057 | INFO | Page 1: 19 review cards found.
+2026-07-03 00:54:56,069 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=2
+2026-07-03 00:54:56,147 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=2
+2026-07-03 00:54:56,983 | INFO | Page 2: 0 review cards found.
+2026-07-03 00:54:56,983 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=3
+2026-07-03 00:54:58,023 | INFO | Page 2: 20 review cards found.
+2026-07-03 00:54:58,024 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com?page=3
+2026-07-03 00:55:00,536 | INFO | Page 3: 0 review cards found.
+2026-07-03 00:55:00,619 | INFO | Page 2: 19 review cards found.
+2026-07-03 00:55:00,619 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=3
+2026-07-03 00:55:00,636 | INFO | Total reviews scraped: 4
+2026-07-03 00:55:00,637 | INFO | JEFIT: 4 reviews scraped.
+2026-07-03 00:55:00,637 | INFO | JEFIT: Using Trustpilot reviews.
+2026-07-03 00:55:00,906 | INFO | Page 2: 14 review cards found.
+2026-07-03 00:55:00,906 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=3
+2026-07-03 00:55:05,151 | INFO | Page 3: 20 review cards found.
+2026-07-03 00:55:05,255 | INFO | Total reviews scraped: 15
+2026-07-03 00:55:05,255 | INFO | Aaptiv: 15 reviews scraped.
+2026-07-03 00:55:05,255 | INFO | Aaptiv: Using Trustpilot reviews.
+2026-07-03 00:55:06,182 | INFO | Page 3: 20 review cards found.
+2026-07-03 00:55:06,183 | INFO | Page 3: 0 review cards found.
+2026-07-03 00:55:06,297 | INFO | Total reviews scraped: 15
+2026-07-03 00:55:06,297 | INFO | Fitbod: 15 reviews scraped.
+2026-07-03 00:55:06,297 | INFO | Fitbod: Using Trustpilot reviews.
+2026-07-03 00:55:06,301 | INFO | Total reviews scraped: 15
+2026-07-03 00:55:06,301 | INFO | MyFitnessPal: 15 reviews scraped.
+2026-07-03 00:55:06,301 | INFO | MyFitnessPal: Using Trustpilot reviews.
+2026-07-03 00:55:06,303 | INFO | Agent 3 Completed | FitAI
+2026-07-03 00:55:06,308 | INFO | Agent 4 Started | FitAI
+2026-07-03 00:55:06,309 | INFO | Company Object: {'competitor': 'JEFIT', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com', 'review_count': 4, 'reviews': [{'text': 'In sweden we have this website that shows if when and where your user information have been leeked.\n\nMy most used mail adress has ONE leek.\n\n"Din mejladress hittades i datalï¿½ckor\nDin mejladress fï¿½rekommer i en eller flera datalï¿½ckor.\n\nJefit\nJefit.com, 2020-08-11.\nLï¿½ckta uppgifter: Mejladresser, IP-adresser, Lï¿½senord, Anvï¿½ndarnamn."', 'source': 'trustpilot'}, {'text': "Jefit is hands-down one of the best workout tracking apps out there. Packed with features, it combines structure, customization, and motivationï¿½all in your pocket.\n\nIf youï¿½re serious about your workouts and love tracking progress, Jefit is a no-brainer. It's powerful, motivating, and absolutely worth the download.", 'source': 'trustpilot'}, {'text': "If you sign up as a VIP, you will have to cancel your payment card to stop it being charged if you ever decide to stop using JEFIT. I had signed up with JEFIT back in 2016 and subscribed to their VIP level in order to customise my workouts, since at the time I could not find an app that supported supersets or circuits. It worked fine, but eventually I didn't need it any more so in 2019 I canceled my VIP subscription and chose to delete my account. Fast forward to 2021, when I received an email from JEFIT saying my autorenewal was to be processed on 04-Aug...I found that not only was my account not deleted, but still active under the VIP level (the account that the charge would go to no longer exists, so I was not worried about being charged). I went to the help page to find out how to deactivate/delete my account in case the process had changed and found the information there was not updated or just incorrect; it described a process that you neither do from a mobile device in a web browser nor in the app itself (in my case, an iPhone app, long ago deleted and reinstalled to try and find a way to delete the account). I wrote to customer service who told me that even after canceling your VIP subscription, 'autorenew' is turned on by default and must be turned off for the account to be fully deleted...this feature, by the way, does not exist anywhere for you to turn on or off. If you cancel VIP and try to delete your account, you will get an error saying you cannot delete your account because you subscribed as a VIP, even if you are showing as a 'regular' account, and because autorenew cannot be turned off by the subscriber, you are therefore trapped. I suspect that this is intentional, since once the end of your VIP period expires if you have canceled before hand, autorenew kicks in, charges your card, and sets you back to an active VIP user. Since the card I have on file no longer exists, I won't run into that problem, but other users surely will. After writing to JEFIT customer service and telling them my old bank account had been closed in 2019, they advanced the case to someone who theoretically could delete the account at last (realising I suppose that that they would get no more money from me). Six days have gone by and still the account has not been deleted, with customer service claiming their technician is just not replying. I have to say this shows the company as either woefully incompetent or building in feature that makes it impossible to halt paid subscriptions. Given the level of difficulty to execute what should be a simple process, I cannot and will not recommend this service to anyone. There are other, better apps with easier processes to unsubscribe that don't involve canceling your credit or debit card.", 'source': 'trustpilot'}, {'text': 'Website hacked and personal data leaked onto the dark web', 'source': 'trustpilot'}]}
+2026-07-03 00:55:06,310 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-03 00:55:07,001 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 00:55:38,413 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-03 00:55:38,415 | INFO | Company Object: {'competitor': 'Fitbod', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.fitbod.me', 'review_count': 15, 'reviews': [{'text': 'I have tried literally everything to cancel this subscription. I downloaded for the free trial and no matter what I do, they keep trying to take money from my account. Worst app Iï¿½ve ever had the misfortune to download. Total scam.', 'source': 'trustpilot'}, {'text': 'Cancelled subscription to find out months later still geyting charge as you have to cancel google play app as well. Yet another scam.', 'source': 'trustpilot'}, {'text': 'I issued a ticket through my membership-linked email a week ago on the app asking them about the unsent weekly workout reports and my progress to which they never replied. I believe it is my right as a paying subscriber to have access to all available features.', 'source': 'trustpilot'}, {'text': 'It is an okay app, maybe a 3-4 star but they are so tied into the Apple ecosystem that I couldnï¿½t get a refund on day 1 of year 2 because they say Apple controls that. It didnï¿½t quite meet my needs for the money and Iï¿½m out $80 this year.', 'source': 'trustpilot'}, {'text': 'Diana was very patient and worked hard to help with a difficult issue. She went above and beyond to answer my questions and fix my issues.', 'source': 'trustpilot'}, {'text': 'Nope. Bought, paid for, app locked saying I havenï¿½t paid. Iï¿½ve contacted support 4 times in the last 4 days. Nada. Waste of money.', 'source': 'trustpilot'}, {'text': 'This app automates the task of designing your work out and saves you a lot of time. It automates progression through your own feedback. It tracks your progress and gives you a point system to allow you to see progress across a spectrum of exercises. You can customize which exercises it gives you by telling it what equipment you have. You can ask it to recommend exercises more or less. Thereï¿½s a lot of customization for something that automates workouts for you. Itï¿½s been going great for me.', 'source': 'trustpilot'}, {'text': 'Good selection of workouts and love how it tracks your progress', 'source': 'trustpilot'}, {'text': 'Good app use almost daily', 'source': 'trustpilot'}, {'text': "I can't say enough bad things about this app. Tough to navigate, slow, and keeps crashing.", 'source': 'trustpilot'}, {'text': "Worst app i've tried so far. I did the free 7 day trial and the app kept crashing which sucked. Workout order was also all over the place with insane reps and weight. I also noticed an influx of positive reviews here that caught my attention and noticed some of these are written by actual Fitbod employees so be careful and do not trust this scammy businesss! Save your money.", 'source': 'trustpilot'}, {'text': 'I tried two other apps they were complicated then I tried Fitbod been using it for three years. It absolutely help change my life when I started. I weighed over 265 pounds now I weigh 216 pounds and I am 17.5% body fat Iï¿½m 52 years old when I first started my weight loss. I weighed 346 pounds Iï¿½m happy to write this review.', 'source': 'trustpilot'}, {'text': 'Love the app, finally I have managed to stick to the plan over a longer period of time. Iï¿½ve used the app for 6 months and the result is amazing! The reports are so good that I always want to do better next week, and looking forward to see my progress in the upcoming reports. Already recommended the app to plenty of friends.', 'source': 'trustpilot'}, {'text': 'Brilliant! I got definition in my arms and shoulders within one year. Ideal for parents with small kids who have little time and workout rather at home than in a gym.', 'source': 'trustpilot'}, {'text': 'Algorithm is not operating correctly. Getting the same exact exercises and cardio which is longer than the whole time allowed. Really falling apart. Iï¿½ve been a top 1% user for 5 years and this is the worst Iï¿½ve seen. And your customer service is totally useless. You are losing customers over the lack of system integrity - and it will soon be me if you donï¿½t get it fixed', 'source': 'trustpilot'}]}
+2026-07-03 00:55:38,415 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-03 00:55:40,476 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 00:56:28,345 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-03 00:56:28,346 | INFO | Company Object: {'competitor': 'MyFitnessPal', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com', 'review_count': 15, 'reviews': [{'text': 'Good way to track calories intake', 'source': 'trustpilot'}, {'text': 'Good app to help you recognize how you are eating', 'source': 'trustpilot'}, {'text': 'Love this app been using it for years, I hate the new design layout, I liked the macros in a pie chart only thing that is better is where u can look back at the dates of your logs much easier,please please change it back to what it used to be like but just leaving the way you can change the date \U0001f64f', 'source': 'trustpilot'}, {'text': 'Quite a good and easy app to help with tracking your food intake', 'source': 'trustpilot'}, {'text': 'Excellent in measuring calories. Guiding you in your fast loss journey.', 'source': 'trustpilot'}, {'text': 'It has a very good database of foods and experiences, feels smooth, other than the ads thing.', 'source': 'trustpilot'}, {'text': 'Great app but please stop playing with the design! Even for someone whoï¿½s used it for years the new updates are so confusing and complex. The old design was much more simple and user friendly', 'source': 'trustpilot'}, {'text': "It's a wonderful tool to help me stay on track.", 'source': 'trustpilot'}, {'text': 'The app is very easy to use and contains just about every food item known to man. I used to use Noom, and they do not begin to compare with MyFitnessPal.', 'source': 'trustpilot'}, {'text': 'I needed help reconnecting an app (Map My Walk) to My Fitness Pal. Koya emailed me with specific detailed steps, which did not correct the error, but subsequently followed up with another fix which actually worked. Great customer service.', 'source': 'trustpilot'}, {'text': "I love using MyFitnesspal to track what I eat and how many calories I'm consuming. I am down 50lbs just by tracking what I eat! This little app has helped me a lot.", 'source': 'trustpilot'}, {'text': 'Itï¿½s a good free app. Iï¿½ve been using it since 2012', 'source': 'trustpilot'}, {'text': "It's free, easy to use, no trial periods and then they start charging. Just a few ads pop up, nothing over the top. The calories are accurate, you can save meals and create recipes, adding ingredients in bulk. A great easy way to track nutrients and calories. Whatever your goal is, track calories or protein, this is the one!", 'source': 'trustpilot'}, {'text': 'Love the app really helps with my weight-loss goal.', 'source': 'trustpilot'}, {'text': 'I love this App, it gives me everything I need except, Sodium Content up with the Fats, Carbs & Calories.\nI never needed to know my Sodium numbers until a month ago when, I started to have issues with my heart & having to go on blood thinners. Now, not only do i need the calories, carbs & fats; I need the sodium contents of the foods as well.', 'source': 'trustpilot'}]}
+2026-07-03 00:56:28,349 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-03 00:56:30,346 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 00:57:26,668 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-03 00:57:26,668 | INFO | Company Object: {'competitor': 'Strong', 'source': 'error', 'error': 'Page.goto: net::ERR_ABORTED at https://www.trustpilot.com/review/strongerlabel.com?page=2\nCall log:\n  - navigating to "https://www.trustpilot.com/review/strongerlabel.com?page=2", waiting until "domcontentloaded"\n'}
+2026-07-03 01:16:49,897 | INFO | New Analysis: FitAI
+2026-07-03 01:16:49,907 | INFO | Agent 1 Started | FitAI
+2026-07-03 01:16:49,907 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-03 01:16:59,749 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:17:21,344 | INFO | Gemini Success | StartupAnalysis
+2026-07-03 01:17:21,344 | INFO | Agent 1 Completed | FitAI
+2026-07-03 01:17:21,350 | INFO | Agent 2 Started | FitAI
+2026-07-03 01:17:21,350 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-03 01:17:22,666 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:17:26,807 | INFO | Gemini Success | CompetitorOutput
+2026-07-03 01:17:26,807 | INFO | Agent 2 Completed | FitAI
+2026-07-03 01:17:26,811 | INFO | Agent 3 Started | FitAI
+2026-07-03 01:17:26,812 | INFO | Collecting competitor reviews for JEFIT
+2026-07-03 01:17:26,812 | INFO | Searching Trustpilot: JEFIT
+2026-07-03 01:17:26,813 | INFO | Collecting competitor reviews for Sworkit
+2026-07-03 01:17:26,813 | INFO | Searching Trustpilot: Sworkit
+2026-07-03 01:17:26,813 | INFO | Collecting competitor reviews for Fitbod
+2026-07-03 01:17:26,814 | INFO | Searching Trustpilot: Fitbod
+2026-07-03 01:17:26,814 | INFO | Collecting competitor reviews for MyFitnessPal
+2026-07-03 01:17:26,814 | INFO | Searching Trustpilot: MyFitnessPal
+2026-07-03 01:17:26,815 | INFO | Collecting competitor reviews for Aaptiv
+2026-07-03 01:17:26,815 | INFO | Searching Trustpilot: Aaptiv
+2026-07-03 01:17:36,950 | INFO | Fitbod: 0 search results found.
+2026-07-03 01:17:36,952 | INFO | Sworkit: 0 search results found.
+2026-07-03 01:17:37,030 | WARNING | Fitbod: No Trustpilot results.
+2026-07-03 01:17:37,031 | WARNING | Sworkit: No Trustpilot results.
+2026-07-03 01:17:37,061 | INFO | Search Result: None
+2026-07-03 01:17:37,062 | INFO | Search Result: None
+2026-07-03 01:17:37,062 | WARNING | Fitbod: Trustpilot match not found. Using LLM.
+2026-07-03 01:17:37,062 | WARNING | Sworkit: Trustpilot match not found. Using LLM.
+2026-07-03 01:17:37,062 | INFO | Invoking Gemini | FallbackResearch
+2026-07-03 01:17:37,062 | INFO | Invoking Gemini | FallbackResearch
+2026-07-03 01:17:37,932 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:17:40,429 | INFO | MyFitnessPal: 3 search results found.
+2026-07-03 01:17:40,444 | INFO | First Trustpilot Result:
+MyFitnessPal
+
+www.myfitnesspal.com
+
+4.312,678 reviews
+
+United States
+2026-07-03 01:17:40,705 | INFO | Search Result: {'name': 'MyFitnessPal\n\nwww.myfitnesspal.com\n\n4.312,678 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com'}
+2026-07-03 01:17:40,706 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-03 01:17:41,632 | INFO | Aaptiv: 10 search results found.
+2026-07-03 01:17:41,672 | INFO | First Trustpilot Result:
+Aaptiv
+
+aaptiv.com
+
+1.1971 reviews
+
+One World Trade, New York, United States
+2026-07-03 01:17:41,725 | INFO | JEFIT: 8 search results found.
+2026-07-03 01:17:41,738 | INFO | First Trustpilot Result:
+jefit.com
+
+www.jefit.com
+
+2.75 reviews
+2026-07-03 01:17:41,919 | INFO | Search Result: {'name': 'Aaptiv\n\naaptiv.com\n\n1.1971 reviews\n\nOne World Trade, New York, United States', 'review_url': 'https://www.trustpilot.com/review/aaptiv.com'}
+2026-07-03 01:17:41,920 | INFO | Scraping reviews from https://www.trustpilot.com/review/aaptiv.com
+2026-07-03 01:17:41,962 | INFO | Search Result: {'name': 'jefit.com\n\nwww.jefit.com\n\n2.75 reviews', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com'}
+2026-07-03 01:17:41,963 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.jefit.com
+2026-07-03 01:17:43,191 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-03 01:17:44,085 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com
+2026-07-03 01:17:44,158 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com
+2026-07-03 01:17:48,473 | INFO | Page 1: 19 review cards found.
+2026-07-03 01:17:48,670 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=2
+2026-07-03 01:17:50,915 | INFO | Page 1: 16 review cards found.
+2026-07-03 01:17:51,355 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com?page=2
+2026-07-03 01:17:51,709 | INFO | Page 1: 4 review cards found.
+2026-07-03 01:17:51,740 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=2
+2026-07-03 01:17:53,669 | INFO | Page 2: 19 review cards found.
+2026-07-03 01:17:53,669 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=3
+2026-07-03 01:17:58,596 | INFO | Page 2: 20 review cards found.
+2026-07-03 01:17:58,597 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com?page=3
+2026-07-03 01:17:58,872 | INFO | Page 3: 20 review cards found.
+2026-07-03 01:17:59,040 | INFO | Total reviews scraped: 15
+2026-07-03 01:17:59,041 | INFO | MyFitnessPal: 15 reviews scraped.
+2026-07-03 01:17:59,041 | INFO | MyFitnessPal: Using Trustpilot reviews.
+2026-07-03 01:18:03,442 | INFO | Page 3: 20 review cards found.
+2026-07-03 01:18:03,613 | INFO | Total reviews scraped: 15
+2026-07-03 01:18:03,614 | INFO | Aaptiv: 15 reviews scraped.
+2026-07-03 01:18:03,614 | INFO | Aaptiv: Using Trustpilot reviews.
+2026-07-03 01:18:04,152 | INFO | Page 2: 0 review cards found.
+2026-07-03 01:18:04,152 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=3
+2026-07-03 01:18:08,111 | INFO | Page 3: 0 review cards found.
+2026-07-03 01:18:08,302 | INFO | Total reviews scraped: 4
+2026-07-03 01:18:08,303 | INFO | JEFIT: 4 reviews scraped.
+2026-07-03 01:18:08,303 | INFO | JEFIT: Using Trustpilot reviews.
+2026-07-03 01:18:42,179 | INFO | Gemini Success | FallbackResearch
+2026-07-03 01:18:42,846 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:19:38,757 | INFO | Gemini Success | FallbackResearch
+2026-07-03 01:19:38,760 | INFO | Agent 3 Completed | FitAI
+2026-07-03 01:19:38,766 | INFO | Agent 4 Started | FitAI
+2026-07-03 01:19:38,767 | INFO | Company Object: {'competitor': 'JEFIT', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com', 'review_count': 4, 'reviews': [{'text': 'In sweden we have this website that shows if when and where your user information have been leeked.\n\nMy most used mail adress has ONE leek.\n\n"Din mejladress hittades i datalï¿½ckor\nDin mejladress fï¿½rekommer i en eller flera datalï¿½ckor.\n\nJefit\nJefit.com, 2020-08-11.\nLï¿½ckta uppgifter: Mejladresser, IP-adresser, Lï¿½senord, Anvï¿½ndarnamn."', 'source': 'trustpilot'}, {'text': "Jefit is hands-down one of the best workout tracking apps out there. Packed with features, it combines structure, customization, and motivationï¿½all in your pocket.\n\nIf youï¿½re serious about your workouts and love tracking progress, Jefit is a no-brainer. It's powerful, motivating, and absolutely worth the download.", 'source': 'trustpilot'}, {'text': "If you sign up as a VIP, you will have to cancel your payment card to stop it being charged if you ever decide to stop using JEFIT. I had signed up with JEFIT back in 2016 and subscribed to their VIP level in order to customise my workouts, since at the time I could not find an app that supported supersets or circuits. It worked fine, but eventually I didn't need it any more so in 2019 I canceled my VIP subscription and chose to delete my account. Fast forward to 2021, when I received an email from JEFIT saying my autorenewal was to be processed on 04-Aug...I found that not only was my account not deleted, but still active under the VIP level (the account that the charge would go to no longer exists, so I was not worried about being charged). I went to the help page to find out how to deactivate/delete my account in case the process had changed and found the information there was not updated or just incorrect; it described a process that you neither do from a mobile device in a web browser nor in the app itself (in my case, an iPhone app, long ago deleted and reinstalled to try and find a way to delete the account). I wrote to customer service who told me that even after canceling your VIP subscription, 'autorenew' is turned on by default and must be turned off for the account to be fully deleted...this feature, by the way, does not exist anywhere for you to turn on or off. If you cancel VIP and try to delete your account, you will get an error saying you cannot delete your account because you subscribed as a VIP, even if you are showing as a 'regular' account, and because autorenew cannot be turned off by the subscriber, you are therefore trapped. I suspect that this is intentional, since once the end of your VIP period expires if you have canceled before hand, autorenew kicks in, charges your card, and sets you back to an active VIP user. Since the card I have on file no longer exists, I won't run into that problem, but other users surely will. After writing to JEFIT customer service and telling them my old bank account had been closed in 2019, they advanced the case to someone who theoretically could delete the account at last (realising I suppose that that they would get no more money from me). Six days have gone by and still the account has not been deleted, with customer service claiming their technician is just not replying. I have to say this shows the company as either woefully incompetent or building in feature that makes it impossible to halt paid subscriptions. Given the level of difficulty to execute what should be a simple process, I cannot and will not recommend this service to anyone. There are other, better apps with easier processes to unsubscribe that don't involve canceling your credit or debit card.", 'source': 'trustpilot'}, {'text': 'Website hacked and personal data leaked onto the dark web', 'source': 'trustpilot'}]}
+2026-07-03 01:19:38,768 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-03 01:19:40,853 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:20:09,632 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-03 01:20:09,632 | INFO | Company Object: {'competitor': 'Sworkit', 'source': 'llm_research', 'strengths': ["Personalized workout plans based on user's fitness level, goals, and time availability", 'Integration with popular wearable devices for tracking progress', 'Offers a variety of exercises including yoga, strength training, cardio, and flexibility', 'Short workout sessions (as short as 5 minutes) catering to busy individuals', 'Includes video demonstrations for proper form during exercises'], 'weaknesses': ['Limited progress tracking features compared to some competitors', 'Lack of community interaction or social sharing options', 'No option for virtual coaching or personal trainer assistance', 'Some users may find the workout recommendations repetitive over time'], 'pain_points': ["Difficulty adjusting workout intensity to match user's progress", "Inconsistent workout suggestions based on user's goals and preferences", 'Lack of motivation or accountability for users completing workouts', "Frustration with the app's interface, particularly during navigation"], 'feature_requests': ['Integration with fitness tracking apps like MyFitnessPal or Apple Health', "Option to customize workout plans based on user's specific needs and preferences", 'Ability to set reminders for workout sessions', 'Inclusion of a community feature for sharing workouts, tips, and motivation'], 'target_users': ['Time-constrained individuals seeking quick, effective workouts', 'Beginners looking for guidance on proper exercise form and technique', 'Individuals with specific fitness goals (e.g., weight loss, muscle gain, flexibility improvement)']}
+2026-07-03 01:25:28,075 | INFO | New Analysis: FitAI
+2026-07-03 01:25:28,088 | INFO | Agent 1 Started | FitAI
+2026-07-03 01:25:28,088 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-03 01:25:38,362 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:26:00,076 | INFO | Gemini Success | StartupAnalysis
+2026-07-03 01:26:00,077 | INFO | Agent 1 Completed | FitAI
+2026-07-03 01:26:00,082 | INFO | Agent 2 Started | FitAI
+2026-07-03 01:26:00,082 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-03 01:26:01,328 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:26:06,370 | INFO | Gemini Success | CompetitorOutput
+2026-07-03 01:26:06,371 | INFO | Agent 2 Completed | FitAI
+2026-07-03 01:26:06,376 | INFO | Agent 3 Started | FitAI
+2026-07-03 01:26:06,384 | INFO | Collecting competitor reviews for JEFIT
+2026-07-03 01:26:06,385 | INFO | Searching Trustpilot: JEFIT
+2026-07-03 01:26:06,385 | INFO | Collecting competitor reviews for Sworkit
+2026-07-03 01:26:06,386 | INFO | Searching Trustpilot: Sworkit
+2026-07-03 01:26:06,386 | INFO | Collecting competitor reviews for Fitbod
+2026-07-03 01:26:06,386 | INFO | Searching Trustpilot: Fitbod
+2026-07-03 01:26:06,387 | INFO | Collecting competitor reviews for MyFitnessPal
+2026-07-03 01:26:06,387 | INFO | Searching Trustpilot: MyFitnessPal
+2026-07-03 01:26:06,392 | INFO | Collecting competitor reviews for Aaptiv
+2026-07-03 01:26:06,392 | INFO | Searching Trustpilot: Aapt iv
+2026-07-03 01:26:18,415 | INFO | Aaptiv: 0 search results found.
+2026-07-03 01:26:18,415 | INFO | Fitbod: 0 search results found.
+2026-07-03 01:26:18,507 | WARNING | Aaptiv: No Trustpilot results.
+2026-07-03 01:26:18,507 | WARNING | Fitbod: No Trustpilot results.
+2026-07-03 01:26:18,542 | INFO | Search Result: None
+2026-07-03 01:26:18,542 | INFO | Search Result: None
+2026-07-03 01:26:18,542 | WARNING | Fitbod: Trustpilot match not found. Using LLM.
+2026-07-03 01:26:18,543 | WARNING | Aaptiv: Trustpilot match not found. Using LLM.
+2026-07-03 01:26:18,543 | INFO | Invoking Gemini | FallbackResearch
+2026-07-03 01:26:18,543 | INFO | Invoking Gemini | FallbackResearch
+2026-07-03 01:26:19,417 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:26:19,772 | INFO | MyFitnessPal: 3 search results found.
+2026-07-03 01:26:19,844 | INFO | First Trustpilot Result:
+MyFitnessPal
+
+www.myfitnesspal.com
+
+4.312,678 reviews
+
+United States
+2026-07-03 01:26:20,210 | INFO | Search Result: {'name': 'MyFitnessPal\n\nwww.myfitnesspal.com\n\n4.312,678 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com'}
+2026-07-03 01:26:20,211 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-03 01:26:22,547 | INFO | Sworkit: 10 search results found.
+2026-07-03 01:26:23,218 | INFO | First Trustpilot Result:
+Sworkit
+
+sworkit.com
+
+3.04 reviews
+
+United States
+2026-07-03 01:26:23,259 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-03 01:26:23,645 | INFO | Search Result: {'name': 'Sworkit\n\nsworkit.com\n\n3.04 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/sworkit.com'}
+2026-07-03 01:26:23,646 | INFO | Scraping reviews from https://www.trustpilot.com/review/sworkit.com
+2026-07-03 01:26:23,986 | INFO | JEFIT: 8 search results found.
+2026-07-03 01:26:24,336 | INFO | First Trustpilot Result:
+jefit.com
+
+www.jefit.com
+
+2.75 reviews
+2026-07-03 01:26:24,538 | INFO | Search Result: {'name': 'jefit.com\n\nwww.jefit.com\n\n2.75 reviews', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com'}
+2026-07-03 01:26:24,539 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.jefit.com
+2026-07-03 01:26:25,991 | INFO | Opening https://www.trustpilot.com/review/sworkit.com
+2026-07-03 01:26:27,019 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com
+2026-07-03 01:26:29,138 | INFO | Page 1: 19 review cards found.
+2026-07-03 01:26:29,633 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=2
+2026-07-03 01:26:32,624 | INFO | Page 1: 2 review cards found.
+2026-07-03 01:26:32,676 | INFO | Opening https://www.trustpilot.com/review/sworkit.com?page=2
+2026-07-03 01:26:34,065 | INFO | Page 1: 4 review cards found.
+2026-07-03 01:26:34,095 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=2
+2026-07-03 01:26:34,411 | INFO | Page 2: 19 review cards found.
+2026-07-03 01:26:34,411 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=3
+2026-07-03 01:26:40,740 | INFO | Page 2: 0 review cards found.
+2026-07-03 01:26:40,740 | INFO | Opening https://www.trustpilot.com/review/sworkit.com?page=3
+2026-07-03 01:26:41,363 | INFO | Page 3: 20 review cards found.
+2026-07-03 01:26:41,695 | INFO | Total reviews scraped: 15
+2026-07-03 01:26:41,696 | INFO | MyFitnessPal: 15 reviews scraped.
+2026-07-03 01:26:41,698 | INFO | MyFitnessPal: Using Trustpilot reviews.
+2026-07-03 01:26:42,941 | INFO | Page 2: 0 review cards found.
+2026-07-03 01:26:42,942 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=3
+2026-07-03 01:26:45,879 | INFO | Page 3: 0 review cards found.
+2026-07-03 01:26:46,137 | INFO | Total reviews scraped: 2
+2026-07-03 01:26:46,137 | INFO | Sworkit: 2 reviews scraped.
+2026-07-03 01:26:46,137 | INFO | Sworkit: Using Trustpilot reviews.
+2026-07-03 01:26:47,490 | INFO | Page 3: 0 review cards found.
+2026-07-03 01:26:47,761 | INFO | Total reviews scraped: 4
+2026-07-03 01:26:47,764 | INFO | JEFIT: 4 reviews scraped.
+2026-07-03 01:26:47,764 | INFO | JEFIT: Using Trustpilot reviews.
+2026-07-03 01:27:25,403 | INFO | Gemini Success | FallbackResearch
+2026-07-03 01:27:26,106 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:28:33,851 | INFO | Gemini Success | FallbackResearch
+2026-07-03 01:28:33,854 | INFO | Agent 3 Completed | FitAI
+2026-07-03 01:28:33,858 | INFO | Agent 4 Started | FitAI
+2026-07-03 01:28:33,859 | INFO | Company Object: {'competitor': 'JEFIT', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com', 'review_count': 4, 'reviews': [{'text': 'In sweden we have this website that shows if when and where your user information have been leeked.\n\nMy most used mail adress has ONE leek.\n\n"Din mejladress hittades i datalï¿½ckor\nDin mejladress fï¿½rekommer i en eller flera datalï¿½ckor.\n\nJefit\nJefit.com, 2020-08-11.\nLï¿½ckta uppgifter: Mejladresser, IP-adresser, Lï¿½senord, Anvï¿½ndarnamn."', 'source': 'trustpilot'}, {'text': "Jefit is hands-down one of the best workout tracking apps out there. Packed with features, it combines structure, customization, and motivationï¿½all in your pocket.\n\nIf youï¿½re serious about your workouts and love tracking progress, Jefit is a no-brainer. It's powerful, motivating, and absolutely worth the download.", 'source': 'trustpilot'}, {'text': "If you sign up as a VIP, you will have to cancel your payment card to stop it being charged if you ever decide to stop using JEFIT. I had signed up with JEFIT back in 2016 and subscribed to their VIP level in order to customise my workouts, since at the time I could not find an app that supported supersets or circuits. It worked fine, but eventually I didn't need it any more so in 2019 I canceled my VIP subscription and chose to delete my account. Fast forward to 2021, when I received an email from JEFIT saying my autorenewal was to be processed on 04-Aug...I found that not only was my account not deleted, but still active under the VIP level (the account that the charge would go to no longer exists, so I was not worried about being charged). I went to the help page to find out how to deactivate/delete my account in case the process had changed and found the information there was not updated or just incorrect; it described a process that you neither do from a mobile device in a web browser nor in the app itself (in my case, an iPhone app, long ago deleted and reinstalled to try and find a way to delete the account). I wrote to customer service who told me that even after canceling your VIP subscription, 'autorenew' is turned on by default and must be turned off for the account to be fully deleted...this feature, by the way, does not exist anywhere for you to turn on or off. If you cancel VIP and try to delete your account, you will get an error saying you cannot delete your account because you subscribed as a VIP, even if you are showing as a 'regular' account, and because autorenew cannot be turned off by the subscriber, you are therefore trapped. I suspect that this is intentional, since once the end of your VIP period expires if you have canceled before hand, autorenew kicks in, charges your card, and sets you back to an active VIP user. Since the card I have on file no longer exists, I won't run into that problem, but other users surely will. After writing to JEFIT customer service and telling them my old bank account had been closed in 2019, they advanced the case to someone who theoretically could delete the account at last (realising I suppose that that they would get no more money from me). Six days have gone by and still the account has not been deleted, with customer service claiming their technician is just not replying. I have to say this shows the company as either woefully incompetent or building in feature that makes it impossible to halt paid subscriptions. Given the level of difficulty to execute what should be a simple process, I cannot and will not recommend this service to anyone. There are other, better apps with easier processes to unsubscribe that don't involve canceling your credit or debit card.", 'source': 'trustpilot'}, {'text': 'Website hacked and personal data leaked onto the dark web', 'source': 'trustpilot'}]}
+2026-07-03 01:28:33,859 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-03 01:28:35,989 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:29:07,792 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-03 01:29:07,792 | INFO | Company Object: {'competitor': 'Sworkit', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/sworkit.com', 'review_count': 2, 'reviews': [{'text': 'I thought the website was good but when it came to cancel my membership it was an absolute nightmare. The only way to cancel is through a chatbot on their site which no one ever responds to. I reached out to their support email and also got no response. I am ready to take legal action against them to get my money back. Horrible customer service. I do not recommend them at all.', 'source': 'trustpilot'}, {'text': 'Excellent fitness & wellness app with lots of great features.', 'source': 'trustpilot'}]}
+2026-07-03 01:29:07,792 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-03 01:29:08,784 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:29:33,143 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-03 01:29:33,144 | INFO | Company Object: {'competitor': 'Fitbod', 'source': 'llm_research', 'strengths': ["Personalized workout plans based on user's fitness level, goals, and equipment availability", 'Integration with various fitness devices for data syncing (e.g., Apple Health, Fitbit)', 'Progress tracking and visualization of workouts, sets, reps, and weights', 'Video demonstrations for proper exercise form and technique', "Workout suggestions tailored to user's schedule and preferences"], 'weaknesses': ['Limited support for advanced exercises or sports-specific training programs', 'Lack of social features for connecting with friends or trainers', 'Inability to customize workout plans beyond basic settings', 'No option for manual entry of workouts when using non-synced devices'], 'pain_points': ['Users may find the app overly prescriptive and inflexible during workouts', 'Some users might experience frustration with the inability to adjust workout plans on-the-go', 'Users who prefer a more holistic approach to fitness (e.g., including nutrition, sleep, etc.) may feel that Fitbod is too focused on exercise'], 'feature_requests': ['Integration with popular calorie tracking apps for comprehensive diet and exercise management', 'Option to add custom exercises or sports-specific training programs', 'Social features like sharing workout progress, connecting with friends, or finding workout partners', 'Ability to manually enter workouts when using non-synced devices'], 'target_users': ['Time-constrained individuals seeking efficient and personalized workout plans', 'Beginners looking for guidance on proper exercise form and technique', 'Intermediate fitness enthusiasts aiming to improve their workouts with data-driven insights']}
+2026-07-03 01:29:33,144 | INFO | Company Object: {'competitor': 'MyFitnessPal', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com', 'review_count': 15, 'reviews': [{'text': 'Good way to track calories intake', 'source': 'trustpilot'}, {'text': 'Good app to help you recognize how you are eating', 'source': 'trustpilot'}, {'text': 'Love this app been using it for years, I hate the new design layout, I liked the macros in a pie chart only thing that is better is where u can look back at the dates of your logs much easier,please please change it back to what it used to be like but just leaving the way you can change the date \U0001f64f', 'source': 'trustpilot'}, {'text': 'Quite a good and easy app to help with tracking your food intake', 'source': 'trustpilot'}, {'text': 'Excellent in measuring calories. Guiding you in your fast loss journey.', 'source': 'trustpilot'}, {'text': 'It has a very good database of foods and experiences, feels smooth, other than the ads thing.', 'source': 'trustpilot'}, {'text': 'Great app but please stop playing with the design! Even for someone whoï¿½s used it for years the new updates are so confusing and complex. The old design was much more simple and user friendly', 'source': 'trustpilot'}, {'text': "It's a wonderful tool to help me stay on track.", 'source': 'trustpilot'}, {'text': 'The app is very easy to use and contains just about every food item known to man. I used to use Noom, and they do not begin to compare with MyFitnessPal.', 'source': 'trustpilot'}, {'text': 'I needed help reconnecting an app (Map My Walk) to My Fitness Pal. Koya emailed me with specific detailed steps, which did not correct the error, but subsequently followed up with another fix which actually worked. Great customer service.', 'source': 'trustpilot'}, {'text': "I love using MyFitnesspal to track what I eat and how many calories I'm consuming. I am down 50lbs just by tracking what I eat! This little app has helped me a lot.", 'source': 'trustpilot'}, {'text': 'Itï¿½s a good free app. Iï¿½ve been using it since 2012', 'source': 'trustpilot'}, {'text': "It's free, easy to use, no trial periods and then they start charging. Just a few ads pop up, nothing over the top. The calories are accurate, you can save meals and create recipes, adding ingredients in bulk. A great easy way to track nutrients and calories. Whatever your goal is, track calories or protein, this is the one!", 'source': 'trustpilot'}, {'text': 'Love the app really helps with my weight-loss goal.', 'source': 'trustpilot'}, {'text': 'I love this App, it gives me everything I need except, Sodium Content up with the Fats, Carbs & Calories.\nI never needed to know my Sodium numbers until a month ago when, I started to have issues with my heart & having to go on blood thinners. Now, not only do i need the calories, carbs & fats; I need the sodium contents of the foods as well.', 'source': 'trustpilot'}]}
+2026-07-03 01:29:33,147 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-03 01:29:35,125 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:30:22,734 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-03 01:30:22,734 | INFO | Company Object: {'competitor': 'Aaptiv', 'source': 'llm_research', 'strengths': ['Aaptiv offers a wide variety of workout classes led by certified trainers, catering to different fitness levels and preferences such as running, cycling, strength training, and yoga.', "The app provides personalized coaching through customizable playlists and daily recommendations based on user's goals and progress.", 'Aaptiv integrates with popular fitness devices like Apple Watch and Fitbit, allowing users to track their workouts seamlessly.'], 'weaknesses': ['Some users may find the subscription cost high compared to free alternatives or gym memberships.', "The app's offline mode is limited, requiring an internet connection for most classes.", 'Aaptiv lacks real-time feedback and progress tracking features, which could be beneficial for users seeking more detailed insights.'], 'pain_points': ['Users might experience frustration when dealing with technical issues during workouts, such as buffering or syncing problems.', 'The absence of a community feature may lead to feelings of isolation and lack of motivation for some users.', "Some users may find the app's interface confusing, especially if they are new to digital fitness platforms."], 'feature_requests': ['Users might request a more comprehensive progress tracking system that includes metrics like weight loss, body measurements, and performance improvements.', 'Integration with more third-party apps (e.g., MyFitnessPal) could be desired to create a more holistic fitness experience.', 'A community feature where users can share their experiences, ask questions, and provide support to each other could help increase user engagement and satisfaction.'], 'target_users': ['Individuals seeking structured workout plans and personalized coaching, particularly those who prefer working out at home or on-the-go.', 'Busy professionals looking for efficient workouts that can be easily incorporated into their schedules.', 'Fitness enthusiasts who want to diversify their workout routines with new classes and trainers.']}
+2026-07-03 01:30:22,734 | INFO | Agent 4 Completed | FitAI
+2026-07-03 01:30:22,742 | INFO | Agent 5 Started | FitAI
+2026-07-03 01:30:22,742 | INFO | Invoking Gemini | MarketGapAnalysis
+2026-07-03 01:30:26,090 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:31:30,852 | INFO | Gemini Success | MarketGapAnalysis
+2026-07-03 01:31:30,852 | INFO | Agent 5 Completed | FitAI
+2026-07-03 01:31:30,861 | INFO | Agent 6 Started | FitAI
+2026-07-03 01:31:30,862 | INFO | Invoking Gemini | StartupScore
+2026-07-03 01:31:34,569 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:31:51,641 | INFO | Gemini Success | StartupScore
+2026-07-03 01:31:51,641 | INFO | Agent 6 Completed | FitAI
+2026-07-03 01:31:51,647 | INFO | Agent 7 Started | FitAI
+2026-07-03 01:31:51,648 | INFO | Invoking Gemini | PersonaOutput
+2026-07-03 01:31:55,349 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:40:02,659 | INFO | Gemini Success | PersonaOutput
+2026-07-03 01:40:02,659 | INFO | Agent 7 Completed | FitAI
+2026-07-03 01:40:02,667 | INFO | Agent 8 Started | FitAI
+2026-07-03 01:40:02,668 | INFO | Invoking Gemini | PersonaFeedbackOutput
+2026-07-03 01:40:07,663 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 01:47:41,245 | INFO | Gemini Success | PersonaFeedbackOutput
+2026-07-03 01:47:41,245 | INFO | Agent 8 Completed | FitAI
+2026-07-03 01:47:41,251 | INFO | Agent 9 Started | FitAI
+2026-07-03 01:47:41,251 | INFO | Invoking Gemini | AdoptionAnalytics
+2026-07-03 01:47:45,051 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 02:09:10,662 | INFO | New Analysis: FitAI
+2026-07-03 02:09:10,675 | INFO | Agent 1 Started | FitAI
+2026-07-03 02:09:10,675 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-03 02:09:11,784 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 02:09:35,944 | INFO | Gemini Success | StartupAnalysis
+2026-07-03 02:09:35,944 | INFO | Agent 1 Completed | FitAI
+2026-07-03 02:09:35,951 | INFO | Agent 2 Started | FitAI
+2026-07-03 02:09:35,951 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-03 02:09:37,335 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 02:09:42,172 | INFO | Gemini Success | CompetitorOutput
+2026-07-03 02:09:42,173 | INFO | Agent 2 Completed | FitAI
+2026-07-03 02:09:42,177 | INFO | Agent 3 Started | FitAI
+2026-07-03 02:09:42,177 | INFO | Collecting competitor reviews for JEFIT
+2026-07-03 02:09:42,178 | INFO | Searching Trustpilot: JEFIT
+2026-07-03 02:09:42,178 | INFO | Collecting competitor reviews for Fitbod
+2026-07-03 02:09:42,178 | INFO | Searching Trustpilot: Fitbod
+2026-07-03 02:09:42,178 | INFO | Collecting competitor reviews for MyFitnessPal
+2026-07-03 02:09:42,179 | INFO | Searching Trustpilot: MyFitnessPal
+2026-07-03 02:09:42,179 | INFO | Collecting competitor reviews for Strong
+2026-07-03 02:09:42,180 | INFO | Searching Trustpilot: Strong
+2026-07-03 02:09:42,180 | INFO | Collecting competitor reviews for Aaptiv
+2026-07-03 02:09:42,180 | INFO | Searching Trustpilot: Aaptiv
+2026-07-03 02:09:53,832 | INFO | JEFIT: 0 search results found.
+2026-07-03 02:09:53,906 | WARNING | JEFIT: No Trustpilot results.
+2026-07-03 02:09:53,942 | INFO | Search Result: None
+2026-07-03 02:09:53,942 | WARNING | JEFIT: Trustpilot match not found. Using LLM.
+2026-07-03 02:09:53,942 | INFO | Invoking Gemini | FallbackResearch
+2026-07-03 02:09:54,012 | INFO | Aaptiv: 0 search results found.
+2026-07-03 02:09:54,090 | WARNING | Aaptiv: No Trustpilot results.
+2026-07-03 02:09:54,115 | INFO | Search Result: None
+2026-07-03 02:09:54,115 | WARNING | Aaptiv: Trustpilot match not found. Using LLM.
+2026-07-03 02:09:54,115 | INFO | Invoking Gemini | FallbackResearch
+2026-07-03 02:09:54,430 | INFO | Fitbod: 0 search results found.
+2026-07-03 02:09:54,503 | WARNING | Fitbod: No Trustpilot results.
+2026-07-03 02:09:54,527 | INFO | Search Result: None
+2026-07-03 02:09:54,527 | WARNING | Fitbod: Trustpilot match not found. Using LLM.
+2026-07-03 02:09:54,527 | INFO | Invoking Gemini | FallbackResearch
+2026-07-03 02:09:54,882 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 02:09:55,576 | INFO | MyFitnessPal: 0 search results found.
+2026-07-03 02:09:55,824 | WARNING | MyFitnessPal: No Trustpilot results.
+2026-07-03 02:09:55,879 | INFO | Search Result: None
+2026-07-03 02:09:55,880 | WARNING | MyFitnessPal: Trustpilot match not found. Using LLM.
+2026-07-03 02:09:55,880 | INFO | Invoking Gemini | FallbackResearch
+2026-07-03 02:10:03,905 | INFO | Strong: 10 search results found.
+2026-07-03 02:10:04,400 | INFO | First Trustpilot Result:
+STRONGER
+
+strongerlabel.com
+
+4.212,315 reviews
+
+Vasagatan 46, Stockholm, Sweden
+2026-07-03 02:10:04,751 | INFO | Search Result: {'name': 'STRONGER\n\nstrongerlabel.com\n\n4.212,315 reviews\n\nVasagatan 46, Stockholm, Sweden', 'review_url': 'https://www.trustpilot.com/review/strongerlabel.com'}
+2026-07-03 02:10:04,753 | INFO | Scraping reviews from https://www.trustpilot.com/review/strongerlabel.com
+2026-07-03 02:10:07,207 | INFO | Opening https://www.trustpilot.com/review/strongerlabel.com
+2026-07-03 02:10:14,285 | INFO | Page 1: 0 review cards found.
+2026-07-03 02:10:14,286 | INFO | Opening https://www.trustpilot.com/review/strongerlabel.com?page=2
+2026-07-03 02:10:15,253 | WARNING | Strong: Scraping failed (Page.goto: net::ERR_ABORTED at https://www.trustpilot.com/review/strongerlabel.com?page=2
+Call log:
+  - navigating to "https://www.trustpilot.com/review/strongerlabel.com?page=2", waiting until "domcontentloaded"
+). Using LLM.
+2026-07-03 02:10:15,253 | INFO | Invoking Gemini | FallbackResearch
+2026-07-03 02:11:03,882 | INFO | Gemini Success | FallbackResearch
+2026-07-03 02:11:04,886 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 02:12:12,272 | INFO | Gemini Success | FallbackResearch
+2026-07-03 02:12:13,069 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 02:13:11,850 | INFO | Gemini Success | FallbackResearch
+2026-07-03 02:13:12,612 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 02:14:21,388 | INFO | Gemini Success | FallbackResearch
+2026-07-03 02:14:22,115 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 02:15:14,527 | INFO | Gemini Success | FallbackResearch
+2026-07-03 02:15:14,527 | INFO | Strong: LLM research completed.
+2026-07-03 02:15:14,534 | INFO | Agent 3 Completed | FitAI
+2026-07-03 02:15:14,542 | INFO | Agent 4 Started | FitAI
+2026-07-03 02:15:14,542 | INFO | Company Object: {'competitor': 'JEFIT', 'source': 'llm_research', 'strengths': ['JEFIT offers a comprehensive workout planner with a wide variety of exercises and routines, catering to different fitness levels.', "The app's progress tracking feature allows users to monitor their workouts effectively, providing motivation and accountability.", 'Users appreciate the ability to create custom workout plans based on their specific goals and preferences.', 'JEFIT provides detailed video demonstrations for each exercise, which can be particularly helpful for beginners.'], 'weaknesses': ["Some users have reported issues with the app's interface being cluttered or difficult to navigate, especially on smaller screens.", 'The workout recommendations may not always cater to individual needs, leading to ineffective workouts for some users.', 'There have been complaints about the lack of integration with external fitness devices and apps.'], 'pain_points': ['Users often express frustration when they encounter technical issues during their workout sessions, such as freezing or crashing.', "Some users find the app's push notifications to be excessive and intrusive.", 'The lack of personalized coaching or feedback can lead to a feeling of disconnection for some users.'], 'feature_requests': ['Users frequently request more advanced workout analytics, such as tracking body measurements and performance metrics over time.', 'Integration with popular fitness devices like Fitbit and Apple Watch is often requested to sync data seamlessly.', 'Some users have expressed a desire for a more personalized coaching experience, either through AI or human coaches.'], 'target_users': ['JEFIT appeals most to individuals who are looking to improve their fitness levels and need guidance on workout routines and exercises.', 'The app is particularly popular among those who prefer a self-guided approach to fitness, as it offers a high degree of customization.']}
+2026-07-03 02:15:14,542 | INFO | Company Object: {'competitor': 'Fitbod', 'source': 'llm_research', 'strengths': ["Personalized workout plans based on user's fitness level, goals, and equipment availability", 'Integration with popular fitness devices like Apple Health, Google Fit, and Fitbit for seamless data tracking', 'Progress tracking and visualization of workouts, sets, reps, and weight lifted', 'Video demonstrations for each exercise to ensure proper form and technique'], 'weaknesses': ['Limited support for advanced exercises or sports-specific training programs', 'Lack of social features or community engagement opportunities', 'No option for customizing workout duration or frequency beyond the suggested plan', 'No integration with nutrition tracking or meal planning tools'], 'pain_points': ['Users may find the suggested workout plans repetitive over time', 'Some users might experience frustration when the app fails to recognize certain exercises or equipment', 'Users who require more flexibility in their workout schedule may struggle with the rigid plan structure'], 'feature_requests': ['Integration with popular nutrition tracking apps like MyFitnessPal or Lifesum', 'Social features such as sharing workouts, progress, and achievements with friends', 'Customizable workout plans that allow users to adjust duration, frequency, and exercise selection', 'Support for advanced exercises or sports-specific training programs'], 'target_users': ['Beginners looking for a personalized workout plan to help them get started with fitness', 'Intermediate and advanced gym-goers seeking guidance on structuring their workouts', 'Busy individuals who want a convenient, time-efficient solution for staying fit']}
+2026-07-03 02:15:14,542 | INFO | Company Object: {'competitor': 'MyFitnessPal', 'source': 'llm_research', 'strengths': ['Comprehensive food database with over 6 million foods, making it easy for users to track their diet accurately', "Integration with various fitness devices and apps like Fitbit, Garmin, and Apple Health, providing a holistic view of user's physical activity", 'Personalized goal setting and progress tracking, helping users stay motivated and achieve their fitness goals', "MyFitnessPal's community feature allows users to connect with others, share experiences, and gain support in their weight loss or fitness journey"], 'weaknesses': ['Limited meal planning features compared to other diet apps, which may not cater well to users who require structured meal plans', 'Ad-supported free version can be intrusive and disruptive for some users, leading them to consider premium alternatives', 'Some users have reported issues with the barcode scanning feature, making it difficult to log certain foods'], 'pain_points': ['Users may find it frustrating when they cannot find specific foods in the database, especially for less common or regional items', 'Inconsistent calorie counts and nutritional information can lead to confusion and dissatisfaction among users', 'Some users have reported difficulty syncing data from fitness devices, causing inaccurate tracking of their physical activity'], 'feature_requests': ['More advanced meal planning features, such as customizable meal plans and recipe suggestions based on dietary preferences and restrictions', 'Improved barcode scanning accuracy to ensure users can easily log foods without manual entry', 'Integration with more fitness devices and apps to provide a wider range of options for users'], 'target_users': ['Individuals looking to lose weight, maintain a healthy lifestyle, or improve their overall fitness level', 'Athletes and active individuals who want to track their diet and physical activity in one place', 'Busy professionals who need an easy-to-use app to help them manage their nutrition and exercise routines']}
+2026-07-03 02:15:14,542 | INFO | Company Object: {'competitor': 'Strong', 'source': 'llm_research', 'strengths': ['Intuitive and user-friendly interface that simplifies complex tasks', 'Advanced analytics dashboard providing actionable insights for decision making', 'Robust security measures ensuring data privacy and protection', 'Integration with popular third-party tools, streamlining workflows', 'AI-driven recommendations improving efficiency and accuracy'], 'weaknesses': ['Limited customization options for branding and layout', 'Lack of offline functionality in certain features', 'Steep learning curve for some advanced features, causing initial frustration', 'Customer support response times can be slow during peak usage periods'], 'pain_points': ['Users often encounter errors when importing large datasets', 'Some users find the subscription pricing model confusing and expensive', 'Occasional glitches in real-time collaboration features causing delays', 'Users may experience difficulty integrating with niche or less popular third-party tools'], 'feature_requests': ['Request for more granular customization options for branding and layout', 'Improved offline functionality for all core features', 'Simplified subscription pricing model with clearer tiers and benefits', 'Enhanced real-time collaboration features with error prevention mechanisms'], 'target_users': ['Small to medium businesses seeking advanced analytics solutions', 'Marketing agencies looking for AI-driven recommendations', 'Enterprises requiring robust security measures for data protection']}
+2026-07-03 02:15:14,543 | INFO | Company Object: {'competitor': 'Aaptiv', 'source': 'llm_research', 'strengths': ['Aaptiv offers a wide variety of workout classes led by certified trainers, catering to different fitness levels and preferences such as running, cycling, strength training, and yoga.', "The app provides personalized coaching with customizable playlists based on user's music taste and workout goals.", 'Aaptiv integrates with popular fitness devices like Apple Watch and Fitbit, allowing users to track their progress seamlessly.'], 'weaknesses': ['Some users may find the subscription cost high compared to free alternatives or gym memberships.', "The app's offline mode is limited, requiring an internet connection for most workouts.", 'Aaptiv lacks real-time feedback and progress tracking features, which could be beneficial for users seeking more detailed insights.'], 'pain_points': ['Users might experience frustration when encountering technical issues during workouts, such as audio sync problems or buffering.', "The app's recommendation algorithm may not always match the user's preferences or fitness goals, leading to dissatisfaction.", 'Some users may find the lack of community features, like leaderboards or social sharing, limiting their motivation and engagement.'], 'feature_requests': ['Users might request more advanced tracking features, such as heart rate monitoring, calorie burn estimation, and progress graphs.', 'Integration with more fitness devices beyond Apple Watch and Fitbit could be desired by users who own other brands.', 'A feature allowing users to create and share their custom workout playlists with others in the community could enhance user engagement.'], 'target_users': ['Fitness enthusiasts looking for structured workouts led by certified trainers, particularly those who prefer a convenient, at-home workout solution.', 'Busy professionals seeking quick and effective workouts that can be easily integrated into their daily routines.', 'Individuals with specific fitness goals, such as weight loss or marathon training, who value personalized coaching and guidance.']}
+2026-07-03 02:15:14,543 | INFO | Agent 4 Completed | FitAI
+2026-07-03 02:15:14,549 | INFO | Agent 5 Started | FitAI
+2026-07-03 02:15:14,549 | INFO | Invoking Gemini | MarketGapAnalysis
+2026-07-03 02:15:18,712 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 02:16:40,474 | INFO | Gemini Success | MarketGapAnalysis
+2026-07-03 02:16:40,474 | INFO | Agent 5 Completed | FitAI
+2026-07-03 02:16:40,481 | INFO | Agent 6 Started | FitAI
+2026-07-03 02:16:40,482 | INFO | Invoking Gemini | StartupScore
+2026-07-03 02:16:45,016 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 02:17:03,002 | INFO | Gemini Success | StartupScore
+2026-07-03 02:17:03,003 | INFO | Agent 6 Completed | FitAI
+2026-07-03 02:17:03,009 | INFO | Agent 7 Started | FitAI
+2026-07-03 02:17:03,009 | INFO | Invoking Gemini | PersonaOutput
+2026-07-03 02:17:07,576 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 02:24:32,380 | INFO | Gemini Success | PersonaOutput
+2026-07-03 02:24:32,381 | INFO | Agent 7 Completed | FitAI
+2026-07-03 02:24:32,387 | INFO | Agent 8 Started | FitAI
+2026-07-03 02:24:32,387 | INFO | Invoking Gemini | PersonaFeedbackOutput
+2026-07-03 02:24:36,860 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 02:32:12,237 | INFO | Gemini Success | PersonaFeedbackOutput
+2026-07-03 02:32:12,237 | INFO | Agent 8 Completed | FitAI
+2026-07-03 02:32:12,243 | INFO | Agent 9 Started | FitAI
+2026-07-03 02:32:12,243 | INFO | Invoking Gemini | AdoptionAnalytics
+2026-07-03 02:32:16,086 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 10:07:37,155 | INFO | New Analysis: FitAI
+2026-07-03 10:07:37,168 | INFO | Agent 1 Started | FitAI
+2026-07-03 10:07:37,168 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-03 10:07:48,010 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 10:08:10,628 | INFO | Gemini Success | StartupAnalysis
+2026-07-03 10:08:10,628 | INFO | Agent 1 Completed | FitAI
+2026-07-03 10:08:10,633 | INFO | Agent 2 Started | FitAI
+2026-07-03 10:08:10,633 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-03 10:08:12,006 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 10:08:17,657 | INFO | Gemini Success | CompetitorOutput
+2026-07-03 10:08:17,658 | INFO | Agent 2 Completed | FitAI
+2026-07-03 10:08:17,665 | INFO | Agent 3 Started | FitAI
+2026-07-03 10:08:17,666 | INFO | Collecting competitor reviews for JEFIT
+2026-07-03 10:08:17,667 | INFO | Searching Trustpilot: JEFIT
+2026-07-03 10:08:17,667 | INFO | Collecting competitor reviews for Sworkit
+2026-07-03 10:08:17,667 | INFO | Searching Trustpilot: Sworkit
+2026-07-03 10:08:17,668 | INFO | Collecting competitor reviews for Fitbod
+2026-07-03 10:08:17,668 | INFO | Searching Trustpilot: Fitbod
+2026-07-03 10:08:17,668 | INFO | Collecting competitor reviews for MyFitnessPal
+2026-07-03 10:08:17,669 | INFO | Searching Trustpilot: MyFitnessPal
+2026-07-03 10:08:17,669 | INFO | Collecting competitor reviews for Aaptiv
+2026-07-03 10:08:17,670 | INFO | Searching Trustpilot: Aaptiv
+2026-07-03 10:08:28,006 | INFO | Aaptiv: 10 search results found.
+2026-07-03 10:08:28,026 | INFO | First Trustpilot Result:
+Aaptiv
+
+aaptiv.com
+
+1.1971 reviews
+
+One World Trade, New York, United States
+2026-07-03 10:08:28,159 | INFO | MyFitnessPal: 3 search results found.
+2026-07-03 10:08:28,175 | INFO | First Trustpilot Result:
+MyFitnessPal
+
+www.myfitnesspal.com
+
+4.312,685 reviews
+
+United States
+2026-07-03 10:08:28,194 | INFO | Search Result: {'name': 'Aaptiv\n\naaptiv.com\n\n1.1971 reviews\n\nOne World Trade, New York, United States', 'review_url': 'https://www.trustpilot.com/review/aaptiv.com'}
+2026-07-03 10:08:28,195 | INFO | Scraping reviews from https://www.trustpilot.com/review/aaptiv.com
+2026-07-03 10:08:28,295 | INFO | Search Result: {'name': 'MyFitnessPal\n\nwww.myfitnesspal.com\n\n4.312,685 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com'}
+2026-07-03 10:08:28,295 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-03 10:08:29,040 | INFO | Fitbod: 10 search results found.
+2026-07-03 10:08:29,066 | INFO | First Trustpilot Result:
+Fitbod
+
+www.fitbod.me
+
+3.135 reviews
+
+Taraval Street 1655, San Francisco, United States
+2026-07-03 10:08:29,194 | INFO | Sworkit: 10 search results found.
+2026-07-03 10:08:29,208 | INFO | Search Result: {'name': 'Fitbod\n\nwww.fitbod.me\n\n3.135 reviews\n\nTaraval Street 1655, San Francisco, United States', 'review_url': 'https://www.trustpilot.com/review/www.fitbod.me'}
+2026-07-03 10:08:29,208 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.fitbod.me
+2026-07-03 10:08:29,213 | INFO | First Trustpilot Result:
+Sworkit
+
+sworkit.com
+
+3.04 reviews
+
+United States
+2026-07-03 10:08:29,350 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com
+2026-07-03 10:08:29,418 | INFO | Search Result: {'name': 'Sworkit\n\nsworkit.com\n\n3.04 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/sworkit.com'}
+2026-07-03 10:08:29,419 | INFO | Scraping reviews from https://www.trustpilot.com/review/sworkit.com
+2026-07-03 10:08:29,465 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-03 10:08:29,811 | INFO | JEFIT: 8 search results found.
+2026-07-03 10:08:29,883 | INFO | First Trustpilot Result:
+jefit.com
+
+www.jefit.com
+
+2.75 reviews
+2026-07-03 10:08:30,034 | INFO | Search Result: {'name': 'jefit.com\n\nwww.jefit.com\n\n2.75 reviews', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com'}
+2026-07-03 10:08:30,034 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.jefit.com
+2026-07-03 10:08:30,261 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me
+2026-07-03 10:08:30,406 | INFO | Opening https://www.trustpilot.com/review/sworkit.com
+2026-07-03 10:08:30,961 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com
+2026-07-03 10:08:33,873 | INFO | Page 1: 20 review cards found.
+2026-07-03 10:08:34,319 | INFO | Page 1: 19 review cards found.
+2026-07-03 10:08:34,493 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com?page=2
+2026-07-03 10:08:34,692 | INFO | Page 1: 2 review cards found.
+2026-07-03 10:08:34,839 | INFO | Page 1: 20 review cards found.
+2026-07-03 10:08:34,933 | INFO | Opening https://www.trustpilot.com/review/sworkit.com?page=2
+2026-07-03 10:08:35,214 | INFO | Page 1: 4 review cards found.
+2026-07-03 10:08:35,243 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=2
+2026-07-03 10:08:35,727 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=2
+2026-07-03 10:08:35,907 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=2
+2026-07-03 10:08:38,444 | INFO | Page 2: 20 review cards found.
+2026-07-03 10:08:38,445 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com?page=3
+2026-07-03 10:08:38,713 | INFO | Page 2: 0 review cards found.
+2026-07-03 10:08:38,713 | INFO | Opening https://www.trustpilot.com/review/sworkit.com?page=3
+2026-07-03 10:08:39,301 | INFO | Page 2: 0 review cards found.
+2026-07-03 10:08:39,301 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=3
+2026-07-03 10:08:39,420 | INFO | Page 2: 19 review cards found.
+2026-07-03 10:08:39,421 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=3
+2026-07-03 10:08:39,894 | INFO | Page 2: 14 review cards found.
+2026-07-03 10:08:39,894 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=3
+2026-07-03 10:08:42,162 | INFO | Page 3: 20 review cards found.
+2026-07-03 10:08:42,169 | INFO | Page 3: 0 review cards found.
+2026-07-03 10:08:42,311 | INFO | Total reviews scraped: 15
+2026-07-03 10:08:42,311 | INFO | Aaptiv: 15 reviews scraped.
+2026-07-03 10:08:42,311 | INFO | Aaptiv: Using Trustpilot reviews.
+2026-07-03 10:08:42,311 | INFO | Total reviews scraped: 2
+2026-07-03 10:08:42,312 | INFO | Sworkit: 2 reviews scraped.
+2026-07-03 10:08:42,312 | INFO | Sworkit: Using Trustpilot reviews.
+2026-07-03 10:08:42,748 | INFO | Page 3: 0 review cards found.
+2026-07-03 10:08:42,841 | INFO | Total reviews scraped: 4
+2026-07-03 10:08:42,842 | INFO | JEFIT: 4 reviews scraped.
+2026-07-03 10:08:42,842 | INFO | JEFIT: Using Trustpilot reviews.
+2026-07-03 10:08:43,212 | INFO | Page 3: 20 review cards found.
+2026-07-03 10:08:43,312 | INFO | Total reviews scraped: 15
+2026-07-03 10:08:43,313 | INFO | MyFitnessPal: 15 reviews scraped.
+2026-07-03 10:08:43,313 | INFO | MyFitnessPal: Using Trustpilot reviews.
+2026-07-03 10:08:43,461 | INFO | Page 3: 0 review cards found.
+2026-07-03 10:08:43,556 | INFO | Total reviews scraped: 15
+2026-07-03 10:08:43,557 | INFO | Fitbod: 15 reviews scraped.
+2026-07-03 10:08:43,557 | INFO | Fitbod: Using Trustpilot reviews.
+2026-07-03 10:08:43,559 | INFO | Agent 3 Completed | FitAI
+2026-07-03 10:08:43,565 | INFO | Agent 4 Started | FitAI
+2026-07-03 10:08:43,565 | INFO | Company Object: {'competitor': 'JEFIT', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com', 'review_count': 4, 'reviews': [{'text': 'In sweden we have this website that shows if when and where your user information have been leeked.\n\nMy most used mail adress has ONE leek.\n\n"Din mejladress hittades i datalï¿½ckor\nDin mejladress fï¿½rekommer i en eller flera datalï¿½ckor.\n\nJefit\nJefit.com, 2020-08-11.\nLï¿½ckta uppgifter: Mejladresser, IP-adresser, Lï¿½senord, Anvï¿½ndarnamn."', 'source': 'trustpilot'}, {'text': "Jefit is hands-down one of the best workout tracking apps out there. Packed with features, it combines structure, customization, and motivationï¿½all in your pocket.\n\nIf youï¿½re serious about your workouts and love tracking progress, Jefit is a no-brainer. It's powerful, motivating, and absolutely worth the download.", 'source': 'trustpilot'}, {'text': "If you sign up as a VIP, you will have to cancel your payment card to stop it being charged if you ever decide to stop using JEFIT. I had signed up with JEFIT back in 2016 and subscribed to their VIP level in order to customise my workouts, since at the time I could not find an app that supported supersets or circuits. It worked fine, but eventually I didn't need it any more so in 2019 I canceled my VIP subscription and chose to delete my account. Fast forward to 2021, when I received an email from JEFIT saying my autorenewal was to be processed on 04-Aug...I found that not only was my account not deleted, but still active under the VIP level (the account that the charge would go to no longer exists, so I was not worried about being charged). I went to the help page to find out how to deactivate/delete my account in case the process had changed and found the information there was not updated or just incorrect; it described a process that you neither do from a mobile device in a web browser nor in the app itself (in my case, an iPhone app, long ago deleted and reinstalled to try and find a way to delete the account). I wrote to customer service who told me that even after canceling your VIP subscription, 'autorenew' is turned on by default and must be turned off for the account to be fully deleted...this feature, by the way, does not exist anywhere for you to turn on or off. If you cancel VIP and try to delete your account, you will get an error saying you cannot delete your account because you subscribed as a VIP, even if you are showing as a 'regular' account, and because autorenew cannot be turned off by the subscriber, you are therefore trapped. I suspect that this is intentional, since once the end of your VIP period expires if you have canceled before hand, autorenew kicks in, charges your card, and sets you back to an active VIP user. Since the card I have on file no longer exists, I won't run into that problem, but other users surely will. After writing to JEFIT customer service and telling them my old bank account had been closed in 2019, they advanced the case to someone who theoretically could delete the account at last (realising I suppose that that they would get no more money from me). Six days have gone by and still the account has not been deleted, with customer service claiming their technician is just not replying. I have to say this shows the company as either woefully incompetent or building in feature that makes it impossible to halt paid subscriptions. Given the level of difficulty to execute what should be a simple process, I cannot and will not recommend this service to anyone. There are other, better apps with easier processes to unsubscribe that don't involve canceling your credit or debit card.", 'source': 'trustpilot'}, {'text': 'Website hacked and personal data leaked onto the dark web', 'source': 'trustpilot'}]}
+2026-07-03 10:08:43,565 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-03 10:08:46,096 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 10:09:16,230 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-03 10:09:16,232 | INFO | Company Object: {'competitor': 'Sworkit', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/sworkit.com', 'review_count': 2, 'reviews': [{'text': 'I thought the website was good but when it came to cancel my membership it was an absolute nightmare. The only way to cancel is through a chatbot on their site which no one ever responds to. I reached out to their support email and also got no response. I am ready to take legal action against them to get my money back. Horrible customer service. I do not recommend them at all.', 'source': 'trustpilot'}, {'text': 'Excellent fitness & wellness app with lots of great features.', 'source': 'trustpilot'}]}
+2026-07-03 10:09:16,232 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-03 10:09:17,227 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 10:09:40,466 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-03 10:09:40,466 | INFO | Company Object: {'competitor': 'Fitbod', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.fitbod.me', 'review_count': 15, 'reviews': [{'text': 'I have tried literally everything to cancel this subscription. I downloaded for the free trial and no matter what I do, they keep trying to take money from my account. Worst app Iï¿½ve ever had the misfortune to download. Total scam.', 'source': 'trustpilot'}, {'text': 'Cancelled subscription to find out months later still geyting charge as you have to cancel google play app as well. Yet another scam.', 'source': 'trustpilot'}, {'text': 'I issued a ticket through my membership-linked email a week ago on the app asking them about the unsent weekly workout reports and my progress to which they never replied. I believe it is my right as a paying subscriber to have access to all available features.', 'source': 'trustpilot'}, {'text': 'It is an okay app, maybe a 3-4 star but they are so tied into the Apple ecosystem that I couldnï¿½t get a refund on day 1 of year 2 because they say Apple controls that. It didnï¿½t quite meet my needs for the money and Iï¿½m out $80 this year.', 'source': 'trustpilot'}, {'text': 'Diana was very patient and worked hard to help with a difficult issue. She went above and beyond to answer my questions and fix my issues.', 'source': 'trustpilot'}, {'text': 'Nope. Bought, paid for, app locked saying I havenï¿½t paid. Iï¿½ve contacted support 4 times in the last 4 days. Nada. Waste of money.', 'source': 'trustpilot'}, {'text': 'This app automates the task of designing your work out and saves you a lot of time. It automates progression through your own feedback. It tracks your progress and gives you a point system to allow you to see progress across a spectrum of exercises. You can customize which exercises it gives you by telling it what equipment you have. You can ask it to recommend exercises more or less. Thereï¿½s a lot of customization for something that automates workouts for you. Itï¿½s been going great for me.', 'source': 'trustpilot'}, {'text': 'Good selection of workouts and love how it tracks your progress', 'source': 'trustpilot'}, {'text': 'Good app use almost daily', 'source': 'trustpilot'}, {'text': "I can't say enough bad things about this app. Tough to navigate, slow, and keeps crashing.", 'source': 'trustpilot'}, {'text': "Worst app i've tried so far. I did the free 7 day trial and the app kept crashing which sucked. Workout order was also all over the place with insane reps and weight. I also noticed an influx of positive reviews here that caught my attention and noticed some of these are written by actual Fitbod employees so be careful and do not trust this scammy businesss! Save your money.", 'source': 'trustpilot'}, {'text': 'I tried two other apps they were complicated then I tried Fitbod been using it for three years. It absolutely help change my life when I started. I weighed over 265 pounds now I weigh 216 pounds and I am 17.5% body fat Iï¿½m 52 years old when I first started my weight loss. I weighed 346 pounds Iï¿½m happy to write this review.', 'source': 'trustpilot'}, {'text': 'Love the app, finally I have managed to stick to the plan over a longer period of time. Iï¿½ve used the app for 6 months and the result is amazing! The reports are so good that I always want to do better next week, and looking forward to see my progress in the upcoming reports. Already recommended the app to plenty of friends.', 'source': 'trustpilot'}, {'text': 'Brilliant! I got definition in my arms and shoulders within one year. Ideal for parents with small kids who have little time and workout rather at home than in a gym.', 'source': 'trustpilot'}, {'text': 'Algorithm is not operating correctly. Getting the same exact exercises and cardio which is longer than the whole time allowed. Really falling apart. Iï¿½ve been a top 1% user for 5 years and this is the worst Iï¿½ve seen. And your customer service is totally useless. You are losing customers over the lack of system integrity - and it will soon be me if you donï¿½t get it fixed', 'source': 'trustpilot'}]}
+2026-07-03 10:09:40,467 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-03 10:09:42,977 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 10:10:28,591 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-03 10:10:28,593 | INFO | Company Object: {'competitor': 'MyFitnessPal', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com', 'review_count': 15, 'reviews': [{'text': "I haven't been on the app for months. I'm back on it and I am delighted with all the new updates they made. Much easier to use and gives you a lot of information right at your fingerstips.", 'source': 'trustpilot'}, {'text': 'I love this app! I have been using it for years, since when almost all features were free, although I understand changes happen to keep the app active. If you in doubt, just download it, YOURE NOT GOINT TO REGRET IT!', 'source': 'trustpilot'}, {'text': 'Application generally is fine except for when a start a walk and it will not allow me to store my results.', 'source': 'trustpilot'}, {'text': 'This app is very helpful with helping me stay on track with calorie counting and weight loss. Any food I have looked up so far has been easy to find and that makes it more doable and helps me from wanting to give up', 'source': 'trustpilot'}, {'text': 'I love being able to track my food and see how I am reaching my goals each day. Itï¿½s very easy to use and I love the convenience of using it to log my food.', 'source': 'trustpilot'}, {'text': "An excellent app to use to count calories and assess exactly what you're eating everyday.", 'source': 'trustpilot'}, {'text': "You get a good idea of how many calories you are consuming. I just don't like having to pay a lot for barcode reading from packages", 'source': 'trustpilot'}, {'text': 'Good way to track calories intake', 'source': 'trustpilot'}, {'text': 'Good app to help you recognize how you are eating', 'source': 'trustpilot'}, {'text': 'Love this app been using it for years, I hate the new design layout, I liked the macros in a pie chart only thing that is better is where u can look back at the dates of your logs much easier,please please change it back to what it used to be like but just leaving the way you can change the date \U0001f64f', 'source': 'trustpilot'}, {'text': 'Quite a good and easy app to help with tracking your food intake', 'source': 'trustpilot'}, {'text': 'Excellent in measuring calories. Guiding you in your fast loss journey.', 'source': 'trustpilot'}, {'text': 'It has a very good database of foods and experiences, feels smooth, other than the ads thing.', 'source': 'trustpilot'}, {'text': 'Great app but please stop playing with the design! Even for someone whoï¿½s used it for years the new updates are so confusing and complex. The old design was much more simple and user friendly', 'source': 'trustpilot'}, {'text': "It's a wonderful tool to help me stay on track.", 'source': 'trustpilot'}]}
+2026-07-03 10:10:28,595 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-03 10:10:30,410 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 10:11:18,355 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-03 10:11:18,356 | INFO | Company Object: {'competitor': 'Aaptiv', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/aaptiv.com', 'review_count': 15, 'reviews': [{'text': 'Scam - run away. I asked pertinent questions on chat and when I gave him a little bit of truth serum they ended the chat. Even told them about the reviews on here. They have been charging me several months even though I canceled. I will be reporting them to my bank for fraud', 'source': 'trustpilot'}, {'text': 'Worst experience Iï¿½ve ever had with a company. No one returns your phone calls. Website doesnï¿½t work half the time. Charged me and then didnï¿½t accept the gyms that I picked. No customer service agents to be found. Save yourself time and donï¿½t go with them.', 'source': 'trustpilot'}, {'text': "Subscribed for 6 years on and off. Tried to resubscribe and they charged me but I couldn't access any of the content. Thankfully able to get a refund through Google play as their customer service hasn't responded.\n\nThis is a shame as the content was great but looking through recent experiences, this glitch has been present for a while and the developers haven't fixed it therefore the app is now just a scam.", 'source': 'trustpilot'}, {'text': "They literally have been charging me for 4+ years and (1) Didn't once email me (2) I deleted the app 4 years ago but I was still being charged (3) Changed my credit card and still getting charged.\n\nI would like a full refund for the 4 years, not 2021but 2022, 2023, 2024 and 2025.", 'source': 'trustpilot'}, {'text': "I was an Aaptiv customer for 3 years... and then when I decided to not renew, I had NO success reaching a human customer service representative to confirm cancellation. I assume the fact that I wasn't charged that I was cancelled, but their business practices have clearly gone downhill. Sending out auto-ticket emails but not having staff ready to respond to this tickets makes me happier that I have left Aaptiv. If they try to charge my card, I will dispute and submit an official complaint.", 'source': 'trustpilot'}, {'text': 'I am an Elite member. They dropped Lifetime from their network without notice, charged my monthly fees, and have not responded to my support ticket despite multiple reminders and requests. This company is scam.', 'source': 'trustpilot'}, {'text': 'Do not use Aaptiv! I recently signed up for their elite tier and within my first 2 month they increased my monthly rate by 40% and then the following month removed all gym access in my area with no communication. Iï¿½ve tried contacting multiple time with no response from their support team. Beware @aaptiv is a fraudulent business scamming their customers out of money!', 'source': 'trustpilot'}, {'text': 'This company is an absolute scam. Do not sign up! So far Iï¿½ve been scammed out of $234. I lost access to almost all my gyms weeks ago and they have refused to respond on all means of communication (multiple emails, Instagram messages public and private, the contact us form, the live chat which is now broken, and disconnected or direct to voicemail phone lines). They also raked in a big customer base at a rate of $164 a month and then have increased everyone to $234 after only being a paying customer for a couple of months. Then theyï¿½ve lost partnerships with Lifetime and other gyms but want you to pay more. I am at a loss at what to do besides cancel and be out all my money.', 'source': 'trustpilot'}, {'text': 'Customer service is awful. Due to a glitch my memberships at the gyms have been cancelled and it says Iï¿½m ineligible even though I was charged this month for an elite membership. I have been trying to get this resolved for a week now and Iï¿½m unable to get anyone on the phone, they donï¿½t respond to emails and the responses I get take days and havenï¿½t fixed the problem. So frustrating, especially for a service this expensive.', 'source': 'trustpilot'}, {'text': 'Customer service takes too long to respond. Membership glitches. Please know that you never speak to a live person. AND IT TAKES DAYS BEFORE YOU GET A RESPONSE ON CRITICAL ISSUES!\nI subscribe to stretch lab and I booked my sessions for Dec 2024. Stretch lab canceled my sessions saying my subscription was cancelled. Aaptiv took the payment out Nov 13, 2024 so why is stretch lab saying I am canceled!', 'source': 'trustpilot'}, {'text': "I signed up due to the cost savings compared to having a gym membership at Lifetime. I had to go through the hassle of canceling my Lifetime membership so that I could get an Aaptiv membership, and as soon as I signed up, a week later they emailed saying they were raising prices by 35% which is actually insane. This cost more than my orginial gym membership. I still liked the other studios and that they had Lifetime as well so I decided maybe it'll be worth it. However, after I renewed, I found out Lifetime is actually no longer an option with Aaptiv as of November 1st which is not something that was shared at all. At this point the price increase definetly is NOT worth it which is annoying since I canceled my orignal membership at Lifetime and NOW there is a waitlist so I can't even join again. This seems like a bait and switch from Aaptiv and I will be canceling my membership immediately and never returning.", 'source': 'trustpilot'}, {'text': 'They said they would increase the price to 233 which is already a huge price jump with little notice effective November 10, but now the price has already increased with no notice to 233 on October 23. Someone else said they only paid 165. Why is aaptiv charging different prices to different people? They havenï¿½t responded to my support requests about this so Iï¿½m hoping someone can actually fix this issue because this is worse than a bait and switch.', 'source': 'trustpilot'}, {'text': 'I have begun an Aaptiv elite tier membership 4 days ago. Two days later, I received a notification that the monthly fee will increase 35%. No.\n\nIs this an across the board increase or are they targeting new members with a bait and switch?', 'source': 'trustpilot'}, {'text': 'Received messsge from Blue365 associated with BlueCross that you can join Aaptiv and itï¿½s 19500+ gyms. There web site states they partipate with Elite membership to my local Lifetime fitness. However Lifetime has no knowledge of them. So before committing to a monthly fee, reached out to Aaptiv for clarification. Seems only email communication available. After multiple messsged and requests for information, it became clear that they werenï¿½t reading my messsges and simply sending back bot type questions without reading or addressing my simple question. Is Lifetime fitness part of their network in Florham Park NJ? If i canï¿½t get a direct answer to such a simple question, itï¿½s clear that that are in my opinion a scam or incompetent, Woukd avoid consistent with other reviews! Disappointing!', 'source': 'trustpilot'}, {'text': "I liked their app, but their new workout programs weren't great so I found an app that was a better fit for me. I cancelled my account two months ago, to the point where I couldn't get in anymore. This morning I woke up to a nice surprise where they tried to charge me for the annual subscription. I verified that my account didn't even exist on the app anymore and contacted them. They immediately reversed the charges. My guess is that as most people don't watch their budget as close as I do, they do this and get away with every year, shadily collecting money without people stopping them. . Due to this, I would not recommend this app to anyone going forward.", 'source': 'trustpilot'}]}
+2026-07-03 10:11:18,356 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-03 10:11:23,328 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 10:11:51,236 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-03 10:11:51,237 | INFO | Agent 4 Completed | FitAI
+2026-07-03 10:11:51,241 | INFO | Agent 5 Started | FitAI
+2026-07-03 10:11:51,241 | INFO | Invoking Gemini | MarketGapAnalysis
+2026-07-03 10:11:55,423 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 10:13:00,583 | INFO | Gemini Success | MarketGapAnalysis
+2026-07-03 10:13:00,583 | INFO | Agent 5 Completed | FitAI
+2026-07-03 10:13:00,588 | INFO | Agent 6 Started | FitAI
+2026-07-03 10:13:00,589 | INFO | Invoking Gemini | StartupScore
+2026-07-03 10:13:06,777 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 10:13:24,470 | INFO | Gemini Success | StartupScore
+2026-07-03 10:13:24,470 | INFO | Agent 6 Completed | FitAI
+2026-07-03 10:13:24,480 | INFO | Agent 7 Started | FitAI
+2026-07-03 10:13:24,480 | INFO | Invoking Gemini | PersonaOutput
+2026-07-03 10:13:30,118 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 10:20:25,231 | INFO | Gemini Success | PersonaOutput
+2026-07-03 10:20:25,232 | INFO | Agent 7 Completed | FitAI
+2026-07-03 10:20:25,240 | INFO | Agent 8 Started | FitAI
+2026-07-03 10:20:25,240 | INFO | Invoking Gemini | PersonaFeedbackOutput
+2026-07-03 10:20:32,600 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 10:28:07,356 | INFO | Gemini Success | PersonaFeedbackOutput
+2026-07-03 10:28:07,356 | INFO | Agent 8 Completed | FitAI
+2026-07-03 10:28:07,363 | INFO | Agent 9 Started | FitAI
+2026-07-03 10:28:07,363 | INFO | Persona Feedback Length: 7231 characters
+2026-07-03 10:28:07,364 | INFO | Invoking Gemini | AdoptionAnalytics
+2026-07-03 10:28:11,101 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+ 2026-07-03 14:41:51,769 | INFO | New Analysis: FitAI
+2026-07-03 14:41:51,784 | INFO | Agent 1 Started | FitAI
+2026-07-03 14:41:51,784 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-03 14:42:01,028 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 14:42:22,977 | INFO | Gemini Success | StartupAnalysis
+2026-07-03 14:42:22,977 | INFO | Agent 1 Completed | FitAI
+2026-07-03 14:42:22,982 | INFO | Agent 2 Started | FitAI
+2026-07-03 14:42:22,982 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-03 14:42:24,234 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-03 14:42:28,743 | INFO | Gemini Success | CompetitorOutput
+2026-07-03 14:42:28,743 | INFO | Agent 2 Completed | FitAI
+2026-07-03 14:42:28,748 | INFO | Agent 3 Started | FitAI
+2026-07-03 14:42:28,749 | INFO | Collecting competitor reviews for JEFIT
+2026-07-03 14:42:28,749 | INFO | Searching Trustpilot: JEFIT
+2026-07-03 14:42:28,749 | INFO | Collecting competitor reviews for Sworkit
+2026-07-03 14:42:28,750 | INFO | Searching Trustpilot: Sworkit
+2026-07-03 14:42:28,750 | INFO | Collecting competitor reviews for Fitbod
+2026-07-03 14:42:28,750 | INFO | Searching Trustpilot: Fitbod
+2026-07-03 14:42:28,750 | INFO | Collecting competitor reviews for MyFitnessPal
+2026-07-03 14:42:28,751 | INFO | Searching Trustpilot: MyFitnessPal
+2026-07-03 14:42:28,751 | INFO | Collecting competitor reviews for Aaptiv
+2026-07-03 14:42:28,752 | INFO | Searching Trustpilot: Aaptiv
+2026-07-03 14:42:40,281 | INFO | Sworkit: 10 search results found.
+2026-07-03 14:42:40,294 | INFO | First Trustpilot Result:
+Sworkit
+
+sworkit.com
+
+3.04 reviews
+
+United States
+2026-07-03 14:42:40,405 | INFO | Search Result: {'name': 'Sworkit\n\nsworkit.com\n\n3.04 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/sworkit.com'}
+2026-07-03 14:42:40,405 | INFO | Scraping reviews from https://www.trustpilot.com/review/sworkit.com
+2026-07-03 14:42:40,546 | INFO | Aaptiv: 10 search results found.
+2026-07-03 14:42:40,568 | INFO | First Trustpilot Result:
+Aaptiv
+
+aaptiv.com
+
+1.1971 reviews
+
+One World Trade, New York, United States
+2026-07-03 14:42:40,771 | INFO | Search Result: {'name': 'Aaptiv\n\naaptiv.com\n\n1.1971 reviews\n\nOne World Trade, New York, United States', 'review_url': 'https://www.trustpilot.com/review/aaptiv.com'}
+2026-07-03 14:42:40,772 | INFO | Scraping reviews from https://www.trustpilot.com/review/aaptiv.com
+2026-07-03 14:42:41,438 | INFO | MyFitnessPal: 3 search results found.
+2026-07-03 14:42:41,477 | INFO | First Trustpilot Result:
+MyFitnessPal
+
+www.myfitnesspal.com
+
+4.312,685 reviews
+
+United States
+2026-07-03 14:42:41,571 | INFO | JEFIT: 8 search results found.
+2026-07-03 14:42:41,587 | INFO | Opening https://www.trustpilot.com/review/sworkit.com
+2026-07-03 14:42:41,619 | INFO | First Trustpilot Result:
+jefit.com
+
+www.jefit.com
+
+2.75 reviews
+2026-07-03 14:42:41,693 | INFO | Search Result: {'name': 'MyFitnessPal\n\nwww.myfitnesspal.com\n\n4.312,685 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com'}
+2026-07-03 14:42:41,693 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-03 14:42:41,815 | INFO | Search Result: {'name': 'jefit.com\n\nwww.jefit.com\n\n2.75 reviews', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com'}
+2026-07-03 14:42:41,816 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.jefit.com
+2026-07-03 14:42:41,980 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com
+2026-07-03 14:42:42,507 | INFO | Fitbod: 10 search results found.
+2026-07-03 14:42:42,542 | INFO | First Trustpilot Result:
+Fitbod
+
+www.fitbod.me
+
+3.135 reviews
+
+Taraval Street 1655, San Francisco, United States
+2026-07-03 14:42:42,668 | INFO | Search Result: {'name': 'Fitbod\n\nwww.fitbod.me\n\n3.135 reviews\n\nTaraval Street 1655, San Francisco, United States', 'review_url': 'https://www.trustpilot.com/review/www.fitbod.me'}
+2026-07-03 14:42:42,668 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.fitbod.me
+2026-07-03 14:42:42,775 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-03 14:42:42,870 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com
+2026-07-03 14:42:43,600 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me
+2026-07-03 14:42:45,979 | INFO | Page 1: 2 review cards found.
+2026-07-03 14:42:46,042 | INFO | Opening https://www.trustpilot.com/review/sworkit.com?page=2
+2026-07-03 14:42:46,708 | INFO | Page 1: 20 review cards found.
+2026-07-03 14:42:47,065 | INFO | Page 1: 4 review cards found.
+2026-07-03 14:42:47,411 | INFO | Page 1: 19 review cards found.
+2026-07-03 14:42:47,569 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=2
+2026-07-03 14:42:47,603 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com?page=2
+2026-07-03 14:42:48,353 | INFO | Page 1: 20 review cards found.
+2026-07-03 14:42:48,545 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=2
+2026-07-03 14:42:49,608 | INFO | Page 2: 0 review cards found.
+2026-07-03 14:42:49,608 | INFO | Opening https://www.trustpilot.com/review/sworkit.com?page=3
+2026-07-03 14:42:49,834 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=2
+2026-07-03 14:42:51,226 | INFO | Page 2: 0 review cards found.
+2026-07-03 14:42:51,226 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=3
+2026-07-03 14:42:52,006 | INFO | Page 2: 20 review cards found.
+2026-07-03 14:42:52,007 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com?page=3
+2026-07-03 14:42:52,917 | INFO | Page 2: 19 review cards found.
+2026-07-03 14:42:52,918 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=3
+2026-07-03 14:42:53,376 | INFO | Page 3: 0 review cards found.
+2026-07-03 14:42:53,635 | INFO | Total reviews scraped: 2
+2026-07-03 14:42:53,635 | INFO | Sworkit: 2 reviews scraped.
+2026-07-03 14:42:53,635 | INFO | Sworkit: Using Trustpilot reviews.
+2026-07-03 14:42:54,492 | INFO | Page 2: 14 review cards found.
+2026-07-03 14:42:54,492 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=3
+2026-07-03 14:42:54,719 | INFO | Page 3: 0 review cards found.
+2026-07-03 14:42:54,856 | INFO | Total reviews scraped: 4
+2026-07-03 14:42:54,856 | INFO | JEFIT: 4 reviews scraped.
+2026-07-03 14:42:54,856 | INFO | JEFIT: Using Trustpilot reviews.
+2026-07-03 14:42:55,932 | INFO | Page 3: 20 review cards found.
+2026-07-03 14:42:56,037 | INFO | Total reviews scraped: 15
+2026-07-03 14:42:56,037 | INFO | Aaptiv: 15 reviews scraped.
+2026-07-03 14:42:56,037 | INFO | Aaptiv: Using Trustpilot reviews.
+2026-07-03 14:42:56,890 | INFO | Page 3: 20 review cards found.
+2026-07-03 14:42:56,977 | INFO | Total reviews scraped: 15
+2026-07-03 14:42:56,977 | INFO | MyFitnessPal: 15 reviews scraped.
+2026-07-03 14:42:56,977 | INFO | MyFitnessPal: Using Trustpilot reviews.
+2026-07-03 14:42:57,985 | INFO | Page 3: 0 review cards found.
+2026-07-03 14:42:58,079 | INFO | Total reviews scraped: 15
+2026-07-03 14:42:58,079 | INFO | Fitbod: 15 reviews scraped.
+2026-07-03 14:42:58,080 | INFO | Fitbod: Using Trustpilot reviews.
+2026-07-03 14:42:58,081 | INFO | Agent 3 Completed | FitAI
+2026-07-03 14:42:58,087 | INFO | Agent 4 Started | FitAI
+2026-07-03 14:42:58,087 | INFO | Company Object: {'competitor': 'JEFIT', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com', 'review_count': 4, 'reviews': [{'text': 'In sweden we have this website that shows if when and where your user information have been leeked.\n\nMy most used mail adress has ONE leek.\n\n"Din mejladress hittades i dataläckor\nDin mejladress förekommer i en eller flera dataläckor.\n\nJefit\nJefit.com, 2020-08-11.\nLäckta uppgifter: Mejladresser, IP-adresser, Lösenord, Användarnamn."', 'source': 'trustpilot'}, {'text': "Jefit is hands-down one of the best workout tracking apps out there. Packed with features, it combines structure, customization, and motivation—all in your pocket.\n\nIf you’re serious about your workouts and love tracking progress, Jefit is a no-brainer. It's powerful, motivating, and absolutely worth the download.", 'source': 'trustpilot'}, {'text': "If you sign up as a VIP, you will have to cancel your payment card to stop it being charged if you ever decide to stop using JEFIT. I had signed up with JEFIT back in 2016 and subscribed to their VIP level in order to customise my workouts, since at the time I could not find an app that supported supersets or circuits. It worked fine, but eventually I didn't need it any more so in 2019 I canceled my VIP subscription and chose to delete my account. Fast forward to 2021, when I received an email from JEFIT saying my autorenewal was to be processed on 04-Aug...I found that not only was my account not deleted, but still active under the VIP level (the account that the charge would go to no longer exists, so I was not worried about being charged). I went to the help page to find out how to deactivate/delete my account in case the process had changed and found the information there was not updated or just incorrect; it described a process that you neither do from a mobile device in a web browser nor in the app itself (in my case, an iPhone app, long ago deleted and reinstalled to try and find a way to delete the account). I wrote to customer service who told me that even after canceling your VIP subscription, 'autorenew' is turned on by default and must be turned off for the account to be fully deleted...this feature, by the way, does not exist anywhere for you to turn on or off. If you cancel VIP and try to delete your account, you will get an error saying you cannot delete your account because you subscribed as a VIP, even if you are showing as a 'regular' account, and because autorenew cannot be turned off by the subscriber, you are therefore trapped. I suspect that this is intentional, since once the end of your VIP period expires if you have canceled before hand, autorenew kicks in, charges your card, and sets you back to an active VIP user. Since the card I have on file no longer exists, I won't run into that problem, but other users surely will. After writing to JEFIT customer service and telling them my old bank account had been closed in 2019, they advanced the case to someone who theoretically could delete the account at last (realising I suppose that that they would get no more money from me). Six days have gone by and still the account has not been deleted, with customer service claiming their technician is just not replying. I have to say this shows the company as either woefully incompetent or building in feature that makes it impossible to halt paid subscriptions. Given the level of difficulty to execute what should be a simple process, I cannot and will not recommend this service to anyone. There are other, better apps with easier processes to unsubscribe that don't involve canceling your credit or debit card.", 'source': 'trustpilot'}, {'text': 'Website hacked and personal data leaked onto the dark web', 'source': 'trustpilot'}]}
+2026-07-03 14:42:58,088 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-03 14:43:00,368 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 20:26:31,595 | INFO | New Analysis: FitAI
+2026-07-04 20:26:31,612 | INFO | Agent 1 Started | FitAI
+2026-07-04 20:26:31,612 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-04 20:26:31,616 | INFO | StartupAnalysis inference: 0.00s
+2026-07-04 20:26:31,616 | INFO | Gemini Success | StartupAnalysis
+2026-07-04 20:26:31,616 | INFO | Agent 1 Completed | FitAI
+2026-07-04 20:29:57,042 | INFO | New Analysis: FitAI
+2026-07-04 20:29:57,051 | INFO | Agent 1 Started | FitAI
+2026-07-04 20:29:57,051 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-04 20:29:57,053 | INFO | StartupAnalysis inference: 0.00s
+2026-07-04 20:29:57,054 | INFO | Gemini Success | StartupAnalysis
+2026-07-04 20:30:09,540 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 20:30:32,500 | INFO | Agent 1 Completed | FitAI
+2026-07-04 20:30:32,506 | INFO | Agent 2 Started | FitAI
+2026-07-04 20:30:32,506 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-04 20:30:32,508 | INFO | CompetitorOutput inference: 0.00s
+2026-07-04 20:30:32,508 | INFO | Gemini Success | CompetitorOutput
+2026-07-04 20:30:33,955 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 20:30:38,589 | INFO | Agent 2 Completed | FitAI
+2026-07-04 20:30:38,593 | INFO | Agent 3 Started | FitAI
+2026-07-04 20:30:38,594 | INFO | Collecting competitor reviews for JEFIT
+2026-07-04 20:30:38,594 | INFO | Searching Trustpilot: JEFIT
+2026-07-04 20:30:38,595 | INFO | Collecting competitor reviews for Sworkit
+2026-07-04 20:30:38,595 | INFO | Searching Trustpilot: Sworkit
+2026-07-04 20:30:38,595 | INFO | Collecting competitor reviews for Fitbod
+2026-07-04 20:30:38,596 | INFO | Searching Trustpilot: Fitbod
+2026-07-04 20:30:38,596 | INFO | Collecting competitor reviews for MyFitnessPal
+2026-07-04 20:30:38,596 | INFO | Searching Trustpilot: MyFitnessPal
+2026-07-04 20:30:38,597 | INFO | Collecting competitor reviews for Aaptiv
+2026-07-04 20:30:38,597 | INFO | Searching Trustpilot: Aaptiv
+2026-07-04 20:30:49,337 | INFO | Fitbod: 10 search results found.
+2026-07-04 20:30:49,378 | INFO | First Trustpilot Result:
+Fitbod
+
+www.fitbod.me
+
+3.135 reviews
+
+Taraval Street 1655, San Francisco, United States
+2026-07-04 20:30:49,383 | INFO | MyFitnessPal: 3 search results found.
+2026-07-04 20:30:49,399 | INFO | First Trustpilot Result:
+MyFitnessPal
+
+www.myfitnesspal.com
+
+4.312,702 reviews
+
+United States
+2026-07-04 20:30:49,532 | INFO | Search Result: {'name': 'Fitbod\n\nwww.fitbod.me\n\n3.135 reviews\n\nTaraval Street 1655, San Francisco, United States', 'review_url': 'https://www.trustpilot.com/review/www.fitbod.me'}
+2026-07-04 20:30:49,532 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.fitbod.me
+2026-07-04 20:30:49,556 | INFO | Search Result: {'name': 'MyFitnessPal\n\nwww.myfitnesspal.com\n\n4.312,702 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com'}
+2026-07-04 20:30:49,556 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-04 20:30:49,965 | INFO | Aaptiv: 10 search results found.
+2026-07-04 20:30:49,984 | INFO | First Trustpilot Result:
+Aaptiv
+
+aaptiv.com
+
+1.1971 reviews
+
+One World Trade, New York, United States
+2026-07-04 20:30:50,143 | INFO | Search Result: {'name': 'Aaptiv\n\naaptiv.com\n\n1.1971 reviews\n\nOne World Trade, New York, United States', 'review_url': 'https://www.trustpilot.com/review/aaptiv.com'}
+2026-07-04 20:30:50,143 | INFO | Scraping reviews from https://www.trustpilot.com/review/aaptiv.com
+2026-07-04 20:30:50,451 | INFO | JEFIT: 8 search results found.
+2026-07-04 20:30:50,467 | INFO | First Trustpilot Result:
+jefit.com
+
+www.jefit.com
+
+2.75 reviews
+2026-07-04 20:30:50,590 | INFO | Search Result: {'name': 'jefit.com\n\nwww.jefit.com\n\n2.75 reviews', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com'}
+2026-07-04 20:30:50,590 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.jefit.com
+2026-07-04 20:30:50,720 | INFO | Sworkit: 10 search results found.
+2026-07-04 20:30:50,736 | INFO | First Trustpilot Result:
+Sworkit
+
+sworkit.com
+
+3.04 reviews
+
+United States
+2026-07-04 20:30:50,853 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-04 20:30:50,860 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me
+2026-07-04 20:30:50,908 | INFO | Search Result: {'name': 'Sworkit\n\nsworkit.com\n\n3.04 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/sworkit.com'}
+2026-07-04 20:30:50,908 | INFO | Scraping reviews from https://www.trustpilot.com/review/sworkit.com
+2026-07-04 20:30:51,449 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com
+2026-07-04 20:30:51,742 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com
+2026-07-04 20:30:52,021 | INFO | Opening https://www.trustpilot.com/review/sworkit.com
+2026-07-04 20:30:55,875 | INFO | Page 1: 20 review cards found.
+2026-07-04 20:30:55,940 | INFO | Page 1: 20 review cards found.
+2026-07-04 20:30:56,131 | INFO | Page 1: 4 review cards found.
+2026-07-04 20:30:56,236 | INFO | Page 1: 2 review cards found.
+2026-07-04 20:30:56,561 | INFO | Page 1: 20 review cards found.
+2026-07-04 20:30:56,639 | INFO | Opening https://www.trustpilot.com/review/sworkit.com?page=2
+2026-07-04 20:30:56,685 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=2
+2026-07-04 20:30:57,149 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=2
+2026-07-04 20:30:57,656 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=2
+2026-07-04 20:30:58,004 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com?page=2
+2026-07-04 20:31:00,531 | INFO | Page 2: 0 review cards found.
+2026-07-04 20:31:00,531 | INFO | Opening https://www.trustpilot.com/review/sworkit.com?page=3
+2026-07-04 20:31:00,882 | INFO | Page 2: 0 review cards found.
+2026-07-04 20:31:00,882 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=3
+2026-07-04 20:31:01,899 | INFO | Page 2: 19 review cards found.
+2026-07-04 20:31:01,900 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=3
+2026-07-04 20:31:02,360 | INFO | Page 2: 14 review cards found.
+2026-07-04 20:31:02,361 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=3
+2026-07-04 20:31:02,972 | INFO | Page 2: 20 review cards found.
+2026-07-04 20:31:02,972 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com?page=3
+2026-07-04 20:31:04,274 | INFO | Page 3: 0 review cards found.
+2026-07-04 20:31:04,449 | INFO | Total reviews scraped: 2
+2026-07-04 20:31:04,449 | INFO | Sworkit: 2 reviews scraped.
+2026-07-04 20:31:04,449 | INFO | Sworkit: Using Trustpilot reviews.
+2026-07-04 20:31:04,522 | INFO | Page 3: 0 review cards found.
+2026-07-04 20:31:04,659 | INFO | Total reviews scraped: 4
+2026-07-04 20:31:04,659 | INFO | JEFIT: 4 reviews scraped.
+2026-07-04 20:31:04,659 | INFO | JEFIT: Using Trustpilot reviews.
+2026-07-04 20:31:06,036 | INFO | Page 3: 0 review cards found.
+2026-07-04 20:31:06,155 | INFO | Total reviews scraped: 15
+2026-07-04 20:31:06,155 | INFO | Fitbod: 15 reviews scraped.
+2026-07-04 20:31:06,155 | INFO | Fitbod: Using Trustpilot reviews.
+2026-07-04 20:31:06,494 | INFO | Page 3: 19 review cards found.
+2026-07-04 20:31:06,602 | INFO | Total reviews scraped: 15
+2026-07-04 20:31:06,602 | INFO | MyFitnessPal: 15 reviews scraped.
+2026-07-04 20:31:06,602 | INFO | MyFitnessPal: Using Trustpilot reviews.
+2026-07-04 20:31:06,809 | INFO | Page 3: 20 review cards found.
+2026-07-04 20:31:06,916 | INFO | Total reviews scraped: 15
+2026-07-04 20:31:06,916 | INFO | Aaptiv: 15 reviews scraped.
+2026-07-04 20:31:06,916 | INFO | Aaptiv: Using Trustpilot reviews.
+2026-07-04 20:31:06,930 | INFO | Agent 3 Completed | FitAI
+2026-07-04 20:31:06,940 | INFO | Agent 4 Started | FitAI
+2026-07-04 20:31:06,941 | INFO | Company Object: {'competitor': 'JEFIT', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com', 'review_count': 4, 'reviews': [{'text': 'In sweden we have this website that shows if when and where your user information have been leeked.\n\nMy most used mail adress has ONE leek.\n\n"Din mejladress hittades i dataläckor\nDin mejladress förekommer i en eller flera dataläckor.\n\nJefit\nJefit.com, 2020-08-11.\nLäckta uppgifter: Mejladresser, IP-adresser, Lösenord, Användarnamn."', 'source': 'trustpilot'}, {'text': "Jefit is hands-down one of the best workout tracking apps out there. Packed with features, it combines structure, customization, and motivation—all in your pocket.\n\nIf you’re serious about your workouts and love tracking progress, Jefit is a no-brainer. It's powerful, motivating, and absolutely worth the download.", 'source': 'trustpilot'}, {'text': "If you sign up as a VIP, you will have to cancel your payment card to stop it being charged if you ever decide to stop using JEFIT. I had signed up with JEFIT back in 2016 and subscribed to their VIP level in order to customise my workouts, since at the time I could not find an app that supported supersets or circuits. It worked fine, but eventually I didn't need it any more so in 2019 I canceled my VIP subscription and chose to delete my account. Fast forward to 2021, when I received an email from JEFIT saying my autorenewal was to be processed on 04-Aug...I found that not only was my account not deleted, but still active under the VIP level (the account that the charge would go to no longer exists, so I was not worried about being charged). I went to the help page to find out how to deactivate/delete my account in case the process had changed and found the information there was not updated or just incorrect; it described a process that you neither do from a mobile device in a web browser nor in the app itself (in my case, an iPhone app, long ago deleted and reinstalled to try and find a way to delete the account). I wrote to customer service who told me that even after canceling your VIP subscription, 'autorenew' is turned on by default and must be turned off for the account to be fully deleted...this feature, by the way, does not exist anywhere for you to turn on or off. If you cancel VIP and try to delete your account, you will get an error saying you cannot delete your account because you subscribed as a VIP, even if you are showing as a 'regular' account, and because autorenew cannot be turned off by the subscriber, you are therefore trapped. I suspect that this is intentional, since once the end of your VIP period expires if you have canceled before hand, autorenew kicks in, charges your card, and sets you back to an active VIP user. Since the card I have on file no longer exists, I won't run into that problem, but other users surely will. After writing to JEFIT customer service and telling them my old bank account had been closed in 2019, they advanced the case to someone who theoretically could delete the account at last (realising I suppose that that they would get no more money from me). Six days have gone by and still the account has not been deleted, with customer service claiming their technician is just not replying. I have to say this shows the company as either woefully incompetent or building in feature that makes it impossible to halt paid subscriptions. Given the level of difficulty to execute what should be a simple process, I cannot and will not recommend this service to anyone. There are other, better apps with easier processes to unsubscribe that don't involve canceling your credit or debit card.", 'source': 'trustpilot'}, {'text': 'Website hacked and personal data leaked onto the dark web', 'source': 'trustpilot'}]}
+2026-07-04 20:31:06,941 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-04 20:31:06,942 | INFO | CompetitorAnalysis inference: 0.00s
+2026-07-04 20:31:06,942 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-04 20:31:09,479 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 20:31:41,971 | INFO | Company Object: {'competitor': 'Sworkit', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/sworkit.com', 'review_count': 2, 'reviews': [{'text': 'I thought the website was good but when it came to cancel my membership it was an absolute nightmare. The only way to cancel is through a chatbot on their site which no one ever responds to. I reached out to their support email and also got no response. I am ready to take legal action against them to get my money back. Horrible customer service. I do not recommend them at all.', 'source': 'trustpilot'}, {'text': 'Excellent fitness & wellness app with lots of great features.', 'source': 'trustpilot'}]}
+2026-07-04 20:31:41,971 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-04 20:31:41,972 | INFO | CompetitorAnalysis inference: 0.00s
+2026-07-04 20:31:41,972 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-04 20:31:42,997 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 20:32:08,126 | INFO | Company Object: {'competitor': 'Fitbod', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.fitbod.me', 'review_count': 15, 'reviews': [{'text': 'I have tried literally everything to cancel this subscription. I downloaded for the free trial and no matter what I do, they keep trying to take money from my account. Worst app I’ve ever had the misfortune to download. Total scam.', 'source': 'trustpilot'}, {'text': 'Cancelled subscription to find out months later still geyting charge as you have to cancel google play app as well. Yet another scam.', 'source': 'trustpilot'}, {'text': 'I issued a ticket through my membership-linked email a week ago on the app asking them about the unsent weekly workout reports and my progress to which they never replied. I believe it is my right as a paying subscriber to have access to all available features.', 'source': 'trustpilot'}, {'text': 'It is an okay app, maybe a 3-4 star but they are so tied into the Apple ecosystem that I couldn’t get a refund on day 1 of year 2 because they say Apple controls that. It didn’t quite meet my needs for the money and I’m out $80 this year.', 'source': 'trustpilot'}, {'text': 'Diana was very patient and worked hard to help with a difficult issue. She went above and beyond to answer my questions and fix my issues.', 'source': 'trustpilot'}, {'text': 'Nope. Bought, paid for, app locked saying I haven’t paid. I’ve contacted support 4 times in the last 4 days. Nada. Waste of money.', 'source': 'trustpilot'}, {'text': 'This app automates the task of designing your work out and saves you a lot of time. It automates progression through your own feedback. It tracks your progress and gives you a point system to allow you to see progress across a spectrum of exercises. You can customize which exercises it gives you by telling it what equipment you have. You can ask it to recommend exercises more or less. There’s a lot of customization for something that automates workouts for you. It’s been going great for me.', 'source': 'trustpilot'}, {'text': 'Good selection of workouts and love how it tracks your progress', 'source': 'trustpilot'}, {'text': 'Good app use almost daily', 'source': 'trustpilot'}, {'text': "I can't say enough bad things about this app. Tough to navigate, slow, and keeps crashing.", 'source': 'trustpilot'}, {'text': "Worst app i've tried so far. I did the free 7 day trial and the app kept crashing which sucked. Workout order was also all over the place with insane reps and weight. I also noticed an influx of positive reviews here that caught my attention and noticed some of these are written by actual Fitbod employees so be careful and do not trust this scammy businesss! Save your money.", 'source': 'trustpilot'}, {'text': 'I tried two other apps they were complicated then I tried Fitbod been using it for three years. It absolutely help change my life when I started. I weighed over 265 pounds now I weigh 216 pounds and I am 17.5% body fat I’m 52 years old when I first started my weight loss. I weighed 346 pounds I’m happy to write this review.', 'source': 'trustpilot'}, {'text': 'Love the app, finally I have managed to stick to the plan over a longer period of time. I’ve used the app for 6 months and the result is amazing! The reports are so good that I always want to do better next week, and looking forward to see my progress in the upcoming reports. Already recommended the app to plenty of friends.', 'source': 'trustpilot'}, {'text': 'Brilliant! I got definition in my arms and shoulders within one year. Ideal for parents with small kids who have little time and workout rather at home than in a gym.', 'source': 'trustpilot'}, {'text': 'Algorithm is not operating correctly. Getting the same exact exercises and cardio which is longer than the whole time allowed. Really falling apart. I’ve been a top 1% user for 5 years and this is the worst I’ve seen. And your customer service is totally useless. You are losing customers over the lack of system integrity - and it will soon be me if you don’t get it fixed', 'source': 'trustpilot'}]}
+2026-07-04 20:32:08,126 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-04 20:32:08,127 | INFO | CompetitorAnalysis inference: 0.00s
+2026-07-04 20:32:08,127 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-04 20:32:11,556 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 20:33:01,147 | INFO | Company Object: {'competitor': 'MyFitnessPal', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com', 'review_count': 15, 'reviews': [{'text': 'helpful to track food paid or not', 'source': 'trustpilot'}, {'text': 'I havnt been on for a while,but when im counting calories I use fitness pal\nIt has everything on it that I need,quick to look up items,', 'source': 'trustpilot'}, {'text': 'I Love it! I can edit what food I want.', 'source': 'trustpilot'}, {'text': 'I find the app very useful. Improvements are made regularly.\nI find that the layouts are designed so you hit the premium button (by mistake) which is frustrating and annoying.\nUpgrades should be separate. I have used premium and prefer the standard version.', 'source': 'trustpilot'}, {'text': 'I like the previous version better.', 'source': 'trustpilot'}, {'text': 'App is horribly glitchy. Have had to uninstall and reinstall 3 times in the past 24 hours and it still is not working. Ive been a My Fitness Pal user for years now. This latest update is horrible', 'source': 'trustpilot'}, {'text': "Love this site I do try to add up my calories every day and this makes it so easy for me!! Keeps me on track. But they did an update not too long again not too sure about it little bit harder to monitor or maybe I'm just getting used to it..", 'source': 'trustpilot'}, {'text': 'A great way to plan, track and monitor food intake and nutrients thereof as well as water intake.\nProvides various meal plans to help reach your goal!\nFitness Pal pairs easily with other tech devices such as Renpho scale, Apple phone/watch to monitor your caloric intake, body fat etc\nDefinitely a great app at a very reasonable cost!!!', 'source': 'trustpilot'}, {'text': 'I’ve found some of the items have the wrong calories and can’t find one to match.', 'source': 'trustpilot'}, {'text': "Easy to use and understand. Great database of foods, though some stats are not accurate when I check against the manufacturer's information. An abundance of resources on topics related to weight loss/management and wellness, as well as fitness. Feeback on logs is helpful.", 'source': 'trustpilot'}, {'text': 'Love this app. Especially the scanning feature for quick tracking.', 'source': 'trustpilot'}, {'text': 'I like how easy it is to add your food with scanner.', 'source': 'trustpilot'}, {'text': 'Somtimes you need companion to keep you in check', 'source': 'trustpilot'}, {'text': 'Good app, which I have used for years. Love the app, but not the fact that parts that used to be free are now only available with substantial subscription fee, which is difficult for us as we are on fixed income and my wife and I both use this app daily. Sorry they made the changes. We still use the app, but it is more difficult with some convenient applications as well as dietary information are now only available through monthly payments.', 'source': 'trustpilot'}, {'text': 'Its a good app to loose weight without crashing diet.', 'source': 'trustpilot'}]}
+2026-07-04 20:33:01,147 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-04 20:33:01,149 | INFO | CompetitorAnalysis inference: 0.00s
+2026-07-04 20:33:01,149 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-04 20:33:03,994 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 20:33:51,712 | INFO | Company Object: {'competitor': 'Aaptiv', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/aaptiv.com', 'review_count': 15, 'reviews': [{'text': 'Scam - run away. I asked pertinent questions on chat and when I gave him a little bit of truth serum they ended the chat. Even told them about the reviews on here. They have been charging me several months even though I canceled. I will be reporting them to my bank for fraud', 'source': 'trustpilot'}, {'text': 'Worst experience I’ve ever had with a company. No one returns your phone calls. Website doesn’t work half the time. Charged me and then didn’t accept the gyms that I picked. No customer service agents to be found. Save yourself time and don’t go with them.', 'source': 'trustpilot'}, {'text': "Subscribed for 6 years on and off. Tried to resubscribe and they charged me but I couldn't access any of the content. Thankfully able to get a refund through Google play as their customer service hasn't responded.\n\nThis is a shame as the content was great but looking through recent experiences, this glitch has been present for a while and the developers haven't fixed it therefore the app is now just a scam.", 'source': 'trustpilot'}, {'text': "They literally have been charging me for 4+ years and (1) Didn't once email me (2) I deleted the app 4 years ago but I was still being charged (3) Changed my credit card and still getting charged.\n\nI would like a full refund for the 4 years, not 2021but 2022, 2023, 2024 and 2025.", 'source': 'trustpilot'}, {'text': "I was an Aaptiv customer for 3 years... and then when I decided to not renew, I had NO success reaching a human customer service representative to confirm cancellation. I assume the fact that I wasn't charged that I was cancelled, but their business practices have clearly gone downhill. Sending out auto-ticket emails but not having staff ready to respond to this tickets makes me happier that I have left Aaptiv. If they try to charge my card, I will dispute and submit an official complaint.", 'source': 'trustpilot'}, {'text': 'I am an Elite member. They dropped Lifetime from their network without notice, charged my monthly fees, and have not responded to my support ticket despite multiple reminders and requests. This company is scam.', 'source': 'trustpilot'}, {'text': 'Do not use Aaptiv! I recently signed up for their elite tier and within my first 2 month they increased my monthly rate by 40% and then the following month removed all gym access in my area with no communication. I’ve tried contacting multiple time with no response from their support team. Beware @aaptiv is a fraudulent business scamming their customers out of money!', 'source': 'trustpilot'}, {'text': 'This company is an absolute scam. Do not sign up! So far I’ve been scammed out of $234. I lost access to almost all my gyms weeks ago and they have refused to respond on all means of communication (multiple emails, Instagram messages public and private, the contact us form, the live chat which is now broken, and disconnected or direct to voicemail phone lines). They also raked in a big customer base at a rate of $164 a month and then have increased everyone to $234 after only being a paying customer for a couple of months. Then they’ve lost partnerships with Lifetime and other gyms but want you to pay more. I am at a loss at what to do besides cancel and be out all my money.', 'source': 'trustpilot'}, {'text': 'Customer service is awful. Due to a glitch my memberships at the gyms have been cancelled and it says I’m ineligible even though I was charged this month for an elite membership. I have been trying to get this resolved for a week now and I’m unable to get anyone on the phone, they don’t respond to emails and the responses I get take days and haven’t fixed the problem. So frustrating, especially for a service this expensive.', 'source': 'trustpilot'}, {'text': 'Customer service takes too long to respond. Membership glitches. Please know that you never speak to a live person. AND IT TAKES DAYS BEFORE YOU GET A RESPONSE ON CRITICAL ISSUES!\nI subscribe to stretch lab and I booked my sessions for Dec 2024. Stretch lab canceled my sessions saying my subscription was cancelled. Aaptiv took the payment out Nov 13, 2024 so why is stretch lab saying I am canceled!', 'source': 'trustpilot'}, {'text': "I signed up due to the cost savings compared to having a gym membership at Lifetime. I had to go through the hassle of canceling my Lifetime membership so that I could get an Aaptiv membership, and as soon as I signed up, a week later they emailed saying they were raising prices by 35% which is actually insane. This cost more than my orginial gym membership. I still liked the other studios and that they had Lifetime as well so I decided maybe it'll be worth it. However, after I renewed, I found out Lifetime is actually no longer an option with Aaptiv as of November 1st which is not something that was shared at all. At this point the price increase definetly is NOT worth it which is annoying since I canceled my orignal membership at Lifetime and NOW there is a waitlist so I can't even join again. This seems like a bait and switch from Aaptiv and I will be canceling my membership immediately and never returning.", 'source': 'trustpilot'}, {'text': 'They said they would increase the price to 233 which is already a huge price jump with little notice effective November 10, but now the price has already increased with no notice to 233 on October 23. Someone else said they only paid 165. Why is aaptiv charging different prices to different people? They haven’t responded to my support requests about this so I’m hoping someone can actually fix this issue because this is worse than a bait and switch.', 'source': 'trustpilot'}, {'text': 'I have begun an Aaptiv elite tier membership 4 days ago. Two days later, I received a notification that the monthly fee will increase 35%. No.\n\nIs this an across the board increase or are they targeting new members with a bait and switch?', 'source': 'trustpilot'}, {'text': 'Received messsge from Blue365 associated with BlueCross that you can join Aaptiv and it’s 19500+ gyms. There web site states they partipate with Elite membership to my local Lifetime fitness. However Lifetime has no knowledge of them. So before committing to a monthly fee, reached out to Aaptiv for clarification. Seems only email communication available. After multiple messsged and requests for information, it became clear that they weren’t reading my messsges and simply sending back bot type questions without reading or addressing my simple question. Is Lifetime fitness part of their network in Florham Park NJ? If i can’t get a direct answer to such a simple question, it’s clear that that are in my opinion a scam or incompetent, Woukd avoid consistent with other reviews! Disappointing!', 'source': 'trustpilot'}, {'text': "I liked their app, but their new workout programs weren't great so I found an app that was a better fit for me. I cancelled my account two months ago, to the point where I couldn't get in anymore. This morning I woke up to a nice surprise where they tried to charge me for the annual subscription. I verified that my account didn't even exist on the app anymore and contacted them. They immediately reversed the charges. My guess is that as most people don't watch their budget as close as I do, they do this and get away with every year, shadily collecting money without people stopping them. . Due to this, I would not recommend this app to anyone going forward.", 'source': 'trustpilot'}]}
+2026-07-04 20:33:51,713 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-04 20:33:51,714 | INFO | CompetitorAnalysis inference: 0.00s
+2026-07-04 20:33:51,714 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-04 20:33:55,715 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 20:34:39,513 | INFO | Agent 4 Completed | FitAI
+2026-07-04 20:34:39,521 | INFO | Agent 5 Started | FitAI
+2026-07-04 20:34:39,522 | INFO | Invoking Gemini | MarketGapAnalysis
+2026-07-04 20:34:39,523 | INFO | MarketGapAnalysis inference: 0.00s
+2026-07-04 20:34:39,523 | INFO | Gemini Success | MarketGapAnalysis
+2026-07-04 20:34:46,040 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 21:01:05,425 | INFO | New Analysis: FitAI
+2026-07-04 21:01:05,437 | INFO | Agent 1 Started | FitAI
+2026-07-04 21:01:05,437 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-04 21:01:05,441 | INFO | StartupAnalysis inference: 0.00s
+2026-07-04 21:01:05,441 | INFO | Gemini Success | StartupAnalysis
+2026-07-04 21:01:15,236 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 21:01:36,330 | INFO | Agent 1 Completed | FitAI
+2026-07-04 21:01:36,335 | INFO | Agent 2 Started | FitAI
+2026-07-04 21:01:36,335 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-04 21:01:36,336 | INFO | CompetitorOutput inference: 0.00s
+2026-07-04 21:01:36,336 | INFO | Gemini Success | CompetitorOutput
+2026-07-04 21:01:37,423 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 21:01:41,593 | INFO | Agent 2 Completed | FitAI
+2026-07-04 21:01:41,597 | INFO | Agent 3 Started | FitAI
+2026-07-04 21:01:41,597 | INFO | Collecting competitor reviews for JEFIT
+2026-07-04 21:01:41,598 | INFO | Searching Trustpilot: JEFIT
+2026-07-04 21:01:41,598 | INFO | Collecting competitor reviews for Sworkit
+2026-07-04 21:01:41,598 | INFO | Searching Trustpilot: Sworkit
+2026-07-04 21:01:41,598 | INFO | Collecting competitor reviews for Fitbod
+2026-07-04 21:01:41,599 | INFO | Searching Trustpilot: Fitbod
+2026-07-04 21:01:41,599 | INFO | Collecting competitor reviews for MyFitnessPal
+2026-07-04 21:01:41,600 | INFO | Collecting competitor reviews for Aaptiv
+2026-07-04 21:01:41,600 | INFO | Searching Trustpilot: MyFitnessPal
+2026-07-04 21:01:41,601 | INFO | Searching Trustpilot: Aaptiv
+2026-07-04 21:01:51,887 | INFO | JEFIT: 8 search results found.
+2026-07-04 21:01:52,044 | INFO | MyFitnessPal: 3 search results found.
+2026-07-04 21:01:52,064 | INFO | First Trustpilot Result:
+MyFitnessPal
+
+www.myfitnesspal.com
+
+4.312,702 reviews
+
+United States
+2026-07-04 21:01:52,135 | INFO | Aaptiv: 10 search results found.
+2026-07-04 21:01:52,161 | INFO | First Trustpilot Result:
+jefit.com
+
+www.jefit.com
+
+2.75 reviews
+2026-07-04 21:01:52,283 | INFO | Search Result: {'name': 'MyFitnessPal\n\nwww.myfitnesspal.com\n\n4.312,702 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com'}
+2026-07-04 21:01:52,283 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-04 21:01:52,329 | INFO | Search Result: {'name': 'jefit.com\n\nwww.jefit.com\n\n2.75 reviews', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com'}
+2026-07-04 21:01:52,329 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.jefit.com
+2026-07-04 21:01:52,371 | INFO | First Trustpilot Result:
+Aaptiv
+
+aaptiv.com
+
+1.1971 reviews
+
+One World Trade, New York, United States
+2026-07-04 21:01:52,551 | INFO | Search Result: {'name': 'Aaptiv\n\naaptiv.com\n\n1.1971 reviews\n\nOne World Trade, New York, United States', 'review_url': 'https://www.trustpilot.com/review/aaptiv.com'}
+2026-07-04 21:01:52,551 | INFO | Scraping reviews from https://www.trustpilot.com/review/aaptiv.com
+2026-07-04 21:01:53,108 | INFO | Fitbod: 10 search results found.
+2026-07-04 21:01:53,165 | INFO | Sworkit: 10 search results found.
+2026-07-04 21:01:53,182 | INFO | First Trustpilot Result:
+Sworkit
+
+sworkit.com
+
+3.04 reviews
+
+United States
+2026-07-04 21:01:53,208 | INFO | First Trustpilot Result:
+Fitbod
+
+www.fitbod.me
+
+3.135 reviews
+
+Taraval Street 1655, San Francisco, United States
+2026-07-04 21:01:53,391 | INFO | Search Result: {'name': 'Sworkit\n\nsworkit.com\n\n3.04 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/sworkit.com'}
+2026-07-04 21:01:53,392 | INFO | Search Result: {'name': 'Fitbod\n\nwww.fitbod.me\n\n3.135 reviews\n\nTaraval Street 1655, San Francisco, United States', 'review_url': 'https://www.trustpilot.com/review/www.fitbod.me'}
+2026-07-04 21:01:53,392 | INFO | Scraping reviews from https://www.trustpilot.com/review/sworkit.com
+2026-07-04 21:01:53,392 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.fitbod.me
+2026-07-04 21:01:53,454 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-07-04 21:01:53,510 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com
+2026-07-04 21:01:53,723 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com
+2026-07-04 21:01:54,425 | INFO | Opening https://www.trustpilot.com/review/sworkit.com
+2026-07-04 21:01:54,433 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me
+2026-07-04 21:01:57,716 | INFO | Page 1: 4 review cards found.
+2026-07-04 21:01:58,110 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=2
+2026-07-04 21:01:58,203 | INFO | Page 1: 20 review cards found.
+2026-07-04 21:01:58,542 | INFO | Page 1: 20 review cards found.
+2026-07-04 21:01:58,580 | INFO | Page 1: 2 review cards found.
+2026-07-04 21:01:58,931 | INFO | Page 1: 20 review cards found.
+2026-07-04 21:01:58,958 | INFO | Opening https://www.trustpilot.com/review/sworkit.com?page=2
+2026-07-04 21:01:59,014 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=2
+2026-07-04 21:01:59,179 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com?page=2
+2026-07-04 21:02:00,506 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=2
+2026-07-04 21:02:01,836 | INFO | Page 2: 0 review cards found.
+2026-07-04 21:02:01,836 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=3
+2026-07-04 21:02:02,691 | INFO | Page 2: 0 review cards found.
+2026-07-04 21:02:02,691 | INFO | Opening https://www.trustpilot.com/review/sworkit.com?page=3
+2026-07-04 21:02:03,033 | INFO | Page 2: 19 review cards found.
+2026-07-04 21:02:03,033 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=3
+2026-07-04 21:02:03,093 | INFO | Page 2: 20 review cards found.
+2026-07-04 21:02:03,093 | INFO | Opening https://www.trustpilot.com/review/aaptiv.com?page=3
+2026-07-04 21:02:04,298 | INFO | Page 2: 14 review cards found.
+2026-07-04 21:02:04,298 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=3
+2026-07-04 21:02:05,652 | INFO | Page 3: 0 review cards found.
+2026-07-04 21:02:05,776 | INFO | Total reviews scraped: 4
+2026-07-04 21:02:05,776 | INFO | JEFIT: 4 reviews scraped.
+2026-07-04 21:02:05,776 | INFO | JEFIT: Using Trustpilot reviews.
+2026-07-04 21:02:06,156 | INFO | Page 3: 0 review cards found.
+2026-07-04 21:02:06,276 | INFO | Total reviews scraped: 2
+2026-07-04 21:02:06,276 | INFO | Sworkit: 2 reviews scraped.
+2026-07-04 21:02:06,276 | INFO | Sworkit: Using Trustpilot reviews.
+2026-07-04 21:02:06,800 | INFO | Page 3: 20 review cards found.
+2026-07-04 21:02:06,888 | INFO | Total reviews scraped: 15
+2026-07-04 21:02:06,888 | INFO | Aaptiv: 15 reviews scraped.
+2026-07-04 21:02:06,888 | INFO | Aaptiv: Using Trustpilot reviews.
+2026-07-04 21:02:06,959 | INFO | Page 3: 19 review cards found.
+2026-07-04 21:02:07,053 | INFO | Total reviews scraped: 15
+2026-07-04 21:02:07,053 | INFO | MyFitnessPal: 15 reviews scraped.
+2026-07-04 21:02:07,053 | INFO | MyFitnessPal: Using Trustpilot reviews.
+2026-07-04 21:02:07,797 | INFO | Page 3: 0 review cards found.
+2026-07-04 21:02:07,894 | INFO | Total reviews scraped: 15
+2026-07-04 21:02:07,894 | INFO | Fitbod: 15 reviews scraped.
+2026-07-04 21:02:07,894 | INFO | Fitbod: Using Trustpilot reviews.
+2026-07-04 21:02:07,897 | INFO | Agent 3 Completed | FitAI
+2026-07-04 21:02:07,902 | INFO | Agent 4 Started | FitAI
+2026-07-04 21:02:07,902 | INFO | Company Object: {'competitor': 'JEFIT', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com', 'review_count': 4, 'reviews': [{'text': 'In sweden we have this website that shows if when and where your user information have been leeked.\n\nMy most used mail adress has ONE leek.\n\n"Din mejladress hittades i dataläckor\nDin mejladress förekommer i en eller flera dataläckor.\n\nJefit\nJefit.com, 2020-08-11.\nLäckta uppgifter: Mejladresser, IP-adresser, Lösenord, Användarnamn."', 'source': 'trustpilot'}, {'text': "Jefit is hands-down one of the best workout tracking apps out there. Packed with features, it combines structure, customization, and motivation—all in your pocket.\n\nIf you’re serious about your workouts and love tracking progress, Jefit is a no-brainer. It's powerful, motivating, and absolutely worth the download.", 'source': 'trustpilot'}, {'text': "If you sign up as a VIP, you will have to cancel your payment card to stop it being charged if you ever decide to stop using JEFIT. I had signed up with JEFIT back in 2016 and subscribed to their VIP level in order to customise my workouts, since at the time I could not find an app that supported supersets or circuits. It worked fine, but eventually I didn't need it any more so in 2019 I canceled my VIP subscription and chose to delete my account. Fast forward to 2021, when I received an email from JEFIT saying my autorenewal was to be processed on 04-Aug...I found that not only was my account not deleted, but still active under the VIP level (the account that the charge would go to no longer exists, so I was not worried about being charged). I went to the help page to find out how to deactivate/delete my account in case the process had changed and found the information there was not updated or just incorrect; it described a process that you neither do from a mobile device in a web browser nor in the app itself (in my case, an iPhone app, long ago deleted and reinstalled to try and find a way to delete the account). I wrote to customer service who told me that even after canceling your VIP subscription, 'autorenew' is turned on by default and must be turned off for the account to be fully deleted...this feature, by the way, does not exist anywhere for you to turn on or off. If you cancel VIP and try to delete your account, you will get an error saying you cannot delete your account because you subscribed as a VIP, even if you are showing as a 'regular' account, and because autorenew cannot be turned off by the subscriber, you are therefore trapped. I suspect that this is intentional, since once the end of your VIP period expires if you have canceled before hand, autorenew kicks in, charges your card, and sets you back to an active VIP user. Since the card I have on file no longer exists, I won't run into that problem, but other users surely will. After writing to JEFIT customer service and telling them my old bank account had been closed in 2019, they advanced the case to someone who theoretically could delete the account at last (realising I suppose that that they would get no more money from me). Six days have gone by and still the account has not been deleted, with customer service claiming their technician is just not replying. I have to say this shows the company as either woefully incompetent or building in feature that makes it impossible to halt paid subscriptions. Given the level of difficulty to execute what should be a simple process, I cannot and will not recommend this service to anyone. There are other, better apps with easier processes to unsubscribe that don't involve canceling your credit or debit card.", 'source': 'trustpilot'}, {'text': 'Website hacked and personal data leaked onto the dark web', 'source': 'trustpilot'}]}
+2026-07-04 21:02:07,902 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-04 21:02:07,903 | INFO | CompetitorAnalysis inference: 0.00s
+2026-07-04 21:02:07,904 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-04 21:02:09,967 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 21:02:39,948 | INFO | Company Object: {'competitor': 'Sworkit', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/sworkit.com', 'review_count': 2, 'reviews': [{'text': 'I thought the website was good but when it came to cancel my membership it was an absolute nightmare. The only way to cancel is through a chatbot on their site which no one ever responds to. I reached out to their support email and also got no response. I am ready to take legal action against them to get my money back. Horrible customer service. I do not recommend them at all.', 'source': 'trustpilot'}, {'text': 'Excellent fitness & wellness app with lots of great features.', 'source': 'trustpilot'}]}
+2026-07-04 21:02:39,948 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-04 21:02:39,949 | INFO | CompetitorAnalysis inference: 0.00s
+2026-07-04 21:02:39,949 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-04 21:02:40,911 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 21:03:04,975 | INFO | Company Object: {'competitor': 'Fitbod', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.fitbod.me', 'review_count': 15, 'reviews': [{'text': 'I have tried literally everything to cancel this subscription. I downloaded for the free trial and no matter what I do, they keep trying to take money from my account. Worst app I’ve ever had the misfortune to download. Total scam.', 'source': 'trustpilot'}, {'text': 'Cancelled subscription to find out months later still geyting charge as you have to cancel google play app as well. Yet another scam.', 'source': 'trustpilot'}, {'text': 'I issued a ticket through my membership-linked email a week ago on the app asking them about the unsent weekly workout reports and my progress to which they never replied. I believe it is my right as a paying subscriber to have access to all available features.', 'source': 'trustpilot'}, {'text': 'It is an okay app, maybe a 3-4 star but they are so tied into the Apple ecosystem that I couldn’t get a refund on day 1 of year 2 because they say Apple controls that. It didn’t quite meet my needs for the money and I’m out $80 this year.', 'source': 'trustpilot'}, {'text': 'Diana was very patient and worked hard to help with a difficult issue. She went above and beyond to answer my questions and fix my issues.', 'source': 'trustpilot'}, {'text': 'Nope. Bought, paid for, app locked saying I haven’t paid. I’ve contacted support 4 times in the last 4 days. Nada. Waste of money.', 'source': 'trustpilot'}, {'text': 'This app automates the task of designing your work out and saves you a lot of time. It automates progression through your own feedback. It tracks your progress and gives you a point system to allow you to see progress across a spectrum of exercises. You can customize which exercises it gives you by telling it what equipment you have. You can ask it to recommend exercises more or less. There’s a lot of customization for something that automates workouts for you. It’s been going great for me.', 'source': 'trustpilot'}, {'text': 'Good selection of workouts and love how it tracks your progress', 'source': 'trustpilot'}, {'text': 'Good app use almost daily', 'source': 'trustpilot'}, {'text': "I can't say enough bad things about this app. Tough to navigate, slow, and keeps crashing.", 'source': 'trustpilot'}, {'text': "Worst app i've tried so far. I did the free 7 day trial and the app kept crashing which sucked. Workout order was also all over the place with insane reps and weight. I also noticed an influx of positive reviews here that caught my attention and noticed some of these are written by actual Fitbod employees so be careful and do not trust this scammy businesss! Save your money.", 'source': 'trustpilot'}, {'text': 'I tried two other apps they were complicated then I tried Fitbod been using it for three years. It absolutely help change my life when I started. I weighed over 265 pounds now I weigh 216 pounds and I am 17.5% body fat I’m 52 years old when I first started my weight loss. I weighed 346 pounds I’m happy to write this review.', 'source': 'trustpilot'}, {'text': 'Love the app, finally I have managed to stick to the plan over a longer period of time. I’ve used the app for 6 months and the result is amazing! The reports are so good that I always want to do better next week, and looking forward to see my progress in the upcoming reports. Already recommended the app to plenty of friends.', 'source': 'trustpilot'}, {'text': 'Brilliant! I got definition in my arms and shoulders within one year. Ideal for parents with small kids who have little time and workout rather at home than in a gym.', 'source': 'trustpilot'}, {'text': 'Algorithm is not operating correctly. Getting the same exact exercises and cardio which is longer than the whole time allowed. Really falling apart. I’ve been a top 1% user for 5 years and this is the worst I’ve seen. And your customer service is totally useless. You are losing customers over the lack of system integrity - and it will soon be me if you don’t get it fixed', 'source': 'trustpilot'}]}
+2026-07-04 21:03:04,975 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-04 21:03:04,976 | INFO | CompetitorAnalysis inference: 0.00s
+2026-07-04 21:03:04,976 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-04 21:03:07,095 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 21:03:55,006 | INFO | Company Object: {'competitor': 'MyFitnessPal', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com', 'review_count': 15, 'reviews': [{'text': 'helpful to track food paid or not', 'source': 'trustpilot'}, {'text': 'I havnt been on for a while,but when im counting calories I use fitness pal\nIt has everything on it that I need,quick to look up items,', 'source': 'trustpilot'}, {'text': 'I Love it! I can edit what food I want.', 'source': 'trustpilot'}, {'text': 'I find the app very useful. Improvements are made regularly.\nI find that the layouts are designed so you hit the premium button (by mistake) which is frustrating and annoying.\nUpgrades should be separate. I have used premium and prefer the standard version.', 'source': 'trustpilot'}, {'text': 'I like the previous version better.', 'source': 'trustpilot'}, {'text': 'App is horribly glitchy. Have had to uninstall and reinstall 3 times in the past 24 hours and it still is not working. Ive been a My Fitness Pal user for years now. This latest update is horrible', 'source': 'trustpilot'}, {'text': "Love this site I do try to add up my calories every day and this makes it so easy for me!! Keeps me on track. But they did an update not too long again not too sure about it little bit harder to monitor or maybe I'm just getting used to it..", 'source': 'trustpilot'}, {'text': 'A great way to plan, track and monitor food intake and nutrients thereof as well as water intake.\nProvides various meal plans to help reach your goal!\nFitness Pal pairs easily with other tech devices such as Renpho scale, Apple phone/watch to monitor your caloric intake, body fat etc\nDefinitely a great app at a very reasonable cost!!!', 'source': 'trustpilot'}, {'text': 'I’ve found some of the items have the wrong calories and can’t find one to match.', 'source': 'trustpilot'}, {'text': "Easy to use and understand. Great database of foods, though some stats are not accurate when I check against the manufacturer's information. An abundance of resources on topics related to weight loss/management and wellness, as well as fitness. Feeback on logs is helpful.", 'source': 'trustpilot'}, {'text': 'Love this app. Especially the scanning feature for quick tracking.', 'source': 'trustpilot'}, {'text': 'I like how easy it is to add your food with scanner.', 'source': 'trustpilot'}, {'text': 'Somtimes you need companion to keep you in check', 'source': 'trustpilot'}, {'text': 'Good app, which I have used for years. Love the app, but not the fact that parts that used to be free are now only available with substantial subscription fee, which is difficult for us as we are on fixed income and my wife and I both use this app daily. Sorry they made the changes. We still use the app, but it is more difficult with some convenient applications as well as dietary information are now only available through monthly payments.', 'source': 'trustpilot'}, {'text': 'Its a good app to loose weight without crashing diet.', 'source': 'trustpilot'}]}
+2026-07-04 21:03:55,007 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-04 21:03:55,008 | INFO | CompetitorAnalysis inference: 0.00s
+2026-07-04 21:03:55,008 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-04 21:03:56,890 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 21:04:42,432 | INFO | Company Object: {'competitor': 'Aaptiv', 'source': 'trustpilot', 'review_url': 'https://www.trustpilot.com/review/aaptiv.com', 'review_count': 15, 'reviews': [{'text': 'Scam - run away. I asked pertinent questions on chat and when I gave him a little bit of truth serum they ended the chat. Even told them about the reviews on here. They have been charging me several months even though I canceled. I will be reporting them to my bank for fraud', 'source': 'trustpilot'}, {'text': 'Worst experience I’ve ever had with a company. No one returns your phone calls. Website doesn’t work half the time. Charged me and then didn’t accept the gyms that I picked. No customer service agents to be found. Save yourself time and don’t go with them.', 'source': 'trustpilot'}, {'text': "Subscribed for 6 years on and off. Tried to resubscribe and they charged me but I couldn't access any of the content. Thankfully able to get a refund through Google play as their customer service hasn't responded.\n\nThis is a shame as the content was great but looking through recent experiences, this glitch has been present for a while and the developers haven't fixed it therefore the app is now just a scam.", 'source': 'trustpilot'}, {'text': "They literally have been charging me for 4+ years and (1) Didn't once email me (2) I deleted the app 4 years ago but I was still being charged (3) Changed my credit card and still getting charged.\n\nI would like a full refund for the 4 years, not 2021but 2022, 2023, 2024 and 2025.", 'source': 'trustpilot'}, {'text': "I was an Aaptiv customer for 3 years... and then when I decided to not renew, I had NO success reaching a human customer service representative to confirm cancellation. I assume the fact that I wasn't charged that I was cancelled, but their business practices have clearly gone downhill. Sending out auto-ticket emails but not having staff ready to respond to this tickets makes me happier that I have left Aaptiv. If they try to charge my card, I will dispute and submit an official complaint.", 'source': 'trustpilot'}, {'text': 'I am an Elite member. They dropped Lifetime from their network without notice, charged my monthly fees, and have not responded to my support ticket despite multiple reminders and requests. This company is scam.', 'source': 'trustpilot'}, {'text': 'Do not use Aaptiv! I recently signed up for their elite tier and within my first 2 month they increased my monthly rate by 40% and then the following month removed all gym access in my area with no communication. I’ve tried contacting multiple time with no response from their support team. Beware @aaptiv is a fraudulent business scamming their customers out of money!', 'source': 'trustpilot'}, {'text': 'This company is an absolute scam. Do not sign up! So far I’ve been scammed out of $234. I lost access to almost all my gyms weeks ago and they have refused to respond on all means of communication (multiple emails, Instagram messages public and private, the contact us form, the live chat which is now broken, and disconnected or direct to voicemail phone lines). They also raked in a big customer base at a rate of $164 a month and then have increased everyone to $234 after only being a paying customer for a couple of months. Then they’ve lost partnerships with Lifetime and other gyms but want you to pay more. I am at a loss at what to do besides cancel and be out all my money.', 'source': 'trustpilot'}, {'text': 'Customer service is awful. Due to a glitch my memberships at the gyms have been cancelled and it says I’m ineligible even though I was charged this month for an elite membership. I have been trying to get this resolved for a week now and I’m unable to get anyone on the phone, they don’t respond to emails and the responses I get take days and haven’t fixed the problem. So frustrating, especially for a service this expensive.', 'source': 'trustpilot'}, {'text': 'Customer service takes too long to respond. Membership glitches. Please know that you never speak to a live person. AND IT TAKES DAYS BEFORE YOU GET A RESPONSE ON CRITICAL ISSUES!\nI subscribe to stretch lab and I booked my sessions for Dec 2024. Stretch lab canceled my sessions saying my subscription was cancelled. Aaptiv took the payment out Nov 13, 2024 so why is stretch lab saying I am canceled!', 'source': 'trustpilot'}, {'text': "I signed up due to the cost savings compared to having a gym membership at Lifetime. I had to go through the hassle of canceling my Lifetime membership so that I could get an Aaptiv membership, and as soon as I signed up, a week later they emailed saying they were raising prices by 35% which is actually insane. This cost more than my orginial gym membership. I still liked the other studios and that they had Lifetime as well so I decided maybe it'll be worth it. However, after I renewed, I found out Lifetime is actually no longer an option with Aaptiv as of November 1st which is not something that was shared at all. At this point the price increase definetly is NOT worth it which is annoying since I canceled my orignal membership at Lifetime and NOW there is a waitlist so I can't even join again. This seems like a bait and switch from Aaptiv and I will be canceling my membership immediately and never returning.", 'source': 'trustpilot'}, {'text': 'They said they would increase the price to 233 which is already a huge price jump with little notice effective November 10, but now the price has already increased with no notice to 233 on October 23. Someone else said they only paid 165. Why is aaptiv charging different prices to different people? They haven’t responded to my support requests about this so I’m hoping someone can actually fix this issue because this is worse than a bait and switch.', 'source': 'trustpilot'}, {'text': 'I have begun an Aaptiv elite tier membership 4 days ago. Two days later, I received a notification that the monthly fee will increase 35%. No.\n\nIs this an across the board increase or are they targeting new members with a bait and switch?', 'source': 'trustpilot'}, {'text': 'Received messsge from Blue365 associated with BlueCross that you can join Aaptiv and it’s 19500+ gyms. There web site states they partipate with Elite membership to my local Lifetime fitness. However Lifetime has no knowledge of them. So before committing to a monthly fee, reached out to Aaptiv for clarification. Seems only email communication available. After multiple messsged and requests for information, it became clear that they weren’t reading my messsges and simply sending back bot type questions without reading or addressing my simple question. Is Lifetime fitness part of their network in Florham Park NJ? If i can’t get a direct answer to such a simple question, it’s clear that that are in my opinion a scam or incompetent, Woukd avoid consistent with other reviews! Disappointing!', 'source': 'trustpilot'}, {'text': "I liked their app, but their new workout programs weren't great so I found an app that was a better fit for me. I cancelled my account two months ago, to the point where I couldn't get in anymore. This morning I woke up to a nice surprise where they tried to charge me for the annual subscription. I verified that my account didn't even exist on the app anymore and contacted them. They immediately reversed the charges. My guess is that as most people don't watch their budget as close as I do, they do this and get away with every year, shadily collecting money without people stopping them. . Due to this, I would not recommend this app to anyone going forward.", 'source': 'trustpilot'}]}
+2026-07-04 21:04:42,432 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-04 21:04:42,433 | INFO | CompetitorAnalysis inference: 0.00s
+2026-07-04 21:04:42,434 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-04 21:04:45,777 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 21:05:17,477 | INFO | Agent 4 Completed | FitAI
+2026-07-04 21:05:17,482 | INFO | Agent 5 Started | FitAI
+2026-07-04 21:05:17,482 | INFO | Invoking Gemini | MarketGapAnalysis
+2026-07-04 21:05:17,483 | INFO | MarketGapAnalysis inference: 0.00s
+2026-07-04 21:05:17,483 | INFO | Gemini Success | MarketGapAnalysis
+2026-07-04 21:05:20,148 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 21:06:25,386 | INFO | Agent 5 Completed | FitAI
+2026-07-04 21:06:25,390 | INFO | Agent 6 Started | FitAI
+2026-07-04 21:06:25,390 | INFO | Invoking Gemini | StartupScore
+2026-07-04 21:06:25,391 | INFO | StartupScore inference: 0.00s
+2026-07-04 21:06:25,391 | INFO | Gemini Success | StartupScore
+2026-07-04 21:06:28,395 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 21:06:43,894 | INFO | Agent 6 Completed | FitAI
+2026-07-04 21:06:43,899 | INFO | Agent 7 Started | FitAI
+2026-07-04 21:06:43,900 | INFO | Invoking Gemini | PersonaOutput
+2026-07-04 21:06:43,901 | INFO | PersonaOutput inference: 0.00s
+2026-07-04 21:06:43,901 | INFO | Gemini Success | PersonaOutput
+2026-07-04 21:06:46,802 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 21:13:17,358 | INFO | Agent 7 Completed | FitAI
+2026-07-04 21:13:17,365 | INFO | Agent 8 Started | FitAI
+2026-07-04 21:13:17,365 | INFO | Invoking Gemini | PersonaFeedbackOutput
+2026-07-04 21:13:17,367 | INFO | PersonaFeedbackOutput inference: 0.00s
+2026-07-04 21:13:17,367 | INFO | Gemini Success | PersonaFeedbackOutput
+2026-07-04 21:13:21,614 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 21:18:58,143 | INFO | Agent 8 Completed | FitAI
+2026-07-04 21:18:58,147 | INFO | Agent 9 Started | FitAI
+2026-07-04 21:18:58,147 | INFO | Persona Feedback Length: 5459 characters
+2026-07-04 21:18:58,147 | INFO | Invoking Gemini | AdoptionAnalytics
+2026-07-04 21:18:58,148 | INFO | AdoptionAnalytics inference: 0.00s
+2026-07-04 21:18:58,148 | INFO | Gemini Success | AdoptionAnalytics
+2026-07-04 21:19:01,170 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 21:19:43,354 | INFO | Agent 9 Completed | FitAI
+2026-07-04 21:19:43,358 | INFO | Agent 10 Started | FitAI
+2026-07-04 21:19:43,359 | INFO | Invoking Gemini | FinalReport
+2026-07-04 21:19:43,360 | INFO | FinalReport inference: 0.00s
+2026-07-04 21:19:43,360 | INFO | Gemini Success | FinalReport
+2026-07-04 21:19:48,905 | INFO | HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-07-04 21:21:58,796 | INFO | Agent 10 Completed | FitAI
+2026-07-04 21:21:58,803 | INFO | Analysis Complete: FitAI; Total time: 1253.3728606700897

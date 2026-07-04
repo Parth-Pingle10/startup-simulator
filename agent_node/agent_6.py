@@ -124,7 +124,7 @@ async def startup_scoring_agent(state):
     Return structured output only.
         """
 
-        response = invoke_structured(
+        response =await invoke_structured(
         StartupScore,
         prompt
     )

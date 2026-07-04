@@ -11,6 +11,10 @@ async def adoption_analytics_agent(state):
       logger.info(
          f"Agent 9 Started | {state['startup_name']}"
       )
+      
+      logger.info(
+    f"Persona Feedback Length: {len(str(state['persona_feedback']))} characters"
+)
 
       prompt = f"""
       You are an expert startup analyst, market researcher, and customer insights specialist.
@@ -107,7 +111,7 @@ async def adoption_analytics_agent(state):
    Return structured output only.
       """
 
-      response = invoke_structured(
+      response = await invoke_structured(
       AdoptionAnalytics,
       prompt
    )

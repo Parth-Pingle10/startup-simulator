@@ -4,6 +4,7 @@ from scraper.trustpilot import (
 )
 
 from utils.structured_invoke import invoke_structured
+from utils.logger import logger
 
 from pydantic import BaseModel
 from typing import List
@@ -22,7 +23,7 @@ class FallbackResearch(BaseModel):
     target_users: List[str]
 
 
-def llm_competitor_research(
+async def llm_competitor_research(
     competitor
     
 ):
@@ -95,7 +96,7 @@ Generate specific, realistic findings.
 Return structured output only.
 """
 
-    response = invoke_structured(
+    response = await invoke_structured(
         FallbackResearch,
         prompt
     )
@@ -109,28 +110,70 @@ Return structured output only.
     return{ "reviews" : response}
 
 
+
 def collect_competitor_reviews(
     competitor,
-   
 ):
 
-    search_result = (
-        search_trustpilot(
-            competitor
-        )
+    logger.info(
+        f"Collecting competitor reviews for {competitor}"
     )
 
-    if search_result:
+    search_result = search_trustpilot(
+        competitor
+    )
 
-        reviews = (
-            scrape_trustpilot_reviews(
-                search_result["review_url"]
-            )
+    logger.info(
+        f"Search Result: {search_result}"
+    )
+
+    # Trustpilot search failed OR company name didn't match
+    if not search_result:
+
+        logger.warning(
+            f"{competitor}: Trustpilot match not found. Using LLM."
+        )
+
+        research = llm_competitor_research(
+            competitor
+        )
+
+        return {
+
+            "competitor":
+            competitor,
+
+            "source":
+            "llm_research",
+
+            **research
+
+        }
+
+    try:
+
+        reviews = scrape_trustpilot_reviews(
+
+            search_result["review_url"]
+
+        )
+
+        logger.info(
+
+            f"{competitor}: {len(reviews)} reviews scraped."
+
         )
 
         if len(reviews) > 0:
 
+            logger.info(
+
+                f"{competitor}: Using Trustpilot reviews."
+
+            )
+
             return {
+
                 "competitor":
                 competitor,
 
@@ -145,21 +188,39 @@ def collect_competitor_reviews(
 
                 "reviews":
                 reviews
+
             }
 
-    research = (
-        llm_competitor_research(
-            competitor
+        logger.warning(
+
+            f"{competitor}: No reviews found. Using LLM."
+
         )
+
+    except Exception as e:
+
+        logger.warning(
+
+            f"{competitor}: Scraping failed ({str(e)}). Using LLM."
+
+        )
+
+    research = llm_competitor_research(
+        competitor
+    )
+
+    logger.info(
+        f"{competitor}: LLM research completed."
     )
 
     return {
+
         "competitor":
         competitor,
 
         "source":
-            
         "llm_research",
 
         **research
+
     }

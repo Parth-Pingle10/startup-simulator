@@ -1,4 +1,5 @@
 import logging
+import time
 
 from tenacity import (
     retry,
@@ -49,10 +50,16 @@ def invoke_structured(
                 schema
             )
         )
+        start = time.time()
 
-        response = llm.invoke(
+
+        response = llm.ainvoke(
             prompt
         )
+
+        logger.info(
+    f"{schema.__name__} inference: {time.time()-start:.2f}s"
+)
 
         logger.info(
             f"Gemini Success | {schema.__name__}"
@@ -77,7 +84,7 @@ def invoke_structured(
             )
         )
 
-        response = llm.invoke(
+        response = llm.ainvoke(
             prompt
         )
 

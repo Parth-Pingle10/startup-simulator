@@ -110,7 +110,7 @@ async def market_gap_analysis_agent(state):
     Return structured output only.
         """
 
-        response = invoke_structured(
+        response =await invoke_structured(
         MarketGapAnalysis,
         prompt
     )

@@ -1,5 +1,34 @@
 from playwright.sync_api import sync_playwright
 from urllib.parse import quote
+from utils.logger import logger
+
+import re
+
+def normalize_name(
+    text: str
+):
+
+    text = text.lower()
+
+    text = re.sub(
+        r"www\.",
+        "",
+        text
+    )
+
+    text = re.sub(
+        r"\.(com|io|ai|app|co|net)",
+        "",
+        text
+    )
+
+    text = re.sub(
+        r"[^a-z0-9]",
+        "",
+        text
+    )
+
+    return text
 
 
 def search_trustpilot(
@@ -10,6 +39,10 @@ def search_trustpilot(
         f"https://www.trustpilot.com/search?query={quote(company_name)}"
     )
 
+    logger.info(
+        f"Searching Trustpilot: {company_name}"
+    )
+
     with sync_playwright() as p:
 
         browser = p.chromium.launch(
@@ -18,7 +51,10 @@ def search_trustpilot(
 
         page = browser.new_page()
 
-        page.goto(search_url,wait_until="domcontentloaded")
+        page.goto(
+            search_url,
+            wait_until="domcontentloaded"
+        )
 
         page.wait_for_timeout(3000)
 
@@ -26,9 +62,17 @@ def search_trustpilot(
             "a[href*='/review/']"
         ).all()
 
+        logger.info(
+            f"{company_name}: {len(links)} search results found."
+        )
+
         if not links:
 
             browser.close()
+
+            logger.warning(
+                f"{company_name}: No Trustpilot results."
+            )
 
             return None
 
@@ -39,10 +83,35 @@ def search_trustpilot(
             .strip()
         )
 
-        review_url = (
-            first_link.get_attribute(
-                "href"
+        logger.info(
+            f"First Trustpilot Result:\n{company_text}"
+        )
+
+        expected = normalize_name(
+            company_name
+        )
+
+        found = normalize_name(
+            company_text
+        )
+
+        if expected not in found:
+
+            logger.warning(
+
+                f"Company mismatch.\n"
+                f"Expected : {company_name}\n"
+                f"Found    : {company_text}\n"
+                f"Using LLM fallback."
+
             )
+
+            browser.close()
+
+            return None
+
+        review_url = first_link.get_attribute(
+            "href"
         )
 
         if review_url.startswith("/"):
@@ -55,14 +124,23 @@ def search_trustpilot(
         browser.close()
 
         return {
-            "name": company_text,
-            "review_url": review_url
+
+            "name":
+            company_text,
+
+            "review_url":
+            review_url
+
         }
-        
-        
+
+
 def scrape_trustpilot_reviews(
     review_url: str
 ):
+
+    logger.info(
+        f"Scraping reviews from {review_url}"
+    )
 
     reviews = []
 
@@ -86,7 +164,14 @@ def scrape_trustpilot_reviews(
                     f"{review_url}?page={page_num}"
                 )
 
-            page.goto(url,wait_until="domcontentloaded")
+            logger.info(
+                f"Opening {url}"
+            )
+
+            page.goto(
+                url,
+                wait_until="domcontentloaded"
+            )
 
             page.wait_for_timeout(3000)
 
@@ -96,20 +181,29 @@ def scrape_trustpilot_reviews(
             )
 
             if (
-                "Page not found"
-                in page_text
-                or "404"
-                in page_text
+                "Page not found" in page_text
+                or "404" in page_text
             ):
+
+                logger.warning(
+                    f"{url} not found."
+                )
+
                 break
 
             review_cards = page.locator(
                 '[data-service-review-text-typography="true"]'
             ).all()
 
+            logger.info(
+                f"Page {page_num}: {len(review_cards)} review cards found."
+            )
+
             for card in review_cards:
+
                 if len(reviews) >= 15:
                     break
+
                 try:
 
                     review_text = (
@@ -119,19 +213,24 @@ def scrape_trustpilot_reviews(
 
                     if len(review_text) > 20:
 
-                        reviews.append(
-                            {
-                                "text":
-                                review_text,
+                        reviews.append({
 
-                                "source":
-                                "trustpilot"
-                            }
-                        )
+                            "text":
+                            review_text,
 
-                except:
+                            "source":
+                            "trustpilot"
+
+                        })
+
+                except Exception:
+
                     pass
 
         browser.close()
+
+    logger.info(
+        f"Total reviews scraped: {len(reviews)}"
+    )
 
     return reviews

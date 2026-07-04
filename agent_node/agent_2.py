@@ -79,7 +79,7 @@ async def competitor_finder(state):
     Return structured output only.
         """
 
-        response = invoke_structured(
+        response = await invoke_structured(
         CompetitorOutput,
         prompt
     )

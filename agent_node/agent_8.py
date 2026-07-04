@@ -164,7 +164,7 @@ Generate feedback for ALL personas.
 Return structured output only.
         """
 
-        response = invoke_structured(
+        response = await invoke_structured(
             PersonaFeedbackOutput,
             prompt
         )
