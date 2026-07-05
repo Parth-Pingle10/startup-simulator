@@ -2,6 +2,7 @@ from scraper.trustpilot import (
     search_trustpilot,
     scrape_trustpilot_reviews
 )
+import asyncio
 
 from utils.structured_invoke import invoke_structured
 from utils.logger import logger
@@ -111,7 +112,7 @@ Return structured output only.
 
 
 
-def collect_competitor_reviews(
+async def collect_competitor_reviews(
     competitor,
 ):
 
@@ -119,7 +120,8 @@ def collect_competitor_reviews(
         f"Collecting competitor reviews for {competitor}"
     )
 
-    search_result = search_trustpilot(
+    search_result = await asyncio.to_thread(
+        search_trustpilot,
         competitor
     )
 
@@ -134,7 +136,7 @@ def collect_competitor_reviews(
             f"{competitor}: Trustpilot match not found. Using LLM."
         )
 
-        research = llm_competitor_research(
+        research = await llm_competitor_research(
             competitor
         )
 
@@ -152,12 +154,11 @@ def collect_competitor_reviews(
 
     try:
 
-        reviews = scrape_trustpilot_reviews(
-
+        reviews = await asyncio.to_thread(
+            scrape_trustpilot_reviews,
             search_result["review_url"]
-
         )
-
+        
         logger.info(
 
             f"{competitor}: {len(reviews)} reviews scraped."
@@ -205,7 +206,7 @@ def collect_competitor_reviews(
 
         )
 
-    research = llm_competitor_research(
+    research =await llm_competitor_research(
         competitor
     )
 

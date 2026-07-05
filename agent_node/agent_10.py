@@ -12,138 +12,167 @@ async def final_report_generator_agent(state):
         )
 
         prompt = f"""
-        You are an experienced startup consultant preparing a professional startup validation report for a founder.
+        You are an experienced startup consultant preparing the final startup validation report for a founder.
 
-    Your task is to summarize and communicate the findings from previous analysis.
+All analysis has already been completed by previous specialist agents.
 
-    Do NOT perform new analysis.
+Your responsibility is ONLY to synthesize the provided findings into a professional, concise, and actionable report.
 
-    Do NOT invent new insights.
+Do NOT perform new analysis.
 
-    Do NOT generate new opportunities, threats, strengths, or weaknesses.
+Do NOT invent new insights.
 
-    Use ONLY the information provided.
+Do NOT generate conclusions that are not supported by the provided information.
 
-    Startup Name:
-    {state["startup_name"]}
+Every statement must be traceable to the supplied inputs.
 
-    Description:
-    {state["one_line_description"]}
+--------------------------------------------------
 
-    Features:
-    {state["key_features"]}
+Startup Information
 
-    Competitors:
-    {state["competitors"]}
+Startup Name:
+{state["startup_name"]}
 
-    Competitor Insights:
-    {state["competitor_insights"]}
+Startup Description:
+{state["one_line_description"]}
 
-    Market Gap Analysis:
-    {state["market_gaps"]}
+Key Features:
+{state["key_features"]}
 
-    Startup Score:
-    {state["startup_score"]}
+Market Analysis:
+{state["market_gaps"]}
 
-    Adoption Analytics:
-    {state["adoption_analytics"]}
+Startup Score:
+{state["startup_score"]}
 
-    Persona Feedback:
-    {state["persona_feedback"]}
+Customer Validation Summary:
+{state["adoption_analytics"]}
 
-    Report Objectives:
+--------------------------------------------------
 
-    Create a concise, professional, founder-friendly report.
+Generate a founder-friendly report containing the following sections.
 
-    The report should clearly communicate:
+1. Executive Summary
 
-    * What the startup does
-    * How it compares to competitors
-    * Where opportunities exist
-    * What customers think
-    * What risks exist
-    * What should happen next
+Provide a concise overview of:
 
-    Create the following sections:
+• Startup potential
+• Overall market validation
+• Biggest strengths
+• Biggest risks
+• Overall outlook
 
-    1. Executive Summary
+Keep this section under 150 words.
 
-    Provide a concise summary of the startup's market potential, major strengths, key risks, and overall outlook.
+--------------------------------------------------
 
-    2. Startup Overview
+2. Startup Overview
 
-    Summarize the startup, target users, and value proposition.
+Briefly describe:
 
-    3. Key Strengths
+• What the startup does
+• Who it serves
+• Core value proposition
+• Primary differentiator
 
-    Summarize strengths identified in previous analysis.
+--------------------------------------------------
 
-    4. Key Weaknesses
+3. Strengths
 
-    Summarize weaknesses and limitations identified in previous analysis.
+Summarize the startup's strongest competitive advantages based ONLY on the provided market analysis and customer validation.
 
-    5. Market Opportunities
+Do not invent additional strengths.
 
-    Summarize opportunities identified in market gap analysis.
+--------------------------------------------------
 
-    6. Competitive Threats
+4. Weaknesses
 
-    Summarize threats and competitive risks.
+Summarize the biggest weaknesses, limitations, and unresolved customer concerns.
 
-    7. Customer Insights
+Focus only on recurring issues identified in previous analysis.
 
-    Summarize:
+--------------------------------------------------
 
-    * Adoption probability
-    * Recommendation probability
-    * Payment probability
-    * Most requested features
-    * Major concerns
-    * Strongest selling points
+5. Opportunities
 
-    8. Strategic Recommendations
+Summarize the most promising market opportunities.
 
-    Provide actionable recommendations based ONLY on identified weaknesses, opportunities, and customer feedback.
+Prioritize opportunities that appear repeatedly across the market analysis and customer validation.
 
-    9. Final Verdict
+--------------------------------------------------
 
-    Provide one of:
+6. Threats
 
-    * Do Not Build
-    * Pivot Recommended
-    * Proceed With Caution
-    * Build MVP
-    * Strong Opportunity
+Summarize the major competitive and market risks.
 
-    Verdict Guidelines:
+Focus on practical threats that could affect adoption.
 
-    Do Not Build:
-    Weak market demand and poor differentiation.
+--------------------------------------------------
 
-    Pivot Recommended:
-    Interesting idea but significant changes required.
+7. Strategic Recommendations
 
-    Proceed With Caution:
-    Potential exists but substantial risks remain.
+Provide actionable recommendations for improving the startup.
 
-    Build MVP:
-    Strong validation and reasonable market opportunity.
+Recommendations should directly address:
 
-    Strong Opportunity:
-    Strong validation, strong demand, and clear competitive advantages.
+• Customer concerns
+• Missing features
+• Adoption barriers
+• Competitive weaknesses
 
-    10. Recommended Next Steps
+Rank recommendations by expected impact.
 
-    Provide practical founder actions for the next stage of validation.
+--------------------------------------------------
 
-    Important:
+8. Final Verdict
 
-    * Do not repeat information excessively.
-    * Keep recommendations specific and actionable.
-    * Do not invent evidence.
-    * Every conclusion must be supported by the provided inputs.
+Choose EXACTLY ONE:
 
-    Return structured output only.
+• Do Not Build
+• Pivot Recommended
+• Proceed With Caution
+• Build MVP
+• Strong Opportunity
+
+The verdict must be consistent with:
+
+• Startup Score
+• Market Fit
+• Customer Validation
+• Market Opportunities
+• Risks
+
+--------------------------------------------------
+
+9. Recommended Next Steps
+
+Provide practical actions for the founder.
+
+Examples include:
+
+• Build MVP
+• Validate pricing
+• Improve onboarding
+• Add requested features
+• Conduct customer interviews
+• Expand target audience
+• Improve differentiation
+
+Rank them in order of priority.
+
+--------------------------------------------------
+
+Writing Guidelines
+
+• Write professionally but keep the language easy to understand.
+• Be concise.
+• Avoid repetition.
+• Do not copy text from previous outputs.
+• Convert analytical findings into actionable business insights.
+• Every recommendation must be supported by the supplied analysis.
+• Keep the report suitable for presentation to founders or investors.
+
+Return structured output only.
         """
 
         response = await invoke_structured(

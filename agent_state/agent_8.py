@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Literal
 from pydantic import BaseModel
 
 
@@ -6,27 +6,39 @@ class PersonaFeedback(BaseModel):
 
     persona_name: str
 
-    would_use: bool
+    would_use: Literal["Yes", "Maybe", "No"]
 
     adoption_score: int
 
-    would_pay: bool
+    would_pay: Literal["Yes", "Maybe", "No"]
 
-    would_recommend: bool
+    would_recommend: Literal["Yes", "Maybe", "No"]
 
-    favorite_feature: str
-
-    missing_feature: str
+    liked_features: List[str]
 
     concerns: List[str]
 
-    detailed_feedback: str
+    missing_features: List[str]
 
+    adoption_reason: str
 
-class PersonaFeedbackOutput(
-    BaseModel
-):
+    deal_breaker: str
 
-    persona_feedback: List[
-        PersonaFeedback
+    purchase_decision: Literal[
+        "Buy Immediately",
+        "Try Free Version",
+        "Wait For Improvements",
+        "Compare With Competitors",
+        "Not Interested"
     ]
+
+    preferred_competitor: str
+
+    competitor_reason: str
+
+    customer_review: str
+
+
+class PersonaFeedbackOutput(BaseModel):
+
+    persona_feedback: List[PersonaFeedback]

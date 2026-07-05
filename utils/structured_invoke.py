@@ -33,7 +33,7 @@ from utils.logger import (
 
     reraise=True
 )
-def invoke_structured(
+async def invoke_structured(
     schema,
     prompt
 ):
@@ -53,7 +53,7 @@ def invoke_structured(
         start = time.time()
 
 
-        response = llm.ainvoke(
+        response = await llm.ainvoke(
             prompt
         )
 

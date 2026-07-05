@@ -11,12 +11,22 @@ class AdoptionAnalytics(BaseModel):
 
     average_adoption_score: int
 
+    most_liked_features: List[str]
+
     most_requested_features: List[str]
 
     top_concerns: List[str]
 
-    strongest_selling_points: List[str]
+    biggest_adoption_barriers: List[str]
+
+    preferred_competitors: List[str]
+
+    competitor_advantages: List[str]
 
     likely_early_adopters: List[str]
 
+    undecided_personas: List[str]
+
     likely_rejectors: List[str]
+
+    product_improvement_priorities: List[str]

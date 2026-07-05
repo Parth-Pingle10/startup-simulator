@@ -13,96 +13,95 @@ async def persona_generator_agent(state):
         )
 
         prompt = f"""
-        You are an expert consumer psychologist, startup researcher, and customer segmentation specialist.
+You are an expert consumer psychologist, startup researcher, and customer segmentation specialist.
 
-    Your task is to generate realistic customer personas that represent potential users of the startup.
+Your task is to generate realistic customer personas that represent potential users of the startup.
 
-    Startup Target Users:
-    {state["target_users"]}
+Startup Target Users:
+{state["target_users"]}
 
-    Startup Description:
-    {state["one_line_description"]}
+Startup Description:
+{state["one_line_description"]}
 
-    Startup Features:
-    {state["key_features"]}
+Startup Features:
+{state["key_features"]}
 
-    Market Gap Analysis:
-    {state["market_gaps"]}
+Market Gap Analysis:
+{state["market_gaps"]}
 
-    Competitor Intelligence:
-    {state["competitor_insights"]}
+Competitor Intelligence:
+{state["competitor_insights"]}
 
-    Startup Score:
-    {state["startup_score"]}
+Startup Score:
+{state["startup_score"]}
 
-    Requirements:
+Requirements:
 
-    Generate EXACTLY 15 distinct personas.
+Generate EXACTLY 10 distinct personas.
 
-    The personas must represent different customer archetypes, not simply different names.
+The personas must represent different customer archetypes, not simply different names.
 
-    Use competitor frustrations, pain points, feature requests, and market gaps when creating personas.
+Use competitor frustrations, pain points, feature requests, and market gaps when creating personas.
 
-    Persona Distribution:
+Persona Distribution:
 
-    * 3 Enthusiastic Early Adopters
-    * 3 Practical Buyers
-    * 3 Budget-Conscious Users
-    * 3 Skeptical Users
-    * 3 Non-Users / Likely Rejectors
+• 2 Enthusiastic Early Adopters
+• 2 Practical Buyers
+• 2 Budget-Conscious Users
+• 2 Skeptical Users
+• 2 Non-Users / Likely Rejectors
 
-    Each persona must have:
+Each persona must have:
 
-    * Unique goals
-    * Unique frustrations
-    * Unique buying behavior
-    * Unique expectations
-    * Unique reasons for adoption or rejection
+• Unique goals
+• Unique frustrations
+• Unique buying behavior
+• Unique expectations
+• Unique reasons for adoption or rejection
 
-    Persona Rules:
+Persona Rules:
 
-    * Do not create duplicate personas.
-    * Do not simply change age or name.
-    * Each persona should represent a meaningful customer segment.
-    * Base frustrations on actual competitor research whenever possible.
-    * Include personas that strongly dislike the startup.
-    * Include personas that are undecided.
-    * Include personas that are highly likely to adopt.
+• Do not create duplicate personas.
+• Do not simply change age or name.
+• Each persona should represent a meaningful customer segment.
+• Base frustrations on actual competitor research whenever possible.
+• Include personas that strongly dislike the startup.
+• Include personas that are undecided.
+• Include personas that are highly likely to adopt.
 
-    Adoption Likelihood Rules:
+Adoption Likelihood Rules:
 
-    High:
-    Likely to use and pay.
+High:
+Likely to use and pay.
 
-    Medium:
-    Interested but uncertain.
+Medium:
+Interested but uncertain.
 
-    Low:
-    Unlikely to use or pay.
+Low:
+Unlikely to use or pay.
 
-    Persona Categories Should Include Examples Such As:
+Persona Categories Should Include Examples Such As:
 
-    * Power Users
-    * Beginners
-    * Casual Users
-    * Budget-Conscious Users
-    * Skeptics
-    * Busy Professionals
-    * Students
-    * Advanced Users
-    * Feature-Focused Users
-    * Convenience-Focused Users
+• Power Users
+• Beginners
+• Casual Users
+• Budget-Conscious Users
+• Skeptics
+• Busy Professionals
+• Students
+• Advanced Users
+• Feature-Focused Users
+• Convenience-Focused Users
 
-    Important:
+Important:
 
-    The goal is to simulate realistic market behavior.
+The goal is to simulate realistic market behavior.
 
-    Do not make every persona like the startup.
+Do not make every persona like the startup.
 
-    At least 30% of personas should be skeptical or unlikely to adopt.
+At least 30% of personas should be skeptical or unlikely to adopt.
 
-    Return structured output only.
-        """
+Return structured output only.        """
 
         response = await invoke_structured(
         PersonaOutput,

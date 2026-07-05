@@ -1,4 +1,6 @@
 import time
+import asyncio
+import sys
 
 from fastapi import FastAPI, Request, Depends
 
@@ -18,6 +20,11 @@ from services.log_service import create_log, complete_log, fail_log
 from routes.auth import router as auth_router
 from routes.analysis import router as analysis_router
 from routes.logs import router as logs_router
+
+if sys.platform == "win32":
+    asyncio.set_event_loop_policy(
+        asyncio.WindowsProactorEventLoopPolicy()
+    )
 
 limiter = Limiter(
     key_func=get_remote_address
@@ -65,6 +72,7 @@ async def analyze_startup(
 
     try:
         start = time.time()
+        runtime = 0
         
         state = {
             "startup_name":

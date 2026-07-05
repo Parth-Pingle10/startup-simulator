@@ -23,57 +23,34 @@ async def persona_simulation_agent(
         )
 
         prompt = f"""
-You are simulating a customer validation panel.
+You are simulating a startup customer validation panel.
 
 You will receive multiple customer personas.
 
-Each persona represents a completely different individual with different:
+Each persona represents a unique individual with different:
 
-* Goals
-* Motivations
-* Habits
-* Frustrations
-* Budget constraints
-* Technical skills
-* Adoption behavior
+• Goals
+• Motivations
+• Lifestyle
+• Budget
+• Technical confidence
+• Decision-making style
+• Buying behaviour
+• Product expectations
 
-Your task is to independently roleplay EACH persona and evaluate the startup from THEIR perspective.
+Your job is to independently roleplay EACH persona and evaluate the startup from ONLY that persona's perspective.
 
-IMPORTANT:
+Do NOT act as a startup consultant.
 
-Do NOT act as a startup advisor.
-
-Do NOT act as a business consultant.
-
-Do NOT evaluate the startup objectively.
+Do NOT provide market analysis.
 
 Do NOT average opinions across personas.
 
-Do NOT attempt to help the startup succeed.
+Every persona must think independently.
 
-You must fully roleplay each persona individually.
+--------------------------------------------------
 
-Treat every persona as if they are unaware of the opinions of the other personas.
-
-A skeptical persona must remain skeptical.
-
-A budget-conscious persona must focus heavily on value and cost.
-
-A power user must compare against existing alternatives and demand advanced functionality.
-
-A casual user must prioritize simplicity and convenience.
-
-A resistant or low-adoption persona should reject the startup unless there is a compelling reason to adopt.
-
-It is completely acceptable for personas to:
-
-* Reject the startup
-* Refuse to pay
-* Refuse to recommend it
-* Criticize missing features
-* Highlight major concerns
-
-Startup:
+Startup
 
 Name:
 {state["startup_name"]}
@@ -81,87 +58,152 @@ Name:
 Description:
 {state["one_line_description"]}
 
-Features:
+Problem:
+{state["problem"]}
+
+Solution:
+{state["solution"]}
+
+Key Features:
 {state["key_features"]}
 
-Startup Score:
-{state["startup_score"]}
+--------------------------------------------------
 
-Market Gaps:
+Competitive Landscape
+
+Competitor Intelligence:
+{state["competitor_insights"]}
+
+Market Gap Analysis:
 {state["market_gaps"]}
 
-Personas:
+--------------------------------------------------
+
+Customer Personas
 
 {state["personas"]}
 
-Evaluation Process:
+--------------------------------------------------
 
 For EACH persona:
 
-1. Carefully analyze the startup from the perspective of that persona only.
+Imagine you have just discovered this startup.
 
-2. Consider:
+Evaluate it exactly as that persona would after comparing it with existing alternatives.
 
-* Personal goals
-* Existing habits
-* Current alternatives
-* Frustrations
-* Budget limitations
-* Technical comfort level
-* Motivations
-* Adoption barriers
-* Concerns
+Your evaluation should be based ONLY on:
 
-3. Decide whether that specific persona would realistically use the startup.
+• Goals
+• Frustrations
+• Budget
+• Technical confidence
+• Buying behaviour
+• Product expectations
+• Competitor offerings
 
-4. Do not allow the startup score to dominate the decision.
+Ignore every other persona.
 
-5. Use the startup score only as a supporting signal.
-
-6. The final decision must be driven primarily by the persona profile.
+--------------------------------------------------
 
 Provide the following for EVERY persona:
 
 1. Persona Name
-2. Would Use (true/false)
-3. Adoption Score (0-100)
-4. Would Pay (true/false)
-5. Would Recommend (true/false)
-6. Favorite Feature
-7. Most Important Missing Feature
-8. Main Concerns
-9. Detailed Feedback
 
-Detailed Feedback Rules:
+2. Would Use
+Choose ONE:
+• Yes
+• Maybe
+• No
 
-* Write in first person.
-* Speak as the persona.
-* Be realistic.
-* Mention specific reasons.
-* Mention tradeoffs.
-* Mention competing alternatives if relevant.
-* Mention why the startup does or does not fit the persona's needs.
+3. Adoption Score
+(Integer between 0 and 100)
 
-Scoring Guidelines:
+4. Would Pay
+Choose ONE:
+• Yes
+• Maybe
+• No
 
-0-20
+5. Would Recommend
+Choose ONE:
+• Yes
+• Maybe
+• No
+
+6. Top 3 Liked Features
+
+7. Top 3 Concerns
+
+8. Missing Features
+
+9. Biggest Adoption Reason
+
+10. Biggest Deal Breaker
+
+11. Purchase Decision
+
+Choose ONE:
+
+• Buy Immediately
+• Try Free Version
+• Wait For Improvements
+• Compare With Competitors
+• Not Interested
+
+12. Competitor Preference
+
+If another competitor would be chosen instead of this startup, provide:
+
+• Preferred Competitor
+• Reason
+
+Otherwise return:
+
+Startup Preferred
+
+13. Customer Review
+
+Write ONE realistic customer review.
+
+Maximum 70 words.
+
+Write exactly as the persona would naturally speak.
+
+--------------------------------------------------
+
+Scoring Guide
+
+0–20
 Would never use.
 
-21-40
-Unlikely to use.
+21–40
+Highly unlikely.
 
-41-60
-Possibly interested.
+41–60
+Needs convincing.
 
-61-80
-Likely to use.
+61–80
+Likely customer.
 
-81-100
-Highly likely to use.
+81–100
+Strong early adopter.
 
-Generate feedback for ALL personas.
+--------------------------------------------------
 
-Return structured output only.
+Rules
+
+• Stay completely in character.
+• Every persona should produce different opinions.
+• Budget-conscious personas should focus on price.
+• Privacy-conscious personas should focus on trust.
+• Beginners should focus on ease of use.
+• Experts should focus on advanced capabilities.
+• Skeptical users should require convincing evidence.
+• Traditional users should naturally resist switching.
+• Use competitor information only when it genuinely influences the decision.
+• Keep answers concise.
+• Never write long paragraphs.
+• Return structured output only.
         """
 
         response = await invoke_structured(

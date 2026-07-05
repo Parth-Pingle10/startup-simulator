@@ -1,6 +1,5 @@
-from concurrent.futures import (
-    ThreadPoolExecutor
-)
+import asyncio
+import traceback
 
 from utils.logger import logger
 from utils.competitor_research import (
@@ -9,29 +8,23 @@ from utils.competitor_research import (
 from utils.agent_runner import run_agent
 
 
-def process_competitor(
+async def process_competitor(
     competitor
 ):
 
     try:
 
-        return collect_competitor_reviews(
+        return await collect_competitor_reviews(
             competitor
         )
 
     except Exception as e:
+        traceback.print_exc()
 
         return {
-
-            "competitor":
-            competitor,
-
-            "source":
-            "error",
-
-            "error":
-            str(e)
-
+            "competitor": competitor,
+            "source": "error",
+            "error": repr(e)
         }
 
 
@@ -49,21 +42,16 @@ async def competitor_research_agent(
             state["competitors"]
         )
 
-        with ThreadPoolExecutor(
-            max_workers=5
-        ) as executor:
+        competitor_research = await asyncio.gather(
 
-            competitor_research = list(
-
-                executor.map(
-
-                    process_competitor,
-
-                    competitors
-
+            *[
+                process_competitor(
+                    competitor
                 )
+                for competitor in competitors
+            ]
 
-            )
+        )
 
         logger.info(
             f"Agent 3 Completed | {state['startup_name']}"

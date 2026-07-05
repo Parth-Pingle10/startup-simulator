@@ -17,98 +17,123 @@ async def adoption_analytics_agent(state):
 )
 
       prompt = f"""
-      You are an expert startup analyst, market researcher, and customer insights specialist.
+     You are an expert product strategist and customer insights analyst.
 
-   Your task is to analyze aggregated customer feedback and identify overall market sentiment toward the startup.
+Your task is to aggregate customer validation results.
 
-   Persona Feedback:
-   {state["persona_feedback"]}
+The persona feedback has already been generated.
 
-   Analysis Rules:
+Do NOT re-simulate personas.
 
-   * Base conclusions ONLY on the provided persona feedback.
-   * Do NOT invent opinions that are not present.
-   * Look for recurring themes and patterns.
-   * Prioritize evidence that appears across multiple personas.
-   * Consider both positive and negative feedback.
-   * Use actual adoption scores, concerns, and recommendations when drawing conclusions.
+Do NOT invent new opinions.
 
-   Tasks:
+Only analyze the provided structured customer feedback.
 
-   1. Estimate overall adoption probability.
+--------------------------------------------------
 
-      * Consider how many personas would realistically use the product.
-      * Consider average adoption scores.
-      * Consider enthusiasm levels.
+Persona Feedback
 
-   2. Estimate payment probability.
+{state["persona_feedback"]}
 
-      * Consider how many personas would pay.
-      * Consider budget concerns.
-      * Consider perceived value.
+--------------------------------------------------
 
-   3. Estimate recommendation probability.
+Analyze the feedback and determine:
 
-      * Consider how many personas would recommend the product.
-      * Consider satisfaction and confidence levels.
+1. Overall Adoption Probability
 
-   4. Calculate average adoption score.
+Calculate using:
 
-      * Use persona adoption scores as evidence.
+• Would Use
+• Adoption Scores
 
-   5. Identify most requested features.
+2. Payment Probability
 
-      * Focus on features repeatedly requested by multiple personas.
-      * Ignore one-off suggestions.
+Calculate using:
 
-   6. Identify top concerns.
+• Would Pay
+• Adoption Scores
 
-      * Focus on recurring objections and adoption barriers.
+3. Recommendation Probability
 
-   7. Identify strongest selling points.
+Calculate using:
 
-      * Features and benefits consistently praised.
+• Would Recommend
 
-   8. Identify likely early adopters.
+4. Average Adoption Score
 
-      * Personas with high adoption scores and positive sentiment.
+5. Most Liked Features
 
-   9. Identify likely rejectors.
+Rank by frequency.
 
-      * Personas with low adoption scores and strong objections.
+6. Most Requested Features
 
-   10. Identify major adoption barriers.
+Rank by frequency.
 
-      * What is preventing broader adoption?
+7. Most Common Concerns
 
-   11. Identify key opportunities for improvement.
+Rank by frequency.
 
-      * Which improvements would most increase adoption?
+8. Biggest Adoption Barriers
 
-   Probability Guidelines:
+Focus on:
 
-   0-20:
-   Very unlikely.
+• Deal Breakers
 
-   21-40:
-   Unlikely.
+• Purchase Decisions
 
-   41-60:
-   Moderate.
+• Customer Concerns
 
-   61-80:
-   Likely.
+9. Preferred Competitors
 
-   81-100:
-   Highly likely.
+Identify:
 
-   Important:
+• Which competitors were preferred most often
 
-   Probabilities must be justified by persona feedback.
+• Why customers preferred them
 
-   Do not assign high probabilities unless the feedback strongly supports them.
+10. Likely Early Adopters
 
-   Return structured output only.
+Identify personas with:
+
+High adoption
+
+Positive purchase decision
+
+Positive recommendation
+
+11. Undecided Personas
+
+Identify personas that require more convincing.
+
+12. Likely Rejectors
+
+Identify personas with:
+
+Low adoption
+
+Negative purchase decision
+
+Strong objections
+
+13. Product Improvement Priorities
+
+Rank the improvements that would have the greatest impact on adoption.
+
+--------------------------------------------------
+
+Rules
+
+• Base every conclusion only on the provided persona feedback.
+
+• Count recurring themes.
+
+• Ignore isolated opinions.
+
+• Do not invent statistics.
+
+• Keep insights concise.
+
+• Return structured output only.
       """
 
       response = await invoke_structured(
