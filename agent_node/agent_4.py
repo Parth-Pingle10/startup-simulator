@@ -1,35 +1,51 @@
+import asyncio
+
 from agent_state.agent_4 import CompetitorAnalysis
+
 from utils.structured_invoke import invoke_structured
 from utils.logger import logger
 from utils.agent_runner import run_agent
-import time
+
 
 async def competitor_intelligence_agent(state):
-    
-    async def execute():
+
+    async def analyze_company(company):
+
         logger.info(
-            f"Agent 4 Started | {state['startup_name']}"
+            f"Processing {company['competitor']}"
         )
 
-        competitor_insights = []
+        # Already researched by Gemini fallback
+        if company["source"] == "llm_research":
 
-        for company in state["competitor_research"]:
-            logger.info(f"Company Object: {company}")
-            if company["source"] == "llm_research":
+            return {
 
-                competitor_insights.append({
-                    "competitor": company["competitor"],
-                    "strengths": company["strengths"],
-                    "weaknesses": company["weaknesses"],
-                    "pain_points": company["pain_points"],
-                    "feature_requests": company["feature_requests"],
-                    "target_users": company["target_users"]
-                })
+                "competitor":
+                company["competitor"],
 
-                continue
-            
-            prompt = f"""
-        You are an expert product researcher and customer insights analyst.
+                "strengths":
+                company["strengths"],
+
+                "weaknesses":
+                company["weaknesses"],
+
+                "pain_points":
+                company["pain_points"],
+
+                "feature_requests":
+                company["feature_requests"],
+
+                "target_users":
+                company["target_users"]
+
+            }
+
+        logger.info(
+            f"{company['competitor']} | Gemini Analysis Started"
+        )
+
+        prompt = f"""
+         You are an expert product researcher and customer insights analyst.
 
     Analyze the competitor reviews and extract insights ONLY from the provided reviews.
 
@@ -87,36 +103,91 @@ async def competitor_intelligence_agent(state):
     If a finding is not supported by the reviews, do not include it.
 
     Return structured output only.
-            """
+        """
 
-            response = await invoke_structured(
+        response = await invoke_structured(
+
             CompetitorAnalysis,
+
             prompt
-    )
 
-            if isinstance(response, dict):
+        )
 
-                competitor_insights.append(
-                    response
+        logger.info(
+            f"{company['competitor']} | Gemini Analysis Finished"
+        )
+
+        if hasattr(response, "model_dump"):
+
+            return response.model_dump()
+
+        return response
+
+
+    async def execute():
+
+        logger.info(
+            f"Agent 4 Started | {state['startup_name']}"
+        )
+
+        tasks = [
+
+            analyze_company(company)
+
+            for company in state["competitor_research"]
+
+        ]
+
+        results = await asyncio.gather(
+
+            *tasks,
+
+            return_exceptions=True
+
+        )
+
+        competitor_insights = []
+
+        for company, result in zip(
+
+            state["competitor_research"],
+
+            results
+
+        ):
+
+            if isinstance(result, Exception):
+
+                logger.exception(
+
+                    f"{company['competitor']} Failed"
+
                 )
 
-            else:
+                continue
 
-                competitor_insights.append(
-                    response.model_dump()
-                )
-                
+            competitor_insights.append(
+                result
+            )
+
         logger.info(
             f"Agent 4 Completed | {state['startup_name']}"
         )
 
         return {
+
             "competitor_insights":
             competitor_insights
+
         }
-    
+
     return await run_agent(
+
         state,
+
         4,
+
         execute
+
     )
+       

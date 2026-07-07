@@ -48,8 +48,9 @@ def search_trustpilot(
         browser = p.chromium.launch(
             headless=True
         )
-
-        page = browser.new_page()
+        context = browser.new_context()
+         
+        page = context.new_page()
 
         page.goto(
             search_url,
@@ -122,6 +123,7 @@ def search_trustpilot(
             )
 
         browser.close()
+        context.close()
 
         return {
 
@@ -149,8 +151,10 @@ def scrape_trustpilot_reviews(
         browser = p.chromium.launch(
             headless=True
         )
-
-        page = browser.new_page()
+        
+        context = browser.new_context()
+        
+        page = context.new_page()
 
         for page_num in range(1, 4):
 
@@ -228,6 +232,7 @@ def scrape_trustpilot_reviews(
                     pass
 
         browser.close()
+        context.close()
 
     logger.info(
         f"Total reviews scraped: {len(reviews)}"

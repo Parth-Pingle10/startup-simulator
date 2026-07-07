@@ -7,6 +7,7 @@ venv/
 __pycache__/
 *.py[cod]
 og_main.py
+myenv310/
 *$py.class
 venv/
 myenv/
@@ -19,3 +20,4 @@ dist/
 .idea/
 idk.py
 okok.py
+logs/

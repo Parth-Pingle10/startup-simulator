@@ -3099,3 +3099,746 @@ Berg-am-Laim-Straße 111, München, Germany
 2026-07-05 22:04:11,722 | INFO | Gemini Success | FinalReport
 2026-07-05 22:04:11,723 | INFO | Agent 10 Completed | FitAI
 2026-07-05 22:04:11,765 | INFO | Analysis Complete: FitAI; Total time: 268.59410285949707
+2026-07-07 16:12:35,480 | INFO | New Analysis: FitAI
+2026-07-07 16:12:35,492 | INFO | Agent 1 Started | FitAI
+2026-07-07 16:12:35,492 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-07 16:12:35,500 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:12:43,037 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:12:43,041 | INFO | StartupAnalysis inference: 7.55s
+2026-07-07 16:12:43,042 | INFO | Gemini Success | StartupAnalysis
+2026-07-07 16:12:43,042 | INFO | Agent 1 Completed | FitAI
+2026-07-07 16:12:43,046 | INFO | Agent 2 Started | FitAI
+2026-07-07 16:12:43,047 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-07 16:12:43,049 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:12:55,837 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:12:55,841 | INFO | CompetitorOutput inference: 12.79s
+2026-07-07 16:12:55,841 | INFO | Gemini Success | CompetitorOutput
+2026-07-07 16:12:55,841 | INFO | Agent 2 Completed | FitAI
+2026-07-07 16:12:55,845 | INFO | Agent 3 Started | FitAI
+2026-07-07 16:12:55,846 | INFO | Collecting competitor reviews for Fitbod
+2026-07-07 16:12:55,846 | INFO | Collecting competitor reviews for Freeletics
+2026-07-07 16:12:55,846 | INFO | Searching Trustpilot: Fitbod
+2026-07-07 16:12:55,847 | INFO | Searching Trustpilot: Freeletics
+2026-07-07 16:12:55,847 | INFO | Collecting competitor reviews for Alpha Progression
+2026-07-07 16:12:55,847 | INFO | Searching Trustpilot: Alpha Progression
+2026-07-07 16:12:55,848 | INFO | Collecting competitor reviews for Future
+2026-07-07 16:12:55,848 | INFO | Searching Trustpilot: Future
+2026-07-07 16:12:55,848 | INFO | Collecting competitor reviews for Caliber Strength Training
+2026-07-07 16:12:55,849 | INFO | Searching Trustpilot: Caliber Strength Training
+2026-07-07 16:13:05,661 | INFO | Freeletics: 2 search results found.
+2026-07-07 16:13:05,673 | INFO | Caliber Strength Training: 10 search results found.
+2026-07-07 16:13:05,737 | INFO | First Trustpilot Result:
+Caliber
+
+caliberstrong.com
+
+4.9941 reviews
+
+505 W 37th St Apt 23E, New York, United States
+2026-07-07 16:13:05,738 | WARNING | Company mismatch.
+Expected : Caliber Strength Training
+Found    : Caliber
+
+caliberstrong.com
+
+4.9941 reviews
+
+505 W 37th St Apt 23E, New York, United States
+Using LLM fallback.
+2026-07-07 16:13:05,767 | INFO | First Trustpilot Result:
+Freeletics
+
+www.freeletics.com
+
+2.93,069 reviews
+
+Berg-am-Laim-Straße 111, München, Germany
+2026-07-07 16:13:05,933 | INFO | Search Result: None
+2026-07-07 16:13:05,933 | WARNING | Caliber Strength Training: Trustpilot match not found. Using LLM.
+2026-07-07 16:13:05,933 | INFO | Invoking Gemini | FallbackResearch
+2026-07-07 16:13:05,938 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:13:05,945 | INFO | Search Result: {'name': 'Freeletics\n\nwww.freeletics.com\n\n2.93,069 reviews\n\nBerg-am-Laim-Straße 111, München, Germany', 'review_url': 'https://www.trustpilot.com/review/www.freeletics.com'}
+2026-07-07 16:13:05,945 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.freeletics.com
+2026-07-07 16:13:06,183 | INFO | Alpha Progression: 10 search results found.
+2026-07-07 16:13:06,218 | INFO | First Trustpilot Result:
+Alpha Futures
+
+alpha-futures.com
+
+4.85,326 reviews
+
+United States
+2026-07-07 16:13:06,218 | WARNING | Company mismatch.
+Expected : Alpha Progression
+Found    : Alpha Futures
+
+alpha-futures.com
+
+4.85,326 reviews
+
+United States
+Using LLM fallback.
+2026-07-07 16:13:06,341 | INFO | Search Result: None
+2026-07-07 16:13:06,341 | WARNING | Alpha Progression: Trustpilot match not found. Using LLM.
+2026-07-07 16:13:06,341 | INFO | Invoking Gemini | FallbackResearch
+2026-07-07 16:13:06,345 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:13:06,918 | INFO | Opening https://www.trustpilot.com/review/www.freeletics.com
+2026-07-07 16:13:07,385 | INFO | Future: 10 search results found.
+2026-07-07 16:13:07,415 | INFO | First Trustpilot Result:
+Face the Future
+
+facethefuture.co.uk
+
+3.19,113 reviews
+
+Unit 4 Daughters Court, Silkwood Park, Ossett, Wakefield, Wakefield, United Kingdom
+2026-07-07 16:13:07,511 | INFO | Fitbod: 10 search results found.
+2026-07-07 16:13:07,538 | INFO | Search Result: {'name': 'Face the Future\n\nfacethefuture.co.uk\n\n3.19,113 reviews\n\nUnit 4 Daughters Court, Silkwood Park, Ossett, Wakefield, Wakefield, United Kingdom', 'review_url': 'https://www.trustpilot.com/review/facethefuture.co.uk'}
+2026-07-07 16:13:07,539 | INFO | Scraping reviews from https://www.trustpilot.com/review/facethefuture.co.uk
+2026-07-07 16:13:07,582 | INFO | First Trustpilot Result:
+Fitbod
+
+www.fitbod.me
+
+3.036 reviews
+
+Taraval Street 1655, San Francisco, United States
+2026-07-07 16:13:07,753 | INFO | Search Result: {'name': 'Fitbod\n\nwww.fitbod.me\n\n3.036 reviews\n\nTaraval Street 1655, San Francisco, United States', 'review_url': 'https://www.trustpilot.com/review/www.fitbod.me'}
+2026-07-07 16:13:07,754 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.fitbod.me
+2026-07-07 16:13:08,458 | INFO | Opening https://www.trustpilot.com/review/facethefuture.co.uk
+2026-07-07 16:13:08,691 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me
+2026-07-07 16:13:11,422 | INFO | Page 1: 20 review cards found.
+2026-07-07 16:13:12,464 | INFO | Opening https://www.trustpilot.com/review/www.freeletics.com?page=2
+2026-07-07 16:13:12,974 | INFO | Page 1: 20 review cards found.
+2026-07-07 16:13:13,194 | INFO | Page 1: 20 review cards found.
+2026-07-07 16:13:13,892 | INFO | Opening https://www.trustpilot.com/review/facethefuture.co.uk?page=2
+2026-07-07 16:13:14,221 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=2
+2026-07-07 16:13:16,009 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:13:16,014 | INFO | FallbackResearch inference: 10.08s
+2026-07-07 16:13:16,015 | INFO | Gemini Success | FallbackResearch
+2026-07-07 16:13:16,688 | INFO | Page 2: 20 review cards found.
+2026-07-07 16:13:16,688 | INFO | Opening https://www.trustpilot.com/review/www.freeletics.com?page=3
+2026-07-07 16:13:18,122 | INFO | Page 2: 20 review cards found.
+2026-07-07 16:13:18,122 | INFO | Opening https://www.trustpilot.com/review/facethefuture.co.uk?page=3
+2026-07-07 16:13:18,182 | INFO | Page 2: 15 review cards found.
+2026-07-07 16:13:18,182 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=3
+2026-07-07 16:13:19,519 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:13:19,527 | INFO | FallbackResearch inference: 13.18s
+2026-07-07 16:13:19,528 | INFO | Gemini Success | FallbackResearch
+2026-07-07 16:13:20,493 | INFO | Page 3: 20 review cards found.
+2026-07-07 16:13:20,704 | INFO | Total reviews scraped: 15
+2026-07-07 16:13:20,704 | INFO | Freeletics: 15 reviews scraped.
+2026-07-07 16:13:20,704 | INFO | Freeletics: Using Trustpilot reviews.
+2026-07-07 16:13:21,660 | INFO | Page 3: 0 review cards found.
+2026-07-07 16:13:21,808 | INFO | Total reviews scraped: 15
+2026-07-07 16:13:21,808 | INFO | Fitbod: 15 reviews scraped.
+2026-07-07 16:13:21,809 | INFO | Fitbod: Using Trustpilot reviews.
+2026-07-07 16:13:22,078 | INFO | Page 3: 20 review cards found.
+2026-07-07 16:13:22,192 | INFO | Total reviews scraped: 15
+2026-07-07 16:13:22,193 | INFO | Future: 15 reviews scraped.
+2026-07-07 16:13:22,193 | INFO | Future: Using Trustpilot reviews.
+2026-07-07 16:13:22,193 | INFO | Agent 3 Completed | FitAI
+2026-07-07 16:13:22,198 | INFO | Agent 4 Started | FitAI
+2026-07-07 16:13:22,198 | INFO | Processing Fitbod
+2026-07-07 16:13:22,199 | INFO | Fitbod | Gemini Analysis Started
+2026-07-07 16:13:22,200 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-07 16:13:22,203 | INFO | Processing Freeletics
+2026-07-07 16:13:22,203 | INFO | Freeletics | Gemini Analysis Started
+2026-07-07 16:13:22,204 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-07 16:13:22,208 | INFO | Processing Alpha Progression
+2026-07-07 16:13:22,208 | INFO | Processing Future
+2026-07-07 16:13:22,208 | INFO | Future | Gemini Analysis Started
+2026-07-07 16:13:22,209 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-07 16:13:22,212 | INFO | Processing Caliber Strength Training
+2026-07-07 16:13:22,216 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:13:22,222 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:13:22,227 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:13:22,646 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:13:22,648 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.5 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 38.544042622s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}.
+2026-07-07 16:13:24,344 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:13:24,346 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 2.42 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 36.846732581s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}.
+2026-07-07 16:13:40,701 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:13:40,706 | INFO | CompetitorAnalysis inference: 18.50s
+2026-07-07 16:13:40,706 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-07 16:13:40,707 | INFO | Fitbod | Gemini Analysis Finished
+2026-07-07 16:13:46,127 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:13:46,135 | INFO | CompetitorAnalysis inference: 23.93s
+2026-07-07 16:13:46,135 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-07 16:13:46,136 | INFO | Freeletics | Gemini Analysis Finished
+2026-07-07 16:17:23,120 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:17:23,124 | INFO | CompetitorAnalysis inference: 240.91s
+2026-07-07 16:17:23,124 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-07 16:17:23,124 | INFO | Future | Gemini Analysis Finished
+2026-07-07 16:17:23,124 | INFO | Agent 4 Completed | FitAI
+2026-07-07 16:17:23,130 | INFO | Agent 5 Started | FitAI
+2026-07-07 16:17:23,131 | INFO | Invoking Gemini | MarketGapAnalysis
+2026-07-07 16:17:23,134 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:17:39,629 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:17:39,634 | INFO | MarketGapAnalysis inference: 16.50s
+2026-07-07 16:17:39,634 | INFO | Gemini Success | MarketGapAnalysis
+2026-07-07 16:17:39,635 | INFO | Agent 5 Completed | FitAI
+2026-07-07 16:17:39,641 | INFO | Agent 6 Started | FitAI
+2026-07-07 16:17:39,642 | INFO | Invoking Gemini | StartupScore
+2026-07-07 16:17:39,644 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:18:06,427 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:18:06,433 | INFO | StartupScore inference: 26.79s
+2026-07-07 16:18:06,433 | INFO | Gemini Success | StartupScore
+2026-07-07 16:18:06,433 | INFO | Agent 6 Completed | FitAI
+2026-07-07 16:18:06,438 | INFO | Agent 7 Started | FitAI
+2026-07-07 16:18:06,439 | INFO | Invoking Gemini | PersonaOutput
+2026-07-07 16:18:06,444 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:18:30,296 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:18:30,300 | INFO | PersonaOutput inference: 23.86s
+2026-07-07 16:18:30,300 | INFO | Gemini Success | PersonaOutput
+2026-07-07 16:18:30,300 | INFO | Agent 7 Completed | FitAI
+2026-07-07 16:18:30,306 | INFO | Agent 8 Started | FitAI
+2026-07-07 16:18:30,307 | INFO | Invoking Gemini | PersonaFeedbackOutput
+2026-07-07 16:18:30,315 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:18:57,680 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:18:57,687 | INFO | PersonaFeedbackOutput inference: 27.37s
+2026-07-07 16:18:57,687 | INFO | Gemini Success | PersonaFeedbackOutput
+2026-07-07 16:18:57,687 | INFO | Agent 8 Completed | FitAI
+2026-07-07 16:18:57,691 | INFO | Agent 9 Started | FitAI
+2026-07-07 16:18:57,691 | INFO | Persona Feedback Length: 15031 characters
+2026-07-07 16:18:57,692 | INFO | Invoking Gemini | AdoptionAnalytics
+2026-07-07 16:18:57,695 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:19:38,962 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:19:38,966 | INFO | AdoptionAnalytics inference: 41.27s
+2026-07-07 16:19:38,966 | INFO | Gemini Success | AdoptionAnalytics
+2026-07-07 16:19:38,966 | INFO | Agent 9 Completed | FitAI
+2026-07-07 16:19:38,971 | INFO | Agent 10 Started | FitAI
+2026-07-07 16:19:38,971 | INFO | Invoking Gemini | FinalReport
+2026-07-07 16:19:38,974 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:19:56,103 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:19:56,107 | INFO | FinalReport inference: 17.13s
+2026-07-07 16:19:56,107 | INFO | Gemini Success | FinalReport
+2026-07-07 16:19:56,107 | INFO | Agent 10 Completed | FitAI
+2026-07-07 16:19:56,116 | INFO | Analysis Complete: FitAI; Total time: 440.6293523311615
+2026-07-07 16:21:13,471 | INFO | New Analysis: FitAI
+2026-07-07 16:21:13,476 | INFO | Agent 1 Started | FitAI
+2026-07-07 16:21:13,476 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-07 16:21:13,479 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:21:14,031 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:21:14,034 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.42 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 47.238578431s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}.
+2026-07-07 16:21:15,671 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:21:15,672 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 2.14 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 45.549636106s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}.
+2026-07-07 16:21:18,128 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:21:18,129 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 4.23 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 43.17680876s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '43s'}]}}.
+2026-07-07 16:21:22,548 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:21:22,549 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 8.25 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 38.658459716s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}.
+2026-07-07 16:21:31,033 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:21:31,036 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 16.4 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 30.172600339s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}.
+2026-07-07 16:21:47,917 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:21:47,920 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 13.287397444s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '13s'}]}}
+2026-07-07 16:21:47,920 | INFO | Switching To DeepSeek | StartupAnalysis
+2026-07-07 16:21:47,921 | INFO | DeepSeek Success | StartupAnalysis
+2026-07-07 16:21:47,922 | INFO | Agent 1 Completed | FitAI
+2026-07-07 16:21:47,928 | ERROR | Analysis Failed: 'coroutine' object has no attribute 'one_line_description'
+2026-07-07 16:22:06,074 | INFO | New Analysis: FitAI
+2026-07-07 16:22:06,080 | INFO | Agent 1 Started | FitAI
+2026-07-07 16:22:06,080 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-07 16:22:06,092 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:22:06,324 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:22:06,326 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.6 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 54.879433239s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '54s'}]}}.
+2026-07-07 16:22:08,129 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:22:08,130 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 2.68 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 53.07229504s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}.
+2026-07-07 16:22:10,989 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:22:10,990 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 4.82 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 50.217577492s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}.
+2026-07-07 16:22:16,106 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:22:16,109 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 8.65 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 45.199861078s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}.
+2026-07-07 16:22:24,974 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:22:24,976 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 16.4 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 36.226913837s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}.
+2026-07-07 16:24:44,398 | INFO | New Analysis: FitAI
+2026-07-07 16:24:44,410 | INFO | Agent 1 Started | FitAI
+2026-07-07 16:24:44,410 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-07 16:24:44,418 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:24:44,849 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:24:44,851 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.25 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 16.354133471s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}.
+2026-07-07 16:24:46,315 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:24:46,317 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 2.78 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 14.908944781s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '14s'}]}}.
+2026-07-07 16:24:49,378 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:24:49,379 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 4.85 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 11.9037132s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}.
+2026-07-07 16:24:54,506 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:24:54,507 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 8.87 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 6.725220802s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}.
+2026-07-07 16:25:03,810 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:25:03,813 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 16.8 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 57.396510068s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '57s'}]}}.
+2026-07-07 16:25:21,029 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:25:21,032 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 40.290981324s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}
+2026-07-07 16:25:21,032 | INFO | Switching To DeepSeek | StartupAnalysis
+2026-07-07 16:25:21,034 | INFO | DeepSeek Success | StartupAnalysis
+2026-07-07 16:25:21,034 | INFO | Agent 1 Completed | FitAI
+2026-07-07 16:25:21,039 | ERROR | Analysis Failed: 'coroutine' object has no attribute 'one_line_description'
+2026-07-07 16:28:15,644 | INFO | New Analysis: FitAI
+2026-07-07 16:28:15,654 | INFO | Agent 1 Started | FitAI
+2026-07-07 16:28:15,654 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-07 16:28:15,661 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:28:16,157 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:28:16,159 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.63 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 43.899455612s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '43s'}]}}.
+2026-07-07 16:28:18,246 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:28:18,248 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 2.8 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 41.838597243s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '41s'}]}}.
+2026-07-07 16:28:21,318 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:28:21,319 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 4.47 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 38.787582603s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}.
+2026-07-07 16:28:26,028 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:28:26,030 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 8.66 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 34.034286617s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '34s'}]}}.
+2026-07-07 16:28:35,041 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:28:35,042 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 16.5 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 25.11604783s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '25s'}]}}.
+2026-07-07 16:28:51,835 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:28:51,837 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 8.226500232s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '8s'}]}}
+2026-07-07 16:28:51,837 | INFO | Switching To DeepSeek | StartupAnalysis
+2026-07-07 16:28:51,839 | INFO | DeepSeek Success | StartupAnalysis
+2026-07-07 16:28:51,839 | INFO | Agent 1 Completed | FitAI
+2026-07-07 16:28:51,844 | ERROR | Analysis Failed: 'coroutine' object has no attribute 'one_line_description'
+2026-07-07 16:30:13,713 | INFO | New Analysis: FitAI
+2026-07-07 16:30:13,723 | INFO | Agent 1 Started | FitAI
+2026-07-07 16:30:13,724 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-07 16:30:13,730 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:30:21,476 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:30:21,480 | INFO | StartupAnalysis inference: 7.75s
+2026-07-07 16:30:21,481 | INFO | Gemini Success | StartupAnalysis
+2026-07-07 16:30:21,481 | INFO | Agent 1 Completed | FitAI
+2026-07-07 16:30:21,486 | INFO | Agent 2 Started | FitAI
+2026-07-07 16:30:21,486 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-07 16:30:21,490 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:30:42,431 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:30:42,436 | INFO | CompetitorOutput inference: 20.95s
+2026-07-07 16:30:42,437 | INFO | Gemini Success | CompetitorOutput
+2026-07-07 16:30:42,437 | INFO | Agent 2 Completed | FitAI
+2026-07-07 16:30:42,442 | INFO | Agent 3 Started | FitAI
+2026-07-07 16:30:42,442 | INFO | Collecting competitor reviews for Freeletics
+2026-07-07 16:30:42,442 | INFO | Collecting competitor reviews for Fitbod
+2026-07-07 16:30:42,442 | INFO | Searching Trustpilot: Freeletics
+2026-07-07 16:30:42,443 | INFO | Searching Trustpilot: Fitbod
+2026-07-07 16:30:42,443 | INFO | Collecting competitor reviews for Alpha Progression
+2026-07-07 16:30:42,444 | INFO | Searching Trustpilot: Alpha Progression
+2026-07-07 16:30:42,444 | INFO | Collecting competitor reviews for Caliber
+2026-07-07 16:30:42,445 | INFO | Searching Trustpilot: Caliber
+2026-07-07 16:30:42,445 | INFO | Collecting competitor reviews for Jefit
+2026-07-07 16:30:42,446 | INFO | Searching Trustpilot: Jefit
+2026-07-07 16:30:51,744 | INFO | Freeletics: 2 search results found.
+2026-07-07 16:30:51,766 | INFO | First Trustpilot Result:
+Freeletics
+
+www.freeletics.com
+
+2.93,069 reviews
+
+Berg-am-Laim-Straße 111, München, Germany
+2026-07-07 16:30:51,777 | INFO | Caliber: 10 search results found.
+2026-07-07 16:30:51,794 | INFO | First Trustpilot Result:
+Caliber
+
+caliberstrong.com
+
+4.9941 reviews
+
+505 W 37th St Apt 23E, New York, United States
+2026-07-07 16:30:51,905 | INFO | Fitbod: 15 search results found.
+2026-07-07 16:30:51,924 | INFO | First Trustpilot Result:
+Fitbodwww.fitbod.me•36 reviews3.0
+2026-07-07 16:30:51,964 | INFO | Search Result: {'name': 'Freeletics\n\nwww.freeletics.com\n\n2.93,069 reviews\n\nBerg-am-Laim-Straße 111, München, Germany', 'review_url': 'https://www.trustpilot.com/review/www.freeletics.com'}
+2026-07-07 16:30:51,965 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.freeletics.com
+2026-07-07 16:30:51,970 | INFO | Search Result: {'name': 'Caliber\n\ncaliberstrong.com\n\n4.9941 reviews\n\n505 W 37th St Apt 23E, New York, United States', 'review_url': 'https://www.trustpilot.com/review/caliberstrong.com'}
+2026-07-07 16:30:51,970 | INFO | Scraping reviews from https://www.trustpilot.com/review/caliberstrong.com
+2026-07-07 16:30:52,073 | INFO | Search Result: {'name': 'Fitbodwww.fitbod.me•36 reviews3.0', 'review_url': 'https://www.trustpilot.com/review/www.fitbod.me'}
+2026-07-07 16:30:52,073 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.fitbod.me
+2026-07-07 16:30:53,023 | INFO | Alpha Progression: 15 search results found.
+2026-07-07 16:30:53,129 | INFO | Jefit: 8 search results found.
+2026-07-07 16:30:53,141 | INFO | First Trustpilot Result:
+Alpha Futuresalpha-futures.com•5.3K reviews4.8
+2026-07-07 16:30:53,141 | WARNING | Company mismatch.
+Expected : Alpha Progression
+Found    : Alpha Futuresalpha-futures.com•5.3K reviews4.8
+Using LLM fallback.
+2026-07-07 16:30:53,187 | INFO | First Trustpilot Result:
+jefit.com
+
+www.jefit.com
+
+2.75 reviews
+2026-07-07 16:30:53,288 | INFO | Opening https://www.trustpilot.com/review/www.freeletics.com
+2026-07-07 16:30:53,375 | INFO | Opening https://www.trustpilot.com/review/caliberstrong.com
+2026-07-07 16:30:53,515 | INFO | Search Result: None
+2026-07-07 16:30:53,515 | WARNING | Alpha Progression: Trustpilot match not found. Using LLM.
+2026-07-07 16:30:53,515 | INFO | Invoking Gemini | FallbackResearch
+2026-07-07 16:30:53,521 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:30:53,527 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me
+2026-07-07 16:30:53,570 | INFO | Search Result: {'name': 'jefit.com\n\nwww.jefit.com\n\n2.75 reviews', 'review_url': 'https://www.trustpilot.com/review/www.jefit.com'}
+2026-07-07 16:30:53,570 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.jefit.com
+2026-07-07 16:30:54,550 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com
+2026-07-07 16:30:57,756 | INFO | Page 1: 20 review cards found.
+2026-07-07 16:30:57,857 | INFO | Page 1: 20 review cards found.
+2026-07-07 16:30:58,249 | INFO | Page 1: 20 review cards found.
+2026-07-07 16:30:58,546 | INFO | Opening https://www.trustpilot.com/review/www.freeletics.com?page=2
+2026-07-07 16:30:58,800 | INFO | Page 1: 4 review cards found.
+2026-07-07 16:30:59,191 | INFO | Opening https://www.trustpilot.com/review/caliberstrong.com?page=2
+2026-07-07 16:30:59,220 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=2
+2026-07-07 16:30:59,286 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=2
+2026-07-07 16:31:02,973 | INFO | Page 2: 0 review cards found.
+2026-07-07 16:31:02,974 | INFO | Opening https://www.trustpilot.com/review/www.jefit.com?page=3
+2026-07-07 16:31:02,991 | INFO | Page 2: 20 review cards found.
+2026-07-07 16:31:02,991 | INFO | Opening https://www.trustpilot.com/review/www.freeletics.com?page=3
+2026-07-07 16:31:03,267 | INFO | Page 2: 15 review cards found.
+2026-07-07 16:31:03,267 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=3
+2026-07-07 16:31:03,842 | INFO | Page 2: 20 review cards found.
+2026-07-07 16:31:03,842 | INFO | Opening https://www.trustpilot.com/review/caliberstrong.com?page=3
+2026-07-07 16:31:05,372 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:31:05,378 | INFO | FallbackResearch inference: 11.86s
+2026-07-07 16:31:05,378 | INFO | Gemini Success | FallbackResearch
+2026-07-07 16:31:06,459 | INFO | Page 3: 0 review cards found.
+2026-07-07 16:31:06,519 | INFO | Page 3: 20 review cards found.
+2026-07-07 16:31:06,636 | INFO | Total reviews scraped: 4
+2026-07-07 16:31:06,637 | INFO | Jefit: 4 reviews scraped.
+2026-07-07 16:31:06,637 | INFO | Jefit: Using Trustpilot reviews.
+2026-07-07 16:31:06,639 | INFO | Page 3: 0 review cards found.
+2026-07-07 16:31:06,707 | INFO | Total reviews scraped: 15
+2026-07-07 16:31:06,708 | INFO | Freeletics: 15 reviews scraped.
+2026-07-07 16:31:06,708 | INFO | Freeletics: Using Trustpilot reviews.
+2026-07-07 16:31:06,808 | INFO | Total reviews scraped: 15
+2026-07-07 16:31:06,809 | INFO | Fitbod: 15 reviews scraped.
+2026-07-07 16:31:06,809 | INFO | Fitbod: Using Trustpilot reviews.
+2026-07-07 16:31:07,917 | INFO | Page 3: 20 review cards found.
+2026-07-07 16:31:08,016 | INFO | Total reviews scraped: 15
+2026-07-07 16:31:08,016 | INFO | Caliber: 15 reviews scraped.
+2026-07-07 16:31:08,016 | INFO | Caliber: Using Trustpilot reviews.
+2026-07-07 16:31:08,016 | INFO | Agent 3 Completed | FitAI
+2026-07-07 16:31:08,020 | INFO | Agent 4 Started | FitAI
+2026-07-07 16:31:08,021 | INFO | Processing Freeletics
+2026-07-07 16:31:08,021 | INFO | Freeletics | Gemini Analysis Started
+2026-07-07 16:31:08,021 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-07 16:31:08,023 | INFO | Processing Fitbod
+2026-07-07 16:31:08,023 | INFO | Fitbod | Gemini Analysis Started
+2026-07-07 16:31:08,023 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-07 16:31:08,024 | INFO | Processing Alpha Progression
+2026-07-07 16:31:08,024 | INFO | Processing Caliber
+2026-07-07 16:31:08,024 | INFO | Caliber | Gemini Analysis Started
+2026-07-07 16:31:08,025 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-07 16:31:08,026 | INFO | Processing Jefit
+2026-07-07 16:31:08,026 | INFO | Jefit | Gemini Analysis Started
+2026-07-07 16:31:08,026 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-07 16:31:08,031 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:31:08,035 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:31:08,039 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:31:08,042 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:31:09,377 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-07-07 16:31:09,379 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.66 seconds as it raised ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}.
+2026-07-07 16:31:11,219 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:31:11,221 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 2.17 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 48.824407058s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '48s'}]}}.
+2026-07-07 16:31:13,574 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:31:13,576 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 4.2 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 46.469782225s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '46s'}]}}.
+2026-07-07 16:31:20,855 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:31:20,861 | INFO | CompetitorAnalysis inference: 12.83s
+2026-07-07 16:31:20,861 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-07 16:31:20,862 | INFO | Jefit | Gemini Analysis Finished
+2026-07-07 16:31:26,889 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:31:26,894 | INFO | CompetitorAnalysis inference: 18.87s
+2026-07-07 16:31:26,894 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-07 16:31:26,894 | INFO | Caliber | Gemini Analysis Finished
+2026-07-07 16:31:29,990 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-07-07 16:31:29,991 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 8.18 seconds as it raised ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}.
+2026-07-07 16:31:30,510 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-07-07 16:31:30,512 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.12 seconds as it raised ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}.
+2026-07-07 16:31:33,953 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-07-07 16:31:33,954 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 2.99 seconds as it raised ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}.
+2026-07-07 16:31:40,758 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-07-07 16:31:40,760 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 16.7 seconds as it raised ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}.
+2026-07-07 16:32:04,280 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:32:04,286 | INFO | CompetitorAnalysis inference: 56.26s
+2026-07-07 16:32:04,286 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-07 16:32:04,287 | INFO | Freeletics | Gemini Analysis Finished
+2026-07-07 16:32:12,053 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:32:12,056 | INFO | CompetitorAnalysis inference: 64.03s
+2026-07-07 16:32:12,056 | INFO | Gemini Success | CompetitorAnalysis
+2026-07-07 16:32:12,057 | INFO | Fitbod | Gemini Analysis Finished
+2026-07-07 16:32:12,057 | INFO | Agent 4 Completed | FitAI
+2026-07-07 16:32:12,062 | INFO | Agent 5 Started | FitAI
+2026-07-07 16:32:12,062 | INFO | Invoking Gemini | MarketGapAnalysis
+2026-07-07 16:32:12,067 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:32:27,510 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-07-07 16:32:27,512 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.4 seconds as it raised ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}.
+2026-07-07 16:32:51,309 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:32:51,315 | INFO | MarketGapAnalysis inference: 39.25s
+2026-07-07 16:32:51,315 | INFO | Gemini Success | MarketGapAnalysis
+2026-07-07 16:32:51,315 | INFO | Agent 5 Completed | FitAI
+2026-07-07 16:32:51,322 | INFO | Agent 6 Started | FitAI
+2026-07-07 16:32:51,322 | INFO | Invoking Gemini | StartupScore
+2026-07-07 16:32:51,325 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:33:09,278 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:33:09,283 | INFO | StartupScore inference: 17.96s
+2026-07-07 16:33:09,283 | INFO | Gemini Success | StartupScore
+2026-07-07 16:33:09,283 | INFO | Agent 6 Completed | FitAI
+2026-07-07 16:33:09,288 | INFO | Agent 7 Started | FitAI
+2026-07-07 16:33:09,288 | INFO | Invoking Gemini | PersonaOutput
+2026-07-07 16:33:09,294 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:33:38,379 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:33:38,383 | INFO | PersonaOutput inference: 29.09s
+2026-07-07 16:33:38,384 | INFO | Gemini Success | PersonaOutput
+2026-07-07 16:33:38,384 | INFO | Agent 7 Completed | FitAI
+2026-07-07 16:33:38,388 | INFO | Agent 8 Started | FitAI
+2026-07-07 16:33:38,389 | INFO | Invoking Gemini | PersonaFeedbackOutput
+2026-07-07 16:33:38,395 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:34:13,046 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:34:13,053 | INFO | PersonaFeedbackOutput inference: 34.66s
+2026-07-07 16:34:13,054 | INFO | Gemini Success | PersonaFeedbackOutput
+2026-07-07 16:34:13,054 | INFO | Agent 8 Completed | FitAI
+2026-07-07 16:34:13,059 | INFO | Agent 9 Started | FitAI
+2026-07-07 16:34:13,059 | INFO | Persona Feedback Length: 15863 characters
+2026-07-07 16:34:13,060 | INFO | Invoking Gemini | AdoptionAnalytics
+2026-07-07 16:34:13,064 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:34:48,730 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:34:48,735 | INFO | AdoptionAnalytics inference: 35.67s
+2026-07-07 16:34:48,735 | INFO | Gemini Success | AdoptionAnalytics
+2026-07-07 16:34:48,735 | INFO | Agent 9 Completed | FitAI
+2026-07-07 16:34:48,739 | INFO | Agent 10 Started | FitAI
+2026-07-07 16:34:48,739 | INFO | Invoking Gemini | FinalReport
+2026-07-07 16:34:48,742 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:34:50,151 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-07-07 16:34:50,153 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.87 seconds as it raised ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}.
+2026-07-07 16:35:08,382 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:35:08,386 | INFO | FinalReport inference: 19.64s
+2026-07-07 16:35:08,386 | INFO | Gemini Success | FinalReport
+2026-07-07 16:35:08,386 | INFO | Agent 10 Completed | FitAI
+2026-07-07 16:35:08,393 | INFO | Analysis Complete: FitAI; Total time: 294.6756887435913
+2026-07-07 16:45:41,795 | INFO | New Analysis: FitAI
+2026-07-07 16:45:41,800 | INFO | Agent 1 Started | FitAI
+2026-07-07 16:45:41,801 | INFO | Invoking Gemini | StartupAnalysis
+2026-07-07 16:45:41,803 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:45:50,643 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:45:50,648 | INFO | StartupAnalysis inference: 8.85s
+2026-07-07 16:45:50,648 | INFO | Gemini Success | StartupAnalysis
+2026-07-07 16:45:50,648 | INFO | Agent 1 Completed | FitAI
+2026-07-07 16:45:50,652 | INFO | Agent 2 Started | FitAI
+2026-07-07 16:45:50,652 | INFO | Invoking Gemini | CompetitorOutput
+2026-07-07 16:45:50,656 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:45:59,662 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-07 16:45:59,665 | INFO | CompetitorOutput inference: 9.01s
+2026-07-07 16:45:59,665 | INFO | Gemini Success | CompetitorOutput
+2026-07-07 16:45:59,666 | INFO | Agent 2 Completed | FitAI
+2026-07-07 16:45:59,669 | INFO | Agent 3 Started | FitAI
+2026-07-07 16:45:59,669 | INFO | Collecting competitor reviews for Freeletics
+2026-07-07 16:45:59,669 | INFO | Collecting competitor reviews for Fitbod
+2026-07-07 16:45:59,669 | INFO | Searching Trustpilot: Freeletics
+2026-07-07 16:45:59,670 | INFO | Collecting competitor reviews for Shred
+2026-07-07 16:45:59,670 | INFO | Searching Trustpilot: Fitbod
+2026-07-07 16:45:59,670 | INFO | Collecting competitor reviews for Alpha Progression
+2026-07-07 16:45:59,670 | INFO | Searching Trustpilot: Shred
+2026-07-07 16:45:59,670 | INFO | Collecting competitor reviews for Vi Trainer
+2026-07-07 16:45:59,671 | INFO | Searching Trustpilot: Alpha Progression
+2026-07-07 16:45:59,672 | INFO | Searching Trustpilot: Vi Trainer
+2026-07-07 16:46:09,612 | INFO | Fitbod: 10 search results found.
+2026-07-07 16:46:09,625 | INFO | First Trustpilot Result:
+Fitbod
+
+www.fitbod.me
+
+3.036 reviews
+
+Taraval Street 1655, San Francisco, United States
+2026-07-07 16:46:09,737 | INFO | Freeletics: 2 search results found.
+2026-07-07 16:46:09,760 | INFO | First Trustpilot Result:
+Freeletics
+
+www.freeletics.com
+
+2.93,069 reviews
+
+Berg-am-Laim-Straße 111, München, Germany
+2026-07-07 16:46:09,794 | INFO | Search Result: {'name': 'Fitbod\n\nwww.fitbod.me\n\n3.036 reviews\n\nTaraval Street 1655, San Francisco, United States', 'review_url': 'https://www.trustpilot.com/review/www.fitbod.me'}
+2026-07-07 16:46:09,796 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.fitbod.me
+2026-07-07 16:46:09,935 | INFO | Search Result: {'name': 'Freeletics\n\nwww.freeletics.com\n\n2.93,069 reviews\n\nBerg-am-Laim-Straße 111, München, Germany', 'review_url': 'https://www.trustpilot.com/review/www.freeletics.com'}
+2026-07-07 16:46:09,935 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.freeletics.com
+2026-07-07 16:46:10,137 | INFO | Alpha Progression: 10 search results found.
+2026-07-07 16:46:10,231 | INFO | First Trustpilot Result:
+Alpha Futures
+
+alpha-futures.com
+
+4.85,327 reviews
+
+United States
+2026-07-07 16:46:10,232 | WARNING | Company mismatch.
+Expected : Alpha Progression
+Found    : Alpha Futures
+
+alpha-futures.com
+
+4.85,327 reviews
+
+United States
+Using LLM fallback.
+2026-07-07 16:46:10,374 | INFO | Search Result: None
+2026-07-07 16:46:10,374 | WARNING | Alpha Progression: Trustpilot match not found. Using LLM.
+2026-07-07 16:46:10,374 | INFO | Invoking Gemini | FallbackResearch
+2026-07-07 16:46:10,379 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:46:10,799 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:10,801 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.65 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 49.264079279s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '49s'}]}}.
+2026-07-07 16:46:10,874 | INFO | Shred: 10 search results found.
+2026-07-07 16:46:10,892 | INFO | First Trustpilot Result:
+V Shred
+
+vshred.com
+
+2.713,490 reviews
+
+4530 S Decatur Blvd #103, Las Vegas, United States
+2026-07-07 16:46:10,988 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me
+2026-07-07 16:46:11,086 | INFO | Search Result: {'name': 'V Shred\n\nvshred.com\n\n2.713,490 reviews\n\n4530 S Decatur Blvd #103, Las Vegas, United States', 'review_url': 'https://www.trustpilot.com/review/vshred.com'}
+2026-07-07 16:46:11,087 | INFO | Scraping reviews from https://www.trustpilot.com/review/vshred.com
+2026-07-07 16:46:11,095 | INFO | Opening https://www.trustpilot.com/review/www.freeletics.com
+2026-07-07 16:46:11,782 | INFO | Vi Trainer: 10 search results found.
+2026-07-07 16:46:11,999 | INFO | First Trustpilot Result:
+Vintage Trainers
+
+vintagetrainers.co.uk
+
+3.261 reviews
+
+Unit 18, Basepoint Industrial Estate. Waterberry Drive, Waterlooville, United Kingdom
+2026-07-07 16:46:11,999 | WARNING | Company mismatch.
+Expected : Vi Trainer
+Found    : Vintage Trainers
+
+vintagetrainers.co.uk
+
+3.261 reviews
+
+Unit 18, Basepoint Industrial Estate. Waterberry Drive, Waterlooville, United Kingdom
+Using LLM fallback.
+2026-07-07 16:46:12,064 | INFO | Opening https://www.trustpilot.com/review/vshred.com
+2026-07-07 16:46:12,105 | INFO | Search Result: None
+2026-07-07 16:46:12,105 | WARNING | Vi Trainer: Trustpilot match not found. Using LLM.
+2026-07-07 16:46:12,105 | INFO | Invoking Gemini | FallbackResearch
+2026-07-07 16:46:12,109 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:46:12,295 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:12,296 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.72 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 47.76794478s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}.
+2026-07-07 16:46:12,677 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:12,679 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 2.56 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 47.423218769s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}.
+2026-07-07 16:46:14,230 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:14,232 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 2.48 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 45.855601157s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}.
+2026-07-07 16:46:15,393 | INFO | Page 1: 20 review cards found.
+2026-07-07 16:46:15,478 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:15,479 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 4.32 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 44.598972221s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '44s'}]}}.
+2026-07-07 16:46:15,684 | INFO | Page 1: 20 review cards found.
+2026-07-07 16:46:16,217 | INFO | Opening https://www.trustpilot.com/review/www.freeletics.com?page=2
+2026-07-07 16:46:16,797 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=2
+2026-07-07 16:46:16,898 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:16,900 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 4.83 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 43.165553674s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '43s'}]}}.
+2026-07-07 16:46:16,977 | INFO | Page 1: 20 review cards found.
+2026-07-07 16:46:17,662 | INFO | Opening https://www.trustpilot.com/review/vshred.com?page=2
+2026-07-07 16:46:20,013 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:20,016 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 8.53 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 40.057296583s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}.
+2026-07-07 16:46:20,373 | INFO | Page 2: 20 review cards found.
+2026-07-07 16:46:20,373 | INFO | Opening https://www.trustpilot.com/review/www.freeletics.com?page=3
+2026-07-07 16:46:20,652 | INFO | Page 2: 15 review cards found.
+2026-07-07 16:46:20,652 | INFO | Opening https://www.trustpilot.com/review/www.fitbod.me?page=3
+2026-07-07 16:46:21,634 | INFO | Page 2: 20 review cards found.
+2026-07-07 16:46:21,634 | INFO | Opening https://www.trustpilot.com/review/vshred.com?page=3
+2026-07-07 16:46:21,942 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:21,944 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 8.91 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 38.121227945s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}.
+2026-07-07 16:46:24,222 | INFO | Page 3: 20 review cards found.
+2026-07-07 16:46:24,337 | INFO | Total reviews scraped: 15
+2026-07-07 16:46:24,338 | INFO | Freeletics: 15 reviews scraped.
+2026-07-07 16:46:24,338 | INFO | Freeletics: Using Trustpilot reviews.
+2026-07-07 16:46:24,526 | INFO | Page 3: 0 review cards found.
+2026-07-07 16:46:24,654 | INFO | Total reviews scraped: 15
+2026-07-07 16:46:24,655 | INFO | Fitbod: 15 reviews scraped.
+2026-07-07 16:46:24,655 | INFO | Fitbod: Using Trustpilot reviews.
+2026-07-07 16:46:25,958 | INFO | Page 3: 19 review cards found.
+2026-07-07 16:46:26,080 | INFO | Total reviews scraped: 15
+2026-07-07 16:46:26,080 | INFO | Shred: 15 reviews scraped.
+2026-07-07 16:46:26,080 | INFO | Shred: Using Trustpilot reviews.
+2026-07-07 16:46:28,801 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:28,803 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 16.4 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 31.28012128s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31s'}]}}.
+2026-07-07 16:46:31,099 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:31,101 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 17 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 29.007757482s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '29s'}]}}.
+2026-07-07 16:46:46,106 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:46,108 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 14.60129112s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '14s'}]}}
+2026-07-07 16:46:46,109 | INFO | Switching To DeepSeek | FallbackResearch
+2026-07-07 16:46:46,110 | INFO | DeepSeek Success | FallbackResearch
+2026-07-07 16:46:48,300 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:48,301 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 11.81879937s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}
+2026-07-07 16:46:48,301 | INFO | Switching To DeepSeek | FallbackResearch
+2026-07-07 16:46:48,302 | INFO | DeepSeek Success | FallbackResearch
+2026-07-07 16:46:48,303 | INFO | Agent 3 Completed | FitAI
+2026-07-07 16:46:48,310 | INFO | Agent 4 Started | FitAI
+2026-07-07 16:46:48,310 | INFO | Processing Freeletics
+2026-07-07 16:46:48,310 | INFO | Freeletics | Gemini Analysis Started
+2026-07-07 16:46:48,311 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-07 16:46:48,313 | INFO | Processing Fitbod
+2026-07-07 16:46:48,313 | INFO | Fitbod | Gemini Analysis Started
+2026-07-07 16:46:48,313 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-07 16:46:48,315 | INFO | Processing Shred
+2026-07-07 16:46:48,315 | INFO | Shred | Gemini Analysis Started
+2026-07-07 16:46:48,315 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-07-07 16:46:48,317 | INFO | Processing Alpha Progression
+2026-07-07 16:46:48,317 | INFO | Processing Vi Trainer
+2026-07-07 16:46:48,319 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:46:48,323 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:46:48,326 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:46:48,604 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:48,609 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.52 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 11.557511801s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}.
+2026-07-07 16:46:48,611 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:48,613 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.81 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 11.528436487s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}.
+2026-07-07 16:46:48,911 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:48,913 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.44 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 11.26109278s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}.
+2026-07-07 16:46:50,373 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:50,374 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 2.08 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 9.721490003s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '9s'}]}}.
+2026-07-07 16:46:50,591 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:50,594 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 2.72 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 9.524462502s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '9s'}]}}.
+2026-07-07 16:46:50,663 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:50,665 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 2.85 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 9.421995579s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '9s'}]}}.
+2026-07-07 16:46:52,706 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:52,707 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 4.31 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 7.419363348s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '7s'}]}}.
+2026-07-07 16:46:53,526 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:53,528 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 4.03 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 6.579663506s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}.
+2026-07-07 16:46:53,833 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:53,835 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 4.89 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 6.351710615s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}.
+2026-07-07 16:46:57,212 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:57,214 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 8.49 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 2.855371298s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '2s'}]}}.
+2026-07-07 16:46:57,827 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:57,828 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 8.52 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 2.317415789s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '2s'}]}}.
+2026-07-07 16:46:58,954 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:46:58,955 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 8.03 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 1.136621977s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '1s'}]}}.
+2026-07-07 16:47:05,932 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:47:05,935 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 16.5 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 54.140424165s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '54s'}]}}.
+2026-07-07 16:47:06,551 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:47:06,552 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 16.8 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 53.515505433s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}.
+2026-07-07 16:47:07,252 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:47:07,254 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 16.5 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 52.89487681s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '52s'}]}}.
+2026-07-07 16:47:22,626 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:47:22,628 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 37.448267805s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '37s'}]}}
+2026-07-07 16:47:22,628 | INFO | Switching To DeepSeek | CompetitorAnalysis
+2026-07-07 16:47:22,629 | INFO | DeepSeek Success | CompetitorAnalysis
+2026-07-07 16:47:22,629 | INFO | Freeletics | Gemini Analysis Finished
+2026-07-07 16:47:23,538 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:47:23,540 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 36.533068086s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}
+2026-07-07 16:47:23,541 | INFO | Switching To DeepSeek | CompetitorAnalysis
+2026-07-07 16:47:23,542 | INFO | DeepSeek Success | CompetitorAnalysis
+2026-07-07 16:47:23,542 | INFO | Fitbod | Gemini Analysis Finished
+2026-07-07 16:47:23,966 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:47:23,968 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 36.099515458s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}
+2026-07-07 16:47:23,968 | INFO | Switching To DeepSeek | CompetitorAnalysis
+2026-07-07 16:47:23,969 | INFO | DeepSeek Success | CompetitorAnalysis
+2026-07-07 16:47:23,969 | INFO | Shred | Gemini Analysis Finished
+2026-07-07 16:47:23,969 | ERROR | Alpha Progression Failed
+NoneType: None
+2026-07-07 16:47:23,970 | ERROR | Vi Trainer Failed
+NoneType: None
+2026-07-07 16:47:23,970 | INFO | Agent 4 Completed | FitAI
+2026-07-07 16:47:23,974 | INFO | Agent 5 Started | FitAI
+2026-07-07 16:47:23,975 | INFO | Invoking Gemini | MarketGapAnalysis
+2026-07-07 16:47:23,978 | INFO | AFC is enabled with max remote calls: 10.
+2026-07-07 16:47:24,269 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:47:24,273 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.86 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 35.802487321s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '35s'}]}}.
+2026-07-07 16:47:26,329 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:47:26,330 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 2.03 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 33.747007862s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33s'}]}}.
+2026-07-07 16:47:28,551 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:47:28,553 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 4.7 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 31.543371503s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31s'}]}}.
+2026-07-07 16:47:33,473 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:47:33,475 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 8.65 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 26.638306265s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '26s'}]}}.
+2026-07-07 16:47:42,373 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:47:42,374 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 16.8 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 17.73095463s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}.
+2026-07-07 16:47:59,594 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-07-07 16:47:59,596 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 526.48278ms.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '0s'}]}}
+2026-07-07 16:47:59,596 | INFO | Switching To DeepSeek | MarketGapAnalysis
+2026-07-07 16:47:59,597 | INFO | DeepSeek Success | MarketGapAnalysis
+2026-07-07 16:47:59,605 | ERROR | Analysis Failed: 'coroutine' object has no attribute 'model_dump'
