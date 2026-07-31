@@ -1,0 +1,77 @@
+import { apiGet, apiPost } from "@/lib/api/client";
+import { clearAuth, readAuth, writeAuth, type StoredAuth } from "@/lib/auth/storage";
+
+export type RegisterPayload = {
+  name: string;
+  email: string;
+  password: string;
+};
+
+export type LoginPayload = {
+  email: string;
+  password: string;
+};
+
+export type AuthResponse = {
+  access_token: string;
+  refresh_token: string;
+  token_type: string;
+};
+
+export type CurrentUser = {
+  user_id: string;
+  name: string;
+  email: string;
+  created_at?: string;
+};
+
+export async function registerUser(payload: RegisterPayload) {
+  return apiPost<{ message: string }>('/auth/register', payload);
+}
+
+export async function loginUser(payload: LoginPayload) {
+  const result = await apiPost<AuthResponse>('/auth/login', payload);
+  const auth: StoredAuth = {
+    accessToken: result.access_token,
+    refreshToken: result.refresh_token,
+    userId: "",
+    email: payload.email,
+    name: payload.email.split("@")[0],
+  };
+  writeAuth(auth);
+  return result;
+}
+
+export async function fetchCurrentUser() {
+  const user = await apiGet<CurrentUser>('/auth/me');
+  const auth = readAuth();
+  if (auth) {
+    writeAuth({ ...auth, userId: user.user_id, email: user.email, name: user.name });
+  }
+  return user;
+}
+
+export async function logoutUser() {
+  const auth = readAuth();
+  if (!auth) {
+    clearAuth();
+    return { message: "Logged out" };
+  }
+
+  try {
+    await apiPost('/auth/logout', {
+      user_id: auth.userId,
+      refresh_token: auth.refreshToken,
+    });
+  } catch {
+    // ignore logout API failures and clear local session
+  } finally {
+    clearAuth();
+  }
+
+  return { message: "Logged out" };
+}
+
+export function getStoredAuth() {
+  return readAuth();
+}
