@@ -126,14 +126,20 @@ function RootComponent() {
 
   const protectedPaths = ["/dashboard", "/history", "/profile", "/analysis"];
   const isProtectedRoute = protectedPaths.some((path) => pathname === path || pathname.startsWith(`${path}/`));
-  const isPublicRoute = ["/", "/login", "/register", "/forgot-password"].some((path) => pathname === path);
+  const authEntryPaths = ["/", "/login", "/register", "/forgot-password"];
+  const isAuthEntryRoute = authEntryPaths.includes(pathname);
 
   useEffect(() => {
     if (loading) return;
-    if (!session && isProtectedRoute && !isPublicRoute) {
+    if (!session && isProtectedRoute) {
       window.location.assign("/login");
+      return;
     }
-  }, [isProtectedRoute, isPublicRoute, loading, session]);
+    // Already signed in with a valid session — skip landing/auth screens
+    if (session && isAuthEntryRoute) {
+      window.location.assign("/dashboard");
+    }
+  }, [isAuthEntryRoute, isProtectedRoute, loading, session]);
 
   return (
     <QueryClientProvider client={queryClient}>

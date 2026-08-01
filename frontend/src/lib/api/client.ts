@@ -1,4 +1,4 @@
-import { readAuth, clearAuth } from "@/lib/auth/storage";
+import { readAuth, clearAuth, writeAuth } from "@/lib/auth/storage";
 
 const DEFAULT_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000";
 
@@ -20,7 +20,78 @@ class ApiError extends Error {
   }
 }
 
-async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
+function userIdFromAccessToken(token: string): string {
+  try {
+    const part = token.split(".")[1];
+    if (!part) return "";
+    const json = atob(part.replace(/-/g, "+").replace(/_/g, "/"));
+    const payload = JSON.parse(json) as { user_id?: string };
+    return payload.user_id ?? "";
+  } catch {
+    return "";
+  }
+}
+
+/** Refresh access token using the 7-day refresh token. Returns false if session is over. */
+async function refreshAccessToken(): Promise<boolean> {
+  const auth = readAuth();
+  if (!auth?.refreshToken) return false;
+
+  const userId = auth.userId || userIdFromAccessToken(auth.accessToken);
+  if (!userId) return false;
+
+  try {
+    const response = await fetch(`${DEFAULT_BASE_URL}/auth/refresh`, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        user_id: userId,
+        refresh_token: auth.refreshToken,
+      }),
+    });
+
+    if (!response.ok) {
+      clearAuth();
+      return false;
+    }
+
+    const result = (await response.json()) as {
+      access_token: string;
+      refresh_token: string;
+    };
+
+    writeAuth({
+      ...auth,
+      userId,
+      accessToken: result.access_token,
+      refreshToken: result.refresh_token,
+    });
+    return true;
+  } catch {
+    clearAuth();
+    return false;
+  }
+}
+
+let refreshPromise: Promise<boolean> | null = null;
+
+function ensureRefreshed() {
+  if (!refreshPromise) {
+    refreshPromise = refreshAccessToken().finally(() => {
+      refreshPromise = null;
+    });
+  }
+  return refreshPromise;
+}
+
+function isAuthPath(path: string) {
+  return path.startsWith("/auth/");
+}
+
+async function request<T>(path: string, init: RequestInit = {}, retried = false): Promise<T> {
   const auth = readAuth();
   const headers = new Headers(init.headers);
   headers.set("Accept", "application/json");
@@ -43,8 +114,24 @@ async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
   const payload = isJson ? await response.json() : await response.text();
 
   if (!response.ok) {
-    if (response.status === 401) {
+    // Access token expired (~30 min) — try refresh token (valid ~7 days) once
+    if (response.status === 401 && !retried && !isAuthPath(path) && readAuth()?.refreshToken) {
+      const refreshed = await ensureRefreshed();
+      if (refreshed) {
+        return request<T>(path, init, true);
+      }
+      if (typeof window !== "undefined" && !window.location.pathname.startsWith("/login")) {
+        window.location.assign("/login");
+      }
+    } else if (response.status === 401) {
       clearAuth();
+      if (
+        typeof window !== "undefined" &&
+        !isAuthPath(path) &&
+        !window.location.pathname.startsWith("/login")
+      ) {
+        window.location.assign("/login");
+      }
     }
 
     const errorMessage =

@@ -1,6 +1,7 @@
 import os
 
 from dotenv import load_dotenv
+from langchain_ollama import ChatOllama
 
 load_dotenv()
 
@@ -19,6 +20,11 @@ class LLMManager:
             google_api_key=os.getenv("GOOGLE_API_KEY"),
             temperature=0,
         )
+        # return ChatOllama(
+        #     model="mistral:latest",
+        #     base_url="http://localhost:11434",
+        #     temperature=0,
+        # )
 
     def _build_fallback(self):
         from langchain_openai import ChatOpenAI

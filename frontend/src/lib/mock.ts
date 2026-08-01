@@ -34,6 +34,30 @@ export type Recommendation = {
   actions: string[];
 };
 
+export type ValidationAnalytics = {
+  executiveSummary: string;
+  startupOverview: string;
+  marketValidation: string;
+  customerValidation: string;
+  strengths: string[];
+  weaknesses: string[];
+  opportunities: string[];
+  threats: string[];
+  adoptionProbability: number;
+  paymentProbability: number;
+  recommendationProbability: number;
+  averageAdoptionScore: number;
+  mostLikedFeatures: string[];
+  mostRequestedFeatures: string[];
+  topConcerns: string[];
+  barriers: string[];
+  preferredCompetitors: string[];
+  earlyAdopters: string[];
+  undecided: string[];
+  rejectors: string[];
+  finalVerdict: string;
+};
+
 export type Analysis = {
   id: string;
   input: AnalysisInput;
@@ -43,7 +67,7 @@ export type Analysis = {
   summary: { oneLiner: string; industry: string; features: string[] };
   competitors: Competitor[];
   gaps: { title: string; detail: string; opportunity: "High" | "Medium" }[];
-  scoreBreakdown: { label: string; value: number }[];
+  scoreBreakdown: { label: string; value: number; reason?: string }[];
   strengthMeter: number;
   weaknessMeter: number;
   personas: Persona[];
@@ -52,6 +76,7 @@ export type Analysis = {
   adoption: { week: string; adoption: number }[];
   market: { label: string; value: number; note: string }[];
   recommendations: Recommendation[];
+  validation: ValidationAnalytics | null;
 };
 
 export const AGENTS = [
@@ -77,6 +102,13 @@ export const AGENTS = [
     seconds: 6,
   },
   {
+    key: "intelligence",
+    title: "Competitor Intelligence",
+    description: "Synthesising strengths, weaknesses and differentiation",
+    icon: "Radar",
+    seconds: 5,
+  },
+  {
     key: "gaps",
     title: "Market Gap Analysis",
     description: "Finding unclaimed territory you can own",
@@ -85,7 +117,7 @@ export const AGENTS = [
   },
   {
     key: "score",
-    title: "Startup Score",
+    title: "Startup Scoring",
     description: "Scoring viability across eight weighted dimensions",
     icon: "Gauge",
     seconds: 4,
@@ -99,7 +131,7 @@ export const AGENTS = [
   },
   {
     key: "feedback",
-    title: "Persona Feedback",
+    title: "Persona Simulation",
     description: "Interviewing each persona about your pitch",
     icon: "MessageSquare",
     seconds: 6,
@@ -345,6 +377,7 @@ export function buildAnalysis(input: AnalysisInput, id: string = crypto.randomUU
         actions: ["Select a compliance vendor", "Assign an internal owner", "Publish a trust center"],
       },
     ],
+    validation: null,
   };
 }
 

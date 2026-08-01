@@ -1,8 +1,8 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { toast } from "sonner";
 import { AuthLayout, Field, inputClass, submitClass } from "@/components/layout/AuthLayout";
-import { registerUser } from "@/lib/api/auth";
+import { loginUser, registerUser } from "@/lib/api/auth";
 
 export const Route = createFileRoute("/register")({
   head: () => ({
@@ -17,7 +17,6 @@ export const Route = createFileRoute("/register")({
 });
 
 function RegisterPage() {
-  const navigate = useNavigate();
   const [form, setForm] = useState({ name: "", email: "", password: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(false);
@@ -36,8 +35,9 @@ function RegisterPage() {
     setLoading(true);
     try {
       await registerUser({ name: form.name, email: form.email, password: form.password });
+      await loginUser({ email: form.email, password: form.password });
       toast.success("Account created — let's analyze something");
-      navigate({ to: "/login" });
+      window.location.assign("/dashboard");
     } catch (error) {
       const message = error instanceof Error ? error.message : "Unable to create account";
       toast.error(message);
@@ -59,26 +59,37 @@ function RegisterPage() {
         </>
       }
     >
-      <form onSubmit={submit} className="space-y-4">
+      <form onSubmit={submit} className="space-y-4" autoComplete="off">
         <Field label="Full name" error={errors.name}>
-          <input className={inputClass} value={form.name} onChange={set("name")} placeholder="Ada Lovelace" />
+          <input
+            className={inputClass}
+            name="name"
+            value={form.name}
+            onChange={set("name")}
+            placeholder="Ada Lovelace"
+            autoComplete="off"
+          />
         </Field>
         <Field label="Work email" error={errors.email}>
           <input
             className={inputClass}
             type="email"
+            name="email"
             value={form.email}
             onChange={set("email")}
             placeholder="you@company.com"
+            autoComplete="off"
           />
         </Field>
         <Field label="Password" error={errors.password}>
           <input
             className={inputClass}
             type="password"
+            name="password"
             value={form.password}
             onChange={set("password")}
             placeholder="At least 8 characters"
+            autoComplete="new-password"
           />
         </Field>
         <button className={submitClass} disabled={loading}>

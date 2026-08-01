@@ -1,4 +1,4 @@
-from backend.agent_state.agent_9 import AdoptionAnalytics
+from backend.agent_state.agent_9 import StartupValidationReport
 from backend.utils.structured_invoke import invoke_structured
 from backend.utils.logger import logger
 from backend.utils.agent_runner import run_agent 
@@ -17,19 +17,50 @@ async def adoption_analytics_agent(state):
 )
 
       prompt = f"""
-     You are an expert product strategist and customer insights analyst.
+    You are an experienced startup consultant and customer insights analyst.
 
-Your task is to aggregate customer validation results.
+Your task is to generate the final startup validation report.
 
-The persona feedback has already been generated.
+The previous agents have already completed:
 
-Do NOT re-simulate personas.
+• Competitor Research
+• Competitor Intelligence
+• Market Gap Analysis
+• Startup Scoring
+• Persona Generation
+• Persona Validation
 
-Do NOT invent new opinions.
+Do NOT perform new research.
 
-Only analyze the provided structured customer feedback.
+Do NOT invent information.
+
+Every conclusion must be directly supported by the supplied inputs.
 
 --------------------------------------------------
+
+Startup Name
+
+{state["startup_name"]}
+
+Startup Description
+
+{state["one_line_description"]}
+
+Key Features
+
+{state["key_features"]}
+
+Competitor Insights
+
+{state["competitor_insights"]}
+
+Market Gap Analysis
+
+{state["market_gaps"]}
+
+Startup Score
+
+{state["startup_score"]}
 
 Persona Feedback
 
@@ -37,107 +68,171 @@ Persona Feedback
 
 --------------------------------------------------
 
-Analyze the feedback and determine:
+Generate a structured startup validation report.
 
-1. Overall Adoption Probability
+Include:
 
-Calculate using:
+1. Executive Summary
 
-• Would Use
-• Adoption Scores
+Provide a concise summary describing:
 
-2. Payment Probability
+• Overall startup potential
 
-Calculate using:
+• Market readiness
 
-• Would Pay
-• Adoption Scores
+• Customer reception
 
-3. Recommendation Probability
+Maximum 150 words.
 
-Calculate using:
+--------------------------------------------------
 
-• Would Recommend
+2. Startup Overview
 
-4. Average Adoption Score
+Briefly describe
 
-5. Most Liked Features
+• What the startup does
+
+• Target users
+
+• Core value proposition
+
+--------------------------------------------------
+
+3. Market Validation
+
+Summarize
+
+• Market demand
+
+• Competitive positioning
+
+• Market opportunities
+
+--------------------------------------------------
+
+4. Customer Validation
+
+Summarize
+
+• Overall customer reactions
+
+• Buying intent
+
+• Adoption likelihood
+
+--------------------------------------------------
+
+5. Startup Strengths
+
+List the strongest recurring strengths.
+
+--------------------------------------------------
+
+6. Startup Weaknesses
+
+List the biggest weaknesses.
+
+--------------------------------------------------
+
+7. Market Opportunities
+
+List recurring opportunities.
+
+--------------------------------------------------
+
+8. Market Threats
+
+List recurring risks.
+
+--------------------------------------------------
+
+9. Adoption Analytics
+
+Estimate:
+
+• Adoption Probability (0-100)
+
+• Payment Probability (0-100)
+
+• Recommendation Probability (0-100)
+
+• Average Adoption Score (0-100)
+
+--------------------------------------------------
+
+10. Most Liked Features
 
 Rank by frequency.
 
-6. Most Requested Features
+--------------------------------------------------
+
+11. Most Requested Features
 
 Rank by frequency.
 
-7. Most Common Concerns
+--------------------------------------------------
+
+12. Top Customer Concerns
 
 Rank by frequency.
 
-8. Biggest Adoption Barriers
+--------------------------------------------------
 
-Focus on:
+13. Biggest Adoption Barriers
 
-• Deal Breakers
+Rank by importance.
 
-• Purchase Decisions
+--------------------------------------------------
 
-• Customer Concerns
+14. Preferred Competitors
 
-9. Preferred Competitors
+List competitors preferred most frequently.
 
-Identify:
+--------------------------------------------------
 
-• Which competitors were preferred most often
+15. Customer Segmentation
 
-• Why customers preferred them
+Identify
 
-10. Likely Early Adopters
+• Early Adopters
 
-Identify personas with:
+• Undecided Personas
 
-High adoption
+• Likely Rejectors
 
-Positive purchase decision
+--------------------------------------------------
 
-Positive recommendation
+16. Final Verdict
 
-11. Undecided Personas
+Choose EXACTLY ONE
 
-Identify personas that require more convincing.
+• Do Not Build
 
-12. Likely Rejectors
+• Pivot Recommended
 
-Identify personas with:
+• Proceed With Caution
 
-Low adoption
+• Build MVP
 
-Negative purchase decision
-
-Strong objections
-
-13. Product Improvement Priorities
-
-Rank the improvements that would have the greatest impact on adoption.
+• Strong Opportunity
 
 --------------------------------------------------
 
 Rules
 
-• Base every conclusion only on the provided persona feedback.
+• Do not invent data.
 
-• Count recurring themes.
+• Aggregate recurring patterns.
 
 • Ignore isolated opinions.
 
-• Do not invent statistics.
-
-• Keep insights concise.
+• Keep answers concise.
 
 • Return structured output only.
       """
 
       response = await invoke_structured(
-      AdoptionAnalytics,
+      StartupValidationReport,
       prompt
    )
 
@@ -155,7 +250,8 @@ Rules
       )
 
       return {
-         "adoption_analytics": analytics
+         "adoption_analytics": analytics,
+         "startup_validation_report": analytics,
       }
    
    return await run_agent(

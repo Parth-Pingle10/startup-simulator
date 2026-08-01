@@ -1,22 +1,25 @@
-from pydantic import BaseModel 
+from pydantic import BaseModel
 from typing import List
 
-class FinalReport(BaseModel):
 
-    executive_summary: str
+class StartupRecommendations(BaseModel):
 
-    startup_overview: str
+    strategic_recommendations: List[str]
 
-    strengths: List[str]
+    product_improvements: List[str]
 
-    weaknesses: List[str]
+    mvp_features: List[str]
 
-    opportunities: List[str]
+    future_features: List[str]
 
-    threats: List[str]
+    pricing_strategy: List[str]
 
-    key_recommendations: List[str]
+    go_to_market_strategy: List[str]
 
-    final_verdict: str
+    marketing_strategy: List[str]
+
+    launch_strategy: List[str]
+
+    investment_readiness: str
 
     next_steps: List[str]

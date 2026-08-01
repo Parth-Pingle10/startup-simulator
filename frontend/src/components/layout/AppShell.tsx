@@ -7,8 +7,11 @@ import { useAuthSession } from "@/lib/hooks/use-auth";
 import { cn } from "@/lib/utils";
 
 export function Logo({ compact = false }: { compact?: boolean }) {
+  const { session, loading } = useAuthSession();
+  const to = !loading && session ? "/dashboard" : "/";
+
   return (
-    <Link to="/" className="group flex items-center gap-2.5">
+    <Link to={to} className="group flex items-center gap-2.5">
       <span className="relative grid size-8 shrink-0 place-items-center rounded-xl bg-brand-gradient">
         <Sparkles className="size-4 text-primary-foreground" strokeWidth={2.5} />
         <span className="absolute inset-0 rounded-xl bg-brand-gradient opacity-50 blur-md transition-opacity group-hover:opacity-80" />

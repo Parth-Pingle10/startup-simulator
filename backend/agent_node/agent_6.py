@@ -99,7 +99,9 @@ async def startup_scoring_agent(state):
 
     Reasoning Requirements:
 
-    For each score provide concise reasoning based on the available evidence.
+    For each score provide a concise reason field based on the available evidence:
+    market_fit_reason, differentiation_reason, problem_strength_reason,
+    monetization_reason, execution_complexity_reason.
 
     Do not invent evidence.
 

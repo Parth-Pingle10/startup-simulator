@@ -38,7 +38,7 @@ const SECTIONS = [
   ["score", "Score"],
   ["personas", "Personas"],
   ["feedback", "Feedback"],
-  ["analytics", "Analytics"],
+  ["analytics", "Validation"],
   ["actions", "Recommendations"],
 ] as const;
 
@@ -226,6 +226,9 @@ function ResultsPage() {
                   <div className="mt-2">
                     <Meter value={b.value} />
                   </div>
+                  {b.reason ? (
+                    <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{b.reason}</p>
+                  ) : null}
                 </div>
               ))}
             </div>
@@ -281,24 +284,30 @@ function ResultsPage() {
       {/* Feedback */}
       <section id="feedback" className="scroll-mt-32 pt-16">
         <h2 className="text-2xl font-semibold">Persona feedback</h2>
-        <div className="mt-6 space-y-5">
+        <div className="relative mt-6 space-y-3 border-l border-border pl-8">
           {a.feedback.map((f, i) => (
             <Reveal key={f.persona} delay={i * 0.06}>
-              <div className="flex items-start gap-4">
-                <span className="grid size-10 shrink-0 place-items-center rounded-full border border-border bg-elevated text-xs font-semibold">
+              <div className="group relative" tabIndex={0}>
+                <span className="absolute -left-8 top-3 grid size-6 -translate-x-1/2 place-items-center rounded-full border border-border bg-elevated text-[10px] font-semibold">
                   {f.avatar}
                 </span>
-                <div className="min-w-0 flex-1 rounded-2xl rounded-tl-sm border border-border bg-card/60 p-5">
-                  <div className="flex flex-wrap items-center gap-3">
+                <div className="overflow-hidden rounded-2xl border border-border bg-card/60 transition-all duration-300 hover:border-primary/40 hover:bg-card focus-within:border-primary/40">
+                  <div className="flex flex-wrap items-center gap-3 px-5 py-3.5">
                     <p className="text-sm font-medium">{f.persona}</p>
-                    <Pill tone={f.sentiment > 75 ? "success" : "warning"}>
-                      {f.sentiment}% positive
-                    </Pill>
                   </div>
-                  <p className="mt-3 flex gap-2 text-[15px] leading-relaxed text-muted-foreground">
-                    <Quote className="mt-1 size-4 shrink-0 text-violet" />
-                    {f.quote}
-                  </p>
+                  <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-hover:grid-rows-[1fr] group-focus-within:grid-rows-[1fr]">
+                    <div className="overflow-hidden">
+                      <div className="space-y-3 px-5 pb-5">
+                        <Pill tone={f.sentiment > 75 ? "success" : "warning"}>
+                          {f.sentiment}% positive
+                        </Pill>
+                        <p className="flex gap-2 text-[15px] leading-relaxed text-muted-foreground">
+                          <Quote className="mt-1 size-4 shrink-0 text-violet" />
+                          {f.quote}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Reveal>
@@ -306,9 +315,14 @@ function ResultsPage() {
         </div>
       </section>
 
-      {/* Analytics */}
+      {/* Validation analytics */}
       <section id="analytics" className="scroll-mt-32 pt-16">
-        <h2 className="text-2xl font-semibold">Adoption analytics</h2>
+        <h2 className="text-2xl font-semibold">Validation analytics</h2>
+        {a.validation?.executiveSummary ? (
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+            {a.validation.executiveSummary}
+          </p>
+        ) : null}
         <div className="mt-6 grid gap-4 lg:grid-cols-2">
           <Surface>
             <p className="font-medium">Projected user growth</p>
@@ -364,7 +378,7 @@ function ResultsPage() {
           </Surface>
 
           <Surface>
-            <p className="font-medium">Market size (USD millions)</p>
+            <p className="font-medium">Validation probabilities</p>
             <div className="mt-5 h-56">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={a.market}>
@@ -420,6 +434,104 @@ function ResultsPage() {
             </div>
           </Surface>
         </div>
+
+        {a.validation ? (
+          <div className="mt-4 grid gap-4 lg:grid-cols-2">
+            <Surface>
+              <p className="font-medium">Strengths & opportunities</p>
+              <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-success">Strengths</p>
+                  {a.validation.strengths.map((item) => (
+                    <p key={item} className="mt-1.5 flex gap-2 text-sm text-muted-foreground">
+                      <Plus className="mt-0.5 size-3.5 shrink-0 text-success" /> {item}
+                    </p>
+                  ))}
+                </div>
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-violet">Opportunities</p>
+                  {a.validation.opportunities.map((item) => (
+                    <p key={item} className="mt-1.5 flex gap-2 text-sm text-muted-foreground">
+                      <Plus className="mt-0.5 size-3.5 shrink-0 text-violet" /> {item}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </Surface>
+            <Surface>
+              <p className="font-medium">Risks & barriers</p>
+              <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-warning">Weaknesses</p>
+                  {a.validation.weaknesses.map((item) => (
+                    <p key={item} className="mt-1.5 flex gap-2 text-sm text-muted-foreground">
+                      <Minus className="mt-0.5 size-3.5 shrink-0 text-warning" /> {item}
+                    </p>
+                  ))}
+                </div>
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-warning">Adoption barriers</p>
+                  {a.validation.barriers.map((item) => (
+                    <p key={item} className="mt-1.5 flex gap-2 text-sm text-muted-foreground">
+                      <Minus className="mt-0.5 size-3.5 shrink-0 text-warning" /> {item}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </Surface>
+            <Surface>
+              <p className="font-medium">Customer signals</p>
+              <div className="mt-4 space-y-4">
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-muted-foreground">Most liked</p>
+                  <p className="mt-1.5 text-sm text-muted-foreground">
+                    {a.validation.mostLikedFeatures.join(" · ") || "—"}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-muted-foreground">Most requested</p>
+                  <p className="mt-1.5 text-sm text-muted-foreground">
+                    {a.validation.mostRequestedFeatures.join(" · ") || "—"}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-muted-foreground">Top concerns</p>
+                  <p className="mt-1.5 text-sm text-muted-foreground">
+                    {a.validation.topConcerns.join(" · ") || "—"}
+                  </p>
+                </div>
+              </div>
+            </Surface>
+            <Surface>
+              <p className="font-medium">Persona outlook</p>
+              <div className="mt-4 space-y-4">
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-success">Early adopters</p>
+                  <p className="mt-1.5 text-sm text-muted-foreground">
+                    {a.validation.earlyAdopters.join(" · ") || "—"}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-warning">Undecided</p>
+                  <p className="mt-1.5 text-sm text-muted-foreground">
+                    {a.validation.undecided.join(" · ") || "—"}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs uppercase tracking-wider text-destructive">Likely rejectors</p>
+                  <p className="mt-1.5 text-sm text-muted-foreground">
+                    {a.validation.rejectors.join(" · ") || "—"}
+                  </p>
+                </div>
+                {a.validation.finalVerdict ? (
+                  <p className="rounded-xl bg-muted/60 p-3 text-sm text-muted-foreground">
+                    {a.validation.finalVerdict}
+                  </p>
+                ) : null}
+              </div>
+            </Surface>
+          </div>
+        ) : null}
       </section>
 
       {/* Recommendations */}

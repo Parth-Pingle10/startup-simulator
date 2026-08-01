@@ -1,7 +1,24 @@
 from pydantic import BaseModel
 from typing import List
 
-class AdoptionAnalytics(BaseModel):
+
+class StartupValidationReport(BaseModel):
+
+    executive_summary: str
+
+    startup_overview: str
+
+    market_validation: str
+
+    customer_validation: str
+
+    startup_strengths: List[str]
+
+    startup_weaknesses: List[str]
+
+    market_opportunities: List[str]
+
+    market_threats: List[str]
 
     adoption_probability: int
 
@@ -15,13 +32,11 @@ class AdoptionAnalytics(BaseModel):
 
     most_requested_features: List[str]
 
-    top_concerns: List[str]
+    top_customer_concerns: List[str]
 
     biggest_adoption_barriers: List[str]
 
     preferred_competitors: List[str]
-
-    competitor_advantages: List[str]
 
     likely_early_adopters: List[str]
 
@@ -29,4 +44,4 @@ class AdoptionAnalytics(BaseModel):
 
     likely_rejectors: List[str]
 
-    product_improvement_priorities: List[str]
+    final_verdict: str

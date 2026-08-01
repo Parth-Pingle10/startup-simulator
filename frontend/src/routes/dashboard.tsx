@@ -23,12 +23,17 @@ export const Route = createFileRoute("/dashboard")({
 function Dashboard() {
   const { items, hydrated } = useAnalysisList();
   const { session } = useAuthSession();
-  const avg = items.length ? Math.round(items.reduce((a, b) => (a + (Number(b.total_runtime) || 0)) / items.length, 0)) : 0;
+  const runtimes = items
+    .map((i) => Number(i.total_runtime) || 0)
+    .filter((n) => n > 0);
+  const avgMinutes = runtimes.length
+    ? Math.round((runtimes.reduce((a, b) => a + b, 0) / runtimes.length / 60) * 10) / 10
+    : 0;
   const best = items.length ? Math.max(...items.map((i) => (i.status === "completed" ? 100 : 0))) : 0;
 
   const stats = [
     { label: "Total analyses", value: items.length, hint: "across all ideas" },
-    { label: "Average runtime", value: avg, hint: "seconds" },
+    { label: "Average runtime", value: avgMinutes.toFixed(1), hint: "minutes" },
     { label: "Completed", value: best, hint: "completed reports" },
   ];
 

@@ -1,4 +1,4 @@
-from backend.agent_state.agent_10 import FinalReport
+from backend.agent_state.agent_10 import StartupRecommendations
 from backend.utils.structured_invoke import invoke_structured
 from backend.utils.logger import logger 
 import time
@@ -11,172 +11,144 @@ async def final_report_generator_agent(state):
             f"Agent 10 Started | {state['startup_name']}"
         )
 
+        validation = (
+            state.get("startup_validation_report")
+            or state.get("adoption_analytics")
+            or {}
+        )
+
         prompt = f"""
-        You are an experienced startup consultant preparing the final startup validation report for a founder.
+        You are a senior startup advisor, VC, product strategist and founder coach.
 
-All analysis has already been completed by previous specialist agents.
+Your task is NOT to evaluate the startup again.
 
-Your responsibility is ONLY to synthesize the provided findings into a professional, concise, and actionable report.
+The startup has already been analyzed.
 
-Do NOT perform new analysis.
+Your responsibility is ONLY to generate actionable recommendations for the founder.
 
-Do NOT invent new insights.
+Base every recommendation ONLY on the provided validation report.
 
-Do NOT generate conclusions that are not supported by the provided information.
+Do NOT invent new analysis.
 
-Every statement must be traceable to the supplied inputs.
-
---------------------------------------------------
-
-Startup Information
-
-Startup Name:
-{state["startup_name"]}
-
-Startup Description:
-{state["one_line_description"]}
-
-Key Features:
-{state["key_features"]}
-
-Market Analysis:
-{state["market_gaps"]}
-
-Startup Score:
-{state["startup_score"]}
-
-Customer Validation Summary:
-{state["adoption_analytics"]}
+Do NOT contradict previous findings.
 
 --------------------------------------------------
 
-Generate a founder-friendly report containing the following sections.
+Startup Validation Report
 
-1. Executive Summary
-
-Provide a concise overview of:
-
-• Startup potential
-• Overall market validation
-• Biggest strengths
-• Biggest risks
-• Overall outlook
-
-Keep this section under 150 words.
+{validation}
 
 --------------------------------------------------
 
-2. Startup Overview
+Generate recommendations in the following sections.
 
-Briefly describe:
+1. Strategic Recommendations
 
-• What the startup does
-• Who it serves
-• Core value proposition
-• Primary differentiator
+Provide the highest-impact recommendations.
 
---------------------------------------------------
-
-3. Strengths
-
-Summarize the startup's strongest competitive advantages based ONLY on the provided market analysis and customer validation.
-
-Do not invent additional strengths.
+Rank them by priority.
 
 --------------------------------------------------
 
-4. Weaknesses
+2. Product Improvements
 
-Summarize the biggest weaknesses, limitations, and unresolved customer concerns.
-
-Focus only on recurring issues identified in previous analysis.
-
---------------------------------------------------
-
-5. Opportunities
-
-Summarize the most promising market opportunities.
-
-Prioritize opportunities that appear repeatedly across the market analysis and customer validation.
-
---------------------------------------------------
-
-6. Threats
-
-Summarize the major competitive and market risks.
-
-Focus on practical threats that could affect adoption.
-
---------------------------------------------------
-
-7. Strategic Recommendations
-
-Provide actionable recommendations for improving the startup.
-
-Recommendations should directly address:
+Recommend improvements that directly address
 
 • Customer concerns
-• Missing features
+
 • Adoption barriers
-• Competitive weaknesses
 
-Rank recommendations by expected impact.
-
---------------------------------------------------
-
-8. Final Verdict
-
-Choose EXACTLY ONE:
-
-• Do Not Build
-• Pivot Recommended
-• Proceed With Caution
-• Build MVP
-• Strong Opportunity
-
-The verdict must be consistent with:
-
-• Startup Score
-• Market Fit
-• Customer Validation
-• Market Opportunities
-• Risks
+• Weaknesses
 
 --------------------------------------------------
 
-9. Recommended Next Steps
+3. MVP Features
 
-Provide practical actions for the founder.
-
-Examples include:
-
-• Build MVP
-• Validate pricing
-• Improve onboarding
-• Add requested features
-• Conduct customer interviews
-• Expand target audience
-• Improve differentiation
-
-Rank them in order of priority.
+Recommend features that should exist before launch.
 
 --------------------------------------------------
 
-Writing Guidelines
+4. Future Features
 
-• Write professionally but keep the language easy to understand.
-• Be concise.
+Recommend features suitable after product-market fit.
+
+--------------------------------------------------
+
+5. Pricing Strategy
+
+Suggest a pricing approach based on customer feedback.
+
+--------------------------------------------------
+
+6. Go-To-Market Strategy
+
+Recommend the best launch approach.
+
+--------------------------------------------------
+
+7. Marketing Strategy
+
+Recommend
+
+• Acquisition channels
+
+• Messaging
+
+• Positioning
+
+--------------------------------------------------
+
+8. Launch Strategy
+
+Describe
+
+• Validation steps
+
+• Beta launch
+
+• MVP rollout
+
+--------------------------------------------------
+
+9. Investment Readiness
+
+Choose one
+
+• Not Ready
+
+• Early Validation Needed
+
+• Ready for MVP Funding
+
+• Ready for Seed Funding
+
+Explain briefly.
+
+--------------------------------------------------
+
+10. Next Steps
+
+Provide practical founder actions.
+
+Rank by priority.
+
+--------------------------------------------------
+
+Rules
+
+• Every recommendation must be supported by the supplied report.
+
+• Focus on practical actions.
+
 • Avoid repetition.
-• Do not copy text from previous outputs.
-• Convert analytical findings into actionable business insights.
-• Every recommendation must be supported by the supplied analysis.
-• Keep the report suitable for presentation to founders or investors.
 
-Return structured output only.
+• Keep recommendations concise.
+
+• Return structured output only.
         """
 
         response = await invoke_structured(
-        FinalReport,
+        StartupRecommendations,
         prompt
     )
 
@@ -195,7 +167,8 @@ Return structured output only.
 
 
         return {
-            "final_report": report
+            "final_report": report,
+            "startup_recommendations": report,
         }
     
     return await run_agent(

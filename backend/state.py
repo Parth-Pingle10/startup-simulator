@@ -31,3 +31,7 @@ class StartupState(TypedDict):
     adoption_analytics: Dict[str, Any]
 
     final_report: Dict[str, Any]
+    
+    startup_validation_report: Dict[str, Any]
+
+    startup_recommendations: Dict[str, Any]

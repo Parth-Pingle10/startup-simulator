@@ -189,3 +189,343 @@ Using LLM fallback.
 2026-07-31 19:18:15,358 | INFO | Gemini Success | FinalReport
 2026-07-31 19:18:15,358 | INFO | Agent 10 Completed | SkillForge
 2026-07-31 19:18:15,366 | INFO | Analysis Complete: SkillForge; Total time: 254.18121123313904
+2026-08-01 07:40:24,646 | INFO | New Analysis: SkillForge
+2026-08-01 07:40:24,694 | INFO | Agent 1 Started | SkillForge
+2026-08-01 07:40:24,695 | INFO | Invoking Gemini | StartupAnalysis
+2026-08-01 07:40:29,357 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-01 07:40:37,876 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-01 07:40:37,904 | INFO | StartupAnalysis inference: 8.56s
+2026-08-01 07:40:37,904 | INFO | Gemini Success | StartupAnalysis
+2026-08-01 07:40:37,904 | INFO | Agent 1 Completed | SkillForge
+2026-08-01 07:40:37,910 | INFO | Agent 2 Started | SkillForge
+2026-08-01 07:40:37,910 | INFO | Invoking Gemini | CompetitorOutput
+2026-08-01 07:40:37,913 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-01 07:40:48,016 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-01 07:40:48,021 | INFO | CompetitorOutput inference: 10.11s
+2026-08-01 07:40:48,021 | INFO | Gemini Success | CompetitorOutput
+2026-08-01 07:40:48,021 | INFO | Agent 2 Completed | SkillForge
+2026-08-01 07:40:48,026 | INFO | Agent 3 Started | SkillForge
+2026-08-01 07:40:48,026 | INFO | Collecting competitor reviews for Hyperskill
+2026-08-01 07:40:48,026 | INFO | Collecting competitor reviews for Udacity
+2026-08-01 07:40:48,026 | INFO | Searching Trustpilot: Hyperskill
+2026-08-01 07:40:48,027 | INFO | Searching Trustpilot: Udacity
+2026-08-01 07:40:48,027 | INFO | Collecting competitor reviews for Educative.io
+2026-08-01 07:40:48,028 | INFO | Searching Trustpilot: Educative.io
+2026-08-01 07:40:48,028 | INFO | Collecting competitor reviews for Codecademy
+2026-08-01 07:40:48,028 | INFO | Searching Trustpilot: Codecademy
+2026-08-01 07:40:48,028 | INFO | Collecting competitor reviews for Pluralsight Skills
+2026-08-01 07:40:48,035 | INFO | Searching Trustpilot: Pluralsight Skills
+2026-08-01 07:41:05,739 | INFO | Codecademy: 13 search results found.
+2026-08-01 07:41:05,769 | INFO | First Trustpilot Result:
+Codecademycodecademy.com•1.5K reviews2.5
+2026-08-01 07:41:05,910 | INFO | Search Result: {'name': 'Codecademycodecademy.com•1.5K reviews2.5', 'review_url': 'https://www.trustpilot.com/review/codecademy.com'}
+2026-08-01 07:41:05,911 | INFO | Scraping reviews from https://www.trustpilot.com/review/codecademy.com
+2026-08-01 07:41:06,019 | INFO | Pluralsight Skills: 10 search results found.
+2026-08-01 07:41:06,065 | INFO | Hyperskill: 6 search results found.
+2026-08-01 07:41:06,109 | INFO | First Trustpilot Result:
+Hyperskill
+
+hyperskill.org
+
+4.1162 reviews
+
+United States
+2026-08-01 07:41:06,126 | INFO | First Trustpilot Result:
+Pluralsightpluralsight.com•986 reviews1.4
+2026-08-01 07:41:06,127 | WARNING | Company mismatch.
+Expected : Pluralsight Skills
+Found    : Pluralsightpluralsight.com•986 reviews1.4
+Using LLM fallback.
+2026-08-01 07:41:06,245 | INFO | Search Result: {'name': 'Hyperskill\n\nhyperskill.org\n\n4.1162 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/hyperskill.org'}
+2026-08-01 07:41:06,245 | INFO | Scraping reviews from https://www.trustpilot.com/review/hyperskill.org
+2026-08-01 07:41:06,257 | INFO | Search Result: None
+2026-08-01 07:41:06,257 | WARNING | Pluralsight Skills: Trustpilot match not found. Using LLM.
+2026-08-01 07:41:06,258 | INFO | Invoking Gemini | FallbackResearch
+2026-08-01 07:41:06,263 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-01 07:41:06,827 | INFO | Udacity: 15 search results found.
+2026-08-01 07:41:06,847 | INFO | First Trustpilot Result:
+Udacityudacity.com•3.3K reviews4.5
+2026-08-01 07:41:06,982 | INFO | Search Result: {'name': 'Udacityudacity.com•3.3K reviews4.5', 'review_url': 'https://www.trustpilot.com/review/udacity.com'}
+2026-08-01 07:41:06,983 | INFO | Scraping reviews from https://www.trustpilot.com/review/udacity.com
+2026-08-01 07:41:07,238 | INFO | Educative.io: 16 search results found.
+2026-08-01 07:41:07,580 | INFO | First Trustpilot Result:
+Skillshareskillshare.com•4.2K reviews4.1
+2026-08-01 07:41:07,580 | WARNING | Company mismatch.
+Expected : Educative.io
+Found    : Skillshareskillshare.com•4.2K reviews4.1
+Using LLM fallback.
+2026-08-01 07:41:07,677 | INFO | Search Result: None
+2026-08-01 07:41:07,677 | WARNING | Educative.io: Trustpilot match not found. Using LLM.
+2026-08-01 07:41:07,677 | INFO | Invoking Gemini | FallbackResearch
+2026-08-01 07:41:07,680 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-01 07:41:15,143 | INFO | Opening https://www.trustpilot.com/review/codecademy.com
+2026-08-01 07:41:15,367 | INFO | Opening https://www.trustpilot.com/review/hyperskill.org
+2026-08-01 07:41:15,857 | INFO | Opening https://www.trustpilot.com/review/udacity.com
+2026-08-01 07:41:16,946 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-01 07:41:16,951 | INFO | FallbackResearch inference: 10.69s
+2026-08-01 07:41:16,951 | INFO | Gemini Success | FallbackResearch
+2026-08-01 07:41:18,343 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-01 07:41:18,349 | INFO | FallbackResearch inference: 10.67s
+2026-08-01 07:41:18,349 | INFO | Gemini Success | FallbackResearch
+2026-08-01 07:41:19,223 | INFO | Page 1: 19 review cards found.
+2026-08-01 07:41:19,395 | INFO | Page 1: 18 review cards found.
+2026-08-01 07:41:19,705 | INFO | Opening https://www.trustpilot.com/review/codecademy.com?page=2
+2026-08-01 07:41:19,817 | WARNING | https://www.trustpilot.com/review/udacity.com not found.
+2026-08-01 07:41:19,941 | INFO | Total reviews scraped: 0
+2026-08-01 07:41:19,942 | INFO | Udacity: 0 reviews scraped.
+2026-08-01 07:41:19,942 | WARNING | Udacity: No reviews found. Using LLM.
+2026-08-01 07:41:19,942 | INFO | Invoking Gemini | FallbackResearch
+2026-08-01 07:41:19,946 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-01 07:41:20,303 | INFO | Opening https://www.trustpilot.com/review/hyperskill.org?page=2
+2026-08-01 07:41:23,615 | INFO | Page 2: 20 review cards found.
+2026-08-01 07:41:23,615 | INFO | Opening https://www.trustpilot.com/review/codecademy.com?page=3
+2026-08-01 07:41:24,613 | INFO | Page 2: 20 review cards found.
+2026-08-01 07:41:24,613 | INFO | Opening https://www.trustpilot.com/review/hyperskill.org?page=3
+2026-08-01 07:41:27,192 | INFO | Page 3: 20 review cards found.
+2026-08-01 07:41:27,320 | INFO | Total reviews scraped: 15
+2026-08-01 07:41:27,321 | INFO | Codecademy: 15 reviews scraped.
+2026-08-01 07:41:27,321 | INFO | Codecademy: Using Trustpilot reviews.
+2026-08-01 07:41:28,424 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-01 07:41:28,430 | INFO | FallbackResearch inference: 8.49s
+2026-08-01 07:41:28,430 | INFO | Gemini Success | FallbackResearch
+2026-08-01 07:41:28,430 | INFO | Udacity: LLM research completed.
+2026-08-01 07:41:28,597 | INFO | Page 3: 19 review cards found.
+2026-08-01 07:41:28,703 | INFO | Total reviews scraped: 15
+2026-08-01 07:41:28,704 | INFO | Hyperskill: 15 reviews scraped.
+2026-08-01 07:41:28,704 | INFO | Hyperskill: Using Trustpilot reviews.
+2026-08-01 07:41:28,705 | INFO | Agent 3 Completed | SkillForge
+2026-08-01 07:41:28,728 | INFO | Agent 4 Started | SkillForge
+2026-08-01 07:41:28,728 | INFO | Processing Hyperskill
+2026-08-01 07:41:28,729 | INFO | Hyperskill | Gemini Analysis Started
+2026-08-01 07:41:28,729 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-08-01 07:41:28,730 | INFO | Processing Udacity
+2026-08-01 07:41:28,731 | INFO | Processing Educative.io
+2026-08-01 07:41:28,731 | INFO | Processing Codecademy
+2026-08-01 07:41:28,731 | INFO | Codecademy | Gemini Analysis Started
+2026-08-01 07:41:28,731 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-08-01 07:41:28,733 | INFO | Processing Pluralsight Skills
+2026-08-01 07:41:28,734 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-01 07:41:28,737 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-01 07:41:29,130 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-08-01 07:41:29,132 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.24 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 30.303545054s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}.
+2026-08-01 07:41:47,714 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-01 07:41:47,718 | INFO | CompetitorAnalysis inference: 18.99s
+2026-08-01 07:41:47,718 | INFO | Gemini Success | CompetitorAnalysis
+2026-08-01 07:41:47,718 | INFO | Codecademy | Gemini Analysis Finished
+2026-08-01 07:41:50,485 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-01 07:41:50,490 | INFO | CompetitorAnalysis inference: 21.76s
+2026-08-01 07:41:50,490 | INFO | Gemini Success | CompetitorAnalysis
+2026-08-01 07:41:50,491 | INFO | Hyperskill | Gemini Analysis Finished
+2026-08-01 07:41:50,491 | INFO | Agent 4 Completed | SkillForge
+2026-08-01 07:41:50,517 | INFO | Agent 5 Started | SkillForge
+2026-08-01 07:41:50,517 | INFO | Invoking Gemini | MarketGapAnalysis
+2026-08-01 07:41:50,522 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-01 07:42:13,828 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-08-01 07:42:13,832 | INFO | MarketGapAnalysis inference: 23.31s
+2026-08-01 07:42:13,832 | INFO | Gemini Success | MarketGapAnalysis
+2026-08-01 07:42:13,832 | INFO | Agent 5 Completed | SkillForge
+2026-08-01 07:42:13,839 | INFO | Agent 6 Started | SkillForge
+2026-08-01 07:42:13,839 | INFO | Invoking Gemini | StartupScore
+2026-08-01 07:42:13,842 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-01 07:42:14,135 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-08-01 07:42:14,137 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.87 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 45.386607565s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}.
+2026-08-01 07:42:16,285 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-08-01 07:42:16,287 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 2.42 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 43.220928934s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '43s'}]}}.
+2026-08-01 07:42:19,050 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-08-01 07:42:19,052 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 4.4 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 40.488216638s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}.
+2026-08-01 07:42:23,760 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-08-01 07:42:23,762 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 8.35 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 35.756387419s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '35s'}]}}.
+2026-08-01 07:42:32,361 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-08-01 07:42:32,363 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 16.8 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 27.131493275s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '27s'}]}}.
+2026-08-01 07:42:49,558 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-08-01 07:42:49,560 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 9.972941715s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '9s'}]}}
+2026-08-01 07:42:49,560 | INFO | Switching To DeepSeek | StartupScore
+2026-08-01 07:42:54,657 | INFO | DeepSeek Success | StartupScore
+2026-08-01 07:42:54,684 | ERROR | Analysis Failed: 'coroutine' object has no attribute 'model_dump'
+2026-08-01 08:36:36,661 | INFO | New Analysis: SkillForge
+2026-08-01 08:36:36,692 | INFO | Agent 1 Started | SkillForge
+2026-08-01 08:36:36,692 | INFO | Invoking Gemini | StartupAnalysis
+2026-08-01 08:36:40,037 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-01 08:36:40,606 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-08-01 08:36:40,609 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 1.3 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 19.002071636s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19s'}]}}.
+2026-08-01 08:36:42,141 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-08-01 08:36:42,143 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 2.09 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 17.407271302s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}.
+2026-08-01 08:36:44,496 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-08-01 08:36:44,497 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 4.39 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 15.09885772s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '15s'}]}}.
+2026-08-01 08:36:49,104 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-08-01 08:36:49,106 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 8.6 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 10.448351704s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '10s'}]}}.
+2026-08-01 08:36:58,013 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-08-01 08:36:58,014 | INFO | Retrying google.genai._api_client.BaseApiClient._async_request_once in 16.9 seconds as it raised ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 1.544512367s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '1s'}]}}.
+2026-08-01 08:37:15,526 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-08-01 08:37:15,528 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 44.07379903s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '44s'}]}}
+2026-08-01 08:37:15,528 | INFO | Switching To DeepSeek | StartupAnalysis
+2026-08-01 08:37:18,813 | INFO | DeepSeek Success | StartupAnalysis
+2026-08-01 08:37:18,814 | INFO | Agent 1 Completed | SkillForge
+2026-08-01 08:37:18,822 | ERROR | Analysis Failed: 'coroutine' object has no attribute 'one_line_description'
+2026-08-01 08:42:22,566 | INFO | New Analysis: **SkillForge**
+2026-08-01 08:42:22,582 | INFO | Agent 1 Started | **SkillForge**
+2026-08-01 08:42:22,583 | INFO | Invoking Gemini | StartupAnalysis
+2026-08-01 08:42:35,696 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-01 08:42:59,606 | INFO | StartupAnalysis inference: 35.70s
+2026-08-01 08:42:59,606 | INFO | Gemini Success | StartupAnalysis
+2026-08-01 08:42:59,606 | INFO | Agent 1 Completed | **SkillForge**
+2026-08-01 08:42:59,611 | INFO | Agent 2 Started | **SkillForge**
+2026-08-01 08:42:59,611 | INFO | Invoking Gemini | CompetitorOutput
+2026-08-01 08:43:01,111 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-01 08:43:07,078 | INFO | CompetitorOutput inference: 7.47s
+2026-08-01 08:43:07,078 | INFO | Gemini Success | CompetitorOutput
+2026-08-01 08:43:07,078 | INFO | Agent 2 Completed | **SkillForge**
+2026-08-01 08:43:07,082 | INFO | Agent 3 Started | **SkillForge**
+2026-08-01 08:43:07,082 | INFO | Collecting competitor reviews for Codementor
+2026-08-01 08:43:07,082 | INFO | Collecting competitor reviews for Turing
+2026-08-01 08:43:07,083 | INFO | Searching Trustpilot: Codementor
+2026-08-01 08:43:07,083 | INFO | Searching Trustpilot: Turing
+2026-08-01 08:43:07,083 | INFO | Collecting competitor reviews for LeetCode Learning
+2026-08-01 08:43:07,084 | INFO | Searching Trustpilot: LeetCode Learning
+2026-08-01 08:43:07,084 | INFO | Collecting competitor reviews for HackerRank Learn
+2026-08-01 08:43:07,085 | INFO | Searching Trustpilot: HackerRank Learn
+2026-08-01 08:43:07,085 | INFO | Collecting competitor reviews for Pluralsight Skill
+2026-08-01 08:43:07,085 | INFO | Searching Trustpilot: Pluralsight Skill
+2026-08-01 08:43:24,570 | INFO | HackerRank Learn: 15 search results found.
+2026-08-01 08:43:24,585 | INFO | First Trustpilot Result:
+HackerRankhackerrank.com•18 reviews1.7
+2026-08-01 08:43:24,585 | WARNING | Company mismatch.
+Expected : HackerRank Learn
+Found    : HackerRankhackerrank.com•18 reviews1.7
+Using LLM fallback.
+2026-08-01 08:43:24,705 | INFO | Search Result: None
+2026-08-01 08:43:24,705 | WARNING | HackerRank Learn: Trustpilot match not found. Using LLM.
+2026-08-01 08:43:24,705 | INFO | Invoking Gemini | FallbackResearch
+2026-08-01 08:43:25,278 | INFO | LeetCode Learning: 10 search results found.
+2026-08-01 08:43:25,300 | INFO | Turing: 10 search results found.
+2026-08-01 08:43:25,303 | INFO | First Trustpilot Result:
+LeetCodeleetcode.com•18 reviews2.2
+2026-08-01 08:43:25,304 | WARNING | Company mismatch.
+Expected : LeetCode Learning
+Found    : LeetCodeleetcode.com•18 reviews2.2
+Using LLM fallback.
+2026-08-01 08:43:25,322 | INFO | First Trustpilot Result:
+Turing
+
+developers.turing.com
+
+2.96 reviews
+
+United States
+2026-08-01 08:43:25,439 | INFO | Search Result: None
+2026-08-01 08:43:25,440 | WARNING | LeetCode Learning: Trustpilot match not found. Using LLM.
+2026-08-01 08:43:25,440 | INFO | Invoking Gemini | FallbackResearch
+2026-08-01 08:43:25,449 | INFO | Search Result: {'name': 'Turing\n\ndevelopers.turing.com\n\n2.96 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/developers.turing.com'}
+2026-08-01 08:43:25,449 | INFO | Scraping reviews from https://www.trustpilot.com/review/developers.turing.com
+2026-08-01 08:43:25,565 | INFO | Pluralsight Skill: 10 search results found.
+2026-08-01 08:43:25,581 | INFO | First Trustpilot Result:
+Pluralsight
+
+pluralsight.com
+
+1.4986 reviews
+
+1500 Solana Blvd Building 6 - Floor 4, Suite 6400 Westlake, Westlake, United States
+2026-08-01 08:43:25,581 | WARNING | Company mismatch.
+Expected : Pluralsight Skill
+Found    : Pluralsight
+
+pluralsight.com
+
+1.4986 reviews
+
+1500 Solana Blvd Building 6 - Floor 4, Suite 6400 Westlake, Westlake, United States
+Using LLM fallback.
+2026-08-01 08:43:25,686 | INFO | Search Result: None
+2026-08-01 08:43:25,687 | WARNING | Pluralsight Skill: Trustpilot match not found. Using LLM.
+2026-08-01 08:43:25,687 | INFO | Invoking Gemini | FallbackResearch
+2026-08-01 08:43:25,976 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-01 08:43:27,074 | INFO | Codementor: 12 search results found.
+2026-08-01 08:43:27,231 | INFO | First Trustpilot Result:
+Codementorcodementor.io•221 reviews3.6
+2026-08-01 08:43:27,594 | INFO | Search Result: {'name': 'Codementorcodementor.io•221 reviews3.6', 'review_url': 'https://www.trustpilot.com/review/codementor.io'}
+2026-08-01 08:43:27,595 | INFO | Scraping reviews from https://www.trustpilot.com/review/codementor.io
+2026-08-01 08:43:37,555 | INFO | Opening https://www.trustpilot.com/review/developers.turing.com
+2026-08-01 08:43:39,958 | INFO | Opening https://www.trustpilot.com/review/codementor.io
+2026-08-01 08:43:42,128 | INFO | Page 1: 6 review cards found.
+2026-08-01 08:43:43,581 | INFO | Opening https://www.trustpilot.com/review/developers.turing.com?page=2
+2026-08-01 08:43:45,916 | INFO | Page 1: 19 review cards found.
+2026-08-01 08:43:47,397 | INFO | Page 2: 0 review cards found.
+2026-08-01 08:43:47,397 | INFO | Opening https://www.trustpilot.com/review/developers.turing.com?page=3
+2026-08-01 08:43:48,409 | INFO | Opening https://www.trustpilot.com/review/codementor.io?page=2
+2026-08-01 08:43:51,087 | INFO | Page 3: 0 review cards found.
+2026-08-01 08:43:51,313 | INFO | Total reviews scraped: 6
+2026-08-01 08:43:51,314 | INFO | Turing: 6 reviews scraped.
+2026-08-01 08:43:51,314 | INFO | Turing: Using Trustpilot reviews.
+2026-08-01 08:43:53,303 | INFO | Page 2: 19 review cards found.
+2026-08-01 08:43:53,303 | INFO | Opening https://www.trustpilot.com/review/codementor.io?page=3
+2026-08-01 08:43:57,937 | INFO | Page 3: 20 review cards found.
+2026-08-01 08:43:58,160 | INFO | Total reviews scraped: 15
+2026-08-01 08:43:58,161 | INFO | Codementor: 15 reviews scraped.
+2026-08-01 08:43:58,161 | INFO | Codementor: Using Trustpilot reviews.
+2026-08-01 08:44:25,964 | INFO | FallbackResearch inference: 61.26s
+2026-08-01 08:44:25,964 | INFO | Gemini Success | FallbackResearch
+2026-08-01 08:44:26,761 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-01 08:45:42,861 | INFO | FallbackResearch inference: 137.42s
+2026-08-01 08:45:42,862 | INFO | Gemini Success | FallbackResearch
+2026-08-01 08:45:43,742 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-01 08:47:19,839 | INFO | FallbackResearch inference: 234.15s
+2026-08-01 08:47:19,839 | INFO | Gemini Success | FallbackResearch
+2026-08-01 08:47:19,839 | INFO | Agent 3 Completed | **SkillForge**
+2026-08-01 08:47:19,843 | INFO | Agent 4 Started | **SkillForge**
+2026-08-01 08:47:19,843 | INFO | Processing Codementor
+2026-08-01 08:47:19,844 | INFO | Codementor | Gemini Analysis Started
+2026-08-01 08:47:19,862 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-08-01 08:47:19,863 | INFO | Processing Turing
+2026-08-01 08:47:19,864 | INFO | Turing | Gemini Analysis Started
+2026-08-01 08:47:19,864 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-08-01 08:47:19,865 | INFO | Processing LeetCode Learning
+2026-08-01 08:47:19,865 | INFO | Processing HackerRank Learn
+2026-08-01 08:47:19,865 | INFO | Processing Pluralsight Skill
+2026-08-01 08:47:23,495 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-01 08:48:20,442 | INFO | CompetitorAnalysis inference: 60.58s
+2026-08-01 08:48:20,442 | INFO | Gemini Success | CompetitorAnalysis
+2026-08-01 08:48:20,442 | INFO | Codementor | Gemini Analysis Finished
+2026-08-01 08:48:22,167 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-01 08:48:54,160 | INFO | CompetitorAnalysis inference: 94.29s
+2026-08-01 08:48:54,160 | INFO | Gemini Success | CompetitorAnalysis
+2026-08-01 08:48:54,160 | INFO | Turing | Gemini Analysis Finished
+2026-08-01 08:48:54,160 | INFO | Agent 4 Completed | **SkillForge**
+2026-08-01 08:48:54,164 | INFO | Agent 5 Started | **SkillForge**
+2026-08-01 08:48:54,164 | INFO | Invoking Gemini | MarketGapAnalysis
+2026-08-01 08:48:59,618 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-01 08:52:11,578 | INFO | MarketGapAnalysis inference: 197.41s
+2026-08-01 08:52:11,578 | INFO | Gemini Success | MarketGapAnalysis
+2026-08-01 08:52:11,578 | INFO | Agent 5 Completed | **SkillForge**
+2026-08-01 08:52:11,597 | INFO | Agent 6 Started | **SkillForge**
+2026-08-01 08:52:11,597 | INFO | Invoking Gemini | StartupScore
+2026-08-01 08:52:16,633 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-01 08:54:44,008 | INFO | StartupScore inference: 152.41s
+2026-08-01 08:54:44,008 | INFO | Gemini Success | StartupScore
+2026-08-01 08:54:44,009 | INFO | Agent 6 Completed | **SkillForge**
+2026-08-01 08:54:44,014 | INFO | Agent 7 Started | **SkillForge**
+2026-08-01 08:54:44,014 | INFO | Invoking Gemini | PersonaOutput
+2026-08-01 08:54:49,606 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-01 09:00:41,890 | INFO | PersonaOutput inference: 357.87s
+2026-08-01 09:00:41,891 | INFO | Gemini Success | PersonaOutput
+2026-08-01 09:00:41,891 | INFO | Agent 7 Completed | **SkillForge**
+2026-08-01 09:00:41,896 | INFO | Agent 8 Started | **SkillForge**
+2026-08-01 09:00:41,896 | INFO | Invoking Gemini | PersonaFeedbackOutput
+2026-08-01 09:00:45,005 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-01 09:08:48,773 | INFO | PersonaFeedbackOutput inference: 486.88s
+2026-08-01 09:08:48,773 | INFO | Gemini Success | PersonaFeedbackOutput
+2026-08-01 09:08:48,774 | INFO | Agent 8 Completed | **SkillForge**
+2026-08-01 09:08:48,779 | INFO | Agent 9 Started | **SkillForge**
+2026-08-01 09:08:48,779 | INFO | Persona Feedback Length: 7422 characters
+2026-08-01 09:08:48,779 | INFO | Invoking Gemini | StartupValidationReport
+2026-08-01 09:08:51,865 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-01 09:10:51,898 | INFO | StartupValidationReport inference: 123.12s
+2026-08-01 09:10:51,898 | INFO | Gemini Success | StartupValidationReport
+2026-08-01 09:10:51,898 | INFO | Agent 9 Completed | **SkillForge**
+2026-08-01 09:10:51,902 | INFO | Agent 10 Started | **SkillForge**
+2026-08-01 09:10:51,902 | INFO | Invoking Gemini | StartupRecommendations
+2026-08-01 09:10:53,964 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-01 09:12:10,662 | INFO | StartupRecommendations inference: 78.76s
+2026-08-01 09:12:10,662 | INFO | Gemini Success | StartupRecommendations
+2026-08-01 09:12:10,663 | INFO | Agent 10 Completed | **SkillForge**
+2026-08-01 09:12:10,690 | INFO | Analysis Complete: **SkillForge**; Total time: 1788.099540233612

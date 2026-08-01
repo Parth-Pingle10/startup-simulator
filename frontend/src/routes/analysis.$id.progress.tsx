@@ -13,7 +13,7 @@ import {
   TrendingUp,
   Users,
 } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
 import { AppShell } from "@/components/layout/AppShell";
 import { ScoreRing } from "@/components/report/ScoreRing";
 import { AGENTS } from "@/lib/mock";
@@ -36,24 +36,40 @@ export const Route = createFileRoute("/analysis/$id/progress")({
   head: () => ({
     meta: [
       { title: "Running analysis — AI Startup Simulator" },
-      { name: "description", content: "Watch nine AI agents research and score your startup live." },
+      { name: "description", content: "Watch AI agents research and score your startup live." },
       { property: "og:title", content: "Running analysis — AI Startup Simulator" },
-      { property: "og:description", content: "Nine specialised agents, running live." },
+      { property: "og:description", content: "Specialised agents, running live." },
     ],
   }),
   component: ProgressPage,
 });
 
+function resolveCurrentAgentIndex(
+  currentAgent: string | null | undefined,
+  progressPct: number,
+  isDone: boolean,
+) {
+  if (isDone) return AGENTS.length;
+
+  if (currentAgent) {
+    const byName = AGENTS.findIndex(
+      (a) => a.title.toLowerCase() === currentAgent.trim().toLowerCase(),
+    );
+    if (byName >= 0) return byName;
+  }
+
+  // Backend progress is 10, 20, … 100 when each agent starts
+  if (progressPct > 0) {
+    return Math.min(AGENTS.length - 1, Math.max(0, Math.ceil(progressPct / 10) - 1));
+  }
+
+  return 0;
+}
+
 function ProgressPage() {
   const { id } = Route.useParams();
   const navigate = useNavigate();
-  const [elapsed, setElapsed] = useState(0);
   const { progress } = useAnalysisProgress(id);
-
-  useEffect(() => {
-    const t = setInterval(() => setElapsed((e) => e + 0.25), 250);
-    return () => clearInterval(t);
-  }, []);
 
   const done = Boolean(progress?.status === "completed" || progress?.progress === 100);
 
@@ -63,17 +79,19 @@ function ProgressPage() {
     return () => clearTimeout(t);
   }, [done, id, navigate]);
 
-  const totalSeconds = useMemo(() => AGENTS.reduce((acc, a) => acc + a.seconds, 0), []);
+  const currentIdx = useMemo(
+    () => resolveCurrentAgentIndex(progress?.current_agent, progress?.progress ?? 0, done),
+    [progress?.current_agent, progress?.progress, done],
+  );
 
-  let acc = 0;
-  const states = AGENTS.map((a) => {
-    const start = acc;
-    acc += a.seconds;
-    return elapsed >= acc ? "done" : elapsed >= start ? "running" : "queued";
+  const states = AGENTS.map((_, i) => {
+    if (done || i < currentIdx) return "done";
+    if (i === currentIdx) return "running";
+    return "queued";
   });
 
-  const pct = Math.min(100, Math.round((progress?.progress ?? 0) || (elapsed / totalSeconds) * 100));
-  const remaining = Math.max(0, Math.ceil(totalSeconds - elapsed));
+  const pct = Math.min(100, Math.round(progress?.progress ?? (done ? 100 : 0)));
+  const runningTitle = done ? null : AGENTS[currentIdx]?.title;
 
   return (
     <AppShell>
@@ -87,9 +105,9 @@ function ProgressPage() {
             <p className="mt-2 text-muted-foreground">
               {done
                 ? "Opening your report…"
-                : progress?.current_agent
-                  ? `Current step: ${progress.current_agent}`
-                  : `Nine agents at work. About ${remaining}s remaining — you can keep this tab open.`}
+                : runningTitle
+                  ? `${runningTitle} is running now`
+                  : "Agents are starting up — hang tight."}
             </p>
           </div>
         </div>
@@ -140,9 +158,9 @@ function ProgressPage() {
                     <div className="mt-3 h-1 overflow-hidden rounded-full bg-muted">
                       <motion.div
                         className="h-full rounded-full bg-brand-gradient"
-                        initial={{ width: "0%" }}
-                        animate={{ width: "100%" }}
-                        transition={{ duration: agent.seconds, ease: "linear" }}
+                        initial={{ width: "15%" }}
+                        animate={{ width: ["15%", "85%"] }}
+                        transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
                       />
                     </div>
                   )}

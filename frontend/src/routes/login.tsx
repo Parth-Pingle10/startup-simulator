@@ -1,4 +1,4 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { toast } from "sonner";
 import { AuthLayout, Field, inputClass, submitClass } from "@/components/layout/AuthLayout";
@@ -17,7 +17,6 @@ export const Route = createFileRoute("/login")({
 });
 
 function LoginPage() {
-  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState<{ email?: string; password?: string }>({});
@@ -34,7 +33,7 @@ function LoginPage() {
     try {
       await loginUser({ email, password });
       toast.success("Welcome back");
-      navigate({ to: "/dashboard" });
+      window.location.assign("/dashboard");
     } catch (error) {
       const message = error instanceof Error ? error.message : "Unable to sign in";
       toast.error(message);
@@ -56,23 +55,27 @@ function LoginPage() {
         </>
       }
     >
-      <form onSubmit={submit} className="space-y-4">
+      <form onSubmit={submit} className="space-y-4" autoComplete="on">
         <Field label="Email" error={errors.email}>
           <input
             className={inputClass}
             type="email"
+            name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="you@company.com"
+            autoComplete="email"
           />
         </Field>
         <Field label="Password" error={errors.password}>
           <input
             className={inputClass}
             type="password"
+            name="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="••••••••"
+            autoComplete="current-password"
           />
         </Field>
         <div className="flex justify-end">

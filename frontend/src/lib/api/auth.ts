@@ -25,6 +25,18 @@ export type CurrentUser = {
   created_at?: string;
 };
 
+function userIdFromAccessToken(token: string): string {
+  try {
+    const part = token.split(".")[1];
+    if (!part) return "";
+    const json = atob(part.replace(/-/g, "+").replace(/_/g, "/"));
+    const payload = JSON.parse(json) as { user_id?: string };
+    return payload.user_id ?? "";
+  } catch {
+    return "";
+  }
+}
+
 export async function registerUser(payload: RegisterPayload) {
   return apiPost<{ message: string }>('/auth/register', payload);
 }
@@ -34,7 +46,7 @@ export async function loginUser(payload: LoginPayload) {
   const auth: StoredAuth = {
     accessToken: result.access_token,
     refreshToken: result.refresh_token,
-    userId: "",
+    userId: userIdFromAccessToken(result.access_token),
     email: payload.email,
     name: payload.email.split("@")[0],
   };
