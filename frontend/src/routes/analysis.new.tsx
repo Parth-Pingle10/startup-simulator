@@ -102,6 +102,18 @@ function NewAnalysis() {
     setStep((s) => s + 1);
   }
 
+  function onFieldKeyDown(e: React.KeyboardEvent) {
+    if ((e.ctrlKey || e.metaKey) && e.key === "Enter") {
+      e.preventDefault();
+      void next();
+      return;
+    }
+    if (!current.long && e.key === "Enter") {
+      e.preventDefault();
+      void next();
+    }
+  }
+
   return (
     <AppShell>
       <div className="mx-auto max-w-2xl">
@@ -115,7 +127,7 @@ function NewAnalysis() {
                 <motion.div
                   className="h-full rounded-full bg-brand-gradient"
                   initial={false}
-                  animate={{ width: i < step ? "100%" : i === step ? "45%" : "0%" }}
+                  animate={{ width: i < step ? "100%" : "0%" }}
                   transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
                 />
               </div>
@@ -151,6 +163,7 @@ function NewAnalysis() {
                   placeholder={current.placeholder}
                   value={value}
                   onChange={(e) => setValues({ ...values, [current.key]: e.target.value })}
+                  onKeyDown={onFieldKeyDown}
                 />
               ) : (
                 <input
@@ -159,10 +172,11 @@ function NewAnalysis() {
                   placeholder={current.placeholder}
                   value={value}
                   onChange={(e) => setValues({ ...values, [current.key]: e.target.value })}
-                  onKeyDown={(e) => e.key === "Enter" && next()}
+                  onKeyDown={onFieldKeyDown}
                 />
               )}
               {error && <p className="mt-2 text-xs text-destructive">{error}</p>}
+              <p className="mt-2 text-[11px] text-muted-foreground">Press Ctrl+Enter to continue</p>
             </motion.div>
           </AnimatePresence>
 

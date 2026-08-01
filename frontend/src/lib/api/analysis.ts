@@ -29,6 +29,7 @@ export type ProgressResponse = {
   started_at?: string;
   completed_at?: string;
   total_runtime?: number | null;
+  last_completed_step?: number;
 };
 
 export async function createStartupAnalysis(payload: StartupAnalysisPayload) {
@@ -45,6 +46,16 @@ export async function getAnalysisDetail(analysisId: string) {
 
 export async function getAnalysisProgress(analysisId: string) {
   return apiGet<ProgressResponse>(`/analysis/${analysisId}/progress`);
+}
+
+export async function pauseAnalysis(analysisId: string) {
+  return apiPost<{ message: string }>(`/analysis/${analysisId}/pause`);
+}
+
+export async function resumeAnalysis(analysisId: string) {
+  return apiPost<{ message: string; status?: string; start_step?: number }>(
+    `/analysis/${analysisId}/resume`,
+  );
 }
 
 export async function deleteAnalysis(analysisId: string) {

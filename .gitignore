@@ -21,3 +21,5 @@ dist/
 idk.py
 okok.py
 logs/
+tests/
+test.py

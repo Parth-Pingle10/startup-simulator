@@ -1,4 +1,4 @@
-export type AnalysisStatus = "running" | "completed" | "failed";
+export type AnalysisStatus = "running" | "completed" | "failed" | "paused";
 
 export type AnalysisItem = {
   analysis_id: string;

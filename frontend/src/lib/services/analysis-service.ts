@@ -482,6 +482,7 @@ export function useAnalysisProgress(analysisId: string) {
     started_at?: string;
     completed_at?: string;
     total_runtime?: number | null;
+    last_completed_step?: number;
   } | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -502,6 +503,7 @@ export function useAnalysisProgress(analysisId: string) {
             started_at: data.started_at,
             completed_at: data.completed_at,
             total_runtime: data.total_runtime,
+            last_completed_step: data.last_completed_step ?? 0,
           });
           setError(null);
         }

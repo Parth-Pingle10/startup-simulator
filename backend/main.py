@@ -3,7 +3,7 @@ import time
 import asyncio
 import sys
 
-from fastapi import FastAPI, Request, Depends
+from fastapi import FastAPI, Request, Depends, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 
 from slowapi import Limiter
@@ -13,11 +13,11 @@ from slowapi.middleware import SlowAPIMiddleware
 from slowapi import _rate_limit_exceeded_handler
 
 from backend.schemas import StartupRequest
-from backend.builder import graph
+from backend.services.pipeline import run_analysis_task
 from backend.utils.logger import logger
 from backend.auth.dependencies import get_current_user
-from backend.services.analysis_service import create_analysis, complete_analysis, fail_analysis
-from backend.services.log_service import create_log, complete_log, fail_log
+from backend.services.analysis_service import create_analysis
+from backend.services.log_service import create_log
 
 from backend.routes.auth import router as auth_router
 from backend.routes.analysis import router as analysis_router
@@ -33,21 +33,6 @@ limiter = Limiter(
 )
 
 app = FastAPI()
-
-@app.middleware("http")
-async def debug_requests(request, call_next):
-    print("=" * 60)
-    print("METHOD :", request.method)
-    print("PATH   :", request.url.path)
-    print("HEADERS:", dict(request.headers))
-    print("=" * 60)
-
-    response = await call_next(request)
-
-    print("STATUS :", response.status_code)
-    print("=" * 60)
-
-    return response
 
 origins = [origin.strip() for origin in os.getenv("CORS_ORIGINS", "http://localhost:3000,http://localhost:5173,http://127.0.0.1:5173,http://127.0.0.1:3000").split(",") if origin.strip()]
 
@@ -88,28 +73,6 @@ def home(request: Request):
         "Startup Simulator API Running"
     }
 
-
-from fastapi import BackgroundTasks
-
-async def run_analysis_task(state, analysis_id, start_time):
-    try:
-        result = await graph.ainvoke(state)
-        runtime = time.time() - start_time
-        
-        await complete_analysis(analysis_id, result, runtime)
-        await complete_log(analysis_id, runtime)
-        
-        logger.info(
-            f"Analysis Complete: {state['startup_name']}; Total time: {runtime}"
-        )
-    except Exception as e:
-        runtime = time.time() - start_time
-        await fail_analysis(analysis_id, str(e))
-        await fail_log(analysis_id, runtime)
-        
-        logger.error(
-            f"Analysis Failed: {str(e)}"
-        )
 
 @app.post("/analyze")
 @limiter.limit("5/hour")
@@ -154,7 +117,7 @@ async def analyze_startup(
         state["analysis_id"] = analysis_id
         state["user_id"] = current_user["user_id"]
 
-        background_tasks.add_task(run_analysis_task, state, analysis_id, start)
+        background_tasks.add_task(run_analysis_task, state, analysis_id, start, 1)
         
         return {
             "success": True,

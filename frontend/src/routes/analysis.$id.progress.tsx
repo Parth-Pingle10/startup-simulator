@@ -13,11 +13,14 @@ import {
   TrendingUp,
   Users,
 } from "lucide-react";
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import { AppShell } from "@/components/layout/AppShell";
 import { ScoreRing } from "@/components/report/ScoreRing";
+import { pauseAnalysis, resumeAnalysis } from "@/lib/api/analysis";
+import { readAuth } from "@/lib/auth/storage";
 import { AGENTS } from "@/lib/mock";
 import { useAnalysisProgress } from "@/lib/services/analysis-service";
+import { API_BASE_URL } from "@/lib/api/client";
 import { cn } from "@/lib/utils";
 
 const ICONS = {
@@ -47,6 +50,7 @@ export const Route = createFileRoute("/analysis/$id/progress")({
 function resolveCurrentAgentIndex(
   currentAgent: string | null | undefined,
   progressPct: number,
+  lastCompletedStep: number,
   isDone: boolean,
 ) {
   if (isDone) return AGENTS.length;
@@ -58,20 +62,91 @@ function resolveCurrentAgentIndex(
     if (byName >= 0) return byName;
   }
 
-  // Backend progress is 10, 20, … 100 when each agent starts
+  // After N agents completed, we're on agent N+1 (0-based index = lastCompleted)
+  if (lastCompletedStep > 0) {
+    return Math.min(AGENTS.length - 1, lastCompletedStep);
+  }
+
   if (progressPct > 0) {
-    return Math.min(AGENTS.length - 1, Math.max(0, Math.ceil(progressPct / 10) - 1));
+    return Math.min(AGENTS.length - 1, Math.floor(progressPct / 10));
   }
 
   return 0;
+}
+
+function sendPauseBeacon(analysisId: string) {
+  const auth = readAuth();
+  if (!auth?.accessToken) return;
+  const url = `${API_BASE_URL}/analysis/${analysisId}/pause`;
+  const body = JSON.stringify({});
+  try {
+    // Prefer keepalive fetch so auth header is preserved
+    void fetch(url, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${auth.accessToken}`,
+      },
+      body,
+      keepalive: true,
+    });
+  } catch {
+    void pauseAnalysis(analysisId).catch(() => undefined);
+  }
 }
 
 function ProgressPage() {
   const { id } = Route.useParams();
   const navigate = useNavigate();
   const { progress } = useAnalysisProgress(id);
+  const leavingRef = useRef(false);
+  const doneRef = useRef(false);
 
   const done = Boolean(progress?.status === "completed" || progress?.progress === 100);
+  doneRef.current = done;
+
+  // Resume when opening a paused / incomplete analysis
+  useEffect(() => {
+    let active = true;
+    async function maybeResume() {
+      try {
+        const result = await resumeAnalysis(id);
+        if (!active) return;
+        if (result.status === "completed") {
+          navigate({ to: "/analysis/$id", params: { id } });
+        }
+      } catch {
+        // ignore — may already be running
+      }
+    }
+    void maybeResume();
+    return () => {
+      active = false;
+    };
+  }, [id, navigate]);
+
+  // Pause when leaving the page / tab / closing
+  useEffect(() => {
+    const pauseIfNeeded = () => {
+      if (doneRef.current || leavingRef.current) return;
+      leavingRef.current = true;
+      sendPauseBeacon(id);
+    };
+
+    const onVisibility = () => {
+      if (document.visibilityState === "hidden") pauseIfNeeded();
+    };
+
+    window.addEventListener("pagehide", pauseIfNeeded);
+    document.addEventListener("visibilitychange", onVisibility);
+
+    return () => {
+      window.removeEventListener("pagehide", pauseIfNeeded);
+      document.removeEventListener("visibilitychange", onVisibility);
+      pauseIfNeeded();
+    };
+  }, [id]);
 
   useEffect(() => {
     if (!done) return;
@@ -79,9 +154,16 @@ function ProgressPage() {
     return () => clearTimeout(t);
   }, [done, id, navigate]);
 
+  const lastCompleted = Number(progress?.last_completed_step ?? 0);
   const currentIdx = useMemo(
-    () => resolveCurrentAgentIndex(progress?.current_agent, progress?.progress ?? 0, done),
-    [progress?.current_agent, progress?.progress, done],
+    () =>
+      resolveCurrentAgentIndex(
+        progress?.current_agent,
+        progress?.progress ?? 0,
+        lastCompleted,
+        done,
+      ),
+    [progress?.current_agent, progress?.progress, lastCompleted, done],
   );
 
   const states = AGENTS.map((_, i) => {
@@ -90,7 +172,8 @@ function ProgressPage() {
     return "queued";
   });
 
-  const pct = Math.min(100, Math.round(progress?.progress ?? (done ? 100 : 0)));
+  // Agent 1 running → 0%; agent 4 running → 30%; rises when each agent completes
+  const pct = done ? 100 : Math.min(100, currentIdx * 10);
   const runningTitle = done ? null : AGENTS[currentIdx]?.title;
 
   return (
@@ -100,14 +183,20 @@ function ProgressPage() {
           <ScoreRing value={pct} size={112} label="complete" />
           <div className="min-w-0">
             <h1 className="text-2xl font-semibold sm:text-3xl">
-              {done ? "Report ready" : "Your analysis is running"}
+              {done
+                ? "Report ready"
+                : progress?.status === "paused"
+                  ? "Analysis paused"
+                  : "Your analysis is running"}
             </h1>
             <p className="mt-2 text-muted-foreground">
               {done
                 ? "Opening your report…"
-                : runningTitle
-                  ? `${runningTitle} is running now`
-                  : "Agents are starting up — hang tight."}
+                : progress?.status === "paused"
+                  ? "Re-open this analysis to resume from the last unfinished agent."
+                  : runningTitle
+                    ? `${runningTitle} is running now`
+                    : "Agents are starting up — hang tight."}
             </p>
           </div>
         </div>
@@ -154,16 +243,6 @@ function ProgressPage() {
                 <div className="min-w-0 flex-1">
                   <p className="font-medium">{agent.title}</p>
                   <p className="mt-0.5 text-sm text-muted-foreground">{agent.description}</p>
-                  {state === "running" && (
-                    <div className="mt-3 h-1 overflow-hidden rounded-full bg-muted">
-                      <motion.div
-                        className="h-full rounded-full bg-brand-gradient"
-                        initial={{ width: "15%" }}
-                        animate={{ width: ["15%", "85%"] }}
-                        transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
-                      />
-                    </div>
-                  )}
                 </div>
                 <span className="shrink-0 text-xs uppercase tracking-wider text-muted-foreground">
                   {state === "done" ? "done" : state === "running" ? "working" : "queued"}

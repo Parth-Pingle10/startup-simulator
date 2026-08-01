@@ -22,7 +22,7 @@ function LoginPage() {
   const [errors, setErrors] = useState<{ email?: string; password?: string }>({});
   const [loading, setLoading] = useState(false);
 
-  async function submit(e: React.FormEvent) {
+  async function submitPassword(e: React.FormEvent) {
     e.preventDefault();
     const next: typeof errors = {};
     if (!/^\S+@\S+\.\S+$/.test(email)) next.email = "Enter a valid email address";
@@ -55,7 +55,7 @@ function LoginPage() {
         </>
       }
     >
-      <form onSubmit={submit} className="space-y-4" autoComplete="on">
+      <form onSubmit={submitPassword} className="space-y-4" autoComplete="on">
         <Field label="Email" error={errors.email}>
           <input
             className={inputClass}

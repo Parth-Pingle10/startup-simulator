@@ -54,6 +54,28 @@ export async function loginUser(payload: LoginPayload) {
   return result;
 }
 
+function persistTokens(result: AuthResponse, email: string) {
+  const auth: StoredAuth = {
+    accessToken: result.access_token,
+    refreshToken: result.refresh_token,
+    userId: userIdFromAccessToken(result.access_token),
+    email,
+    name: email.split("@")[0],
+  };
+  writeAuth(auth);
+  return result;
+}
+
+export async function requestOtp(email: string) {
+  return apiPost<{ message: string; status?: string; dev_mode?: boolean }>("/auth/otp/request", {
+    email,
+  });
+}
+
+export async function verifyOtp(payload: { email: string; code: string; name?: string }) {
+  return apiPost<{ message: string; status?: string; dev_mode?: boolean }>('/auth/otp/verify', payload);
+}
+
 export async function fetchCurrentUser() {
   const user = await apiGet<CurrentUser>('/auth/me');
   const auth = readAuth();

@@ -9,14 +9,18 @@ import traceback
 from backend.auth.schemas import (
     Register,
     Login,
-    RefreshTokenResquest
+    RefreshTokenResquest,
+    OtpRequest,
+    OtpVerify,
 )
 
 from backend.auth.service import (
     register_user,
     login_user,
     refresh_access_token,
-    logout_user
+    logout_user,
+    request_otp_login,
+    verify_otp_login,
 )
 
 from backend.auth.dependencies import (
@@ -58,6 +62,23 @@ async def login(
             status_code=401,
             detail=str(e)
         )
+
+
+@router.post("/otp/request")
+async def otp_request(request: OtpRequest):
+    try:
+        return await request_otp_login(request.email)
+    except Exception as e:
+        traceback.print_exc()
+        raise HTTPException(status_code=400, detail=str(e))
+
+
+@router.post("/otp/verify")
+async def otp_verify(request: OtpVerify):
+    try:
+        return await verify_otp_login(request.email, request.code, request.name)
+    except Exception as e:
+        raise HTTPException(status_code=401, detail=str(e))
 
 
 @router.post("/refresh")

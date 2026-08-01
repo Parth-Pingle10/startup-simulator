@@ -98,13 +98,21 @@ function Dashboard() {
               </Surface>
             )}
             {items.slice(0, 3).map((a, i) => {
+              const isComplete = a.status === "completed";
+              const isPaused = a.status === "paused";
+              const isRunning = a.status === "running";
+              const score = isComplete ? Number(a.total_runtime ?? 0) : 0;
               const analysis = {
                 id: a.analysis_id,
                 input: { name: a.startup_name, problem: "", solution: "", targetUsers: "" },
                 createdAt: Date.parse(a.created_at ?? new Date().toISOString()),
-                status: a.status === "completed" ? "complete" : "running",
-                score: a.status === "completed" ? 85 : 60,
-                summary: { oneLiner: a.startup_name, industry: "Live backend analysis", features: [] },
+                status: isComplete ? "complete" : "running",
+                score: score || 0,
+                summary: {
+                  oneLiner: a.startup_name,
+                  industry: isComplete ? "Completed analysis" : isPaused ? "Paused" : isRunning ? "Running" : "Pending",
+                  features: [],
+                },
                 competitors: [],
                 gaps: [],
                 scoreBreakdown: [],
@@ -116,6 +124,7 @@ function Dashboard() {
                 adoption: [],
                 market: [],
                 recommendations: [],
+                validation: null,
               };
               return <AnalysisCard key={a.analysis_id} analysis={analysis} index={i} />;
             })}

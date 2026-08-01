@@ -80,7 +80,7 @@ export function AnalysisCard({
       className="group relative"
     >
       <Link
-        to="/analysis/$id"
+        to={analysis.status === "complete" ? "/analysis/$id" : "/analysis/$id/progress"}
         params={{ id: analysis.id }}
         className="surface block p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40"
       >

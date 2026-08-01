@@ -19,6 +19,16 @@ class Login(BaseModel):
     email : EmailStr
     
     password : str
+
+
+class OtpRequest(BaseModel):
+    email: EmailStr
+
+
+class OtpVerify(BaseModel):
+    email: EmailStr
+    code: str = Field(min_length=4, max_length=10)
+    name: str | None = Field(default=None, max_length=50)
     
 class TokenResponse(BaseModel):
     

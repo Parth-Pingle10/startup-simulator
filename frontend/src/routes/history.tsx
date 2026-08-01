@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Plus, Search } from "lucide-react";
 import { useState } from "react";
-import { toast } from "sonner";
 import { AppShell } from "@/components/layout/AppShell";
 import { Surface } from "@/components/kit";
 import { AnalysisCard } from "@/components/report/ScoreRing";
@@ -69,32 +68,43 @@ function HistoryPage() {
       <div className="mt-6 grid gap-4 md:grid-cols-2">
         {!hydrated && [0, 1, 2, 3].map((i) => <Skeleton key={i} className="h-36 rounded-2xl" />)}
         {hydrated &&
-          filtered.map((a, i) => (
-            <AnalysisCard
-              key={a.analysis_id}
-              analysis={{
-                id: a.analysis_id,
-                input: { name: a.startup_name, problem: "", solution: "", targetUsers: "" },
-                createdAt: Date.parse(a.created_at ?? new Date().toISOString()),
-                status: a.status === "completed" ? "complete" : "running",
-                score: a.status === "completed" ? 85 : 60,
-                summary: { oneLiner: a.startup_name, industry: "Live backend analysis", features: [] },
-                competitors: [],
-                gaps: [],
-                scoreBreakdown: [],
-                strengthMeter: 0,
-                weaknessMeter: 0,
-                personas: [],
-                feedback: [],
-                growth: [],
-                adoption: [],
-                market: [],
-                recommendations: [],
-              }}
-              index={i}
-              onDelete={setPending}
-            />
-          ))}
+          filtered.map((a, i) => {
+            const isComplete = a.status === "completed";
+            const isPaused = a.status === "paused";
+            const isRunning = a.status === "running";
+            const score = isComplete ? Math.max(0, Math.min(100, Number(a.total_runtime ?? 0))) : 0;
+            return (
+              <AnalysisCard
+                key={a.analysis_id}
+                analysis={{
+                  id: a.analysis_id,
+                  input: { name: a.startup_name, problem: "", solution: "", targetUsers: "" },
+                  createdAt: Date.parse(a.created_at ?? new Date().toISOString()),
+                  status: isComplete ? "complete" : "running",
+                  score,
+                  summary: {
+                    oneLiner: a.startup_name,
+                    industry: isComplete ? "Completed analysis" : isPaused ? "Paused" : isRunning ? "Running" : "Pending",
+                    features: [],
+                  },
+                  competitors: [],
+                  gaps: [],
+                  scoreBreakdown: [],
+                  strengthMeter: 0,
+                  weaknessMeter: 0,
+                  personas: [],
+                  feedback: [],
+                  growth: [],
+                  adoption: [],
+                  market: [],
+                  recommendations: [],
+                  validation: null,
+                }}
+                index={i}
+                onDelete={setPending}
+              />
+            );
+          })}
       </div>
 
       {hydrated && filtered.length === 0 && (

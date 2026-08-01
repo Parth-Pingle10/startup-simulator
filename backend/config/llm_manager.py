@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 from langchain_ollama import ChatOllama
 
+
 load_dotenv()
 
 
@@ -13,18 +14,34 @@ class LLMManager:
         self._fallback = None
 
     def _build_primary(self):
-        from langchain_google_genai import ChatGoogleGenerativeAI
+        # from langchain_google_genai import ChatGoogleGenerativeAI
 
-        return ChatGoogleGenerativeAI(
-            model="gemini-2.5-flash",
-            google_api_key=os.getenv("GOOGLE_API_KEY"),
-            temperature=0,
-        )
-        # return ChatOllama(
-        #     model="mistral:latest",
-        #     base_url="http://localhost:11434",
+        # return ChatGoogleGenerativeAI(
+        #     model="gemini-2.5-flash",
+        #     google_api_key=os.getenv("GOOGLE_API_KEY"),
         #     temperature=0,
         # )
+        # from langchain_xai import ChatXAI
+
+        # return ChatXAI(
+        #     model="grok-4",  # or "grok-4-fast"
+        #     api_key=os.getenv("XAI_API_KEY"),
+        #     temperature=0,
+        # )
+        
+#         from langchain_openai import ChatOpenAI
+
+#         return ChatOpenAI(
+#     model="openrouter/auto",  # or a specific OpenRouter model
+#     api_key=os.getenv("OPENROUTER_API_KEY"),
+#     base_url="https://openrouter.ai/api/v1",
+#     temperature=0,
+# )
+        return ChatOllama(
+            model="mistral:latest",
+            base_url="http://localhost:11434",
+            temperature=0,
+        )
 
     def _build_fallback(self):
         from langchain_openai import ChatOpenAI
