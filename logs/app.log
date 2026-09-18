@@ -1810,3 +1810,488 @@ For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/erro
 2026-09-18 14:01:17,683 | INFO | DeepSeek Success | CompetitorAnalysis
 2026-09-18 14:01:17,684 | INFO | MyFitnessPal | Gemini Analysis Finished
 2026-09-18 14:04:30,184 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 14:11:48,978 | WARNING | Gemini Failed | Invalid json output: 
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+2026-09-18 14:11:48,978 | INFO | Switching To DeepSeek | CompetitorAnalysis
+2026-09-18 14:11:50,519 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:12:05,298 | INFO | CompetitorAnalysis inference: 1163.47s
+2026-09-18 14:12:05,299 | INFO | Gemini Success | CompetitorAnalysis
+2026-09-18 14:12:05,299 | INFO | Fooducate | Gemini Analysis Finished
+2026-09-18 14:12:07,966 | INFO | DeepSeek Success | CompetitorAnalysis
+2026-09-18 14:12:07,966 | INFO | Yummly | Gemini Analysis Finished
+2026-09-18 14:12:07,967 | INFO | Agent 4 Completed | NutriNest
+2026-09-18 14:12:07,977 | INFO | Agent 5 Started | NutriNest
+2026-09-18 14:12:07,978 | INFO | Invoking Gemini | MarketGapAnalysis
+2026-09-18 14:12:10,659 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 14:14:59,882 | INFO | MarketGapAnalysis inference: 171.90s
+2026-09-18 14:14:59,883 | INFO | Gemini Success | MarketGapAnalysis
+2026-09-18 14:14:59,883 | INFO | Agent 5 Completed | NutriNest
+2026-09-18 14:14:59,896 | INFO | Agent 6 Started | NutriNest
+2026-09-18 14:14:59,896 | INFO | Invoking Gemini | StartupScore
+2026-09-18 14:15:02,612 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 14:16:52,362 | INFO | Agent 1 Started | ReviewPilot
+2026-09-18 14:16:52,565 | INFO | Agent 1 Completed | ReviewPilot
+2026-09-18 14:16:52,570 | INFO | Agent 2 Started | ReviewPilot
+2026-09-18 14:16:52,779 | INFO | Agent 2 Completed | ReviewPilot
+2026-09-18 14:16:52,785 | INFO | Agent 3 Started | ReviewPilot
+2026-09-18 14:16:52,785 | INFO | Agent 7 Started | ReviewPilot
+2026-09-18 14:16:52,948 | INFO | Agent 3 Completed | ReviewPilot
+2026-09-18 14:16:53,195 | INFO | Agent 7 Completed | ReviewPilot
+2026-09-18 14:16:53,198 | INFO | Agent 4 Started | ReviewPilot
+2026-09-18 14:16:53,198 | INFO | Agent 8 Started | ReviewPilot
+2026-09-18 14:16:53,199 | INFO | Processing CodeRabbit
+2026-09-18 14:16:53,199 | INFO | Processing SonarQube
+2026-09-18 14:16:53,199 | INFO | Processing Snyk
+2026-09-18 14:16:53,199 | INFO | Processing Graphite
+2026-09-18 14:16:53,199 | INFO | Processing ReviewDog
+2026-09-18 14:16:53,199 | INFO | Agent 4 Completed | ReviewPilot
+2026-09-18 14:16:53,609 | INFO | Agent 8 Completed | ReviewPilot
+2026-09-18 14:16:53,616 | INFO | Agent 9 Started | ReviewPilot
+2026-09-18 14:16:53,617 | INFO | Persona Feedback Length: 5395 characters
+2026-09-18 14:16:53,617 | INFO | Agent 5 Started | ReviewPilot
+2026-09-18 14:18:12,126 | INFO | StartupScore inference: 192.23s
+2026-09-18 14:18:12,126 | INFO | Gemini Success | StartupScore
+2026-09-18 14:18:12,126 | INFO | Agent 6 Completed | NutriNest
+2026-09-18 14:18:12,138 | INFO | Agent 7 Started | NutriNest
+2026-09-18 14:18:12,139 | INFO | Invoking Gemini | PersonaOutput
+2026-09-18 14:18:15,485 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 14:21:47,113 | WARNING | Gemini Failed | Failed to parse PersonaOutput from completion {"personas": [{"name": "The Pantry-Tracker", "age_range": "30-45", "occupation": "Senior Marketing Manager", "goals": ["Reduce meal prep time by 50% while maintaining dietary goals", "Avoid substitutions that waste time and money"], "frustrations": ["Mealime's hidden shipping fees cause 25% of users to cancel", "Yummly's search fails when excluding allergens"], "budget_level": "High", "tech_savviness": "High", "adoption_likelihood": "High"}, {"name": "The Family Meal Architect", "age_range": "35-45", "occupation": "Middle School Teacher", "goals": ["Create shared family meals with no substitutions", "Track kids' nutrition without constant monitoring"], "frustrations": ["Mealime's 'order tracking confusion' leads to 20% abandonment", "Plan to Eat's recipe scaling breaks cooking times"], "budget_level": "Medium", "tech_savviness": "Medium", "adoption_likelihood": "High"}, {"name": "The Budget Builder", "age_range": "25-35", "occupation": "Freelance Graphic Designer", "goals": ["Minimize grocery spending by 20% through smart substitutions", "Avoid hidden costs from meal kits"], "frustrations": ["Mealime's $2.50 shipping fee causes 25% cancellations", "Yummly's 'bait and switch' tactics"], "budget_level": "Low", "tech_savviness": "Medium", "adoption_likelihood": "Medium"}, {"name": "The Privacy Guardian", "age_range": "32-42", "occupation": "Data Scientist", "goals": ["Ensure camera scanning doesn't track personal habits", "Avoid data harvesting like Yummly"]}]}. Got: 4 validation errors for PersonaOutput
+personas.3.frustrations
+  Field required [type=missing, input_value={'name': 'The Privacy Gua...arvesting like Yummly']}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+personas.3.budget_level
+  Field required [type=missing, input_value={'name': 'The Privacy Gua...arvesting like Yummly']}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+personas.3.tech_savviness
+  Field required [type=missing, input_value={'name': 'The Privacy Gua...arvesting like Yummly']}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+personas.3.adoption_likelihood
+  Field required [type=missing, input_value={'name': 'The Privacy Gua...arvesting like Yummly']}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+2026-09-18 14:21:47,114 | INFO | Switching To DeepSeek | PersonaOutput
+2026-09-18 14:21:48,062 | INFO | Agent 1 Started | ReviewPilot
+2026-09-18 14:21:48,278 | INFO | Agent 1 Completed | ReviewPilot
+2026-09-18 14:21:48,282 | INFO | Agent 2 Started | ReviewPilot
+2026-09-18 14:21:48,497 | INFO | Agent 2 Completed | ReviewPilot
+2026-09-18 14:21:48,499 | INFO | Agent 3 Started | ReviewPilot
+2026-09-18 14:21:48,499 | INFO | Agent 7 Started | ReviewPilot
+2026-09-18 14:21:48,653 | INFO | Agent 3 Completed | ReviewPilot
+2026-09-18 14:21:48,915 | INFO | Agent 7 Completed | ReviewPilot
+2026-09-18 14:21:48,917 | INFO | Agent 4 Started | ReviewPilot
+2026-09-18 14:21:48,917 | INFO | Agent 8 Started | ReviewPilot
+2026-09-18 14:21:48,918 | INFO | Processing CodeRabbit
+2026-09-18 14:21:48,918 | INFO | Processing SonarQube
+2026-09-18 14:21:48,918 | INFO | Processing Snyk
+2026-09-18 14:21:48,918 | INFO | Processing Graphite
+2026-09-18 14:21:48,918 | INFO | Processing ReviewDog
+2026-09-18 14:21:48,918 | INFO | Agent 4 Completed | ReviewPilot
+2026-09-18 14:21:49,331 | INFO | Agent 8 Completed | ReviewPilot
+2026-09-18 14:21:49,334 | INFO | Agent 5 Started | ReviewPilot
+2026-09-18 14:21:49,517 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-18 14:21:49,519 | INFO | Retrying request to /chat/completions in 10.000000 seconds
+2026-09-18 14:21:49,595 | INFO | Agent 5 Completed | ReviewPilot
+2026-09-18 14:21:49,597 | INFO | Agent 6 Started | ReviewPilot
+2026-09-18 14:21:49,861 | INFO | Agent 6 Completed | ReviewPilot
+2026-09-18 14:21:49,863 | INFO | Agent 9 Started | ReviewPilot
+2026-09-18 14:21:49,864 | INFO | Persona Feedback Length: 5395 characters
+2026-09-18 14:21:50,078 | INFO | Agent 9 Completed | ReviewPilot
+2026-09-18 14:21:50,079 | INFO | Agent 10 Started | ReviewPilot
+2026-09-18 14:21:50,293 | INFO | Agent 10 Completed | ReviewPilot
+2026-09-18 14:22:00,473 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:22:38,786 | INFO | DeepSeek Success | PersonaOutput
+2026-09-18 14:22:38,787 | INFO | Agent 7 Completed | NutriNest
+2026-09-18 14:22:38,797 | INFO | Agent 8 Started | NutriNest
+2026-09-18 14:22:38,798 | INFO | Invoking Gemini | PersonaFeedbackOutput
+2026-09-18 14:22:43,432 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 14:23:45,064 | INFO | Agent 1 Started | ReviewPilot
+2026-09-18 14:23:45,278 | INFO | Agent 1 Completed | ReviewPilot
+2026-09-18 14:23:45,281 | INFO | Agent 2 Started | ReviewPilot
+2026-09-18 14:23:45,495 | INFO | Agent 2 Completed | ReviewPilot
+2026-09-18 14:23:45,500 | INFO | Agent 3 Started | ReviewPilot
+2026-09-18 14:23:45,500 | INFO | Agent 7 Started | ReviewPilot
+2026-09-18 14:23:45,664 | INFO | Agent 3 Completed | ReviewPilot
+2026-09-18 14:23:45,913 | INFO | Agent 7 Completed | ReviewPilot
+2026-09-18 14:23:45,916 | INFO | Agent 4 Started | ReviewPilot
+2026-09-18 14:23:45,916 | INFO | Agent 8 Started | ReviewPilot
+2026-09-18 14:23:45,917 | INFO | Processing CodeRabbit
+2026-09-18 14:23:45,918 | INFO | Processing SonarQube
+2026-09-18 14:23:45,918 | INFO | Processing Snyk
+2026-09-18 14:23:45,918 | INFO | Processing Graphite
+2026-09-18 14:23:45,919 | INFO | Processing ReviewDog
+2026-09-18 14:23:45,919 | INFO | Agent 4 Completed | ReviewPilot
+2026-09-18 14:23:46,329 | INFO | Agent 8 Completed | ReviewPilot
+2026-09-18 14:23:46,333 | INFO | Agent 5 Started | ReviewPilot
+2026-09-18 14:23:46,589 | INFO | Agent 5 Completed | ReviewPilot
+2026-09-18 14:23:46,591 | INFO | Agent 6 Started | ReviewPilot
+2026-09-18 14:23:46,844 | INFO | Agent 6 Completed | ReviewPilot
+2026-09-18 14:23:46,847 | INFO | Agent 9 Started | ReviewPilot
+2026-09-18 14:23:46,847 | INFO | Persona Feedback Length: 5395 characters
+2026-09-18 14:23:47,060 | INFO | Agent 9 Completed | ReviewPilot
+2026-09-18 14:23:47,062 | INFO | Agent 10 Started | ReviewPilot
+2026-09-18 14:23:47,278 | INFO | Agent 10 Completed | ReviewPilot
+2026-09-18 14:24:23,890 | WARNING | Gemini Failed | Invalid json output: 
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+2026-09-18 14:24:23,890 | INFO | Switching To DeepSeek | PersonaFeedbackOutput
+2026-09-18 14:24:25,989 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:25:52,367 | INFO | Agent 1 Started | TestInvertedTiming
+2026-09-18 14:25:52,418 | INFO | Agent 1 Completed | TestInvertedTiming
+2026-09-18 14:25:52,420 | INFO | Agent 2 Started | TestInvertedTiming
+2026-09-18 14:25:52,479 | INFO | Agent 2 Completed | TestInvertedTiming
+2026-09-18 14:25:52,481 | INFO | Agent 3 Started | TestInvertedTiming
+2026-09-18 14:25:52,481 | INFO | Agent 7 Started | TestInvertedTiming
+2026-09-18 14:25:52,481 | INFO | Agent 3 Completed | TestInvertedTiming
+2026-09-18 14:25:52,894 | INFO | Agent 7 Completed | TestInvertedTiming
+2026-09-18 14:25:52,897 | INFO | Agent 4 Started | TestInvertedTiming
+2026-09-18 14:25:52,897 | INFO | Agent 8 Started | TestInvertedTiming
+2026-09-18 14:25:52,898 | INFO | Processing C1
+2026-09-18 14:25:52,898 | INFO | Processing C2
+2026-09-18 14:25:52,898 | INFO | Agent 4 Completed | TestInvertedTiming
+2026-09-18 14:25:53,311 | INFO | Agent 8 Completed | TestInvertedTiming
+2026-09-18 14:25:53,314 | INFO | Agent 5 Started | TestInvertedTiming
+2026-09-18 14:25:53,375 | INFO | Agent 5 Completed | TestInvertedTiming
+2026-09-18 14:25:53,377 | INFO | Agent 6 Started | TestInvertedTiming
+2026-09-18 14:25:53,438 | INFO | Agent 6 Completed | TestInvertedTiming
+2026-09-18 14:25:53,441 | INFO | Agent 9 Started | TestInvertedTiming
+2026-09-18 14:25:53,441 | INFO | Persona Feedback Length: 369 characters
+2026-09-18 14:25:53,500 | INFO | Agent 9 Completed | TestInvertedTiming
+2026-09-18 14:25:53,501 | INFO | Agent 10 Started | TestInvertedTiming
+2026-09-18 14:25:53,562 | INFO | Agent 10 Completed | TestInvertedTiming
+2026-09-18 14:25:57,917 | INFO | DeepSeek Success | PersonaFeedbackOutput
+2026-09-18 14:25:57,918 | INFO | Agent 8 Completed | NutriNest
+2026-09-18 14:25:57,933 | INFO | Agent 9 Started | NutriNest
+2026-09-18 14:25:57,934 | INFO | Persona Feedback Length: 7487 characters
+2026-09-18 14:25:57,934 | INFO | Invoking Gemini | StartupValidationReport
+2026-09-18 14:26:00,732 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 14:27:08,428 | INFO | Agent 1 Started | TestBranchBSlower
+2026-09-18 14:27:08,486 | INFO | Agent 1 Completed | TestBranchBSlower
+2026-09-18 14:27:08,490 | INFO | Agent 2 Started | TestBranchBSlower
+2026-09-18 14:27:08,547 | INFO | Agent 2 Completed | TestBranchBSlower
+2026-09-18 14:27:08,551 | INFO | Agent 3 Started | TestBranchBSlower
+2026-09-18 14:27:08,552 | INFO | Agent 7 Started | TestBranchBSlower
+2026-09-18 14:27:08,553 | INFO | Agent 3 Completed | TestBranchBSlower
+2026-09-18 14:27:09,366 | INFO | Agent 7 Completed | TestBranchBSlower
+2026-09-18 14:27:09,371 | INFO | Agent 4 Started | TestBranchBSlower
+2026-09-18 14:27:09,372 | INFO | Agent 8 Started | TestBranchBSlower
+2026-09-18 14:27:09,372 | INFO | Processing C1
+2026-09-18 14:27:09,372 | INFO | Processing C2
+2026-09-18 14:27:09,373 | INFO | Agent 4 Completed | TestBranchBSlower
+2026-09-18 14:27:10,184 | INFO | Agent 8 Completed | TestBranchBSlower
+2026-09-18 14:27:10,191 | INFO | Agent 5 Started | TestBranchBSlower
+2026-09-18 14:27:10,250 | INFO | Agent 5 Completed | TestBranchBSlower
+2026-09-18 14:27:10,255 | INFO | Agent 6 Started | TestBranchBSlower
+2026-09-18 14:27:10,310 | INFO | Agent 6 Completed | TestBranchBSlower
+2026-09-18 14:27:10,313 | INFO | Agent 9 Started | TestBranchBSlower
+2026-09-18 14:27:10,313 | INFO | Persona Feedback Length: 369 characters
+2026-09-18 14:27:10,374 | INFO | Agent 9 Completed | TestBranchBSlower
+2026-09-18 14:27:10,377 | INFO | Agent 10 Started | TestBranchBSlower
+2026-09-18 14:27:10,432 | INFO | Agent 10 Completed | TestBranchBSlower
+2026-09-18 14:36:15,638 | INFO | StartupValidationReport inference: 617.70s
+2026-09-18 14:36:15,638 | INFO | Gemini Success | StartupValidationReport
+2026-09-18 14:36:15,639 | INFO | Agent 9 Completed | NutriNest
+2026-09-18 14:36:15,656 | INFO | Agent 10 Started | NutriNest
+2026-09-18 14:36:15,657 | INFO | Invoking Gemini | StartupRecommendations
+2026-09-18 14:36:17,978 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 14:41:04,867 | INFO | New Analysis: NutriNest
+2026-09-18 14:41:04,915 | INFO | Agent 1 Started | NutriNest
+2026-09-18 14:41:04,916 | INFO | Invoking Gemini | StartupAnalysis
+2026-09-18 14:41:08,023 | WARNING | Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+2026-09-18 14:41:09,625 | INFO | AFC is enabled with max remote calls: 10.
+2026-09-18 14:41:10,137 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (UNAUTHENTICATED): 401 UNAUTHENTICATED. {'error': {'code': 401, 'message': 'Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCESS_TOKEN_TYPE_UNSUPPORTED', 'metadata': {'method': 'google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}
+2026-09-18 14:41:10,137 | INFO | Switching To DeepSeek | StartupAnalysis
+2026-09-18 14:41:16,236 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:41:19,953 | INFO | DeepSeek Success | StartupAnalysis
+2026-09-18 14:41:19,954 | INFO | Agent 1 Completed | NutriNest
+2026-09-18 14:41:19,960 | INFO | Analysis paused: de5999fd-de58-452c-9831-282d63059145
+2026-09-18 14:44:57,419 | INFO | Agent 1 Started | NutriNest
+2026-09-18 14:44:57,420 | INFO | Invoking Gemini | StartupAnalysis
+2026-09-18 14:45:00,244 | WARNING | Gemini Failed | 1 validation error for ChatGoogleGenerativeAI
+  Value error, API key required for Gemini Developer API. Provide api_key parameter or set GOOGLE_API_KEY/GEMINI_API_KEY environment variable. [type=value_error, input_value={'model': 'gemini-2.5-fla...: 0, 'model_kwargs': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-09-18 14:45:00,244 | INFO | Switching To DeepSeek | StartupAnalysis
+2026-09-18 14:45:04,332 | INFO | Agent 1 Started | NutriNest
+2026-09-18 14:45:04,332 | INFO | Invoking Gemini | StartupAnalysis
+2026-09-18 14:45:04,333 | WARNING | Gemini Failed | 1 validation error for ChatGoogleGenerativeAI
+  Value error, API key required for Gemini Developer API. Provide api_key parameter or set GOOGLE_API_KEY/GEMINI_API_KEY environment variable. [type=value_error, input_value={'model': 'gemini-2.5-fla...: 0, 'model_kwargs': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-09-18 14:45:04,333 | INFO | Switching To DeepSeek | StartupAnalysis
+2026-09-18 14:45:06,105 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:45:06,114 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:45:14,332 | INFO | DeepSeek Success | StartupAnalysis
+2026-09-18 14:45:14,332 | INFO | Agent 1 Completed | NutriNest
+2026-09-18 14:45:14,344 | INFO | Agent 2 Started | NutriNest
+2026-09-18 14:45:14,344 | INFO | Invoking Gemini | CompetitorOutput
+2026-09-18 14:45:14,345 | WARNING | Gemini Failed | 1 validation error for ChatGoogleGenerativeAI
+  Value error, API key required for Gemini Developer API. Provide api_key parameter or set GOOGLE_API_KEY/GEMINI_API_KEY environment variable. [type=value_error, input_value={'model': 'gemini-2.5-fla...: 0, 'model_kwargs': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-09-18 14:45:14,345 | INFO | Switching To DeepSeek | CompetitorOutput
+2026-09-18 14:45:14,414 | INFO | DeepSeek Success | StartupAnalysis
+2026-09-18 14:45:14,415 | INFO | Agent 1 Completed | NutriNest
+2026-09-18 14:45:14,427 | INFO | Agent 2 Started | NutriNest
+2026-09-18 14:45:14,427 | INFO | Invoking Gemini | CompetitorOutput
+2026-09-18 14:45:14,428 | WARNING | Gemini Failed | 1 validation error for ChatGoogleGenerativeAI
+  Value error, API key required for Gemini Developer API. Provide api_key parameter or set GOOGLE_API_KEY/GEMINI_API_KEY environment variable. [type=value_error, input_value={'model': 'gemini-2.5-fla...: 0, 'model_kwargs': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-09-18 14:45:14,428 | INFO | Switching To DeepSeek | CompetitorOutput
+2026-09-18 14:45:15,322 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:45:15,527 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:45:16,745 | INFO | DeepSeek Success | CompetitorOutput
+2026-09-18 14:45:16,745 | INFO | Agent 2 Completed | NutriNest
+2026-09-18 14:45:16,755 | INFO | Agent 3 Started | NutriNest
+2026-09-18 14:45:16,756 | INFO | Collecting competitor reviews for Mealime
+2026-09-18 14:45:16,756 | INFO | Collecting competitor reviews for EatLove
+2026-09-18 14:45:16,756 | INFO | Searching Trustpilot: Mealime
+2026-09-18 14:45:16,756 | INFO | Collecting competitor reviews for PlateJoy
+2026-09-18 14:45:16,756 | INFO | Searching Trustpilot: EatLove
+2026-09-18 14:45:16,758 | INFO | Searching Trustpilot: PlateJoy
+2026-09-18 14:45:16,758 | INFO | Collecting competitor reviews for Yummly
+2026-09-18 14:45:16,759 | INFO | Searching Trustpilot: Yummly
+2026-09-18 14:45:16,759 | INFO | Collecting competitor reviews for Paprika
+2026-09-18 14:45:16,760 | INFO | Searching Trustpilot: Paprika
+2026-09-18 14:45:16,767 | INFO | Agent 7 Started | NutriNest
+2026-09-18 14:45:16,767 | INFO | Invoking Gemini | PersonaOutput
+2026-09-18 14:45:16,768 | WARNING | Gemini Failed | 1 validation error for ChatGoogleGenerativeAI
+  Value error, API key required for Gemini Developer API. Provide api_key parameter or set GOOGLE_API_KEY/GEMINI_API_KEY environment variable. [type=value_error, input_value={'model': 'gemini-2.5-fla...: 0, 'model_kwargs': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-09-18 14:45:16,768 | INFO | Switching To DeepSeek | PersonaOutput
+2026-09-18 14:45:17,333 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:45:17,422 | INFO | DeepSeek Success | CompetitorOutput
+2026-09-18 14:45:17,423 | INFO | Agent 2 Completed | NutriNest
+2026-09-18 14:45:17,432 | INFO | Agent 3 Started | NutriNest
+2026-09-18 14:45:17,432 | INFO | Collecting competitor reviews for Mealime
+2026-09-18 14:45:17,432 | INFO | Collecting competitor reviews for EatLove
+2026-09-18 14:45:17,432 | INFO | Searching Trustpilot: Mealime
+2026-09-18 14:45:17,433 | INFO | Searching Trustpilot: EatLove
+2026-09-18 14:45:17,433 | INFO | Collecting competitor reviews for PlateJoy
+2026-09-18 14:45:17,433 | INFO | Searching Trustpilot: PlateJoy
+2026-09-18 14:45:17,434 | INFO | Collecting competitor reviews for MealPrepPro
+2026-09-18 14:45:17,434 | INFO | Searching Trustpilot: MealPrepPro
+2026-09-18 14:45:17,434 | INFO | Collecting competitor reviews for Yummly
+2026-09-18 14:45:17,435 | INFO | Searching Trustpilot: Yummly
+2026-09-18 14:45:17,436 | INFO | Agent 7 Started | NutriNest
+2026-09-18 14:45:17,437 | INFO | Invoking Gemini | PersonaOutput
+2026-09-18 14:45:17,437 | WARNING | Gemini Failed | 1 validation error for ChatGoogleGenerativeAI
+  Value error, API key required for Gemini Developer API. Provide api_key parameter or set GOOGLE_API_KEY/GEMINI_API_KEY environment variable. [type=value_error, input_value={'model': 'gemini-2.5-fla...: 0, 'model_kwargs': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/value_error
+2026-09-18 14:45:17,438 | INFO | Switching To DeepSeek | PersonaOutput
+2026-09-18 14:45:17,882 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:45:21,809 | INFO | Agent 3 Completed | NutriNest
+2026-09-18 14:45:21,859 | INFO | Agent 3 Completed | NutriNest
+2026-09-18 14:48:34,090 | INFO | New Analysis: NutriNest
+2026-09-18 14:48:34,112 | INFO | Agent 1 Started | NutriNest
+2026-09-18 14:48:34,113 | INFO | Invoking Gemini | StartupAnalysis
+2026-09-18 14:48:38,410 | INFO | AFC is enabled with max remote calls: 10.
+2026-09-18 14:48:39,648 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-18 14:48:39,648 | INFO | Switching To DeepSeek | StartupAnalysis
+2026-09-18 14:48:43,774 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:48:48,031 | INFO | DeepSeek Success | StartupAnalysis
+2026-09-18 14:48:48,031 | INFO | Agent 1 Completed | NutriNest
+2026-09-18 14:48:48,041 | INFO | Agent 2 Started | NutriNest
+2026-09-18 14:48:48,041 | INFO | Invoking Gemini | CompetitorOutput
+2026-09-18 14:48:48,043 | INFO | AFC is enabled with max remote calls: 10.
+2026-09-18 14:48:48,402 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-18 14:48:48,403 | INFO | Switching To DeepSeek | CompetitorOutput
+2026-09-18 14:48:48,928 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:48:50,476 | INFO | DeepSeek Success | CompetitorOutput
+2026-09-18 14:48:50,476 | INFO | Agent 2 Completed | NutriNest
+2026-09-18 14:48:50,485 | INFO | Agent 3 Started | NutriNest
+2026-09-18 14:48:50,485 | INFO | Collecting competitor reviews for Mealime
+2026-09-18 14:48:50,485 | INFO | Collecting competitor reviews for EatLove
+2026-09-18 14:48:50,485 | INFO | Searching Trustpilot: Mealime
+2026-09-18 14:48:50,486 | INFO | Searching Trustpilot: EatLove
+2026-09-18 14:48:50,486 | INFO | Collecting competitor reviews for PlateJoy
+2026-09-18 14:48:50,486 | INFO | Searching Trustpilot: PlateJoy
+2026-09-18 14:48:50,487 | INFO | Collecting competitor reviews for MealPrepPro
+2026-09-18 14:48:50,487 | INFO | Searching Trustpilot: MealPrepPro
+2026-09-18 14:48:50,487 | INFO | Collecting competitor reviews for Yummly
+2026-09-18 14:48:50,489 | INFO | Searching Trustpilot: Yummly
+2026-09-18 14:48:50,489 | INFO | Agent 7 Started | NutriNest
+2026-09-18 14:48:50,490 | INFO | Invoking Gemini | PersonaOutput
+2026-09-18 14:48:50,494 | INFO | AFC is enabled with max remote calls: 10.
+2026-09-18 14:48:50,987 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-18 14:48:50,988 | INFO | Switching To DeepSeek | PersonaOutput
+2026-09-18 14:48:51,655 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:49:00,220 | INFO | Mealime: 10 search results found.
+2026-09-18 14:49:00,221 | INFO | MealPrepPro: 1 search results found.
+2026-09-18 14:49:00,259 | INFO | Yummly: 10 search results found.
+2026-09-18 14:49:00,290 | INFO | First Trustpilot Result:
+Yummly
+
+yummly.com
+
+2.28 reviews
+
+Marshall Street 601, Redwood City, United States
+2026-09-18 14:49:00,322 | INFO | First Trustpilot Result:
+The Meal Prep Project
+
+mealprepproject.com
+
+0.00 reviews
+
+41 Boundary Street, London, United Kingdom
+2026-09-18 14:49:00,323 | INFO | First Trustpilot Result:
+Metlife
+
+metlife.com
+
+1.2826 reviews
+
+United States
+2026-09-18 14:49:00,324 | WARNING | Company mismatch.
+Expected : Mealime
+Found    : Metlife
+
+metlife.com
+
+1.2826 reviews
+
+United States
+Using LLM fallback.
+2026-09-18 14:49:00,478 | INFO | Search Result: {'name': 'Yummly\n\nyummly.com\n\n2.28 reviews\n\nMarshall Street 601, Redwood City, United States', 'review_url': 'https://www.trustpilot.com/review/yummly.com'}
+2026-09-18 14:49:00,478 | INFO | Scraping reviews from https://www.trustpilot.com/review/yummly.com
+2026-09-18 14:49:00,479 | INFO | Search Result: None
+2026-09-18 14:49:00,479 | WARNING | Mealime: Trustpilot match not found. Using LLM.
+2026-09-18 14:49:00,479 | INFO | Invoking Gemini | FallbackResearch
+2026-09-18 14:49:00,485 | INFO | AFC is enabled with max remote calls: 10.
+2026-09-18 14:49:00,494 | INFO | Search Result: {'name': 'The Meal Prep Project\n\nmealprepproject.com\n\n0.00 reviews\n\n41 Boundary Street, London, United Kingdom', 'review_url': 'https://www.trustpilot.com/review/mealprepproject.com'}
+2026-09-18 14:49:00,494 | INFO | Scraping reviews from https://www.trustpilot.com/review/mealprepproject.com
+2026-09-18 14:49:01,012 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-18 14:49:01,012 | INFO | Switching To DeepSeek | FallbackResearch
+2026-09-18 14:49:01,404 | INFO | Opening https://www.trustpilot.com/review/yummly.com
+2026-09-18 14:49:01,456 | INFO | Opening https://www.trustpilot.com/review/mealprepproject.com
+2026-09-18 14:49:01,757 | INFO | EatLove: 10 search results found.
+2026-09-18 14:49:01,789 | INFO | First Trustpilot Result:
+Gentlove
+
+gentlove.com
+
+4.4300 reviews
+
+United States
+2026-09-18 14:49:01,790 | WARNING | Company mismatch.
+Expected : EatLove
+Found    : Gentlove
+
+gentlove.com
+
+4.4300 reviews
+
+United States
+Using LLM fallback.
+2026-09-18 14:49:01,903 | INFO | Search Result: None
+2026-09-18 14:49:01,903 | WARNING | EatLove: Trustpilot match not found. Using LLM.
+2026-09-18 14:49:01,903 | INFO | Invoking Gemini | FallbackResearch
+2026-09-18 14:49:01,907 | INFO | AFC is enabled with max remote calls: 10.
+2026-09-18 14:49:02,122 | INFO | PlateJoy: 8 search results found.
+2026-09-18 14:49:02,133 | INFO | First Trustpilot Result:
+Cratejoy
+
+thebowbox.cratejoy.com
+
+1.912 reviews
+2026-09-18 14:49:02,134 | WARNING | Company mismatch.
+Expected : PlateJoy
+Found    : Cratejoy
+
+thebowbox.cratejoy.com
+
+1.912 reviews
+Using LLM fallback.
+2026-09-18 14:49:02,228 | INFO | Search Result: None
+2026-09-18 14:49:02,228 | WARNING | PlateJoy: Trustpilot match not found. Using LLM.
+2026-09-18 14:49:02,228 | INFO | Invoking Gemini | FallbackResearch
+2026-09-18 14:49:02,232 | INFO | AFC is enabled with max remote calls: 10.
+2026-09-18 14:49:02,444 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-18 14:49:02,444 | INFO | Switching To DeepSeek | FallbackResearch
+2026-09-18 14:49:02,454 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:49:02,951 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-18 14:49:02,952 | INFO | Switching To DeepSeek | FallbackResearch
+2026-09-18 14:49:03,692 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:49:04,087 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:49:05,757 | INFO | Page 1: 8 review cards found.
+2026-09-18 14:49:05,770 | INFO | Page 1: 0 review cards found.
+2026-09-18 14:49:05,770 | INFO | Opening https://www.trustpilot.com/review/mealprepproject.com?page=2
+2026-09-18 14:49:06,208 | INFO | Opening https://www.trustpilot.com/review/yummly.com?page=2
+2026-09-18 14:49:09,316 | INFO | Page 2: 0 review cards found.
+2026-09-18 14:49:09,317 | INFO | Opening https://www.trustpilot.com/review/mealprepproject.com?page=3
+2026-09-18 14:49:09,735 | INFO | Page 2: 0 review cards found.
+2026-09-18 14:49:09,736 | INFO | Opening https://www.trustpilot.com/review/yummly.com?page=3
+2026-09-18 14:49:11,602 | INFO | DeepSeek Success | FallbackResearch
+2026-09-18 14:49:12,830 | INFO | Page 3: 0 review cards found.
+2026-09-18 14:49:12,955 | INFO | Total reviews scraped: 0
+2026-09-18 14:49:12,955 | INFO | MealPrepPro: 0 reviews scraped.
+2026-09-18 14:49:12,956 | WARNING | MealPrepPro: No reviews found. Using LLM.
+2026-09-18 14:49:12,956 | INFO | Invoking Gemini | FallbackResearch
+2026-09-18 14:49:12,961 | INFO | AFC is enabled with max remote calls: 10.
+2026-09-18 14:49:13,309 | INFO | Page 3: 0 review cards found.
+2026-09-18 14:49:13,312 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-18 14:49:13,313 | INFO | Switching To DeepSeek | FallbackResearch
+2026-09-18 14:49:13,450 | INFO | Total reviews scraped: 8
+2026-09-18 14:49:13,451 | INFO | Yummly: 8 reviews scraped.
+2026-09-18 14:49:13,451 | INFO | Yummly: Using Trustpilot reviews.
+2026-09-18 14:49:14,021 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:49:16,793 | INFO | DeepSeek Success | FallbackResearch
+2026-09-18 14:49:20,782 | INFO | DeepSeek Success | FallbackResearch
+2026-09-18 14:49:22,219 | INFO | DeepSeek Success | PersonaOutput
+2026-09-18 14:49:22,219 | INFO | Agent 7 Completed | NutriNest
+2026-09-18 14:49:24,970 | INFO | DeepSeek Success | FallbackResearch
+2026-09-18 14:49:24,970 | INFO | MealPrepPro: LLM research completed.
+2026-09-18 14:49:24,971 | INFO | Agent 3 Completed | NutriNest
+2026-09-18 14:49:24,983 | INFO | Agent 4 Started | NutriNest
+2026-09-18 14:49:24,983 | INFO | Processing Mealime
+2026-09-18 14:49:24,984 | INFO | Processing EatLove
+2026-09-18 14:49:24,984 | INFO | Processing PlateJoy
+2026-09-18 14:49:24,984 | INFO | Processing MealPrepPro
+2026-09-18 14:49:24,984 | INFO | Processing Yummly
+2026-09-18 14:49:24,984 | INFO | Yummly | Gemini Analysis Started
+2026-09-18 14:49:24,984 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-09-18 14:49:24,985 | INFO | Agent 8 Started | NutriNest
+2026-09-18 14:49:24,985 | INFO | Invoking Gemini | PersonaFeedbackOutput
+2026-09-18 14:49:24,990 | INFO | AFC is enabled with max remote calls: 10.
+2026-09-18 14:49:24,992 | INFO | AFC is enabled with max remote calls: 10.
+2026-09-18 14:49:25,491 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-18 14:49:25,491 | INFO | Switching To DeepSeek | CompetitorAnalysis
+2026-09-18 14:49:26,110 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-18 14:49:26,110 | INFO | Switching To DeepSeek | PersonaFeedbackOutput
+2026-09-18 14:49:26,813 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:49:29,586 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:49:35,119 | INFO | DeepSeek Success | CompetitorAnalysis
+2026-09-18 14:49:35,119 | INFO | Yummly | Gemini Analysis Finished
+2026-09-18 14:49:35,119 | INFO | Agent 4 Completed | NutriNest
+2026-09-18 14:50:28,582 | INFO | DeepSeek Success | PersonaFeedbackOutput
+2026-09-18 14:50:28,583 | INFO | Agent 8 Completed | NutriNest
+2026-09-18 14:50:28,597 | INFO | Agent 5 Started | NutriNest
+2026-09-18 14:50:28,597 | INFO | Invoking Gemini | MarketGapAnalysis
+2026-09-18 14:50:28,600 | INFO | AFC is enabled with max remote calls: 10.
+2026-09-18 14:50:28,982 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-18 14:50:28,983 | INFO | Switching To DeepSeek | MarketGapAnalysis
+2026-09-18 14:50:29,800 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:50:57,965 | INFO | DeepSeek Success | MarketGapAnalysis
+2026-09-18 14:50:57,966 | INFO | Agent 5 Completed | NutriNest
+2026-09-18 14:50:57,980 | INFO | Agent 6 Started | NutriNest
+2026-09-18 14:50:57,981 | INFO | Invoking Gemini | StartupScore
+2026-09-18 14:50:57,983 | INFO | AFC is enabled with max remote calls: 10.
+2026-09-18 14:50:58,575 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-18 14:50:58,576 | INFO | Switching To DeepSeek | StartupScore
+2026-09-18 14:50:59,394 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:51:16,193 | INFO | DeepSeek Success | StartupScore
+2026-09-18 14:51:16,194 | INFO | Agent 6 Completed | NutriNest
+2026-09-18 14:51:16,205 | INFO | Agent 9 Started | NutriNest
+2026-09-18 14:51:16,206 | INFO | Persona Feedback Length: 8647 characters
+2026-09-18 14:51:16,207 | INFO | Invoking Gemini | StartupValidationReport
+2026-09-18 14:51:16,213 | INFO | AFC is enabled with max remote calls: 10.
+2026-09-18 14:51:16,747 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-18 14:51:16,747 | INFO | Switching To DeepSeek | StartupValidationReport
+2026-09-18 14:51:18,699 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:51:34,012 | INFO | DeepSeek Success | StartupValidationReport
+2026-09-18 14:51:34,012 | INFO | Agent 9 Completed | NutriNest
+2026-09-18 14:51:34,022 | INFO | Agent 10 Started | NutriNest
+2026-09-18 14:51:34,023 | INFO | Invoking Gemini | StartupRecommendations
+2026-09-18 14:51:34,028 | INFO | AFC is enabled with max remote calls: 10.
+2026-09-18 14:51:35,236 | WARNING | Gemini Failed | Error calling model 'gemini-2.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.', 'status': 'NOT_FOUND'}}
+2026-09-18 14:51:35,237 | INFO | Switching To DeepSeek | StartupRecommendations
+2026-09-18 14:51:38,820 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:51:50,093 | INFO | DeepSeek Success | StartupRecommendations
+2026-09-18 14:51:50,094 | INFO | Agent 10 Completed | NutriNest
+2026-09-18 14:51:50,109 | INFO | Analysis Complete: NutriNest; Total time: 196.01097917556763

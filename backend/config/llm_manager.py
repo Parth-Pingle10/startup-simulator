@@ -14,20 +14,20 @@ class LLMManager:
         self._fallback = None
 
     def _build_primary(self):
-        # from langchain_google_genai import ChatGoogleGenerativeAI
+        from langchain_google_genai import ChatGoogleGenerativeAI
 
-        # return ChatGoogleGenerativeAI(
-        #     model="gemini-2.5-flash",
-        #     google_api_key=os.getenv("GOOGLE_API_KEY"),
-        #     temperature=0,
-        # )
-
-
-        return ChatOllama(
-            model="qwen3-vl:4b",
-            base_url="http://localhost:11434",
+        return ChatGoogleGenerativeAI(
+            model="gemini-2.5-flash",
+            google_api_key=os.getenv("GEMINI_API_KEY"),
             temperature=0,
         )
+
+
+        # return ChatOllama(
+        #     model="qwen3-vl:4b",
+        #     base_url="http://localhost:11434",
+        #     temperature=0,
+        # )
 
     def _build_fallback(self):
         from langchain_openai import ChatOpenAI

@@ -72,10 +72,11 @@ Key Features:
 Competitive Landscape
 
 Competitor Intelligence:
-{state["competitor_insights"]}
+{state.get("competitor_insights", "")}
 
 Market Gap Analysis:
-{state["market_gaps"]}
+{state.get("market_gaps", "")}
+
 
 --------------------------------------------------
 

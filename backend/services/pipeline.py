@@ -29,8 +29,13 @@ PIPELINE_STEPS = [
 ]
 
 
+from backend.builder import graph
+
 async def run_pipeline(state: dict, start_step: int = 1) -> dict:
-    """Run agents sequentially from start_step (1-10). Supports pause between/during agents."""
+    """Run agents via parallel LangGraph when starting from step 1, or sequentially from start_step when resuming."""
+    if start_step == 1:
+        return await graph.ainvoke(state)
+
     current = dict(state)
 
     for step, fn in PIPELINE_STEPS:

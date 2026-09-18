@@ -18,22 +18,22 @@ You are an expert consumer psychologist, startup researcher, and customer segmen
 Your task is to generate realistic customer personas that represent potential users of the startup.
 
 Startup Target Users:
-{state["target_users"]}
+{state.get("target_users", "")}
 
 Startup Description:
-{state["one_line_description"]}
+{state.get("one_line_description", "")}
 
 Startup Features:
-{state["key_features"]}
+{state.get("key_features", "")}
 
 Market Gap Analysis:
-{state["market_gaps"]}
+{state.get("market_gaps", "")}
 
 Competitor Intelligence:
-{state["competitor_insights"]}
+{state.get("competitor_insights", "")}
 
 Startup Score:
-{state["startup_score"]}
+{state.get("startup_score", "")}
 
 Requirements:
 
