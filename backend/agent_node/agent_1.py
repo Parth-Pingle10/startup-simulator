@@ -89,10 +89,17 @@ async def startup_analyzer(state):
         
 
 
+        if isinstance(response, dict):
+            return {
+                "one_line_description": response["one_line_description"],
+                "key_features": response["key_features"]
+            }
+
         return {
             "one_line_description": response.one_line_description,
             "key_features": response.key_features
         }
+
 
     return await run_agent(
         state,

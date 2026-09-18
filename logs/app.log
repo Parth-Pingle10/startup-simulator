@@ -26,18 +26,18 @@
 2026-07-31 19:14:23,647 | INFO | Searching Trustpilot: Pluralsight Skills
 2026-07-31 19:14:42,747 | INFO | Springboard: 10 search results found.
 2026-07-31 19:14:42,845 | INFO | First Trustpilot Result:
-Springboardwww.springboard.com•357 reviews4.0
+Springboardwww.springboard.comï¿½357 reviews4.0
 2026-07-31 19:14:42,851 | INFO | Udacity: 15 search results found.
 2026-07-31 19:14:42,892 | INFO | First Trustpilot Result:
-Udacityudacity.com•3.3K reviews4.5
-2026-07-31 19:14:42,993 | INFO | Search Result: {'name': 'Springboardwww.springboard.com•357 reviews4.0', 'review_url': 'https://www.trustpilot.com/review/www.springboard.com'}
+Udacityudacity.comï¿½3.3K reviews4.5
+2026-07-31 19:14:42,993 | INFO | Search Result: {'name': 'Springboardwww.springboard.comï¿½357 reviews4.0', 'review_url': 'https://www.trustpilot.com/review/www.springboard.com'}
 2026-07-31 19:14:42,994 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.springboard.com
 2026-07-31 19:14:43,012 | INFO | Hyperskill: 6 search results found.
-2026-07-31 19:14:43,038 | INFO | Search Result: {'name': 'Udacityudacity.com•3.3K reviews4.5', 'review_url': 'https://www.trustpilot.com/review/udacity.com'}
+2026-07-31 19:14:43,038 | INFO | Search Result: {'name': 'Udacityudacity.comï¿½3.3K reviews4.5', 'review_url': 'https://www.trustpilot.com/review/udacity.com'}
 2026-07-31 19:14:43,038 | INFO | Scraping reviews from https://www.trustpilot.com/review/udacity.com
 2026-07-31 19:14:43,078 | INFO | First Trustpilot Result:
-Hyperskillhyperskill.org•162 reviews4.1
-2026-07-31 19:14:43,226 | INFO | Search Result: {'name': 'Hyperskillhyperskill.org•162 reviews4.1', 'review_url': 'https://www.trustpilot.com/review/hyperskill.org'}
+Hyperskillhyperskill.orgï¿½162 reviews4.1
+2026-07-31 19:14:43,226 | INFO | Search Result: {'name': 'Hyperskillhyperskill.orgï¿½162 reviews4.1', 'review_url': 'https://www.trustpilot.com/review/hyperskill.org'}
 2026-07-31 19:14:43,226 | INFO | Scraping reviews from https://www.trustpilot.com/review/hyperskill.org
 2026-07-31 19:14:43,900 | INFO | Pluralsight Skills: 10 search results found.
 2026-07-31 19:14:43,976 | INFO | First Trustpilot Result:
@@ -217,8 +217,8 @@ Using LLM fallback.
 2026-08-01 07:40:48,035 | INFO | Searching Trustpilot: Pluralsight Skills
 2026-08-01 07:41:05,739 | INFO | Codecademy: 13 search results found.
 2026-08-01 07:41:05,769 | INFO | First Trustpilot Result:
-Codecademycodecademy.com•1.5K reviews2.5
-2026-08-01 07:41:05,910 | INFO | Search Result: {'name': 'Codecademycodecademy.com•1.5K reviews2.5', 'review_url': 'https://www.trustpilot.com/review/codecademy.com'}
+Codecademycodecademy.comï¿½1.5K reviews2.5
+2026-08-01 07:41:05,910 | INFO | Search Result: {'name': 'Codecademycodecademy.comï¿½1.5K reviews2.5', 'review_url': 'https://www.trustpilot.com/review/codecademy.com'}
 2026-08-01 07:41:05,911 | INFO | Scraping reviews from https://www.trustpilot.com/review/codecademy.com
 2026-08-01 07:41:06,019 | INFO | Pluralsight Skills: 10 search results found.
 2026-08-01 07:41:06,065 | INFO | Hyperskill: 6 search results found.
@@ -231,10 +231,10 @@ hyperskill.org
 
 United States
 2026-08-01 07:41:06,126 | INFO | First Trustpilot Result:
-Pluralsightpluralsight.com•986 reviews1.4
+Pluralsightpluralsight.comï¿½986 reviews1.4
 2026-08-01 07:41:06,127 | WARNING | Company mismatch.
 Expected : Pluralsight Skills
-Found    : Pluralsightpluralsight.com•986 reviews1.4
+Found    : Pluralsightpluralsight.comï¿½986 reviews1.4
 Using LLM fallback.
 2026-08-01 07:41:06,245 | INFO | Search Result: {'name': 'Hyperskill\n\nhyperskill.org\n\n4.1162 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/hyperskill.org'}
 2026-08-01 07:41:06,245 | INFO | Scraping reviews from https://www.trustpilot.com/review/hyperskill.org
@@ -244,15 +244,15 @@ Using LLM fallback.
 2026-08-01 07:41:06,263 | INFO | AFC is enabled with max remote calls: 10.
 2026-08-01 07:41:06,827 | INFO | Udacity: 15 search results found.
 2026-08-01 07:41:06,847 | INFO | First Trustpilot Result:
-Udacityudacity.com•3.3K reviews4.5
-2026-08-01 07:41:06,982 | INFO | Search Result: {'name': 'Udacityudacity.com•3.3K reviews4.5', 'review_url': 'https://www.trustpilot.com/review/udacity.com'}
+Udacityudacity.comï¿½3.3K reviews4.5
+2026-08-01 07:41:06,982 | INFO | Search Result: {'name': 'Udacityudacity.comï¿½3.3K reviews4.5', 'review_url': 'https://www.trustpilot.com/review/udacity.com'}
 2026-08-01 07:41:06,983 | INFO | Scraping reviews from https://www.trustpilot.com/review/udacity.com
 2026-08-01 07:41:07,238 | INFO | Educative.io: 16 search results found.
 2026-08-01 07:41:07,580 | INFO | First Trustpilot Result:
-Skillshareskillshare.com•4.2K reviews4.1
+Skillshareskillshare.comï¿½4.2K reviews4.1
 2026-08-01 07:41:07,580 | WARNING | Company mismatch.
 Expected : Educative.io
-Found    : Skillshareskillshare.com•4.2K reviews4.1
+Found    : Skillshareskillshare.comï¿½4.2K reviews4.1
 Using LLM fallback.
 2026-08-01 07:41:07,677 | INFO | Search Result: None
 2026-08-01 07:41:07,677 | WARNING | Educative.io: Trustpilot match not found. Using LLM.
@@ -388,10 +388,10 @@ Using LLM fallback.
 2026-08-01 08:43:07,085 | INFO | Searching Trustpilot: Pluralsight Skill
 2026-08-01 08:43:24,570 | INFO | HackerRank Learn: 15 search results found.
 2026-08-01 08:43:24,585 | INFO | First Trustpilot Result:
-HackerRankhackerrank.com•18 reviews1.7
+HackerRankhackerrank.comï¿½18 reviews1.7
 2026-08-01 08:43:24,585 | WARNING | Company mismatch.
 Expected : HackerRank Learn
-Found    : HackerRankhackerrank.com•18 reviews1.7
+Found    : HackerRankhackerrank.comï¿½18 reviews1.7
 Using LLM fallback.
 2026-08-01 08:43:24,705 | INFO | Search Result: None
 2026-08-01 08:43:24,705 | WARNING | HackerRank Learn: Trustpilot match not found. Using LLM.
@@ -399,10 +399,10 @@ Using LLM fallback.
 2026-08-01 08:43:25,278 | INFO | LeetCode Learning: 10 search results found.
 2026-08-01 08:43:25,300 | INFO | Turing: 10 search results found.
 2026-08-01 08:43:25,303 | INFO | First Trustpilot Result:
-LeetCodeleetcode.com•18 reviews2.2
+LeetCodeleetcode.comï¿½18 reviews2.2
 2026-08-01 08:43:25,304 | WARNING | Company mismatch.
 Expected : LeetCode Learning
-Found    : LeetCodeleetcode.com•18 reviews2.2
+Found    : LeetCodeleetcode.comï¿½18 reviews2.2
 Using LLM fallback.
 2026-08-01 08:43:25,322 | INFO | First Trustpilot Result:
 Turing
@@ -442,8 +442,8 @@ Using LLM fallback.
 2026-08-01 08:43:25,976 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
 2026-08-01 08:43:27,074 | INFO | Codementor: 12 search results found.
 2026-08-01 08:43:27,231 | INFO | First Trustpilot Result:
-Codementorcodementor.io•221 reviews3.6
-2026-08-01 08:43:27,594 | INFO | Search Result: {'name': 'Codementorcodementor.io•221 reviews3.6', 'review_url': 'https://www.trustpilot.com/review/codementor.io'}
+Codementorcodementor.ioï¿½221 reviews3.6
+2026-08-01 08:43:27,594 | INFO | Search Result: {'name': 'Codementorcodementor.ioï¿½221 reviews3.6', 'review_url': 'https://www.trustpilot.com/review/codementor.io'}
 2026-08-01 08:43:27,595 | INFO | Scraping reviews from https://www.trustpilot.com/review/codementor.io
 2026-08-01 08:43:37,555 | INFO | Opening https://www.trustpilot.com/review/developers.turing.com
 2026-08-01 08:43:39,958 | INFO | Opening https://www.trustpilot.com/review/codementor.io
@@ -785,9 +785,9 @@ hellofresh.dk
 
 3.516,179 reviews
 
-Artillerivej 90, København , Denmark
+Artillerivej 90, Kï¿½benhavnï¿½, Denmark
 2026-08-01 15:58:22,504 | INFO | MyFitnessPal: 3 search results found.
-2026-08-01 15:58:22,537 | INFO | Search Result: {'name': 'HelloFresh Danmark\n\nhellofresh.dk\n\n3.516,179 reviews\n\nArtillerivej 90, København\xa0, Denmark', 'review_url': 'https://www.trustpilot.com/review/hellofresh.dk'}
+2026-08-01 15:58:22,537 | INFO | Search Result: {'name': 'HelloFresh Danmark\n\nhellofresh.dk\n\n3.516,179 reviews\n\nArtillerivej 90, Kï¿½benhavn\xa0, Denmark', 'review_url': 'https://www.trustpilot.com/review/hellofresh.dk'}
 2026-08-01 15:58:22,538 | INFO | Scraping reviews from https://www.trustpilot.com/review/hellofresh.dk
 2026-08-01 15:58:22,581 | INFO | Yummly: 10 search results found.
 2026-08-01 15:58:22,611 | INFO | First Trustpilot Result:
@@ -799,10 +799,10 @@ yummly.com
 
 Marshall Street 601, Redwood City, United States
 2026-08-01 15:58:22,657 | INFO | First Trustpilot Result:
-MyFitnessPalwww.myfitnesspal.com•13K reviews4.3
+MyFitnessPalwww.myfitnesspal.comï¿½13K reviews4.3
 2026-08-01 15:58:22,765 | INFO | Search Result: {'name': 'Yummly\n\nyummly.com\n\n2.37 reviews\n\nMarshall Street 601, Redwood City, United States', 'review_url': 'https://www.trustpilot.com/review/yummly.com'}
 2026-08-01 15:58:22,765 | INFO | Scraping reviews from https://www.trustpilot.com/review/yummly.com
-2026-08-01 15:58:22,812 | INFO | Search Result: {'name': 'MyFitnessPalwww.myfitnesspal.com•13K reviews4.3', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com'}
+2026-08-01 15:58:22,812 | INFO | Search Result: {'name': 'MyFitnessPalwww.myfitnesspal.comï¿½13K reviews4.3', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com'}
 2026-08-01 15:58:22,813 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.myfitnesspal.com
 2026-08-01 15:58:23,496 | INFO | Paleo Meal Planner: 10 search results found.
 2026-08-01 15:58:23,538 | INFO | First Trustpilot Result:
@@ -1318,7 +1318,7 @@ hellofresh.dk
 
 3.516,181 reviews
 
-Artillerivej 90, København , Denmark
+Artillerivej 90, Kï¿½benhavnï¿½, Denmark
 2026-08-01 18:30:03,917 | INFO | First Trustpilot Result:
 Blue Apron
 
@@ -1334,7 +1334,7 @@ hellofresh.dk
 
 3.516,181 reviews
 
-Artillerivej 90, København , Denmark
+Artillerivej 90, Kï¿½benhavnï¿½, Denmark
 2026-08-01 18:30:04,192 | INFO | MyFitnessPal: 3 search results found.
 2026-08-01 18:30:04,262 | INFO | First Trustpilot Result:
 MyFitnessPal
@@ -1349,7 +1349,7 @@ United States
 2026-08-01 18:30:04,670 | WARNING | Blue Apron: Trustpilot match not found. Using LLM.
 2026-08-01 18:30:04,670 | INFO | Invoking Gemini | FallbackResearch
 2026-08-01 18:30:04,687 | INFO | Search Result: {'name': 'Yummly\n\nyummly.com\n\n2.37 reviews\n\nMarshall Street 601, Redwood City, United States', 'review_url': 'https://www.trustpilot.com/review/yummly.com'}
-2026-08-01 18:30:04,687 | INFO | Search Result: {'name': 'HelloFresh Danmark\n\nhellofresh.dk\n\n3.516,181 reviews\n\nArtillerivej 90, København\xa0, Denmark', 'review_url': 'https://www.trustpilot.com/review/hellofresh.dk'}
+2026-08-01 18:30:04,687 | INFO | Search Result: {'name': 'HelloFresh Danmark\n\nhellofresh.dk\n\n3.516,181 reviews\n\nArtillerivej 90, Kï¿½benhavn\xa0, Denmark', 'review_url': 'https://www.trustpilot.com/review/hellofresh.dk'}
 2026-08-01 18:30:04,688 | INFO | Scraping reviews from https://www.trustpilot.com/review/yummly.com
 2026-08-01 18:30:04,688 | INFO | Scraping reviews from https://www.trustpilot.com/review/hellofresh.dk
 2026-08-01 18:30:04,689 | INFO | Search Result: {'name': 'Purple Carrot\n\npurplecarrot.com\n\n2.1915 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/purplecarrot.com'}
@@ -1358,7 +1358,7 @@ United States
 2026-08-01 18:30:04,690 | INFO | Scraping reviews from https://www.trustpilot.com/review/purplecarrot.com
 2026-08-01 18:30:04,690 | INFO | Scraping reviews from https://www.trustpilot.com/review/blueapron.com
 2026-08-01 18:30:04,691 | INFO | Scraping reviews from https://www.trustpilot.com/review/purplecarrot.com
-2026-08-01 18:30:04,717 | INFO | Search Result: {'name': 'HelloFresh Danmark\n\nhellofresh.dk\n\n3.516,181 reviews\n\nArtillerivej 90, København\xa0, Denmark', 'review_url': 'https://www.trustpilot.com/review/hellofresh.dk'}
+2026-08-01 18:30:04,717 | INFO | Search Result: {'name': 'HelloFresh Danmark\n\nhellofresh.dk\n\n3.516,181 reviews\n\nArtillerivej 90, Kï¿½benhavn\xa0, Denmark', 'review_url': 'https://www.trustpilot.com/review/hellofresh.dk'}
 2026-08-01 18:30:04,717 | INFO | Scraping reviews from https://www.trustpilot.com/review/hellofresh.dk
 2026-08-01 18:30:04,735 | INFO | Search Result: {'name': 'MyFitnessPal\n\nwww.myfitnesspal.com\n\n4.313,095 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com'}
 2026-08-01 18:30:04,736 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.myfitnesspal.com
@@ -1605,3 +1605,208 @@ Marshall Street 601, Redwood City, United States
 2026-08-01 19:23:32,613 | INFO | Gemini Success | StartupRecommendations
 2026-08-01 19:23:32,613 | INFO | Agent 10 Completed | NutriNest
 2026-08-01 19:23:32,643 | INFO | Analysis Complete: NutriNest; Total time: 3304.6211409568787
+2026-09-18 13:11:44,021 | INFO | Agent 1 Started | NutriNest
+2026-09-18 13:11:44,022 | INFO | Invoking Gemini | StartupAnalysis
+2026-09-18 13:11:45,216 | INFO | Agent 1 Started | NutriNest
+2026-09-18 13:11:45,216 | INFO | Invoking Gemini | StartupAnalysis
+2026-09-18 13:11:45,487 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 404 Not Found"
+2026-09-18 13:11:45,488 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 404 Not Found"
+2026-09-18 13:11:45,489 | WARNING | Gemini Failed | model 'mistral:latest' not found (status code: 404)
+2026-09-18 13:11:45,489 | INFO | Switching To DeepSeek | StartupAnalysis
+2026-09-18 13:11:49,961 | INFO | DeepSeek Success | StartupAnalysis
+2026-09-18 13:11:49,961 | INFO | Agent 1 Completed | NutriNest
+2026-09-18 13:11:49,962 | WARNING | Gemini Failed | model 'mistral:latest' not found (status code: 404)
+2026-09-18 13:11:49,962 | INFO | Switching To DeepSeek | StartupAnalysis
+2026-09-18 13:11:49,963 | INFO | DeepSeek Success | StartupAnalysis
+2026-09-18 13:11:49,963 | INFO | Agent 1 Completed | NutriNest
+2026-09-18 13:11:49,979 | ERROR | Analysis Failed: 'coroutine' object has no attribute 'one_line_description'
+2026-09-18 13:11:49,989 | ERROR | Analysis Failed: 'coroutine' object has no attribute 'one_line_description'
+2026-09-18 13:12:41,941 | INFO | Agent 1 Started | NutriNest
+2026-09-18 13:12:41,942 | INFO | Invoking Gemini | StartupAnalysis
+2026-09-18 13:13:04,339 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 13:15:17,515 | INFO | StartupAnalysis inference: 154.41s
+2026-09-18 13:15:17,515 | INFO | Gemini Success | StartupAnalysis
+2026-09-18 13:15:17,515 | INFO | Agent 1 Completed | NutriNest
+2026-09-18 13:15:17,522 | INFO | Analysis paused: fb96e649-e3ce-42a5-8b99-8728f7c8be6f
+2026-09-18 13:15:57,962 | INFO | Agent 1 Started | NutriNest
+2026-09-18 13:15:57,962 | INFO | Invoking Gemini | StartupAnalysis
+2026-09-18 13:15:58,735 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 13:33:23,426 | INFO | Invoking Gemini | StartupAnalysis
+2026-09-18 13:33:23,427 | WARNING | Gemini Failed | Primary Ollama/Gemini 401 Authentication Failure
+2026-09-18 13:33:23,427 | INFO | Switching To DeepSeek | StartupAnalysis
+2026-09-18 13:33:23,427 | INFO | DeepSeek Success | StartupAnalysis
+2026-09-18 13:33:23,433 | INFO | Agent 1 Started | NutriNest
+2026-09-18 13:33:23,433 | INFO | Agent 1 Completed | NutriNest
+2026-09-18 13:33:23,434 | INFO | Agent 2 Started | NutriNest
+2026-09-18 13:33:23,434 | INFO | Agent 2 Completed | NutriNest
+2026-09-18 13:33:23,434 | INFO | Agent 3 Started | NutriNest
+2026-09-18 13:33:23,435 | INFO | Agent 3 Completed | NutriNest
+2026-09-18 13:33:23,435 | INFO | Agent 4 Started | NutriNest
+2026-09-18 13:33:23,436 | INFO | Processing Yummly
+2026-09-18 13:33:23,436 | INFO | Processing HelloFresh
+2026-09-18 13:33:23,436 | INFO | Processing Blue Apron
+2026-09-18 13:33:23,436 | INFO | Processing Purple Carrot
+2026-09-18 13:33:23,436 | INFO | Processing MyFitnessPal
+2026-09-18 13:33:23,436 | INFO | Agent 4 Completed | NutriNest
+2026-09-18 13:33:23,436 | INFO | Agent 5 Started | NutriNest
+2026-09-18 13:33:23,438 | INFO | Agent 5 Completed | NutriNest
+2026-09-18 13:33:23,438 | INFO | Agent 6 Started | NutriNest
+2026-09-18 13:33:23,438 | INFO | Agent 6 Completed | NutriNest
+2026-09-18 13:33:23,439 | INFO | Agent 7 Started | NutriNest
+2026-09-18 13:33:23,439 | INFO | Agent 7 Completed | NutriNest
+2026-09-18 13:33:23,439 | INFO | Agent 8 Started | NutriNest
+2026-09-18 13:33:23,439 | INFO | Agent 8 Completed | NutriNest
+2026-09-18 13:33:23,440 | INFO | Agent 9 Started | NutriNest
+2026-09-18 13:33:23,440 | INFO | Persona Feedback Length: 5872 characters
+2026-09-18 13:33:23,440 | INFO | Agent 9 Completed | NutriNest
+2026-09-18 13:33:23,440 | INFO | Agent 10 Started | NutriNest
+2026-09-18 13:33:23,440 | INFO | Agent 10 Completed | NutriNest
+2026-09-18 13:37:07,415 | INFO | Agent 1 Started | NutriNest
+2026-09-18 13:37:07,416 | INFO | Invoking Gemini | StartupAnalysis
+2026-09-18 13:37:21,726 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 13:37:56,226 | INFO | New Analysis: NutriNest
+2026-09-18 13:37:56,246 | INFO | Agent 1 Started | NutriNest
+2026-09-18 13:37:56,246 | INFO | Invoking Gemini | StartupAnalysis
+2026-09-18 13:39:11,738 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 13:41:44,188 | INFO | StartupAnalysis inference: 275.63s
+2026-09-18 13:41:44,188 | INFO | Gemini Success | StartupAnalysis
+2026-09-18 13:41:44,188 | INFO | Agent 1 Completed | NutriNest
+2026-09-18 13:41:44,193 | INFO | Analysis paused: fb96e649-e3ce-42a5-8b99-8728f7c8be6f
+2026-09-18 13:42:06,563 | INFO | StartupAnalysis inference: 250.32s
+2026-09-18 13:42:06,563 | INFO | Gemini Success | StartupAnalysis
+2026-09-18 13:42:06,564 | INFO | Agent 1 Completed | NutriNest
+2026-09-18 13:42:06,573 | INFO | Agent 2 Started | NutriNest
+2026-09-18 13:42:06,573 | INFO | Invoking Gemini | CompetitorOutput
+2026-09-18 13:42:07,579 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 13:47:29,241 | INFO | CompetitorOutput inference: 322.67s
+2026-09-18 13:47:29,241 | INFO | Gemini Success | CompetitorOutput
+2026-09-18 13:47:29,241 | INFO | Agent 2 Completed | NutriNest
+2026-09-18 13:47:29,254 | INFO | Agent 3 Started | NutriNest
+2026-09-18 13:47:29,254 | INFO | Collecting competitor reviews for Mealime
+2026-09-18 13:47:29,255 | INFO | Collecting competitor reviews for MyFitnessPal
+2026-09-18 13:47:29,255 | INFO | Searching Trustpilot: Mealime
+2026-09-18 13:47:29,255 | INFO | Searching Trustpilot: MyFitnessPal
+2026-09-18 13:47:29,255 | INFO | Collecting competitor reviews for Yummly
+2026-09-18 13:47:29,256 | INFO | Searching Trustpilot: Yummly
+2026-09-18 13:47:29,256 | INFO | Collecting competitor reviews for Plan to Eat
+2026-09-18 13:47:29,257 | INFO | Searching Trustpilot: Plan to Eat
+2026-09-18 13:47:29,257 | INFO | Collecting competitor reviews for Fooducate
+2026-09-18 13:47:29,258 | INFO | Searching Trustpilot: Fooducate
+2026-09-18 13:47:41,262 | INFO | MyFitnessPal: 3 search results found.
+2026-09-18 13:47:41,304 | INFO | Mealime: 10 search results found.
+2026-09-18 13:47:41,321 | INFO | First Trustpilot Result:
+Metlife
+
+metlife.com
+
+1.2826 reviews
+
+United States
+2026-09-18 13:47:41,322 | WARNING | Company mismatch.
+Expected : Mealime
+Found    : Metlife
+
+metlife.com
+
+1.2826 reviews
+
+United States
+Using LLM fallback.
+2026-09-18 13:47:41,384 | INFO | First Trustpilot Result:
+MyFitnessPal
+
+www.myfitnesspal.com
+
+4.313,161 reviews
+
+United States
+2026-09-18 13:47:41,526 | INFO | Search Result: None
+2026-09-18 13:47:41,527 | WARNING | Mealime: Trustpilot match not found. Using LLM.
+2026-09-18 13:47:41,527 | INFO | Invoking Gemini | FallbackResearch
+2026-09-18 13:47:41,598 | INFO | Search Result: {'name': 'MyFitnessPal\n\nwww.myfitnesspal.com\n\n4.313,161 reviews\n\nUnited States', 'review_url': 'https://www.trustpilot.com/review/www.myfitnesspal.com'}
+2026-09-18 13:47:41,599 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-09-18 13:47:41,982 | INFO | Plan to Eat: 10 search results found.
+2026-09-18 13:47:42,063 | INFO | First Trustpilot Result:
+Eat real food. Eat together. PlanToEat.com.
+
+www.plantoeat.com
+
+0.00 reviews
+2026-09-18 13:47:42,245 | INFO | Search Result: {'name': 'Eat real food. Eat together. PlanToEat.com.\n\nwww.plantoeat.com\n\n0.00 reviews', 'review_url': 'https://www.trustpilot.com/review/www.plantoeat.com'}
+2026-09-18 13:47:42,246 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.plantoeat.com
+2026-09-18 13:47:42,646 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 13:47:43,008 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com
+2026-09-18 13:47:43,190 | INFO | Fooducate: 10 search results found.
+2026-09-18 13:47:43,206 | INFO | Yummly: 15 search results found.
+2026-09-18 13:47:43,287 | INFO | First Trustpilot Result:
+Fooducatewww.fooducate.com•1 review3.2
+2026-09-18 13:47:43,615 | INFO | First Trustpilot Result:
+Yummlyyummly.com•8 reviews2.2
+2026-09-18 13:47:43,772 | INFO | Search Result: {'name': 'Fooducatewww.fooducate.com•1 review3.2', 'review_url': 'https://www.trustpilot.com/review/www.fooducate.com'}
+2026-09-18 13:47:43,774 | INFO | Scraping reviews from https://www.trustpilot.com/review/www.fooducate.com
+2026-09-18 13:47:44,095 | INFO | Search Result: {'name': 'Yummlyyummly.com•8 reviews2.2', 'review_url': 'https://www.trustpilot.com/review/yummly.com'}
+2026-09-18 13:47:44,095 | INFO | Scraping reviews from https://www.trustpilot.com/review/yummly.com
+2026-09-18 13:47:44,593 | INFO | Opening https://www.trustpilot.com/review/www.plantoeat.com
+2026-09-18 13:47:46,015 | INFO | Opening https://www.trustpilot.com/review/www.fooducate.com
+2026-09-18 13:47:46,217 | INFO | Opening https://www.trustpilot.com/review/yummly.com
+2026-09-18 13:47:49,392 | INFO | Page 1: 0 review cards found.
+2026-09-18 13:47:49,392 | INFO | Opening https://www.trustpilot.com/review/www.plantoeat.com?page=2
+2026-09-18 13:47:49,526 | INFO | Page 1: 20 review cards found.
+2026-09-18 13:47:50,720 | INFO | Page 1: 1 review cards found.
+2026-09-18 13:47:50,858 | INFO | Page 1: 8 review cards found.
+2026-09-18 13:47:50,862 | INFO | Opening https://www.trustpilot.com/review/www.fooducate.com?page=2
+2026-09-18 13:47:51,837 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=2
+2026-09-18 13:47:52,284 | INFO | Opening https://www.trustpilot.com/review/yummly.com?page=2
+2026-09-18 13:47:53,568 | INFO | Page 2: 0 review cards found.
+2026-09-18 13:47:53,568 | INFO | Opening https://www.trustpilot.com/review/www.plantoeat.com?page=3
+2026-09-18 13:47:54,795 | INFO | Page 2: 0 review cards found.
+2026-09-18 13:47:54,795 | INFO | Opening https://www.trustpilot.com/review/www.fooducate.com?page=3
+2026-09-18 13:47:56,665 | INFO | Page 2: 0 review cards found.
+2026-09-18 13:47:56,666 | INFO | Opening https://www.trustpilot.com/review/yummly.com?page=3
+2026-09-18 13:47:56,906 | INFO | Page 2: 17 review cards found.
+2026-09-18 13:47:56,906 | INFO | Opening https://www.trustpilot.com/review/www.myfitnesspal.com?page=3
+2026-09-18 13:47:57,575 | INFO | Page 3: 0 review cards found.
+2026-09-18 13:47:57,922 | INFO | Total reviews scraped: 0
+2026-09-18 13:47:57,922 | INFO | Plan to Eat: 0 reviews scraped.
+2026-09-18 13:47:57,923 | WARNING | Plan to Eat: No reviews found. Using LLM.
+2026-09-18 13:47:57,923 | INFO | Invoking Gemini | FallbackResearch
+2026-09-18 13:47:58,315 | INFO | Page 3: 0 review cards found.
+2026-09-18 13:47:58,507 | INFO | Total reviews scraped: 1
+2026-09-18 13:47:58,507 | INFO | Fooducate: 1 reviews scraped.
+2026-09-18 13:47:58,508 | INFO | Fooducate: Using Trustpilot reviews.
+2026-09-18 13:48:00,206 | INFO | Page 3: 0 review cards found.
+2026-09-18 13:48:00,479 | INFO | Total reviews scraped: 8
+2026-09-18 13:48:00,481 | INFO | Yummly: 8 reviews scraped.
+2026-09-18 13:48:00,485 | INFO | Yummly: Using Trustpilot reviews.
+2026-09-18 13:48:01,324 | INFO | Page 3: 18 review cards found.
+2026-09-18 13:48:01,556 | INFO | Total reviews scraped: 15
+2026-09-18 13:48:01,557 | INFO | MyFitnessPal: 15 reviews scraped.
+2026-09-18 13:48:01,557 | INFO | MyFitnessPal: Using Trustpilot reviews.
+2026-09-18 13:49:25,986 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 13:52:20,440 | INFO | FallbackResearch inference: 278.91s
+2026-09-18 13:52:20,441 | INFO | Gemini Success | FallbackResearch
+2026-09-18 13:52:41,807 | INFO | FallbackResearch inference: 283.88s
+2026-09-18 13:52:41,807 | INFO | Gemini Success | FallbackResearch
+2026-09-18 13:52:41,807 | INFO | Plan to Eat: LLM research completed.
+2026-09-18 13:52:41,808 | INFO | Agent 3 Completed | NutriNest
+2026-09-18 13:52:41,820 | INFO | Agent 4 Started | NutriNest
+2026-09-18 13:52:41,820 | INFO | Processing Mealime
+2026-09-18 13:52:41,821 | INFO | Processing MyFitnessPal
+2026-09-18 13:52:41,821 | INFO | MyFitnessPal | Gemini Analysis Started
+2026-09-18 13:52:41,822 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-09-18 13:52:41,823 | INFO | Processing Yummly
+2026-09-18 13:52:41,823 | INFO | Yummly | Gemini Analysis Started
+2026-09-18 13:52:41,824 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-09-18 13:52:41,825 | INFO | Processing Plan to Eat
+2026-09-18 13:52:41,825 | INFO | Processing Fooducate
+2026-09-18 13:52:41,825 | INFO | Fooducate | Gemini Analysis Started
+2026-09-18 13:52:41,825 | INFO | Invoking Gemini | CompetitorAnalysis
+2026-09-18 13:52:43,067 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 14:00:42,447 | WARNING | Gemini Failed | Invalid json output: 
+For troubleshooting, visit: https://docs.langchain.com/oss/python/langchain/errors/OUTPUT_PARSING_FAILURE 
+2026-09-18 14:00:42,447 | INFO | Switching To DeepSeek | CompetitorAnalysis
+2026-09-18 14:00:50,681 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2026-09-18 14:00:52,615 | INFO | HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 14:01:17,683 | INFO | DeepSeek Success | CompetitorAnalysis
+2026-09-18 14:01:17,684 | INFO | MyFitnessPal | Gemini Analysis Finished
+2026-09-18 14:04:30,184 | INFO | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"

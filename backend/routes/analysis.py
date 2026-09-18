@@ -187,8 +187,14 @@ async def resume_analysis(
     if doc.get("status") == "completed":
         return {"message": "Already completed.", "analysis_id": analysis_id, "status": "completed"}
 
-    if doc.get("status") == "running" and not doc.get("pause_requested"):
+    if doc.get("status") == "running":
+        if doc.get("pause_requested"):
+            await analysis_collection.update_one(
+                {"analysis_id": analysis_id},
+                {"$set": {"pause_requested": False}},
+            )
         return {"message": "Already running.", "analysis_id": analysis_id, "status": "running"}
+
 
     last_completed = int(doc.get("last_completed_step") or 0)
     start_step = last_completed + 1

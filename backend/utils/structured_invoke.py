@@ -84,7 +84,7 @@ async def invoke_structured(
             )
         )
 
-        response = llm.ainvoke(
+        response = await llm.ainvoke(
             prompt
         )
 
@@ -92,4 +92,4 @@ async def invoke_structured(
             f"DeepSeek Success | {schema.__name__}"
         )
 
-        return response
+        return response

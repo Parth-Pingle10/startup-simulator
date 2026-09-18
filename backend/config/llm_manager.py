@@ -21,24 +21,10 @@ class LLMManager:
         #     google_api_key=os.getenv("GOOGLE_API_KEY"),
         #     temperature=0,
         # )
-        # from langchain_xai import ChatXAI
 
-        # return ChatXAI(
-        #     model="grok-4",  # or "grok-4-fast"
-        #     api_key=os.getenv("XAI_API_KEY"),
-        #     temperature=0,
-        # )
-        
-#         from langchain_openai import ChatOpenAI
 
-#         return ChatOpenAI(
-#     model="openrouter/auto",  # or a specific OpenRouter model
-#     api_key=os.getenv("OPENROUTER_API_KEY"),
-#     base_url="https://openrouter.ai/api/v1",
-#     temperature=0,
-# )
         return ChatOllama(
-            model="mistral:latest",
+            model="qwen3-vl:4b",
             base_url="http://localhost:11434",
             temperature=0,
         )
